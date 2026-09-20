@@ -1,0 +1,13 @@
+{
+  "package": "nmr-html-reader",
+  "version": "2026-09-21",
+  "title": "200 and More NMR Experiments",
+  "purpose": "offline local search and reading",
+  "contentPages": 227,
+  "searchRecords": 838,
+  "originalPageImages": 838,
+  "sourceIncluded": false,
+  "buildToolsIncluded": false,
+  "recommendedEntry": "START_READING.cmd",
+  "fallbackEntry": "index.html"
+}
