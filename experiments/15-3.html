@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Experiment 15.3: HC-HSQC" />
+    <title>15.3 HC-HSQC — 200 and More NMR Experiments</title>
+    <link rel="stylesheet" href="../shared/site.css?v=17" />
+    <script>window.NMR_EXPERIMENT = Object.freeze({"meta":{"slug":"15-3","domId":"experiment-15-3","number":"15.3","title":"HC-HSQC","chapter":"Protein NMR","pages":[["exp153-p693",693,678],["exp153-p694",694,679],["exp153-p695",695,680],["exp153-p696",696,681]]},"english":{"exp153-p693":"<h3>1. Purpose</h3><p>Having performed the 2D HN-HSQC experiment as described in Experiment 15.2, the next logical step is the recording of the corresponding HC-HSQC spectrum. This gives a complete H,C correlation and thus yields the chemical shift ranges for protons and \u00b9\u00b3C nuclei (but without those of CO), which one needs to know exactly for the particular protein in question as a prerequisite for all further advanced 3D experiments. We recommend that the chemical shift ranges, once they have been found in Experiments 15.2 and 15.3, should not be altered for the subsequent 3D files. This will greatly facilitate the processing steps. :</p><p>We show here a rather simple and straightforward HSQC sequence. This includes gradient selection and a gradient zz-filter, and uses TPPI for frequency determination in the indirect dimension. There have been other varieties described, for example using the constant time principle, additional nitrogen decoupling during \u00a2, and during acquisition, sensitivity enhancement for the back-transfer, or the echo/anti-echo scheme, to gain higher efficiency. Our experimental comparison showed that these additional features do not give significantly better results for this application, due to the restricted digital resolution for the full chemical shift range of \u00b9\u00b3C and proton. Note that one would nowadays perform this experiment with adiabatic pulses replacing the 180\u00b0 pulses p7 and p13, to alleviate phasing problems with high-field instruments (c.f. Exp.</p><h3>2. Literature</h3><p>[1] G. Bodenhausen, D. J. Ruben, Chem. Phys. Lett. 1980, 69, 185-189.</p><p>[2] J. Cavanagh, W. J. Fairbrother, A. G. Palmer III, N. J. Skelton, Protein NMR Spectroscopy, Academic Press, San Diego, 1996, 435-447.</p>","exp153-p694":"<h3>3. Pulse Scheme and Phase Cycle</h3><figure class=\"figure pulse-wide\"><img loading=\"lazy\" src=\"../assets/pulse-sequences/15-3-p694-pulse-1.png\" alt=\"Pulse sequence\" /></figure><h3>4. Acquisition</h3><p>Time requirement: 75 min Sample: 10 mg fully \u00b9\u00b3C- and \u00b9\u2075N-labeled human ubiquitin in 600 p1 90% H,O/ 10% D,0, 50 mM phosphate (potassium salt), pH 5.8, 0.5 mM DSS.</p><p>Set and control the temperature to 300 K. A triple-resonance inverse probe-head with z-gradients must be tuned to the sample on all three channels. \u00b9\u2075N is assigned to the third hardware channel, having in mind that you will need it in subsequent experi- ments. \u00b9\u00b3C is put on the second channel. You have to set:</p><p>td2: 2024 data points in F, CH) td1: 256 data points in F, (\u00b9\u00b3C) sw2: 11 ppm swl: 150 ppm o1: on resonance of water signal [4.7 ppm] o2: middle of '\\C NMR spectrum [75 ppm] p1, p3, pS: 90\u00b0 \u00b9H transmitter pulse [8 \u03bcs, 5 dB] p2, p4, p6: 180\u00b0 \u00b9H transmitter pulse [16 \u03bcs, 5 dB] p8, p10, p11, p12: 90\u00b0 \u00b9\u00b3C decoupler pulse [20.5 \u03bcs, 0 dB] My p9, p13: 180\u00b0 \u00b9\u00b3C decoupler pulse [41 \u03bcs, 0 dB] :2s d2: 1/[4(C,H)} = 1.78 ms, calculated from 'A(C,H) = 140 Hz</p>","exp153-p695":"<p>d3: set to effective gradient duration [1.05 ms] d4: set to d2 minus effective gradient duration g1\u2013g3: sinusoidal-shaped field gradients, ca. 0.1 T/m strength, with gradient loop counters, ring-down delays (50 \u03bcs), lock blanking and gradient coil blanking switches according to actual instrumentation used. Gradient duration and strength according to the table:</p><p>90\u00b0 \u00b9\u00b3C decoupler pulse and attenuation for GARP sequence [70 \u03bcs, 11.5 dB] increment for f;: 1/[4:sw1] ds: 16</p><h3>5. Processing</h3><p>Apply zero-filling to 1024 real data points in F, to obtain a matrix of 1kx1k real data points. Use Gaussian multiplication [gb = 0.2, lb = \u20134 Hz] in F, and 7/3-shifted squared sinusoidal window in F. Phase correction and base-line correction may be necessary for both dimensions. Reference the \u00b9\u00b3C dimension using the =-scale procedure described in the introduction to this chapter using the DSS signal set to 6; = 0.</p><h3>6. Result</h3><p>The figure shows the 2D spectrum obtained on a DRX-600 spectrometer with a multinuclear inverse z-gradient triple-resonance probe-head (fixed third channel on \u00b9\u00b3C). A huge number of correlation signals can be seen. The relevant chemical shift ranges for further, more advanced 3D experiments on proteins can be easily extracted.</p><h3>7. Comments</h3><p>The pulse sequence is divided into four sections separated by dotted vertical lines. First we find in a a standard INEPT transfer from proton to \u00b9\u00b3C yielding the coherence 21, /c, after pulse p8 as described for the standard HSQC experiment 10.17.</p><p>The next section b is only for optimization. The dephasing gradient g! is applied in a [delay\u2013180\u00b0 pulse\u2013gradient] bracket to prevent phase distortion during the finite duration of the gradient. The pulses p10 and p11 and the gradient g2 produce a gradient zz-filter (see Exp. 11.8). The 90\u00b0 pulse p10 on \u00b9\u00b3C creates 2/ H, Ic, and the following gradient pulse g2 dephases all residual magnetization that is still in the xy-plane. This is especially important for the residual water signal. Pulse p11 on \u00b9\u00b3C restores the anti- phase magnetization 2/ H, Icy .</p>","exp153-p696":"<p>2 L120 Subsequently, in section c, the \u00b9\u00b3C chemical shifts are sampled using the TPPI phase cycling. The 180\u00b0 pulse p4 on protons decouples the \u00b9\u00b3C nuclei from protons Having sampled the \u00b9\u00b3C chemical shifts, the back-transfer to protons is achieved in section d by pulses p5 and p12, yielding 2/ Hy Ic,- This antiphase magnetization of protons with respect to \u00b9\u00b3C is transformed into in-phase magnetization / H, in the pe- riod (p5, d2, p6, d4) in which the gradient g3 selects for the protons bonded to \u00b9\u00b3C, having been encoded by gradient g1. Therefore the gradient ratio g1: g3 is 4:1.</p><p>Note that a stripped version of this experiment (with ns = 2 and tdl = 64, lasting about 5 minutes) immediately tells whether the three channels of the instrument are set up and tuned correctly. Thus, it is advisable to run this and the previous Experiment 15.2 in this stripped version, before spending a weekend on a more demanding 3D</p><h3>8. Own Observations</h3>"},"chinese":{"exp153-p693":"<h3>1. \u76ee\u7684</h3><p>\u7ecf\u8fc7\u572815.2\u5b9e\u9a8c\u4e2d\u63cf\u8ff0\u76842DHN-HSQC\u5b9e\u9a8c\u540e,\u4e0b\u4e00\u6b65\u7684\u903b\u8f91\u6b65\u9aa4\u662f\u8bb0\u5f55\u76f8\u5e94\u7684HC-HSQC \u8c31\u7684\u8bb0\u5f55.\u8fd9\u7ed9\u51fa\u4e86\u5b8c\u6574\u7684H,C\u76f8\u5173\u6027,\u4ece\u800c\u4ea7\u751f\u4e86x017\u8303\u56f4\u7684\u8d28\u5b50\u548c13C\u6838 (\u4f46\u6ca1\u6709CO\u7684),\u8fd9\u9700\u8981\u5bf9\u5177\u4f53\u7684\u86cb\u767d\u8d28\u8fdb\u884c\u7cbe\u786e\u4e86\u89e3,\u4f5c\u4e3a\u6240\u6709\u8fdb\u4e00\u6b65\u7684\u9ad8\u7ea73D\u5b9e\u9a8c\u7684\u5148\u51b3\u6761\u4ef6. \u6211\u4eec\u5efa\u8bae\u5316\u5b66\u4f4d\u79fb\u8303\u56f4,\u4e00\u65e6\u572815.2\u548c15.3\u5b9e\u9a8c\u4e2d\u53d1\u73b0,\u4e0d\u5e94\u6539\u53d8\u540e\u7eed\u76843D\u6587\u4ef6. \u8fd9\u5c06\u6781\u5927\u5730\u4fc3\u8fdb\u5904\u7406\u6b65\u9aa4.</p><p>\u6211\u4eec\u5728\u8fd9\u91cc\u5c55\u793a\u4e86\u4e00\u4e2a\u76f8\u5f53\u7b80\u5355\u548c\u76f4\u63a5\u7684HSQC\u5e8f\u5217.\u5305\u62ec\u68af\u5ea6\u9009\u62e9\u548c\u68af\u5ea6 zz\u8fc7\u5668,\u5e76\u4f7f\u7528TPPI\u6765\u786e\u5b9a\u95f4\u63a5\u7ef4\u5ea6\u7684\u9891\u7387.\u5df2\u6709\u5176\u4ed6\u7c7b\u578b\u63cf\u8ff0,\u4f8b\u5982\u4f7f\u7528\u6052\u5b9a\u65f6\u95f4\u539f\u7406,\u5728 \u00a2\u671f\u95f4\u589e\u52a0 \u53bb\u8026\u548c\u5728 \u91c7\u96c6\u671f\u95f4,\u63d0\u9ad8\u5bf9\u540e\u4f20\u8f93\u7684\u654f\u611f\u6027,\u6216\u56de\u58f0/\u53cd\u56de\u58f0\u65b9\u6848,\u4ee5\u83b7\u5f97\u66f4\u9ad8\u6548\u7387.\u6211\u4eec\u7684\u5b9e\u9a8c\u6bd4\u8f83\u8868\u660e,\u7531\u4e8e\u5bf913C\u548c\u8d28\u5b50\u7684 \u5316\u5b66\u4f4d\u79fb \u8303\u56f4\u7684\u6570\u5b57\u5206\u8fa8\u7387\u6709\u9650,\u8fd9\u4e9b\u989d\u5916\u529f\u80fd\u4e0d\u4f1a\u7ed9\u51fa\u66f4\u597d\u7684\u7ed3\u679c.\u8bf7\u6ce8\u610f,\u5f53\u4eca\u4eba\u4eec\u5c06\u4f7f\u7528\u66ff\u6362180\u00b0\u8109\u51b2 p7 \u548c p13\u7684\u963f\u8fea\u4e9a\u5df4\u65af\u8109\u51b2\u6765\u6267\u884c\u8fd9\u79cd\u5b9e\u9a8c,\u4ee5\u7f13\u89e3\u9ad8\u573a\u4eea\u5668\u7684\u76f8\u5dee\u95ee\u9898 (C. Expf.</p><h3>2. \u6587\u732e</h3><p>[1] G. Bodenhausen, D. J. Ruben, Chem. Phys. Lett. 1980, 69, 185-189.</p><p>[2] J. Cavanagh, W. J. Fairbrother, A. G. Palmer III, N. J. Skelton, Protein NMR Spectroscopy, Academic Press, San Diego, 1996, 435-447.</p>","exp153-p694":"<h3>3. \u8109\u51b2\u5e8f\u5217\u4e0e\u76f8\u4f4d\u5faa\u73af</h3><figure class=\"figure pulse-wide\"><img loading=\"lazy\" src=\"../assets/pulse-sequences/15-3-p694-pulse-1.png\" alt=\"\u8109\u51b2\u5e8f\u5217\u56fe\" /></figure><h3>4. \u91c7\u96c6</h3><p>\u65f6\u95f4\u8981\u6c42: 75 \u5206\u949f \u6837\u672c: 10 mg \u516813C\u548c15N\u6807\u8bb0\u7684\u4eba\u7c7b ubiquitin 600 p1 90% H, O/ 10% D,0, 50 mM\u9178\u76d0 (\u76d0), pH 5. 8, 0.5 mM DSS.</p><p>\u8bbe\u7f6e\u548c\u63a7\u5236\u6e29\u5ea6\u4e3a300K. \u5fc5\u987b\u5728\u4e09\u9053\u4e2d\u90fd\u8c03\u6574\u4e00\u4e2a\u4e09\u5171\u632f\u53cd\u5c04\u63a2\u6d4b\u5668\u5934,\u4ee5z\u57fa\u68af\u5ea6. 15N\u88ab\u5206\u914d\u7ed9\u7b2c\u4e09\u4e2a\u786c\u4ef6\u9891\u9053,\u8003\u8651\u5230\u4f60\u5c06\u5728\u540e\u7eed\u5b9e\u9a8c\u4e2d\u9700\u8981\u5b83. 13C\u88ab\u653e\u5230\u7b2c\u4e8c\u4e2a\u9891\u9053\u4e0a.</p><p>td2: 2024 F, CH) td1: 256 F, (13C) sw2: 11 ppm swl: 150 ppm o1:\u5728\u6c34\u4fe1\u53f7\u5171\u632f [4.7 ppm] o2:\u4e2d '\\C NMR \u8c31 [75 ppm] p1, p3, pS: 90\u00b0 1H \u53d1\u5c04\u8109\u51b2 [8 \u03bcs, 5 dB] p2, p4, p6: 180\u00b0 1H \u53d1\u5c04\u8109\u51b2 [16 \u03bcs, 5 dB] p8, p10, p11, p12: 90\u00b0 13C \u53bb\u8026\u8109\u51b2 [20.5 \u03bcs, 0 dB] \u6211\u7684 p9, p13: 180\u00b0 13C \u53bb\u8026\u8109\u51b2 [41 \u03bcs, 0 dB] :2s d2:[4 1/C,H) } = 1.78 ms,\u7531 'AC,H) = 140 Hz ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((</p>","exp153-p695":"<p>d3:\u8bbe\u7f6e\u4e3a\u6709\u6548\u68af\u5ea6\u6301\u7eed\u65f6\u95f4 [1.05 ms] d4:\u8bbe\u7f6e\u4e3ad2\u51cf\u6709\u6548\u68af\u5ea6\u6301\u7eed\u65f6\u95f4 g1g3:\u5706\u5f62\u573a\u68af\u5ea6,\u5927\u7ea60.1T/m\u5f3a\u5ea6,\u5177\u6709\u68af\u5ea6\u5faa\u73af\u8ba1\u6570\u5668,\u73af\u4e0b\u5ef6\u8fdf (50 \u03bcs),\u6309\u5b9e\u9645\u4eea\u5668\u4f7f\u7528\u7684\u9501\u7a7a\u548c\u68af\u5ea6\u5377\u7a7a\u5f00\u5173.\u6309\u8868\u683c\u8fdb\u884c\u68af\u5ea6\u6301\u7eed\u65f6\u95f4\u548c\u5f3a\u5ea6:</p><p>90\u00b0 13C \u53bb\u8026\u8109\u51b2\u548cGARP\u5e8f\u5217\u51cf\u5f31 (70 \u03bcs,11.5 dB) \u589e\u957f\u4e3a f:1/[4:sw1] ds: 16</p><h3>5. \u5904\u7406</h3><p>\u5e94\u7528F\u4e2d\u7684\u96f6\u586b\u5145\u52301024\u4e2a\u5b9e\u6570\u636e\u70b9,\u4ee5\u83b7\u5f971kx1k\u5b9e\u6570\u636e\u70b9\u7684\u77e9\u9635.\u4f7f\u7528F\u4e2d\u7684\u9ad8\u65af\u4e58\u6cd5 [gb = 0.2,lb = 4 Hz]\u548cF\u4e2d\u76847/3\u8f6c\u6362\u65b9\u5f62\u9634\u5f71\u7a97\u53e3.\u4e24\u4e2a\u7ef4\u5ea6\u53ef\u80fd\u9700\u8981\u76f8\u5bf9\u6b63\u786e\u548c\u57fa\u7ebf\u6b63\u786e.\u4f7f\u7528\u5728\u672c\u7ae0\u5165\u95e8\u4e2d\u63cf\u8ff0\u7684=\u5c3a\u5ea6\u7a0b\u5e8f\u5f15\u752813C\u7ef4\u5ea6,\u4f7f\u7528DSS\u4fe1\u53f7\u8bbe\u7f6e\u4e3a6; = 0.</p><h3>6. \u7ed3\u679c</h3><p>\u56fe\u663e\u793a,\u5728DRX-600\u8c31\u4eea\u4e0a\u83b7\u5f97\u76842D \u8c31\u5177\u6709\u591a\u6838\u53cd\u5411z-\u7ea7\u4e09\u5171\u632f\u63a2\u6d4b\u5668\u5934 (\u56fa\u5b9a\u572813C\u4e0a\u7684\u7b2c\u4e09\u901a\u9053).\u53ef\u4ee5\u770b\u5230\u5927\u91cf\u7684\u76f8\u5173\u4fe1\u53f7.\u5bf9\u86cb\u767d\u8d28\u8fdb\u884c\u8fdb\u4e00\u6b65\u7684\u66f4\u5148\u8fdb\u76843D\u5b9e\u9a8c\u7684\u76f8\u5173\u5316\u5b66\u4f4d\u79fb\u8303\u56f4\u53ef\u4ee5\u8f7b\u677e\u63d0\u53d6.</p><h3>7. \u6ce8\u91ca</h3><p>\u8109\u51b2\u5e8f\u5217\u5206\u4e3a\u56db\u4e2a\u5206\u6bb5,\u7531\u70b9\u76f4\u7ebf\u5206\u5f00.\u9996\u5148\u6211\u4eec\u53d1\u73b0\u4e00\u4e2a\u6807\u51c6\u7684INEPT\u8f6c\u79fb\u4ece\u8d28\u5b50\u523013C,\u4ea7\u751f\u76f8\u5e7221 /c,\u5728\u8109\u51b2p8\u540e,\u5982\u63cf\u8ff0\u6807\u51c6HSQC\u5b9e\u9a8c10.17.</p><p>\u4e0b\u4e00\u8282b\u4ec5\u7528\u4e8e\u4f18\u5316. \u51cf\u901f\u68af\u5ea6g!\u5728 [\u5ef6\u8fdf180\u00b0\u8109\u51b2\u68af\u5ea6]\u652f\u67b6\u4e2d\u5e94\u7528\u4e8e\u9632\u6b62\u68af\u5ea6\u7684\u6709\u9650\u6301\u7eed\u65f6\u95f4\u671f\u95f4\u76f8\u66f2\u53d8.\u8109\u51b2p10\u548cp11\u548c\u68af\u5ea6g2\u4ea7\u751f\u68af\u5ea6 zz\u8fc7\u5668 (\u89c1 Exp. 11.8). 13C\u4e0a\u768490\u00b0\u8109\u51b2p10\u4ea7\u751f2/H,Ic,\u800c\u4e0b\u5217\u68af\u5ea6\u8109\u51b2 g2\u51cf\u901f\u6240\u6709\u4ecd\u5728xy\u5e73\u9762\u4e2d\u7684\u6b8b\u7559\u78c1\u5316.\u8fd9\u5bf9\u4e8e\u6b8b\u7559\u6c34\u4fe1\u53f7\u5c24\u5176\u91cd\u8981. 13C\u4e0a\u7684\u8109\u51b2p11\u6062\u590d\u4e86\u53cd\u76f8\u78c1\u53162/H,Icy.</p>","exp153-p696":"<p>2 L120 \u968f\u540e,\u5728c\u8282\u4e2d,13C \u5316\u5b66\u4f4d\u79fbs\u91c7\u7528TPPI \u76f8\u4f4d\u5faa\u73af\u8fdb\u884c\u6837\u672c\u5316.\u5728\u8d28\u5b50\u4e0a\u7684180\u00b0\u8109\u51b2 p4\u5c0613C\u6838\u4e0e\u8d28\u5b50\u5206\u79bb.\u572813C \u5316\u5b66\u4f4d\u79fbs\u8fdb\u884c\u6837\u672c\u5316\u540e,\u901a\u8fc7p5\u548cp12\u8109\u51b2\u5728d\u8282\u4e2d\u5b9e\u73b0\u5411\u8d28\u5b50\u7684\u8f6c\u79fb,\u4ea7\u751f2/Hy Ic.-\u8fd9\u5bf913C\u7684\u53cd\u76f8\u78c1\u5316\u8f6c\u5316\u4e3a\u5728\u76f8\u78c1\u5316/H,\u5728\u4e00\u4e2a\u6bd4\u8f83 (p5,d2,p6,d4) \u4e2d,g3\u68af\u5ea6\u9009\u62e9\u4e86\u88ab13C\u7ed3\u5408\u7684\u8d28\u5b50,\u7531g1\u68af\u5ea6\u7f16\u7801\u540e,g1\u68af\u5ea6\u6bd4\u4e3a4.1g1:3</p><p>\u9700\u8981\u6ce8\u610f\u7684\u662f,\u4e00\u4e2a\u5265\u79bb\u7684\u7248\u672c (ns = 2 \u548c tdl = 64,\u6301\u7eed\u7ea65\u5206\u949f) \u7acb\u5373\u544a\u8bc9\u4eea\u5668\u7684\u4e09\u4e2a\u9891\u9053\u662f\u5426\u8bbe\u7f6e\u548c\u8c03\u6574\u6b63\u786e.\u56e0\u6b64,\u5efa\u8bae\u5728\u82b1\u4e00\u4e2a\u5468\u672b\u5728\u66f4\u82db\u523b\u76843D\u4e0a\u8fd0\u884c\u8fd9\u4e2a\u548c\u4e4b\u524d\u7684\u5b9e\u9a8c15.2\u5728\u8fd9\u4e2a\u5265\u79bb\u7684\u7248\u672c,</p><h3>8. \u4e2a\u4eba\u89c2\u5bdf</h3>"},"figurePlacements":{"exp153-p693":[],"exp153-p694":[],"exp153-p695":[],"exp153-p696":[]}});</script>
+  </head>
+  <body data-language="en" data-asset-prefix="../assets">
+    <header class="topbar">
+      <div class="brand">
+        <h1><a href="../index.html">200 and More NMR Experiments</a></h1>
+        <p>核磁共振实验方法、脉冲序列与谱图实践</p>
+      </div>
+        <div class="toolbar" aria-label="阅读模式">
+          <div class="language-switcher" role="group" aria-label="语言模式">
+            <button class="view-icon" type="button" data-view="en" aria-label="英文" title="英文 · 快捷键 1 / O 循环" aria-pressed="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.5 3.5h11v17h-11zM9 8h6M9 11h6M9 14h4.5" /></svg>
+            </button>
+            <button class="view-icon" type="button" data-view="bilingual" aria-label="中英对照" title="中英对照 · 快捷键 2 / O 循环" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 4.5h7v15h-7zM13.5 4.5h7v15h-7zM6 9h2M6 12h2M16 9h2M16 12h2" /></svg>
+            </button>
+          </div>
+          <button id="toggle-original" class="view-icon" type="button" data-view="original" aria-label="原页对照" aria-pressed="false" title="原页对照 · 快捷键 3 / O 循环">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 3.5h16v17H4zM7 7h10M7 10h10M7 13h6M7 16h4" /></svg>
+          </button>
+          <div class="display-control">
+            <button id="toggle-display-settings" class="view-icon" type="button" aria-label="显示设置" aria-expanded="false" aria-controls="display-settings" title="缩放与主题">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h10M18 7h2M4 17h2M10 17h10M14 4v6M6 14v6" /></svg>
+            </button>
+            <section id="display-settings" class="display-panel" aria-label="显示设置" hidden>
+              <div class="display-panel-heading"><strong>显示设置</strong><span>在实验间自动保留</span></div>
+              <div class="display-setting-row">
+                <span>界面缩放</span>
+                <div class="zoom-controls" role="group" aria-label="界面缩放">
+                  <button id="zoom-out" type="button" aria-label="缩小">−</button>
+                  <output id="zoom-value" aria-live="polite">自动</output>
+                  <button id="zoom-in" type="button" aria-label="放大">+</button>
+                </div>
+              </div>
+              <button id="zoom-auto" class="auto-scale-button" type="button" aria-pressed="true">按窗口自动适应</button>
+              <div class="display-setting-row theme-setting">
+                <span>主题颜色</span>
+                <div class="theme-options" role="group" aria-label="主题颜色">
+                  <button type="button" data-theme="sage" aria-label="鼠尾草绿" title="鼠尾草绿" aria-pressed="true"></button>
+                  <button type="button" data-theme="mist" aria-label="雾蓝" title="雾蓝" aria-pressed="false"></button>
+                  <button type="button" data-theme="sand" aria-label="暖砂" title="暖砂" aria-pressed="false"></button>
+                  <button type="button" data-theme="mauve" aria-label="灰紫" title="灰紫" aria-pressed="false"></button>
+                  <button type="button" data-theme="gray" aria-label="浅灰" title="浅灰" aria-pressed="false"></button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+    </header>
+    <button id="toggle-nav" class="mobile-nav-button" type="button" aria-expanded="false" aria-label="打开实验目录" title="实验目录">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 7h14M5 12h14M5 17h14" /></svg>
+    </button>
+    <div class="layout">
+      <nav class="sidebar" aria-label="Experiment navigation">
+        <a class="sidebar-home-link" href="../index.html">目录与搜索</a>
+        <div class="sidebar-section-heading">
+          <p class="sidebar-label">实验目录</p>
+          <div class="sidebar-tree-actions" role="group" aria-label="目录章节控制">
+            <button type="button" data-nav-action="toggle" data-state="expand" aria-label="展开所有章节" title="展开所有章节">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7l5 5 5-5M3 3h14" /></svg>
+            </button>
+          </div>
+        </div>
+        <div class="sidebar-tree">
+          <details class="chapter-group" data-chapter="1">
+          <summary><span>第 1 章</span><small>The NMR Spectrometer</small></summary>
+          <ol>
+            <li><a href="1.html"><span>1</span><span>The NMR Spectrometer</span></a></li>
+          </ol>
+        </details>
+        <details class="chapter-group" data-chapter="2">
+          <summary><span>第 2 章</span><small>Determination of Pulse-Duration</small></summary>
+          <ol>
+            <li><a href="2.html"><span>2</span><span>Determination of Pulse-Duration</span></a></li>
+              <li><a href="2-1.html"><span>2.1</span><span>Determination of the 90° 1H Transmitter Pulse-Duration</span></a></li>
+              <li><a href="2-2.html"><span>2.2</span><span>Determination of the 90° 13C Transmitter Pulse-Duration</span></a></li>
+              <li><a href="2-3.html"><span>2.3</span><span>Determination of the 90° 1H Decoupler Pulse-Duration</span></a></li>
+              <li><a href="2-4.html"><span>2.4</span><span>The 90° 1H Pulse with Inverse Spectrometer Configuration</span></a></li>
+              <li><a href="2-5.html"><span>2.5</span><span>The 90° 13C Decoupler Pulse with Inverse Configuration</span></a></li>
+              <li><a href="2-6.html"><span>2.6</span><span>Composite Pulses</span></a></li>
+              <li><a href="2-7.html"><span>2.7</span><span>Radiation Damping</span></a></li>
+              <li><a href="2-8.html"><span>2.8</span><span>Pulse and Receiver Phases</span></a></li>
+              <li><a href="2-9.html"><span>2.9</span><span>Determination of Radiofrequency Power</span></a></li>
+          </ol>
+        </details>
+        <details class="chapter-group" data-chapter="3">
+          <summary><span>第 3 章</span><small>Routine NMR Spectroscopy and Standard Tests</small></summary>
+          <ol>
+            <li><a href="3.html"><span>3</span><span>Routine NMR Spectroscopy and Standard Tests</span></a></li>
+              <li><a href="3-1.html"><span>3.1</span><span>The Standard 1H NMR Experiment</span></a></li>
+              <li><a href="3-2.html"><span>3.2</span><span>The Standard 13C NMR Experiment</span></a></li>
+              <li><a href="3-3.html"><span>3.3</span><span>The Application of Window Functions</span></a></li>
+              <li><a href="3-4.html"><span>3.4</span><span>Computer-Aided Spectral Analysis</span></a></li>
+              <li><a href="3-5.html"><span>3.5</span><span>Line Shape Test for 1H NMR Spectroscopy</span></a></li>
+              <li><a href="3-6.html"><span>3.6</span><span>Resolution Test for 1H NMR Spectroscopy</span></a></li>
+              <li><a href="3-7.html"><span>3.7</span><span>Sensitivity Test for 1H NMR Spectroscopy</span></a></li>
+              <li><a href="3-8.html"><span>3.8</span><span>Line Shape Test for 13C NMR Spectroscopy</span></a></li>
+              <li><a href="3-9.html"><span>3.9</span><span>ASTM Sensitivity Test for 13C NMR Spectroscopy</span></a></li>
+              <li><a href="3-10.html"><span>3.10</span><span>Sensitivity Test for 13C NMR Spectroscopy</span></a></li>
+              <li><a href="3-11.html"><span>3.11</span><span>Quadrature Image Test</span></a></li>
+              <li><a href="3-12.html"><span>3.12</span><span>Dynamic Range Test for Signal Amplitudes</span></a></li>
+              <li><a href="3-13.html"><span>3.13</span><span>13° Phase Stability Test</span></a></li>
+              <li><a href="3-14.html"><span>3.14</span><span>Radiofrequency Field Homogeneity</span></a></li>
+          </ol>
+        </details>
+        <details class="chapter-group" data-chapter="4">
+          <summary><span>第 4 章</span><small>Decoupling Techniques</small></summary>
+          <ol>
+            <li><a href="4.html"><span>4</span><span>Decoupling Techniques</span></a></li>
+              <li><a href="4-1.html"><span>4.1</span><span>Decoupler Calibration for Homonuclear Decoupling</span></a></li>
+              <li><a href="4-2.html"><span>4.2</span><span>Decoupler Calibration for Heteronuclear Decoupling</span></a></li>
+              <li><a href="4-3.html"><span>4.3</span><span>Low-Power Calibration for Heteronuclear Decoupling</span></a></li>
+              <li><a href="4-4.html"><span>4.4</span><span>Homonuclear Decoupling</span></a></li>
+              <li><a href="4-5.html"><span>4.5</span><span>Homonuclear Decoupling at Two Frequencies</span></a></li>
+              <li><a href="4-6.html"><span>4.6</span><span>The Homonuclear SPT Experiment</span></a></li>
+              <li><a href="4-7.html"><span>4.7</span><span>The Heteronuclear SPT Experiment</span></a></li>
+              <li><a href="4-8.html"><span>4.8</span><span>The Basic Homonuclear NOE Difference Experiment</span></a></li>
+              <li><a href="4-9.html"><span>4.9</span><span>1D Nuclear Overhauser Difference Spectroscopy</span></a></li>
+              <li><a href="4-10.html"><span>4.10</span><span>1D NOE Spectroscopy with Multiple Selective Irradiation</span></a></li>
+              <li><a href="4-11.html"><span>4.11</span><span>1H Off-Resonance Decoupled 13C NMR Spectra</span></a></li>
+              <li><a href="4-12.html"><span>4.12</span><span>The Gated 1H-Decoupling Technique</span></a></li>
+              <li><a href="4-13.html"><span>4.13</span><span>The Inverse Gated 1H-Decoupling Technique</span></a></li>
+              <li><a href="4-14.html"><span>4.14</span><span>1H Single-Frequency Decoupling of 13C NMR Spectra</span></a></li>
+              <li><a href="4-15.html"><span>4.15</span><span>1H Low-Power Decoupling of 13C NMR Spectra</span></a></li>
+              <li><a href="4-16.html"><span>4.16</span><span>Measurement of the Heteronuclear Overhauser Effect</span></a></li>
+          </ol>
+        </details>
+        <details class="chapter-group" data-chapter="5">
+          <summary><span>第 5 章</span><small>Dynamic NMR Spectroscopy</small></summary>
+          <ol>
+            <li><a href="5.html"><span>5</span><span>Dynamic NMR Spectroscopy</span></a></li>
+              <li><a href="5-1.html"><span>5.1</span><span>Low-Temperature Calibration Using Methanol</span></a></li>
+              <li><a href="5-2.html"><span>5.2</span><span>High-Temperature Calibration Using 1,2-Ethanediol</span></a></li>
+              <li><a href="5-3.html"><span>5.3</span><span>Dynamic 1H NMR Spectroscopy on Dimethylformamide</span></a></li>
+              <li><a href="5-4.html"><span>5.4</span><span>The Saturation Transfer Experiment</span></a></li>
+              <li><a href="5-5.html"><span>5.5</span><span>Measurement of the Rotating-Frame Relaxation Time T1ρ</span></a></li>
+          </ol>
+        </details>
+        <details class="chapter-group" data-chapter="6">
+          <summary><span>第 6 章</span><small>1D Multipulse Sequences</small></summary>
+          <ol>
+            <li><a href="6.html"><span>6</span><span>1D Multipulse Sequences</span></a></li>
+              <li><a href="6-1.html"><span>6.1</span><span>Measurement of the Spin–Lattice Relaxation Time T1</span></a></li>
+              <li><a href="6-2.html"><span>6.2</span><span>Measurement of the Spin–Spin Relaxation Time T2</span></a></li>
+              <li><a href="6-3.html"><span>6.3</span><span>13C NMR Spectra with SEFT</span></a></li>
+              <li><a href="6-4.html"><span>6.4</span><span>13C NMR Spectra with APT</span></a></li>
+              <li><a href="6-5.html"><span>6.5</span><span>The Basic INEPT Technique</span></a></li>
+              <li><a href="6-6.html"><span>6.6</span><span>INEPT+</span></a></li>
+              <li><a href="6-7.html"><span>6.7</span><span>Refocused INEPT</span></a></li>
+              <li><a href="6-8.html"><span>6.8</span><span>Reverse INEPT</span></a></li>
+              <li><a href="6-9.html"><span>6.9</span><span>DEPT-135</span></a></li>
+              <li><a href="6-10.html"><span>6.10</span><span>Editing 13C NMR Spectra Using DEPT</span></a></li>
+              <li><a href="6-11.html"><span>6.11</span><span>DEPTQ</span></a></li>
+              <li><a href="6-12.html"><span>6.12</span><span>Multiplicity Determination Using PENDANT</span></a></li>
+              <li><a href="6-13.html"><span>6.13</span><span>1D-INADEQUATE</span></a></li>
+              <li><a href="6-14.html"><span>6.14</span><span>The BIRD Filter</span></a></li>
+              <li><a href="6-15.html"><span>6.15</span><span>TANGO</span></a></li>
+              <li><a href="6-16.html"><span>6.16</span><span>The Heteronuclear Double-Quantum Filter</span></a></li>
+              <li><a href="6-17.html"><span>6.17</span><span>Purging with a Spin-Lock Pulse</span></a></li>
+              <li><a href="6-18.html"><span>6.18</span><span>Water Suppression by Presaturation</span></a></li>
+              <li><a href="6-19.html"><span>6.19</span><span>Water Suppression by the Jump-and-Return Method</span></a></li>
+          </ol>
+        </details>
+        <details class="chapter-group" data-chapter="7">
+          <summary><span>第 7 章</span><small>NMR Spectroscopy with Selective Pulses</small></summary>
+          <ol>
+            <li><a href="7.html"><span>7</span><span>NMR Spectroscopy with Selective Pulses</span></a></li>
+              <li><a href="7-1.html"><span>7.1</span><span>Determination of a Shaped 90° 1H Transmitter Pulse</span></a></li>
+              <li><a href="7-2.html"><span>7.2</span><span>Determination of a Shaped 90° 1H Decoupler Pulse</span></a></li>
+              <li><a href="7-3.html"><span>7.3</span><span>Determination of a Shaped 90° 13C Decoupler Pulse</span></a></li>
+              <li><a href="7-4.html"><span>7.4</span><span>Selective Excitation Using DANTE</span></a></li>
+              <li><a href="7-5.html"><span>7.5</span><span>SELCOSY</span></a></li>
+              <li><a href="7-6.html"><span>7.6</span><span>SELINCOR: Selective Inverse H,C Correlation via 1J(C,H)</span></a></li>
+              <li><a href="7-7.html"><span>7.7</span><span>SELINQUATE</span></a></li>
+              <li><a href="7-8.html"><span>7.8</span><span>Selective TOCSY</span></a></li>
+              <li><a href="7-9.html"><span>7.9</span><span>INAPT</span></a></li>
+              <li><a href="7-10.html"><span>7.10</span><span>Determination of Long-Range C,H Coupling Constants</span></a></li>
+              <li><a href="7-11.html"><span>7.11</span><span>SELRESOLV</span></a></li>
+              <li><a href="7-12.html"><span>7.12</span><span>SERF</span></a></li>
+          </ol>
+        </details>
+        <details class="chapter-group" data-chapter="8">
+          <summary><span>第 8 章</span><small>Auxiliary Reagents, Quantitative Determinations, and Reaction Mechanisms</small></summary>
+          <ol>
+            <li><a href="8.html"><span>8</span><span>Auxiliary Reagents, Quantitative Determinations, and Reaction Mechanisms</span></a></li>
+              <li><a href="8-1.html"><span>8.1</span><span>Signal Separation Using a Lanthanide Shift Reagent</span></a></li>
+              <li><a href="8-2.html"><span>8.2</span><span>Signal Separation of Enantiomers Using a Chiral Shift Reagent</span></a></li>
+              <li><a href="8-3.html"><span>8.3</span><span>Signal Separation of Enantiomers Using a Chiral Solvating Agent</span></a></li>
+              <li><a href="8-4.html"><span>8.4</span><span>Determination of Enantiomeric Purity with Pirkle’s Reagent</span></a></li>
+              <li><a href="8-5.html"><span>8.5</span><span>Determination of Enantiomeric Purity by ³¹P NMR</span></a></li>
+              <li><a href="8-6.html"><span>8.6</span><span>Determination of Absolute Configuration by the Advanced Mosher Method</span></a></li>
+              <li><a href="8-7.html"><span>8.7</span><span>Aromatic Solvent-Induced Shift (ASIS)</span></a></li>
+              <li><a href="8-8.html"><span>8.8</span><span>NMR Spectroscopy of OH Protons and H/D Exchange</span></a></li>
+              <li><a href="8-9.html"><span>8.9</span><span>Water Suppression Using an Exchange Reagent</span></a></li>
+              <li><a href="8-10.html"><span>8.10</span><span>Isotope Effects on Chemical Shielding</span></a></li>
+              <li><a href="8-11.html"><span>8.11</span><span>pKₐ Determination by ¹³C NMR</span></a></li>
+              <li><a href="8-12.html"><span>8.12</span><span>Determination of Association Constants Kₐ</span></a></li>
+              <li><a href="8-13.html"><span>8.13</span><span>Saturation Transfer Difference NMR</span></a></li>
+              <li><a href="8-14.html"><span>8.14</span><span>The Relaxation Reagent Cr(acac)₃</span></a></li>
+              <li><a href="8-15.html"><span>8.15</span><span>Determination of Paramagnetic Susceptibility by NMR</span></a></li>
+              <li><a href="8-16.html"><span>8.16</span><span>¹H and ¹³C NMR of Paramagnetic Compounds</span></a></li>
+              <li><a href="8-17.html"><span>8.17</span><span>The CIDNP Effect</span></a></li>
+              <li><a href="8-18.html"><span>8.18</span><span>Quantitative ¹H NMR Spectroscopy: Determination of the Alcohol Content of Polish Vodka</span></a></li>
+              <li><a href="8-19.html"><span>8.19</span><span>Quantitative 13C NMR Spectroscopy with Inverse Gated 1H-Decoupling</span></a></li>
+              <li><a href="8-20.html"><span>8.20</span><span>NMR Using Liquid-Crystal Solvents</span></a></li>
+          </ol>
+        </details>
+        <details class="chapter-group" data-chapter="9">
+          <summary><span>第 9 章</span><small>Heteronuclear NMR Spectroscopy</small></summary>
+          <ol>
+            <li><a href="9.html"><span>9</span><span>Heteronuclear NMR Spectroscopy</span></a></li>
+              <li><a href="9-1.html"><span>9.1</span><span>1H-Decoupled 15N NMR Spectra Using DEPT</span></a></li>
+              <li><a href="9-2.html"><span>9.2</span><span>1H-Coupled 15N NMR Spectra Using DEPT</span></a></li>
+              <li><a href="9-3.html"><span>9.3</span><span>19F NMR Spectroscopy</span></a></li>
+              <li><a href="9-4.html"><span>9.4</span><span>29Si NMR Spectroscopy Using DEPT</span></a></li>
+              <li><a href="9-5.html"><span>9.5</span><span>29Si NMR Spectroscopy Using Spin-Lock Polarization</span></a></li>
+              <li><a href="9-6.html"><span>9.6</span><span>119Sn NMR Spectroscopy</span></a></li>
+              <li><a href="9-7.html"><span>9.7</span><span>2H NMR Spectroscopy</span></a></li>
+              <li><a href="9-8.html"><span>9.8</span><span>11B NMR Spectroscopy</span></a></li>
+              <li><a href="9-9.html"><span>9.9</span><span>17O NMR Spectroscopy Using RIDE</span></a></li>
+              <li><a href="9-10.html"><span>9.10</span><span>47/49Ti NMR Spectroscopy Using ARING</span></a></li>
+          </ol>
+        </details>
+        <details class="chapter-group" data-chapter="10">
+          <summary><span>第 10 章</span><small>The Second Dimension</small></summary>
+          <ol>
+            <li><a href="10.html"><span>10</span><span>The Second Dimension</span></a></li>
+              <li><a href="10-1.html"><span>10.1</span><span>2D J-Resolved ¹H NMR Spectroscopy</span></a></li>
+              <li><a href="10-2.html"><span>10.2</span><span>2D J-Resolved ¹³C NMR Spectroscopy</span></a></li>
+              <li><a href="10-3.html"><span>10.3</span><span>The Basic H,H-COSY Experiment</span></a></li>
+              <li><a href="10-4.html"><span>10.4</span><span>Long-Range COSY</span></a></li>
+              <li><a href="10-5.html"><span>10.5</span><span>Phase-Sensitive COSY</span></a></li>
+              <li><a href="10-6.html"><span>10.6</span><span>Phase-Sensitive COSY-45</span></a></li>
+              <li><a href="10-7.html"><span>10.7</span><span>E.COSY</span></a></li>
+              <li><a href="10-8.html"><span>10.8</span><span>Double-Quantum-Filtered COSY with Presaturation</span></a></li>
+              <li><a href="10-9.html"><span>10.9</span><span>Fully Coupled C,H Correlation (FUCOUP)</span></a></li>
+              <li><a href="10-10.html"><span>10.10</span><span>C,H-Correlation by Polarization Transfer (HETCOR)</span></a></li>
+              <li><a href="10-11.html"><span>10.11</span><span>Long-Range C,H-Correlation by Polarization Transfer</span></a></li>
+              <li><a href="10-12.html"><span>10.12</span><span>C,H-Correlation via Long-Range Couplings (COLOC)</span></a></li>
+              <li><a href="10-13.html"><span>10.13</span><span>The Basic HMQC Experiment</span></a></li>
+              <li><a href="10-14.html"><span>10.14</span><span>Phase-Sensitive HMQC with BIRD Filter and GARP Decoupling</span></a></li>
+              <li><a href="10-15.html"><span>10.15</span><span>Poor Man's Gradient HMQC</span></a></li>
+              <li><a href="10-16.html"><span>10.16</span><span>Phase-Sensitive HMBC with BIRD Filter</span></a></li>
+              <li><a href="10-17.html"><span>10.17</span><span>The Basic HSQC Experiment</span></a></li>
+              <li><a href="10-18.html"><span>10.18</span><span>The HOHAHA or TOCSY Experiment</span></a></li>
+              <li><a href="10-19.html"><span>10.19</span><span>HETLOC</span></a></li>
+              <li><a href="10-20.html"><span>10.20</span><span>The NOESY Experiment</span></a></li>
+              <li><a href="10-21.html"><span>10.21</span><span>The CAMELSPIN or ROESY Experiment</span></a></li>
+              <li><a href="10-22.html"><span>10.22</span><span>The HOESY Experiment</span></a></li>
+              <li><a href="10-23.html"><span>10.23</span><span>2D-INADEQUATE</span></a></li>
+              <li><a href="10-24.html"><span>10.24</span><span>The EXSY Experiment</span></a></li>
+              <li><a href="10-25.html"><span>10.25</span><span>X,Y-Correlation</span></a></li>
+          </ol>
+        </details>
+        <details class="chapter-group" data-chapter="11">
+          <summary><span>第 11 章</span><small>1D NMR Spectroscopy with Pulsed Field Gradients</small></summary>
+          <ol>
+            <li><a href="11.html"><span>11</span><span>1D NMR Spectroscopy with Pulsed Field Gradients</span></a></li>
+              <li><a href="11-1.html"><span>11.1</span><span>Calibration of Pulsed Field Gradients</span></a></li>
+              <li><a href="11-2.html"><span>11.2</span><span>Gradient Pre-emphasis</span></a></li>
+              <li><a href="11-3.html"><span>11.3</span><span>Gradient Amplifier Test</span></a></li>
+              <li><a href="11-4.html"><span>11.4</span><span>Determination of Pulsed Field Gradient Ring-Down Delays</span></a></li>
+              <li><a href="11-5.html"><span>11.5</span><span>The Pulsed Field Gradient Spin-Echo Experiment</span></a></li>
+              <li><a href="11-6.html"><span>11.6</span><span>Excitation Pattern of Selective Pulses</span></a></li>
+              <li><a href="11-7.html"><span>11.7</span><span>The Gradient Heteronuclear Double-Quantum Filter</span></a></li>
+              <li><a href="11-8.html"><span>11.8</span><span>The Gradient zz-Filter</span></a></li>
+              <li><a href="11-9.html"><span>11.9</span><span>The Gradient-Selected Dual Step Low-Pass Filter</span></a></li>
+              <li><a href="11-10.html"><span>11.10</span><span>gs-SELCOSY</span></a></li>
+              <li><a href="11-11.html"><span>11.11</span><span>gs-SELTOCSY</span></a></li>
+              <li><a href="11-12.html"><span>11.12</span><span>DPFGSE-NOE</span></a></li>
+              <li><a href="11-13.html"><span>11.13</span><span>gs-SELINCOR</span></a></li>
+              <li><a href="11-14.html"><span>11.14</span><span>α/β-SELINCOR-TOCSY</span></a></li>
+              <li><a href="11-15.html"><span>11.15</span><span>GRECCO</span></a></li>
+              <li><a href="11-16.html"><span>11.16</span><span>WATERGATE</span></a></li>
+              <li><a href="11-17.html"><span>11.17</span><span>Water Suppression by Excitation Sculpting</span></a></li>
+              <li><a href="11-18.html"><span>11.18</span><span>Solvent Suppression Using WET</span></a></li>
+              <li><a href="11-19.html"><span>11.19</span><span>DOSY</span></a></li>
+              <li><a href="11-20.html"><span>11.20</span><span>INEPT-DOSY</span></a></li>
+              <li><a href="11-21.html"><span>11.21</span><span>DOSY-HMQC</span></a></li>
+          </ol>
+        </details>
+        <details class="chapter-group" data-chapter="12">
+          <summary><span>第 12 章</span><small>2D NMR Spectroscopy With Field Gradients</small></summary>
+          <ol>
+            <li><a href="12.html"><span>12</span><span>2D NMR Spectroscopy With Field Gradients</span></a></li>
+              <li><a href="12-1.html"><span>12.1</span><span>gs-COSY</span></a></li>
+              <li><a href="12-2.html"><span>12.2</span><span>Constant-Time COSY</span></a></li>
+              <li><a href="12-3.html"><span>12.3</span><span>Phase-Sensitive gs-DQF-COSY</span></a></li>
+              <li><a href="12-4.html"><span>12.4</span><span>gs-HMQC</span></a></li>
+              <li><a href="12-5.html"><span>12.5</span><span>gs-HMBC</span></a></li>
+              <li><a href="12-6.html"><span>12.6</span><span>ACCORD-HMBC</span></a></li>
+              <li><a href="12-7.html"><span>12.7</span><span>HMSC</span></a></li>
+              <li><a href="12-8.html"><span>12.8</span><span>Phase-Sensitive gs-HSQC with Sensitivity Enhancement</span></a></li>
+              <li><a href="12-9.html"><span>12.9</span><span>Edited HSQC with Sensitivity Enhancement</span></a></li>
+              <li><a href="12-10.html"><span>12.10</span><span>HSQC with Adiabatic Pulses for High-Field Instruments</span></a></li>
+              <li><a href="12-11.html"><span>12.11</span><span>gs-TOCSY</span></a></li>
+              <li><a href="12-12.html"><span>12.12</span><span>gs-HMQC-TOCSY</span></a></li>
+              <li><a href="12-13.html"><span>12.13</span><span>gs-HETLOC</span></a></li>
+              <li><a href="12-14.html"><span>12.14</span><span>gs-J-Resolved HMBC</span></a></li>
+              <li><a href="12-15.html"><span>12.15</span><span>2D-HMBC</span></a></li>
+              <li><a href="12-16.html"><span>12.16</span><span>¹H-Detected 2D INEPT-INADEQUATE</span></a></li>
+              <li><a href="12-17.html"><span>12.17</span><span>1,1-ADEQUATE</span></a></li>
+              <li><a href="12-18.html"><span>12.18</span><span>1,n-ADEQUATE</span></a></li>
+              <li><a href="12-19.html"><span>12.19</span><span>gs-NOESY</span></a></li>
+              <li><a href="12-20.html"><span>12.20</span><span>gs-HSQC-NOESY</span></a></li>
+              <li><a href="12-21.html"><span>12.21</span><span>gs-HOESY</span></a></li>
+              <li><a href="12-22.html"><span>12.22</span><span>¹H,¹⁵N Correlation with gs-HMQC</span></a></li>
+          </ol>
+        </details>
+        <details class="chapter-group" data-chapter="13">
+          <summary><span>第 13 章</span><small>The Third Dimension</small></summary>
+          <ol>
+            <li><a href="13.html"><span>13</span><span>The Third Dimension</span></a></li>
+              <li><a href="13-1.html"><span>13.1</span><span>3D HMQC-COSY</span></a></li>
+              <li><a href="13-2.html"><span>13.2</span><span>3D gs-HSQC-TOCSY</span></a></li>
+              <li><a href="13-3.html"><span>13.3</span><span>3D H,C,P-Correlation</span></a></li>
+              <li><a href="13-4.html"><span>13.4</span><span>3D HMBC</span></a></li>
+          </ol>
+        </details>
+        <details class="chapter-group" data-chapter="14">
+          <summary><span>第 14 章</span><small>Solid-State NMR Spectroscopy</small></summary>
+          <ol>
+            <li><a href="14.html"><span>14</span><span>Solid-State NMR Spectroscopy</span></a></li>
+              <li><a href="14-1.html"><span>14.1</span><span>Shimming Solid-State Probe-Heads</span></a></li>
+              <li><a href="14-2.html"><span>14.2</span><span>Adjusting the Magic Angle</span></a></li>
+              <li><a href="14-3.html"><span>14.3</span><span>Hartmann-Hahn Matching</span></a></li>
+              <li><a href="14-4.html"><span>14.4</span><span>The Basic CP/MAS Experiment</span></a></li>
+              <li><a href="14-5.html"><span>14.5</span><span>TOSS</span></a></li>
+              <li><a href="14-6.html"><span>14.6</span><span>SELTICS</span></a></li>
+              <li><a href="14-7.html"><span>14.7</span><span>Connectivity Determination in the Solid State</span></a></li>
+              <li><a href="14-8.html"><span>14.8</span><span>REDOR</span></a></li>
+              <li><a href="14-9.html"><span>14.9</span><span>High-Resolution Magic-Angle Spinning</span></a></li>
+          </ol>
+        </details>
+        <details class="chapter-group active-chapter" data-chapter="15" open>
+          <summary><span>第 15 章</span><small>Protein NMR</small></summary>
+          <ol>
+            <li><a href="15.html"><span>15</span><span>Protein NMR</span></a></li>
+              <li><a href="15-1.html"><span>15.1</span><span>Pulse Determination for Protein NMR</span></a></li>
+              <li><a href="15-2.html"><span>15.2</span><span>HN-HSQC</span></a></li>
+              <li><a class="active" aria-current="page" href="15-3.html"><span>15.3</span><span>HC-HSQC</span></a></li>
+              <li><a href="15-4.html"><span>15.4</span><span>MUSIC</span></a></li>
+              <li><a href="15-5.html"><span>15.5</span><span>HN-Correlation using TROSY</span></a></li>
+              <li><a href="15-6.html"><span>15.6</span><span>HN-TOCSY-HSQC</span></a></li>
+              <li><a href="15-7.html"><span>15.7</span><span>HNCA</span></a></li>
+              <li><a href="15-8.html"><span>15.8</span><span>HN(CO)CA</span></a></li>
+              <li><a href="15-9.html"><span>15.9</span><span>HNCO</span></a></li>
+              <li><a href="15-10.html"><span>15.10</span><span>HN(CA)CO</span></a></li>
+              <li><a href="15-11.html"><span>15.11</span><span>HCACO</span></a></li>
+              <li><a href="15-12.html"><span>15.12</span><span>HCCH-TOCSY</span></a></li>
+              <li><a href="15-13.html"><span>15.13</span><span>CBCANH</span></a></li>
+              <li><a href="15-14.html"><span>15.14</span><span>CBCA(CO)NH</span></a></li>
+              <li><a href="15-15.html"><span>15.15</span><span>HBHA(CBCACO)NH</span></a></li>
+              <li><a href="15-16.html"><span>15.16</span><span>HN(CA)NNH</span></a></li>
+              <li><a href="15-17.html"><span>15.17</span><span>HN-NOESY-HSQC</span></a></li>
+              <li><a href="15-18.html"><span>15.18</span><span>HC-NOESY-HSQC</span></a></li>
+              <li><a href="15-19.html"><span>15.19</span><span>3D HCN-NOESY</span></a></li>
+              <li><a href="15-20.html"><span>15.20</span><span>HNCA-J</span></a></li>
+          </ol>
+        </details>
+        <details class="chapter-group" data-chapter="A">
+          <summary><span>附录与索引</span><small>Appendices and Reference</small></summary>
+          <ol>
+            <li><a href="appendix-1.html"><span>A.1</span><span>Appendix 1: Pulse Programs</span></a></li>
+              <li><a href="appendix-2.html"><span>A.2</span><span>Appendix 2: Instrument Dialects</span></a></li>
+              <li><a href="appendix-3.html"><span>A.3</span><span>Appendix 3: Classification of Experiments</span></a></li>
+              <li><a href="appendix-4.html"><span>A.4</span><span>Appendix 4: Elementary Product Operator Formalism Rules</span></a></li>
+              <li><a href="appendix-5.html"><span>A.5</span><span>Appendix 5: Chemical Shift and Spin-Coupling Data</span></a></li>
+              <li><a href="index-glossary.html"><span>A.6</span><span>Index and Glossary</span></a></li>
+          </ol>
+        </details>
+        </div>
+        <footer class="sidebar-copyright">
+          <p class="copyright-owner">© 2026 <a href="mailto:wuhaifeng@ustc.edu.cn">wuhaifeng@ustc.edu.cn</a></p>
+          <p>本文档仅供小范围、非公开的学术交流与学习参考；未经许可，不得复制、转载、转发、公开传播或用于商业用途。</p>
+        </footer>
+      </nav>
+      <main>
+        <article class="experiment paper" id="experiment-15-3" data-experiment="15.3" aria-labelledby="experiment-title">
+          <header class="experiment-heading">
+            <p class="experiment-label">Experiment 15.3</p>
+            <h2 class="experiment-title" id="experiment-title">HC-HSQC</h2>
+            <p class="experiment-title-zh" lang="zh-CN">HC-HSQC（氢–碳异核单量子相关）</p>
+            <p class="range-line">PDF 693–696 · 原书 678–681 · Protein NMR</p>
+          </header>
+          <section class="page-block" id="exp153-p693" data-pdf="693" data-book="678">
+            <span class="page-marker">原书第 678 页 · PDF 第 693 页</span>
+            <div class="bilingual-grid">
+              <div class="content-pane content-en" data-page="exp153-p693"></div>
+              <div class="content-pane content-zh" data-page="exp153-p693"></div>
+            </div>
+            <img class="reference-scan" data-src="../assets/original-pages/pdf-693.webp" alt="原书 PDF 第 693 页" loading="lazy" />
+          </section>
+          <section class="page-block" id="exp153-p694" data-pdf="694" data-book="679">
+            <span class="page-marker">原书第 679 页 · PDF 第 694 页</span>
+            <div class="bilingual-grid">
+              <div class="content-pane content-en" data-page="exp153-p694"></div>
+              <div class="content-pane content-zh" data-page="exp153-p694"></div>
+            </div>
+            <img class="reference-scan" data-src="../assets/original-pages/pdf-694.webp" alt="原书 PDF 第 694 页" loading="lazy" />
+          </section>
+          <section class="page-block" id="exp153-p695" data-pdf="695" data-book="680">
+            <span class="page-marker">原书第 680 页 · PDF 第 695 页</span>
+            <div class="bilingual-grid">
+              <div class="content-pane content-en" data-page="exp153-p695"></div>
+              <div class="content-pane content-zh" data-page="exp153-p695"></div>
+            </div>
+            <img class="reference-scan" data-src="../assets/original-pages/pdf-695.webp" alt="原书 PDF 第 695 页" loading="lazy" />
+          </section>
+          <section class="page-block" id="exp153-p696" data-pdf="696" data-book="681">
+            <span class="page-marker">原书第 681 页 · PDF 第 696 页</span>
+            <div class="bilingual-grid">
+              <div class="content-pane content-en" data-page="exp153-p696"></div>
+              <div class="content-pane content-zh" data-page="exp153-p696"></div>
+            </div>
+            <img class="reference-scan" data-src="../assets/original-pages/pdf-696.webp" alt="原书 PDF 第 696 页" loading="lazy" />
+          </section>
+        </article>
+      </main>
+    </div>
+    <script>if (!window.NMR_APP_LOADED) {
+window.NMR_APP_LOADED = true;
+
+const body = document.body;
+const experiment = window.NMR_EXPERIMENT;
+const scanButton = document.querySelector("#toggle-original");
+const navButton = document.querySelector("#toggle-nav");
+const toolbar = document.querySelector(".toolbar");
+const sidebar = document.querySelector(".sidebar");
+const sidebarActionButton = document.querySelector("button[data-nav-action='toggle']");
+const root = document.documentElement;
+const displayButton = document.querySelector("#toggle-display-settings");
+const displayPanel = document.querySelector("#display-settings");
+const zoomOutButton = document.querySelector("#zoom-out");
+const zoomInButton = document.querySelector("#zoom-in");
+const zoomAutoButton = document.querySelector("#zoom-auto");
+const zoomValue = document.querySelector("#zoom-value");
+const themeButtons = [...document.querySelectorAll("button[data-theme]")];
+const viewButtons = [...document.querySelectorAll("button[data-view]")];
+const languageButtons = viewButtons.filter((button) => button.dataset.view !== "original");
+const referenceScans = [...document.querySelectorAll(".reference-scan")];
+
+function cloneMappedFigure(figure) {
+  const mapped = figure.cloneNode(true);
+  mapped.classList.add("mapped-figure");
+  mapped.querySelectorAll("img").forEach((image) => {
+    image.alt = `\u4e2d\u6587\u680f\u5bf9\u5e94\u56fe\u50cf\uff1a${image.alt || "\u539f\u4e66\u56fe\u50cf"}`;
+    image.loading = "lazy";
+  });
+  const caption = document.createElement("figcaption");
+  caption.textContent = mapped.querySelector("img") ? "\u4e2d\u6587\u680f\u5bf9\u5e94\u56fe\u50cf" : "\u4e2d\u6587\u680f\u5bf9\u5e94\u65b9\u7a0b";
+  mapped.append(caption);
+  return mapped;
+}
+
+function mapFigures(page, pageId) {
+  const englishPane = page.querySelector(".content-en");
+  const chinesePane = page.querySelector(".content-zh");
+  const englishFigures = [...englishPane.querySelectorAll("figure")];
+  const placements = experiment.figurePlacements[pageId] ?? englishFigures.map((_, source) => ({ source, atEnd: true }));
+
+  for (const { source, before, after, atEnd } of placements) {
+    const figure = englishFigures[source];
+    if (!figure) continue;
+    const mapped = cloneMappedFigure(figure);
+    const anchors = [...chinesePane.querySelectorAll("h3, p")];
+    if (before) {
+      const anchor = anchors.find((node) => node.textContent.trim().startsWith(before));
+      if (anchor) {
+        anchor.before(mapped);
+        continue;
+      }
+    }
+    if (after) {
+      const anchor = anchors.find((node) => node.textContent.trim().startsWith(after));
+      if (anchor) {
+        anchor.after(mapped);
+        continue;
+      }
+    }
+    if (atEnd || (!before && !after)) chinesePane.append(mapped);
+  }
+}
+
+function populateExperiment() {
+  if (!experiment) return;
+  document.querySelectorAll(".page-block").forEach((page) => {
+    const pageId = page.id;
+    const englishPane = page.querySelector(".content-en");
+    const chinesePane = page.querySelector(".content-zh");
+    englishPane.innerHTML = experiment.english[pageId] || "<p>English transcription pending.</p>";
+    chinesePane.innerHTML = experiment.chinese[pageId] || "<p>\u4e2d\u6587\u7ffb\u8bd1\u5f85\u8865\u3002</p>";
+    mapFigures(page, pageId);
+  });
+
+  const assetPrefix = body.dataset.assetPrefix || "assets";
+  document.querySelectorAll("figure.worksheet img").forEach((image) => {
+    image.src = `${assetPrefix}/worksheets/observations-grid.svg`;
+    image.alt = "Blank NMR observation grid";
+  });
+}
+
+function alignLocationHash() {
+  if (!window.location.hash) return;
+  let targetId;
+  try {
+    targetId = decodeURIComponent(window.location.hash.slice(1));
+  } catch {
+    targetId = window.location.hash.slice(1);
+  }
+  const target = document.getElementById(targetId);
+  if (!target) return;
+
+  const align = () => target.scrollIntoView({ block: "start", behavior: "instant" });
+  requestAnimationFrame(() => requestAnimationFrame(align));
+  window.addEventListener("load", align, { once: true });
+  document.fonts?.ready.then(align).catch(() => {});
+
+  // Page fragments and lazy figures are inserted after the browser's native
+  // hash jump.  Keep the target aligned briefly while those elements settle.
+  if ("ResizeObserver" in window) {
+    const paper = document.querySelector(".paper");
+    if (paper) {
+      const observer = new ResizeObserver(align);
+      observer.observe(paper);
+      window.setTimeout(() => observer.disconnect(), 1500);
+    }
+  }
+}
+
+const scanObserver = "IntersectionObserver" in window
+  ? new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const image = entry.target;
+        if (!image.src && image.dataset.src) image.src = image.dataset.src;
+        scanObserver.unobserve(image);
+      });
+    }, { rootMargin: "900px 0px" })
+  : null;
+
+function armReferenceScans() {
+  referenceScans.forEach((image) => {
+    if (image.src || !image.dataset.src) return;
+    if (scanObserver) scanObserver.observe(image);
+    else image.src = image.dataset.src;
+  });
+}
+
+function setOriginalMode(enabled) {
+  body.classList.toggle("show-original", enabled);
+  scanButton.setAttribute("aria-pressed", String(enabled));
+  scanButton.setAttribute("aria-label", enabled ? "\u8fd4\u56de\u91cd\u5efa\u7a3f" : "\u539f\u9875\u5bf9\u7167");
+  scanButton.title = enabled ? "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af" : "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af";
+  languageButtons.forEach((button) => {
+    button.setAttribute("aria-pressed", String(!enabled && button.dataset.view === body.dataset.language));
+  });
+  if (enabled) armReferenceScans();
+}
+
+function setLanguage(mode) {
+  const selected = ["en", "bilingual"].includes(mode) ? mode : "en";
+  body.classList.remove("show-original");
+  scanButton.setAttribute("aria-pressed", "false");
+  scanButton.setAttribute("aria-label", "\u539f\u9875\u5bf9\u7167");
+  scanButton.title = "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af";
+  body.dataset.language = selected;
+  languageButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.view === selected)));
+  localStorage.setItem("nmr-reading-mode", selected);
+}
+
+function activateView(view) {
+  if (view === "original") {
+    setOriginalMode(!body.classList.contains("show-original"));
+    return;
+  }
+  setLanguage(view);
+}
+
+function cycleView() {
+  if (body.classList.contains("show-original")) {
+    setLanguage("en");
+    return;
+  }
+  if (body.dataset.language === "en") {
+    setLanguage("bilingual");
+    return;
+  }
+  setOriginalMode(true);
+}
+
+populateExperiment();
+alignLocationHash();
+window.addEventListener("hashchange", alignLocationHash);
+
+const sidebarStateKey = "nmr-sidebar-navigation";
+
+function readSidebarState() {
+  try {
+    return JSON.parse(sessionStorage.getItem(sidebarStateKey) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function persistSidebarState() {
+  if (!sidebar) return;
+  const openChapters = [...sidebar.querySelectorAll("details.chapter-group[open]")]
+    .map((group) => group.dataset.chapter)
+    .filter(Boolean);
+  try {
+    sessionStorage.setItem(sidebarStateKey, JSON.stringify({
+      scrollTop: sidebar.scrollTop,
+      openChapters,
+    }));
+  } catch {
+    // Some browser policies disable storage for local files; navigation still works.
+  }
+}
+
+function restoreSidebarState() {
+  if (!sidebar) return;
+  const state = readSidebarState();
+  const openChapters = new Set(Array.isArray(state.openChapters) ? state.openChapters : []);
+  sidebar.querySelectorAll("details.chapter-group").forEach((group) => {
+    if (openChapters.has(group.dataset.chapter) || group.classList.contains("active-chapter")) group.open = true;
+    group.addEventListener("toggle", () => {
+      persistSidebarState();
+      updateNavToggleButton();
+    });
+  });
+
+  requestAnimationFrame(() => {
+    updateNavToggleButton();
+    if (Number.isFinite(state.scrollTop)) {
+      sidebar.scrollTop = state.scrollTop;
+      return;
+    }
+    const activeLink = sidebar.querySelector("a.active");
+    if (activeLink) sidebar.scrollTop = Math.max(0, activeLink.offsetTop - sidebar.clientHeight / 2);
+  });
+
+  let scrollTimer = 0;
+  sidebar.addEventListener("scroll", () => {
+    window.clearTimeout(scrollTimer);
+    scrollTimer = window.setTimeout(persistSidebarState, 80);
+  }, { passive: true });
+}
+
+restoreSidebarState();
+
+function updateNavToggleButton() {
+  if (!sidebar || !sidebarActionButton) return;
+  const groups = [...sidebar.querySelectorAll("details.chapter-group")];
+  const allOpen = groups.length > 0 && groups.every((group) => group.open);
+  const label = allOpen ? "\u6536\u62e2\u6240\u6709\u7ae0\u8282" : "\u5c55\u5f00\u6240\u6709\u7ae0\u8282";
+  sidebarActionButton.dataset.state = allOpen ? "collapse" : "expand";
+  sidebarActionButton.setAttribute("aria-label", label);
+  sidebarActionButton.title = label;
+}
+
+sidebarActionButton?.addEventListener("click", () => {
+  const groups = [...sidebar.querySelectorAll("details.chapter-group")];
+  const shouldOpen = !groups.every((group) => group.open);
+  groups.forEach((group) => {
+    group.open = shouldOpen;
+  });
+  persistSidebarState();
+  updateNavToggleButton();
+});
+
+const scaleStorageKey = "nmr-interface-scale";
+const themeStorageKey = "nmr-interface-theme";
+let scaleMode = "auto";
+let appliedScale = 1;
+
+function storedValue(key, fallback) {
+  try {
+    return localStorage.getItem(key) || fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function saveValue(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    // The display setting still applies for the current page.
+  }
+}
+
+function automaticScale() {
+  if (window.innerWidth <= 1040) return 1;
+  return Math.min(1.2, Math.max(0.95, window.innerWidth / 1800));
+}
+
+function applyScale(scale, mode = scaleMode) {
+  appliedScale = Math.min(1.4, Math.max(0.8, scale));
+  root.style.setProperty("--sidebar-w", `${Math.round(340 * appliedScale)}px`);
+  root.style.setProperty("--page-w", `${Math.round(1180 * appliedScale)}px`);
+  root.style.setProperty("--reader-font", `${(15 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--reader-heading", `${(20 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--reader-title", `${(34 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--sidebar-font", `${(13 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--sidebar-small", `${(11 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--paper-pad", `${Math.round(44 * appliedScale)}px`);
+  if (zoomValue) zoomValue.textContent = mode === "auto" ? `\u81ea\u52a8 ${Math.round(appliedScale * 100)}%` : `${Math.round(appliedScale * 100)}%`;
+  if (zoomAutoButton) zoomAutoButton.setAttribute("aria-pressed", String(mode === "auto"));
+}
+
+function setScaleMode(value) {
+  if (value === "auto") {
+    scaleMode = "auto";
+    applyScale(automaticScale(), scaleMode);
+    saveValue(scaleStorageKey, scaleMode);
+    return;
+  }
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return;
+  scaleMode = String(Math.min(1.4, Math.max(0.8, numeric)));
+  applyScale(Number(scaleMode), scaleMode);
+  saveValue(scaleStorageKey, scaleMode);
+}
+
+function adjustScale(delta) {
+  setScaleMode((Math.round((appliedScale + delta) * 10) / 10).toFixed(1));
+}
+
+function applyTheme(theme) {
+  const selected = ["sage", "mist", "sand", "mauve", "gray"].includes(theme) ? theme : "sage";
+  root.dataset.theme = selected;
+  themeButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.theme === selected)));
+  saveValue(themeStorageKey, selected);
+}
+
+setScaleMode(storedValue(scaleStorageKey, "auto"));
+applyTheme(storedValue(themeStorageKey, "sage"));
+
+displayButton?.addEventListener("click", (event) => {
+  event.stopPropagation();
+  const willOpen = displayPanel.hidden;
+  displayPanel.hidden = !willOpen;
+  displayButton.setAttribute("aria-expanded", String(willOpen));
+});
+
+displayPanel?.addEventListener("click", (event) => event.stopPropagation());
+zoomOutButton?.addEventListener("click", () => adjustScale(-0.1));
+zoomInButton?.addEventListener("click", () => adjustScale(0.1));
+zoomAutoButton?.addEventListener("click", () => setScaleMode("auto"));
+themeButtons.forEach((button) => button.addEventListener("click", () => applyTheme(button.dataset.theme)));
+
+document.addEventListener("click", () => {
+  if (!displayPanel || displayPanel.hidden) return;
+  displayPanel.hidden = true;
+  displayButton?.setAttribute("aria-expanded", "false");
+});
+
+let scaleResizeTimer = 0;
+window.addEventListener("resize", () => {
+  if (scaleMode !== "auto") return;
+  window.clearTimeout(scaleResizeTimer);
+  scaleResizeTimer = window.setTimeout(() => applyScale(automaticScale(), "auto"), 100);
+}, { passive: true });
+
+toolbar.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-view]");
+  if (!button || !toolbar.contains(button)) return;
+  event.preventDefault();
+  activateView(button.dataset.view);
+});
+
+navButton.addEventListener("click", () => {
+  const open = body.classList.toggle("nav-open");
+  navButton.setAttribute("aria-expanded", String(open));
+});
+
+document.querySelectorAll(".sidebar a").forEach((link) => link.addEventListener("click", () => {
+  persistSidebarState();
+  body.classList.remove("nav-open");
+  navButton.setAttribute("aria-expanded", "false");
+}));
+
+document.addEventListener("keydown", (event) => {
+  const target = event.target;
+  if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target?.isContentEditable) return;
+  if (event.ctrlKey || event.metaKey || event.altKey) return;
+  if (event.key === "1") setLanguage("en");
+  if (event.key === "2") setLanguage("bilingual");
+  if (event.key === "3") setOriginalMode(true);
+  if (event.key.toLowerCase() === "o") cycleView();
+});
+
+setLanguage(localStorage.getItem("nmr-reading-mode") || "en");
+}
+</script>
+  </body>
+</html>

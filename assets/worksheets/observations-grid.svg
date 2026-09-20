@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Own observations grid</title>
+  <desc id="desc">Blank NMR observation grid with evenly spaced horizontal and vertical guide lines.</desc>
+  <rect width="1200" height="680" fill="#fffefb"/>
+  <g stroke="#aeb4aa" stroke-width="1">
+    <path d="M40 40H1160 M40 100H1160 M40 160H1160 M40 220H1160 M40 280H1160 M40 340H1160 M40 400H1160 M40 460H1160 M40 520H1160 M40 580H1160 M40 640H1160"/>
+    <path d="M40 40V640 M96 40V640 M152 40V640 M208 40V640 M264 40V640 M320 40V640 M376 40V640 M432 40V640 M488 40V640 M544 40V640 M600 40V640 M656 40V640 M712 40V640 M768 40V640 M824 40V640 M880 40V640 M936 40V640 M992 40V640 M1048 40V640 M1104 40V640 M1160 40V640"/>
+  </g>
+  <g stroke="#d8ddd5" stroke-width="1" stroke-dasharray="3 5">
+    <path d="M40 70H1160 M40 130H1160 M40 190H1160 M40 250H1160 M40 310H1160 M40 370H1160 M40 430H1160 M40 490H1160 M40 550H1160 M40 610H1160"/>
+    <path d="M68 40V640 M124 40V640 M180 40V640 M236 40V640 M292 40V640 M348 40V640 M404 40V640 M460 40V640 M516 40V640 M572 40V640 M628 40V640 M684 40V640 M740 40V640 M796 40V640 M852 40V640 M908 40V640 M964 40V640 M1020 40V640 M1076 40V640 M1132 40V640"/>
+  </g>
+  <rect x="40" y="40" width="1120" height="600" fill="none" stroke="#7c857a" stroke-width="2"/>
+</svg>
