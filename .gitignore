@@ -1,0 +1,28 @@
+# Local reconstruction sources and working records
+/source/
+/tools/
+/work/
+/_non-delivery/
+/s/
+/AGENTS.md
+/TRANSFER.md
+/PROJECT_STATE.json
+/START_PROMPT.md
+
+# Source publications and generated archives
+*.pdf
+*.djvu
+*.zip
+*.7z
+*.rar
+
+# Build caches, logs, and temporary files
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+Thumbs.db
+.DS_Store
