@@ -1,7 +1,10 @@
 # Local reconstruction sources and working records
 /source/
 /tools/
-/work/
+/work/*
+!/work/nmr-terminology.json
+!/work/nmr-terminology.md
+!/work/build-terminology.py
 /_non-delivery/
 /s/
 /AGENTS.md
