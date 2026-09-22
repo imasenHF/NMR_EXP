@@ -427,8 +427,24 @@ body.show-original .page-marker{right:var(--paper-pad)}
   padding-right: 0;
 }
 
-.content-pane .parameter-table {
+.content-pane .table-scroll .parameter-table {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  table-layout: auto;
+}
+
+.content-pane .table-scroll .parameter-table th,
+.content-pane .table-scroll .parameter-table td {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.content-pane .table-scroll .parameter-table th:first-child {
+  width: 34%;
+  min-width: 7.5rem;
+  white-space: normal;
 }
 
 .content-pane .gradient-table th,
