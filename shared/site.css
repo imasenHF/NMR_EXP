@@ -447,6 +447,41 @@ body.show-original .page-marker{right:var(--paper-pad)}
   white-space: normal;
 }
 
+/* Phase-cycle notation belongs to the same unruled, serif typesetting as
+   acquisition parameters; table cells align without monospace padding. */
+.content-pane .table-scroll table.phase-cycle-table,
+.content-pane .table-scroll table.phase-sequence-table {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  font: inherit;
+  table-layout: auto;
+}
+
+.content-pane .table-scroll table.phase-sequence-table {
+  width: calc(100% - 1rem);
+  margin: 0 0 0 1rem;
+}
+
+.content-pane .phase-cycle-table th {
+  width: 3.1rem;
+  white-space: nowrap;
+}
+
+.content-pane .phase-cycle-table td,
+.content-pane .phase-sequence-table td {
+  overflow-wrap: anywhere;
+}
+
+.content-pane .phase-sequence-table td {
+  padding-inline: .25rem;
+  white-space: nowrap;
+}
+
+.content-pane .phase-sequence-table td:first-child {
+  width: 66%;
+}
+
 .content-pane .gradient-table th,
 .content-pane .gradient-table td {
   white-space: nowrap;
