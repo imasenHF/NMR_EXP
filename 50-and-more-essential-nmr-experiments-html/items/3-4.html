@@ -1,0 +1,517 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Item 3.4: Solvent Suppression using WET"><title>3.4 Solvent Suppression using WET — 50 and More Essential NMR Experiments</title><link rel="stylesheet" href="../shared/site.css?v=1"><script>window.NMR_EXPERIMENT = Object.freeze({"meta":{"number":"3.4","slug":"3-4","kind":"item","title":"Solvent Suppression using WET","titleZh":"WET \u6eb6\u5242\u6291\u5236","pages":[{"id":"pdf-99","pdfPage":99,"bookPage":89,"en":"content/pages/pdf-99.en.html","zh":"content/pages/pdf-99.zh.html"},{"id":"pdf-100","pdfPage":100,"bookPage":90,"en":"content/pages/pdf-100.en.html","zh":"content/pages/pdf-100.zh.html"},{"id":"pdf-101","pdfPage":101,"bookPage":91,"en":"content/pages/pdf-101.en.html","zh":"content/pages/pdf-101.zh.html"},{"id":"pdf-102","pdfPage":102,"bookPage":92,"en":"content/pages/pdf-102.en.html","zh":"content/pages/pdf-102.zh.html"}],"chapter":"Selective Methods"},"english":{"pdf-99":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>Experiment 3.4</h3>\r\n<h3>Solvent Suppression Using WET</h3>\r\n<h3>1. Purpose</h3>\r\n<p>Among the many solvent suppression schemes, the WET (Water suppression Enhanced through T1 effects) sequence has become very popular, especially in the field of hyphenated techniques such as HPLC-NMR, although it was originally introduced for localized in vivo spectroscopy. The method uses selective pulses on the solvent resonance, which may contain more than one frequency band in the case of dual solvent systems and pulsed field gradients to dephase the residual solvent magnetization. For comparison with the other water suppression techniques demonstrated in this book (see Exps. 3.1 to 3.3), the performance of the method is again shown for the 2 mM sucrose sample. A special composite excitation pulse is used at the end of the sequence.</p>\r\n<h3>2. Variants</h3>\r\n<p>Several different schemes for the sequence of the selective pulses followed by pulse field gradients have been discussed in the literature [2,3] For the suppression of organic solvents like acetonitrile used in LC applications it is advisable to apply 13C decoupling in order to remove also the 13C satellites of the solvent signals. Combinations with NOESY are known, as well as with other 2D methods ( COSY, TOCSY).</p>\r\n<h3>3. Pulse Scheme and Phase Cycle</h3>\r\n<figure class=\"figure source-figure source-figure-wide\" data-figure-id=\"pdf-99-vector-1\"><img alt=\"Scheme 3.4-1\" loading=\"lazy\" src=\"../assets/pulse-sequences/pdf-99-vector-1.webp\"/><figcaption>Scheme 3.4-1</figcaption></figure>\r\n<h3>4. Acquisition</h3>\r\n<h4>Special values used for the spectrum shown:</h4>\r\n<p>Sample: 2 mM sucrose in 90 % H2O / 10 % D2O + 0.5 mM DSS (2,2-dimethyl-2-silapentane-5-sulfonate, sodium salt) + trace of NaN3 against bacterial growth. Time requirement: 5 min Spectrometer: Bruker Avance-700 with 5-mm TBI probe</p>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">Source sidebar</div>\r\n<h4>Common values:</h4>\r\n<p class=\"parameter-list\">d1: relaxation delay<br>p1: 81.4\u00b0 selective pulse<br>p2: 101.4\u00b0 selective pulse<br>p3: 69.3\u00b0 selective pulse<br>p4: 161.0\u00b0 selective pulse<br>p5, p6, p7, p8: 90\u00b0 1H transmitter pulse<br>d2: gradient ring down delay<br>d3: relaxation delay for solvent signal</p>\r\n</aside>\r\n</div>\r\n","pdf-100":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<p>The probe head must be tuned to the sample used; the temperature should be regulated and controlled to 298 K. Record a normal 1H NMR spectrum and center the offset at the water resonance. Determine the attenuation for a 90\u00b0 selective square pulse of 2 ms (see Exp.8.1) [here 42 dB was used].</p>\r\n<p class=\"parameter-list\">td : 64K<br>sw: 14 ppm<br>aq: 3.33 s<br>o1: on water resonance<br>d1: 2 s<br>d2: 2 ms<br>d3: 10 ms<br>p1: square shape, 2 ms, (42 + 0.87) dB = 42.87 dB<br>p2: square shape, 2 ms, (42 \u2212 1.04) dB = 40.96 dB<br>p3: square shape, 2 ms, (42 + 2.27) dB = 44.27 dB<br>p4: square shape, 2 ms, (42 \u2212 5.05) dB = 36.95 dB<br>p5, p6, p7, p8: 8.75 \u03bcs, + 4 dB g1\u2013g4: sinusoidal-shaped field gradients, 2 ms duration, Gradient strength ratio: 80 % : 40 % : 20 % : 10 % (100 % \u2248 0.56 T/m).<br>ds: 8<br>ns: 16</p>\r\n<h3>5. Processing</h3>\r\n<p>Use standard 1D processing as described in Experiment 1.1 with exponential multiplication (lb = 0.1 Hz) and a base line correction.</p>\r\n<h3>6. Result</h3>\r\n<p>The figure shows the result obtained on an Avance-700 spectrometer with a 5 mm inverse multinuclear gradient probe. Compare the result with those in Exps. 5.1 to 5.3 and observe the integration of the sugar resonances.</p>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-100-fig-1\"><img alt=\"Fig. 3.4-2 Falls in Croatia\" loading=\"lazy\" src=\"../assets/photographs/pdf-100-fig-1.webp\"/><figcaption>Fig. 3.4-2 Falls in Croatia</figcaption></figure>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">Source sidebar</div>\r\n<p>One of the major impediments to the wider growth of the field is the difficulty of observing analyte resonances in the presence of the larger resonances from the mobile phase. While this problem appears similar to the well-known problem of water suppression in normal liquid-phase biomolecular NMR samples it is exacerbated by three additional characteristics: (1) in typical reversed-phase HPLC mobile phases, there is more than one protonated solvent resonance (and all corresponding 13C satellites); (2) the sample in the detector coil is typically flowing, and this replenishment of fresh spins complicates many solvent suppression techniques, such as presaturation; (3) the solvent resonances change during the course of the solvent gradients (the chromatography \"method\") thus presenting the spectroscopist with moving targets.</p>\r\n<p>Taken from ref. [2]</p>\r\n</aside>\r\n</div>\r\n","pdf-101":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<figure class=\"figure source-figure source-figure-wide\" data-figure-id=\"pdf-101-fig-1\"><img alt=\"Fig. 3.4-2 Water suppression by WET in a 2 mM solution of sucrose\" loading=\"lazy\" src=\"../assets/spectra/pdf-101-fig-1.webp\"/><figcaption>Fig. 3.4-2 Water suppression by WET in a 2 mM solution of sucrose</figcaption></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-101-vector-1\"><img alt=\"Scheme 3.4-2\" loading=\"lazy\" src=\"../assets/chemical-structures/pdf-101-vector-1.webp\"/><figcaption>Scheme 3.4-2</figcaption></figure>\r\n<h3>7. Comments</h3>\r\n<p>The basic idea of this solvent suppression method is first to excite only the solvent signal by a selective pulse and to dephase this transverse magnetization using a pulsed field gradient. A subsequent hard r.f. pulse will then excite only the resonances of the solutes, because no longitudinal magnetization of the solvent remains. This scheme has been optimized by a computer simulation [1], leading to a fourfold selective excitation with pulses of different lengths and gradients of different strengths. This results in a very effective suppression of the solvent resonance. The final excitation is performed by a spatially-selective composite pulse [4], which gives better base-line performance at the residual solvent line.</p>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">Source sidebar</div>\r\n<p>[1] R. J. Ogg, P. B. Kingsley, J. S. Taylor, \"WET, a T1 and B1 insensitive water suppression method for in vivo localized 1H NMR spectroscopy\" J. Magn. Reson. Ser. B 1994, 104, 1\u221210.</p>\r\n<p>[2] S. H. Smallcombe, S. L. Patt, P. A. Keifer, \"WET solvent suppression and its applications to LC NMR and high-resolution NMR spectroscopy\" J. Magn. Reson. Ser. A 1995, 117, 295\u2212303.</p>\r\n<p>[3] S. Zhang, X. Yang, D. G. Gorenstein, \"Enhanced suppression of residual water in a \u201c270\u201d WET sequence\" J. Magn. Reson. 2000, 143, 382\u2212386.</p>\r\n<p>[4] A. Bax, \"A spatially selective composite 90\u00b0 radiofrequency pulse\" J. Magn. Reson. 1985, 65, 142\u2212145.</p>\r\n<p>[5] G. Zheng, W. S. Price \"Solvent signal suppression in NMR\" Progr. NMR Spectrosc. 2010, 56, 267\u2013288.</p>\r\n</aside>\r\n</div>\r\n","pdf-102":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<p>The shape of the selective pulses may be varied. The authors of [2] recommend, e.g., a SEDUCE shape, modulated for one or two frequencies (acetonitrile, water). The relaxation delay d3 may be optimized for the sample, 10 ms is an recommended value.</p>\r\n<h3>8. Questions</h3>\r\n<p>A. In typical HPLC applications a water/acetonitrile mixture is used with a solvent gradient during the run. What are the problems for solvent suppression in such experiments?</p>\r\n<p>B. Inform yourself about the spatial selectivity of the composite pulse used.</p>\r\n<p>C. How would the WET sequence react with exchangeable OH and NH protons?</p>\r\n<h3>9. Own Observations</h3>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">Source sidebar</div>\r\n<p>[6] S. J. Kim, S. M. Kim, M. C. Kim, S. W. Kang, B. H. Um \"Fast identification of flavonoids in the roots of Sophora flavescens by on-flow LC-NMR\" J. Med. Plants Research 2010, 4, 2452\u2013-2459.</p>\r\n</aside>\r\n</div>\r\n"},"chinese":{"pdf-99":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>\u5b9e\u9a8c 3.4</h3>\r\n<h3>WET \u6eb6\u5242\u6291\u5236</h3>\r\n<h3>1. \u76ee\u7684</h3>\r\n<p>\u5728\u8bb8\u591a\u6eb6\u5242\u6291\u5236\u65b9\u6848\u4e2d,WET (\u901a\u8fc7T1\u6548\u5e94\u589e\u5f3a\u6c34\u5cf0\u6291\u5236) \u5e8f\u5217\u975e\u5e38\u53d7\u6b22\u8fce,\u7279\u522b\u662f\u5728HPLC-NMR\u7b49\u8fde\u63a5\u6280\u672f\u9886\u57df,\u5c3d\u7ba1\u6700\u521d\u7528\u4e8e\u672c\u5730\u5316 vivo\u5149\u8c31. \u65b9\u6cd5\u4f7f\u7528\u9009\u62e9\u6027\u8109\u51b2\u5728\u6eb6\u5242\u5171\u632f\u4e0a,\u5728\u53cc\u6eb6\u5242\u7cfb\u7edf\u548c\u8109\u51b2\u573a\u68af\u5ea6\u7684\u60c5\u51b5\u4e0b\u53ef\u80fd\u5305\u542b\u591a\u4e2a\u9891\u6bb5,\u4ee5\u51cf\u7f13\u6b8b\u4f59\u6eb6\u5242\u78c1\u5316.\u4e0e\u672c\u4e66\u6240\u793a\u7684\u5176\u4ed6\u6c34\u5cf0\u6291\u5236\u6280\u672f (\u89c1\u7b2c3.1\u81f33.3\u8282) \u7684\u6bd4\u8f83,\u8be5\u65b9\u6cd5\u7684\u6027\u80fd\u518d\u6b21\u88ab\u663e\u793a\u4e3a2 mM\u7cd6\u6837\u672c. \u5728\u5e8f\u5217\u7ed3\u675f\u65f6\u4f7f\u7528\u7279\u6b8a\u590d\u5408\u6fc0\u52b1\u8109\u51b2.</p>\r\n<h3>2. \u53d8\u4f53</h3>\r\n<p>\u5728\u6587\u732e\u4e2d\u8ba8\u8bba\u4e86\u9009\u62e9\u8109\u51b2\u5e8f\u5217,\u5176\u6b21\u662f\u8109\u51b2\u573a\u68af\u5ea6\u7684\u51e0\u4e2a\u4e0d\u540c\u7684\u65b9\u6848 [2,3] \u5728LC\u5e94\u7528\u4e2d\u4f7f\u7528\u7684acetonitrile\u7b49\u6709\u673a\u6eb6\u5242\u7684\u6291\u5236\u8fc7\u7a0b\u4e2d,\u5efa\u8bae\u4f7f\u752813C\u53bb\u8026,\u4ee5\u6d88\u9664\u6eb6\u5242\u4fe1\u53f7\u768413C\u536b\u661f.NOESY\u4ee5\u53ca\u5176\u4ed62D\u65b9\u6cd5 (COSY,TOCSY) \u7684\u7ed3\u5408\u5df2\u77e5.</p>\r\n<h3>3. \u8109\u51b2\u65b9\u6848\u4e0e\u76f8\u4f4d\u5faa\u73af</h3>\r\n<figure class=\"figure source-figure source-figure-wide\" data-figure-id=\"pdf-99-vector-1\"><img alt=\"\u56fe\u5f0f 3.4-1\" loading=\"lazy\" src=\"../assets/pulse-sequences/pdf-99-vector-1.webp\"/><figcaption>\u56fe\u5f0f 3.4-1</figcaption></figure>\r\n<h3>4. \u91c7\u96c6</h3>\r\n<h4>\u56fe\u793a\u8c31\u56fe\u91c7\u7528\u7684\u5177\u4f53\u53c2\u6570\uff1a</h4>\r\n<p>\u6837\u672c:90%H2O/10%D2O+0.5mM DSS (2,2-dimethyl-2-silapentane-5-sulfonate,\u76d0) +\u6297\u7ec6\u83cc\u751f\u957f\u7684NaN3\u75d5\u8ff9.\u65f6\u95f4\u8981\u6c42:5\u5206\u949f\u8c31\u4eea:\u5e03\u9c81\u514b Avance-700\u4e0e5mmTBI\u63a2\u5934</p>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">\u539f\u4e66\u4fa7\u680f</div>\r\n<h4>\u901a\u7528\u53c2\u6570\uff1a</h4>\r\n<p class=\"parameter-list\">d1: relaxation delay<br>p1: 81.4\u00b0 selective pulse<br>p2: 101.4\u00b0 selective pulse<br>p3: 69.3\u00b0 selective pulse<br>p4: 161.0\u00b0 selective pulse<br>p5, p6, p7, p8: 90\u00b0 1H transmitter pulse<br>d2: gradient ring down delay<br>d3: relaxation delay for solvent signal</p>\r\n</aside>\r\n</div>\r\n","pdf-100":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<p>\u63a2\u5934\u5fc5\u987b\u4e0e\u4f7f\u7528\u7684\u6837\u672c\u8c03\u6574;\u6e29\u5ea6\u5e94\u8c03\u8282\u5e76\u63a7\u5236\u5230298K. \u8bb0\u5f55\u4e00\u4e2a\u6b63\u5e38\u76841HNMR \u8c31\u56fe,\u5e76\u5c06\u504f\u79fb\u4e2d\u5fc3\u653e\u5728\u6c34\u5171\u632f. \u786e\u5b9a90\u00b0\u9009\u62e9\u6027\u5e73\u65b9\u8109\u51b2\u7684\u51cf\u5f31\u5ea6\u4e3a2ms (\u89c1 Exp.8.1) [\u8fd9\u91cc\u4f7f\u752842 dB].</p>\r\n<p class=\"parameter-list\">td : 64K<br>sw: 14 ppm<br>aq: 3.33 s<br>o1: on water resonance<br>d1: 2 s<br>d2: 2 ms<br>d3: 10 ms<br>p1: square shape, 2 ms, (42 + 0.87) dB = 42.87 dB<br>p2: square shape, 2 ms, (42 \u2212 1.04) dB = 40.96 dB<br>p3: square shape, 2 ms, (42 + 2.27) dB = 44.27 dB<br>p4: square shape, 2 ms, (42 \u2212 5.05) dB = 36.95 dB<br>p5, p6, p7, p8: 8.75 \u03bcs, + 4 dB g1\u2013g4: sinusoidal-shaped field gradients, 2 ms duration, Gradient strength ratio: 80 % : 40 % : 20 % : 10 % (100 % \u2248 0.56 T/m).<br>ds: 8<br>ns: 16</p>\r\n<h3>5. \u5904\u7406</h3>\r\n<p>\u4f7f\u7528\u6807\u51c61D\u5904\u7406,\u5982\u5b9e\u9a8c1.1\u4e2d\u63cf\u8ff0\u7684,\u4ee5\u6307\u6570\u4e58\u6cd5 (lb = 0.1 Hz) \u548c\u57fa\u7ebf\u7ea0\u6b63.</p>\r\n<h3>6. \u7ed3\u679c</h3>\r\n<p>\u56fe\u8868\u663e\u793a\u4e86\u4f7f\u75285mm\u53cd\u6838\u591a\u6838\u68af\u5ea6\u63a2\u5934\u7684Avance-700\u8c31\u4eea\u83b7\u5f97\u7684\u7ed3\u679c. 5.1-5.3 \u5e76\u4e14\u89c2\u5bdf\u7cd6\u5171\u632f\u7684\u6574\u5408.</p>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-100-fig-1\"><img alt=\"\u56fe 3.4-2 \u514b\u7f57\u5730\u4e9a\u7011\u5e03\" loading=\"lazy\" src=\"../assets/photographs/pdf-100-fig-1.webp\"/><figcaption>\u56fe 3.4-2 \u514b\u7f57\u5730\u4e9a\u7011\u5e03</figcaption></figure>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">\u539f\u4e66\u4fa7\u680f</div>\r\n<p>\u5206\u6790\u7684\u5171\u632f\u5728\u79fb\u52a8\u9636\u6bb5\u7684\u8f83\u5927\u7684\u5171\u632f\u5b58\u5728\u4e0b,\u89c2\u5bdf\u5206\u6790\u7684\u5171\u632f\u96be\u5ea6\u662f\u8be5\u9886\u57df\u7684\u66f4\u5e7f\u6cdb\u589e\u957f\u7684\u4e3b\u8981\u969c\u788d\u4e4b\u4e00. \u867d\u7136\u8fd9\u4e2a\u95ee\u9898\u4e0e\u6b63\u5e38\u6db2\u76f8\u751f\u7269\u5206\u5b50NMR\u6837\u672c\u4e2d\u6c34\u5cf0\u6291\u5236\u7684\u5df2\u77e5\u95ee\u9898\u76f8\u4f3c,\u4f46\u5b83\u88ab\u4e09\u4e2a\u989d\u5916\u7684\u7279\u5f81\u52a0\u5267: (1) \u5728\u5178\u578b\u9006\u76f8HPLC\u79fb\u52a8\u76f8\u4e2d,\u6709\u8d85\u8fc7\u4e00\u4e2a\u8d28\u5b50\u6eb6\u5242\u5171\u632f (\u4ee5\u53ca\u6240\u6709\u76f8\u5e94\u768413C\u536b\u661f); (2) \u68c0\u6d4b\u5668\u5708\u4e2d\u7684\u6837\u672c\u901a\u5e38\u6d41\u52a8,\u8fd9\u79cd\u8865\u5145\u65b0\u9c9c\u7684\u7269 \u6eb6\u5242\u7684\u53cd\u54cd\u5728\u6eb6\u5242\u68af\u5ea6\u8fc7\u7a0b\u4e2d\u53d8\u5316 (\u67d3\u8272\u56fe\"\u65b9\u6cd5\"),\u4ece\u800c\u5411\u5149\u8c31\u5b66\u5bb6\u5448\u73b0\u79fb\u52a8\u76ee\u6807.</p>\r\n<p>\u53d6\u81ea\u6cd5\u5b98 [2]</p>\r\n</aside>\r\n</div>\r\n","pdf-101":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<figure class=\"figure source-figure source-figure-wide\" data-figure-id=\"pdf-101-fig-1\"><img alt=\"\u56fe 3.4-2 2 mM \u8517\u7cd6\u6eb6\u6db2\u4e2d\u7684 WET \u6c34\u5cf0\u6291\u5236\" loading=\"lazy\" src=\"../assets/spectra/pdf-101-fig-1.webp\"/><figcaption>\u56fe 3.4-2 2 mM \u8517\u7cd6\u6eb6\u6db2\u4e2d\u7684 WET \u6c34\u5cf0\u6291\u5236</figcaption></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-101-vector-1\"><img alt=\"\u56fe\u5f0f 3.4-2\" loading=\"lazy\" src=\"../assets/chemical-structures/pdf-101-vector-1.webp\"/><figcaption>\u56fe\u5f0f 3.4-2</figcaption></figure>\r\n<h3>7. \u8bf4\u660e</h3>\r\n<p>\u8fd9\u79cd\u6eb6\u5242\u6291\u5236\u65b9\u6cd5\u7684\u57fa\u672c\u60f3\u6cd5\u662f\u9996\u5148\u901a\u8fc7\u9009\u62e9\u8109\u51b2\u6fc0\u53d1\u4ec5\u6eb6\u5242\u4fe1\u53f7,\u5e76\u901a\u8fc7\u8109\u51b2\u573a\u68af\u5ea6\u53bb\u671f\u8f6c\u78c1\u5316.\u968f\u540e\u7684\u786cRF\u8109\u51b2\u5c06\u4ec5\u6fc0\u53d1\u6eb6\u5242\u7684\u5171\u632f,\u56e0\u4e3a\u6ca1\u6709\u6eb6\u5242\u7684\u7eb5\u5411\u78c1\u5316. \u7531\u4e8e\u8fd9\u79cd\u53cd\u5e94,\u53ef\u4ea7\u751f\u56db\u500d\u7684\u9009\u62e9\u6027\u523a\u6fc0,\u5176\u957f\u5ea6\u548c\u5f3a\u5ea6\u4e0d\u540c\u7684\u8109\u51b2.\u8fd9\u5bfc\u81f4\u4e86\u6eb6\u5242\u5171\u632f\u7684\u975e\u5e38\u6709\u6548\u6291\u5236.\u6700\u7ec8\u7684\u523a\u6fc0\u901a\u8fc7\u7a7a\u95f4\u9009\u62e9\u6027\u590d\u5408\u8109\u51b2 [4]\u8fdb\u884c,\u4ece\u800c\u5728\u4f59\u6eb6\u5242\u7ebf\u4e0a\u63d0\u4f9b\u66f4\u597d\u7684\u57fa\u7ebf\u6027\u80fd.</p>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">\u539f\u4e66\u4fa7\u680f</div>\r\n<p>[1] R. J. Ogg, P. B. Kingsley, J. S. Taylor, \"WET, a T1 and B1 insensitive water suppression method for in vivo localized 1H NMR spectroscopy\" J. Magn. Reson. Ser. B 1994, 104, 1\u221210.</p>\r\n<p>[2] S. H. Smallcombe, S. L. Patt, P. A. Keifer, \"WET solvent suppression and its applications to LC NMR and high-resolution NMR spectroscopy\" J. Magn. Reson. Ser. A 1995, 117, 295\u2212303.</p>\r\n<p>[3] S. Zhang, X. Yang, D. G. Gorenstein, \"Enhanced suppression of residual water in a \u201c270\u201d WET sequence\" J. Magn. Reson. 2000, 143, 382\u2212386.</p>\r\n<p>[4] A. Bax, \"A spatially selective composite 90\u00b0 radiofrequency pulse\" J. Magn. Reson. 1985, 65, 142\u2212145.</p>\r\n<p>[5] G. Zheng, W. S. Price \"Solvent signal suppression in NMR\" Progr. NMR Spectrosc. 2010, 56, 267\u2013288.</p>\r\n</aside>\r\n</div>\r\n","pdf-102":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<p>\u9009\u62e9\u8109\u51b2\u7684\u5f62\u72b6\u53ef\u80fd\u6709\u591a\u79cd. [2] \u7684\u4f5c\u8005\u5efa\u8bae,\u4f8b\u5982,\u4e00\u4e2aSEDUCE\u5f62\u72b6,\u8c03\u5236\u4e3a\u4e00\u4e2a\u6216\u4e24\u4e2a\u9891\u7387 (acetonitrile,\u6c34). \u5f1b\u8c6b\u5ef6\u8fdfd3\u53ef\u4ee5\u4e3a\u6837\u672c\u4f18\u5316,10 ms\u662f\u5efa\u8bae\u503c.</p>\r\n<h3>8. \u95ee\u9898</h3>\r\n<p>A. \u5728\u5178\u578b\u7684HPLC\u5e94\u7528\u4e2d,\u5728\u8fd0\u884c\u8fc7\u7a0b\u4e2d\u4f7f\u7528\u6c34/acetonitrile\u6df7\u5408\u7269,\u6eb6\u5242\u68af\u5ea6.\u5728\u6b64\u7c7b\u5b9e\u9a8c\u4e2d,\u6eb6\u5242\u6291\u5236\u7684\u95ee\u9898\u662f\u4ec0\u4e48?</p>\r\n<p>B. \u4e86\u89e3\u4f7f\u7528\u7684\u590d\u5408\u8109\u51b2\u7684\u7a7a\u95f4\u9009\u62e9\u6027.</p>\r\n<p>C. \u5982\u4f55\u5bf9\u53ef\u4ea4\u6362\u7684OH\u548cNH\u8d28\u5b50\u53cd\u5e94?</p>\r\n<h3>9. \u81ea\u884c\u89c2\u5bdf</h3>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">\u539f\u4e66\u4fa7\u680f</div>\r\n<p>[6] S. J. Kim, S. M. Kim, M. C. Kim, S. W. Kang, B. H. Um \"Fast identification of flavonoids in the roots of Sophora flavescens by on-flow LC-NMR\" J. Med. Plants Research 2010, 4, 2452\u2013-2459.</p>\r\n</aside>\r\n</div>\r\n"},"figurePlacements":{}});</script></head>
+    <body data-language="en" data-asset-prefix="../assets"><header class="topbar"><div class="brand"><h1><a href="../../index.html">50 and More Essential NMR Experiments</a></h1><p>核磁共振实验方法、脉冲序列与谱图实践</p></div><div class="toolbar" aria-label="阅读模式">
+  <div class="language-switcher" role="group" aria-label="语言模式">
+    <button class="view-icon" type="button" data-view="en" aria-label="原文" title="原文 · 快捷键 1 / O 循环" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h11v17h-11zM9 8h6M9 11h6M9 14h4.5" /></svg></button>
+    <button class="view-icon" type="button" data-view="bilingual" aria-label="双语对照" title="双语对照 · 快捷键 2 / O 循环" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 4.5h7v15h-7zM13.5 4.5h7v15h-7zM6 9h2M6 12h2M16 9h2M16 12h2" /></svg></button>
+  </div>
+  <button id="toggle-original" class="view-icon" type="button" data-view="original" aria-label="原页对照" aria-pressed="false" title="原页对照 · 快捷键 3 / O 循环"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5h16v17H4zM7 7h10M7 10h10M7 13h6M7 16h4" /></svg></button>
+  <div class="display-control">
+    <button id="toggle-display-settings" class="view-icon" type="button" aria-label="显示设置" aria-expanded="false" aria-controls="display-settings" title="缩放与主题">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10M14 4v6M6 14v6" /></svg>
+    </button>
+    <section id="display-settings" class="display-panel" aria-label="显示设置" hidden>
+      <div class="display-panel-heading"><strong>显示设置</strong><span>在页面间自动保留</span></div>
+      <div class="display-setting-row"><span>界面缩放</span><div class="zoom-controls" role="group" aria-label="界面缩放"><button id="zoom-out" type="button" aria-label="缩小">−</button><output id="zoom-value" aria-live="polite">自动</output><button id="zoom-in" type="button" aria-label="放大">+</button></div></div>
+      <button id="zoom-auto" class="auto-scale-button" type="button" aria-pressed="true">按窗口自动适应</button>
+      <div class="display-setting-row theme-setting"><span>主题颜色</span>
+  <div class="theme-options" role="group" aria-label="主题颜色">
+    <button type="button" data-theme="sage" aria-label="鼠尾草绿" title="鼠尾草绿" aria-pressed="true"></button>
+    <button type="button" data-theme="mist" aria-label="雾蓝" title="雾蓝" aria-pressed="false"></button>
+    <button type="button" data-theme="sand" aria-label="暖砂" title="暖砂" aria-pressed="false"></button>
+    <button type="button" data-theme="mauve" aria-label="灰紫" title="灰紫" aria-pressed="false"></button>
+    <button type="button" data-theme="gray" aria-label="浅灰" title="浅灰" aria-pressed="false"></button>
+  </div></div>
+    </section>
+  </div>
+</div></header>
+    <button id="toggle-nav" class="mobile-nav-button" type="button" aria-expanded="false" aria-label="打开内容目录" title="内容目录"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14" /></svg></button>
+    <div class="layout"><nav class="sidebar" aria-label="内容目录">
+    <a class="sidebar-home-link" href="../../index.html">目录与搜索</a>
+    <div class="sidebar-section-heading"><p class="sidebar-label">内容目录</p><div class="sidebar-tree-actions" role="group" aria-label="目录章节控制"><button type="button" data-nav-action="toggle" data-state="expand" aria-label="展开所有章节" title="展开所有章节"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7l5 5 5-5M3 3h14" /></svg></button></div></div>
+    <div class="sidebar-tree"><details class="chapter-group" data-chapter="F">
+      <summary><span>第 F 章</span><small>Front Matter</small></summary><ol><li><a href="f-1.html"><span>F.1</span><span>Front Matter</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="1">
+      <summary><span>第 1 章</span><small>The Organic Set of NMR Spectra</small></summary><ol><li><a href="1.html"><span>1</span><span>The Organic Set of NMR Spectra</span></a></li>
+<li><a href="1-1.html"><span>1.1</span><span>The 1H NMR Experiment</span></a></li>
+<li><a href="1-2.html"><span>1.2</span><span>APT-13C NMR</span></a></li>
+<li><a href="1-3.html"><span>1.3</span><span>COSY</span></a></li>
+<li><a href="1-4.html"><span>1.4</span><span>NOESY</span></a></li>
+<li><a href="1-5.html"><span>1.5</span><span>HSQC</span></a></li>
+<li><a href="1-6.html"><span>1.6</span><span>HMBC</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="2">
+      <summary><span>第 2 章</span><small>Advanced Organic NMR Spectroscopy</small></summary><ol><li><a href="2.html"><span>2</span><span>Advanced Organic NMR Spectroscopy</span></a></li>
+<li><a href="2-1.html"><span>2.1</span><span>2D J-Resolved 1H NMR Spectroscopy</span></a></li>
+<li><a href="2-2.html"><span>2.2</span><span>ROESY</span></a></li>
+<li><a href="2-3.html"><span>2.3</span><span>TOCSY</span></a></li>
+<li><a href="2-4.html"><span>2.4</span><span>HSQC-TOCSY</span></a></li>
+<li><a href="2-5.html"><span>2.5</span><span>HOESY</span></a></li>
+<li><a href="2-6.html"><span>2.6</span><span>INADEQUATE</span></a></li>
+<li><a href="2-7.html"><span>2.7</span><span>ADEQUATE</span></a></li>
+<li><a href="2-8.html"><span>2.8</span><span>J-HMBC</span></a></li>
+<li><a href="2-9.html"><span>2.9</span><span>Gated Decoupling</span></a></li></ol>
+    </details>
+<details class="chapter-group active-chapter" data-chapter="3" open>
+      <summary><span>第 3 章</span><small>Selective Methods</small></summary><ol><li><a href="3.html"><span>3</span><span>Selective Methods</span></a></li>
+<li><a href="3-1.html"><span>3.1</span><span>Water suppression by Presaturation</span></a></li>
+<li><a href="3-2.html"><span>3.2</span><span>Solvent Suppression by 1D-NOESY</span></a></li>
+<li><a href="3-3.html"><span>3.3</span><span>Water Suppression by SOGGY Excitation Sculpting</span></a></li>
+<li><a class="active" aria-current="page" href="3-4.html"><span>3.4</span><span>Solvent Suppression using WET</span></a></li>
+<li><a href="3-5.html"><span>3.5</span><span>SELTOCSY</span></a></li>
+<li><a href="3-6.html"><span>3.6</span><span>SELNOESY</span></a></li>
+<li><a href="3-7.html"><span>3.7</span><span>SELINCOR</span></a></li>
+<li><a href="3-8.html"><span>3.8</span><span>SELINQUATE</span></a></li>
+<li><a href="3-9.html"><span>3.9</span><span>Band Selective HMBC</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="4">
+      <summary><span>第 4 章</span><small>Heteronuclear NMR</small></summary><ol><li><a href="4.html"><span>4</span><span>Heteronuclear NMR</span></a></li>
+<li><a href="4-1.html"><span>4.1</span><span>11B NMR Spectroscopy</span></a></li>
+<li><a href="4-2.html"><span>4.2</span><span>15N NMR Spectroscopy</span></a></li>
+<li><a href="4-3.html"><span>4.3</span><span>17O NMR Spectroscopy</span></a></li>
+<li><a href="4-4.html"><span>4.4</span><span>19F NMR Spectroscopy</span></a></li>
+<li><a href="4-5.html"><span>4.5</span><span>29Si NMR Spectroscopy</span></a></li>
+<li><a href="4-6.html"><span>4.6</span><span>57Fe NMR Spectroscopy</span></a></li>
+<li><a href="4-7.html"><span>4.7</span><span>195Pt NMR Spectroscopy</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="5">
+      <summary><span>第 5 章</span><small>Experiments in Physical Organic Chemistry</small></summary><ol><li><a href="5.html"><span>5</span><span>Experiments in Physical Organic Chemistry</span></a></li>
+<li><a href="5-1.html"><span>5.1</span><span>Measurement of the Spin–Lattice Relaxation Time T1</span></a></li>
+<li><a href="5-2.html"><span>5.2</span><span>Measurement of the Spin–Spin Relaxation Time T2</span></a></li>
+<li><a href="5-3.html"><span>5.3</span><span>Dynamic 1H NMR Spectroscopy</span></a></li>
+<li><a href="5-4.html"><span>5.4</span><span>Diffusion Measurement with DOSY</span></a></li>
+<li><a href="5-5.html"><span>5.5</span><span>Residual Dipolar Couplings (RDC)</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="6">
+      <summary><span>第 6 章</span><small>Organic Chemistry Applications</small></summary><ol><li><a href="6.html"><span>6</span><span>Organic Chemistry Applications</span></a></li>
+<li><a href="6-1.html"><span>6.1</span><span>ASIS</span></a></li>
+<li><a href="6-2.html"><span>6.2</span><span>Chirality Determination</span></a></li>
+<li><a href="6-3.html"><span>6.3</span><span>Advanced Mosher Method</span></a></li>
+<li><a href="6-4.html"><span>6.4</span><span>Quantitative NMR and Relaxation Reagents</span></a></li>
+<li><a href="6-5.html"><span>6.5</span><span>Determination of Association Constants Ka</span></a></li>
+<li><a href="6-6.html"><span>6.6</span><span>STD NMR</span></a></li>
+<li><a href="6-7.html"><span>6.7</span><span>A Kinetic Experiment</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="7">
+      <summary><span>第 7 章</span><small>An Excursion to the Solid State and to Structural Biology</small></summary><ol><li><a href="7.html"><span>7</span><span>An Excursion to the Solid State and to Structural Biology</span></a></li>
+<li><a href="7-1.html"><span>7.1</span><span>The CP/MAS Experiment</span></a></li>
+<li><a href="7-2.html"><span>7.2</span><span>High-Resolution Magic-Angle Spinning</span></a></li>
+<li><a href="7-3.html"><span>7.3</span><span>HN-HSQC</span></a></li>
+<li><a href="7-4.html"><span>7.4</span><span>HNCA</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="8">
+      <summary><span>第 8 章</span><small>Maintenance and Calibration</small></summary><ol><li><a href="8.html"><span>8</span><span>Maintenance and Calibration</span></a></li>
+<li><a href="8-1.html"><span>8.1</span><span>Calibration of Pulse Duration in the Transmitter Channel</span></a></li>
+<li><a href="8-2.html"><span>8.2</span><span>Calibration of the Pulse Duration in the Indirect Channel</span></a></li>
+<li><a href="8-3.html"><span>8.3</span><span>Shaped Pulses</span></a></li>
+<li><a href="8-4.html"><span>8.4</span><span>Adiabatic Pulses</span></a></li>
+<li><a href="8-5.html"><span>8.5</span><span>Temperature Calibration in NMR</span></a></li>
+<li><a href="8-6.html"><span>8.6</span><span>Calibration of Pulsed Field Gradients</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="A">
+      <summary><span>第 A 章</span><small>Appendix</small></summary><ol><li><a href="a-1.html"><span>A.1</span><span>Answers</span></a></li>
+<li><a href="a-2.html"><span>A.2</span><span>Pulse Programs</span></a></li>
+<li><a href="a-3.html"><span>A.3</span><span>Elementary Product Operator Formalism Rules</span></a></li>
+<li><a href="a-4.html"><span>A.4</span><span>Chemical Shift and Spin-Coupling Data for Strychnine</span></a></li>
+<li><a href="a-5.html"><span>A.5</span><span>Picture Credits</span></a></li>
+<li><a href="a-6.html"><span>A.6</span><span>Index</span></a></li></ol>
+    </details></div>
+    <footer class="sidebar-copyright"><p class="copyright-owner">© 2026 <a href="mailto:wuhaifeng@ustc.edu.cn">wuhaifeng@ustc.edu.cn</a></p><p>本文档仅供小范围、非公开的学术交流与学习参考；未经许可，不得复制、转载、转发、公开传播或用于商业用途。</p></footer>
+  </nav><main><article class="experiment paper" data-experiment="3.4" aria-labelledby="item-title"><header class="experiment-heading"><p class="experiment-label">Item 3.4</p><h2 class="experiment-title" id="item-title">Solvent Suppression using WET</h2><p class="experiment-title-zh" lang="zh-CN">WET 溶剂抑制</p><p class="range-line">PDF 99–102 · 原书 89–92 · Selective Methods</p></header><section class="page-block" id="pdf-99" data-pdf="99" data-book="89">
+        <span class="page-marker">原书第 89 页 · PDF 第 99 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-99"></div><div class="content-pane content-zh" data-page="pdf-99"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-99.webp" alt="原书 PDF 第 99 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-100" data-pdf="100" data-book="90">
+        <span class="page-marker">原书第 90 页 · PDF 第 100 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-100"></div><div class="content-pane content-zh" data-page="pdf-100"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-100.webp" alt="原书 PDF 第 100 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-101" data-pdf="101" data-book="91">
+        <span class="page-marker">原书第 91 页 · PDF 第 101 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-101"></div><div class="content-pane content-zh" data-page="pdf-101"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-101.webp" alt="原书 PDF 第 101 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-102" data-pdf="102" data-book="92">
+        <span class="page-marker">原书第 92 页 · PDF 第 102 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-102"></div><div class="content-pane content-zh" data-page="pdf-102"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-102.webp" alt="原书 PDF 第 102 页" loading="lazy">
+      </section></article></main></div><script>if (!window.NMR_APP_LOADED) {
+window.NMR_APP_LOADED = true;
+
+const body = document.body;
+const experiment = window.NMR_EXPERIMENT;
+const scanButton = document.querySelector("#toggle-original");
+const navButton = document.querySelector("#toggle-nav");
+const toolbar = document.querySelector(".toolbar");
+const sidebar = document.querySelector(".sidebar");
+const sidebarActionButton = document.querySelector("button[data-nav-action='toggle']");
+const root = document.documentElement;
+const displayButton = document.querySelector("#toggle-display-settings");
+const displayPanel = document.querySelector("#display-settings");
+const zoomOutButton = document.querySelector("#zoom-out");
+const zoomInButton = document.querySelector("#zoom-in");
+const zoomAutoButton = document.querySelector("#zoom-auto");
+const zoomValue = document.querySelector("#zoom-value");
+const themeButtons = [...document.querySelectorAll("button[data-theme]")];
+const viewButtons = [...document.querySelectorAll("button[data-view]")];
+const languageButtons = viewButtons.filter((button) => button.dataset.view !== "original");
+const referenceScans = [...document.querySelectorAll(".reference-scan")];
+
+function cloneMappedFigure(figure) {
+  const mapped = figure.cloneNode(true);
+  mapped.classList.add("mapped-figure");
+  mapped.querySelectorAll("img").forEach((image) => {
+    image.alt = `\u4e2d\u6587\u680f\u5bf9\u5e94\u56fe\u50cf\uff1a${image.alt || "\u539f\u4e66\u56fe\u50cf"}`;
+    image.loading = "lazy";
+  });
+  const caption = document.createElement("figcaption");
+  caption.textContent = mapped.querySelector("img") ? "\u4e2d\u6587\u680f\u5bf9\u5e94\u56fe\u50cf" : "\u4e2d\u6587\u680f\u5bf9\u5e94\u65b9\u7a0b";
+  mapped.append(caption);
+  return mapped;
+}
+
+function mapFigures(page, pageId) {
+  const englishPane = page.querySelector(".content-en");
+  const chinesePane = page.querySelector(".content-zh");
+  const englishFigures = [...englishPane.querySelectorAll("figure")];
+  const chineseFigureIds = new Set([...chinesePane.querySelectorAll("figure[data-figure-id]")]
+    .map((figure) => figure.dataset.figureId));
+  const placements = experiment.figurePlacements[pageId] ?? englishFigures.map((_, source) => ({ source, atEnd: true }));
+
+  for (const { source, before, after, atEnd } of placements) {
+    const figure = englishFigures[source];
+    if (!figure) continue;
+    if (figure.dataset.figureId && chineseFigureIds.has(figure.dataset.figureId)) continue;
+    const mapped = cloneMappedFigure(figure);
+    const anchors = [...chinesePane.querySelectorAll("h3, p")];
+    if (before) {
+      const anchor = anchors.find((node) => node.textContent.trim().startsWith(before));
+      if (anchor) {
+        anchor.before(mapped);
+        continue;
+      }
+    }
+    if (after) {
+      const anchor = anchors.find((node) => node.textContent.trim().startsWith(after));
+      if (anchor) {
+        anchor.after(mapped);
+        continue;
+      }
+    }
+    if (atEnd || (!before && !after)) chinesePane.append(mapped);
+  }
+}
+
+function populateExperiment() {
+  if (!experiment) return;
+  document.querySelectorAll(".page-block").forEach((page) => {
+    const pageId = page.id;
+    const englishPane = page.querySelector(".content-en");
+    const chinesePane = page.querySelector(".content-zh");
+    englishPane.innerHTML = experiment.english[pageId] || "<p>English transcription pending.</p>";
+    chinesePane.innerHTML = experiment.chinese[pageId] || "<p>\u4e2d\u6587\u7ffb\u8bd1\u5f85\u8865\u3002</p>";
+    mapFigures(page, pageId);
+  });
+
+  const assetPrefix = body.dataset.assetPrefix || "assets";
+  document.querySelectorAll("figure.worksheet img").forEach((image) => {
+    image.src = `${assetPrefix}/worksheets/observations-grid.svg`;
+    image.alt = "Blank NMR observation grid";
+  });
+}
+
+function alignLocationHash() {
+  if (!window.location.hash) return;
+  let targetId;
+  try {
+    targetId = decodeURIComponent(window.location.hash.slice(1));
+  } catch {
+    targetId = window.location.hash.slice(1);
+  }
+  const target = document.getElementById(targetId);
+  if (!target) return;
+
+  const align = () => target.scrollIntoView({ block: "start", behavior: "instant" });
+  requestAnimationFrame(() => requestAnimationFrame(align));
+  window.addEventListener("load", align, { once: true });
+  document.fonts?.ready.then(align).catch(() => {});
+
+  // Page fragments and lazy figures are inserted after the browser's native
+  // hash jump.  Keep the target aligned briefly while those elements settle.
+  if ("ResizeObserver" in window) {
+    const paper = document.querySelector(".paper");
+    if (paper) {
+      const observer = new ResizeObserver(align);
+      observer.observe(paper);
+      window.setTimeout(() => observer.disconnect(), 1500);
+    }
+  }
+}
+
+const scanObserver = "IntersectionObserver" in window
+  ? new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const image = entry.target;
+        if (!image.src && image.dataset.src) image.src = image.dataset.src;
+        scanObserver.unobserve(image);
+      });
+    }, { rootMargin: "900px 0px" })
+  : null;
+
+function armReferenceScans() {
+  referenceScans.forEach((image) => {
+    if (image.src || !image.dataset.src) return;
+    if (scanObserver) scanObserver.observe(image);
+    else image.src = image.dataset.src;
+  });
+}
+
+function setOriginalMode(enabled) {
+  body.classList.toggle("show-original", enabled);
+  scanButton.setAttribute("aria-pressed", String(enabled));
+  scanButton.setAttribute("aria-label", enabled ? "\u8fd4\u56de\u91cd\u5efa\u7a3f" : "\u539f\u9875\u5bf9\u7167");
+  scanButton.title = enabled ? "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af" : "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af";
+  languageButtons.forEach((button) => {
+    button.setAttribute("aria-pressed", String(!enabled && button.dataset.view === body.dataset.language));
+  });
+  if (enabled) armReferenceScans();
+}
+
+function setLanguage(mode) {
+  const selected = ["en", "bilingual"].includes(mode) ? mode : "en";
+  body.classList.remove("show-original");
+  scanButton.setAttribute("aria-pressed", "false");
+  scanButton.setAttribute("aria-label", "\u539f\u9875\u5bf9\u7167");
+  scanButton.title = "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af";
+  body.dataset.language = selected;
+  languageButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.view === selected)));
+  localStorage.setItem("nmr-reading-mode", selected);
+}
+
+function activateView(view) {
+  if (view === "original") {
+    setOriginalMode(!body.classList.contains("show-original"));
+    return;
+  }
+  setLanguage(view);
+}
+
+function cycleView() {
+  if (body.classList.contains("show-original")) {
+    setLanguage("en");
+    return;
+  }
+  if (body.dataset.language === "en") {
+    setLanguage("bilingual");
+    return;
+  }
+  setOriginalMode(true);
+}
+
+populateExperiment();
+alignLocationHash();
+window.addEventListener("hashchange", alignLocationHash);
+
+const sidebarStateKey = "nmr-sidebar-navigation";
+
+function readSidebarState() {
+  try {
+    return JSON.parse(sessionStorage.getItem(sidebarStateKey) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function persistSidebarState() {
+  if (!sidebar) return;
+  const openChapters = [...sidebar.querySelectorAll("details.chapter-group[open]")]
+    .map((group) => group.dataset.chapter)
+    .filter(Boolean);
+  try {
+    sessionStorage.setItem(sidebarStateKey, JSON.stringify({
+      scrollTop: sidebar.scrollTop,
+      openChapters,
+    }));
+  } catch {
+    // Some browser policies disable storage for local files; navigation still works.
+  }
+}
+
+function restoreSidebarState() {
+  if (!sidebar) return;
+  const state = readSidebarState();
+  const openChapters = new Set(Array.isArray(state.openChapters) ? state.openChapters : []);
+  sidebar.querySelectorAll("details.chapter-group").forEach((group) => {
+    if (openChapters.has(group.dataset.chapter) || group.classList.contains("active-chapter")) group.open = true;
+    group.addEventListener("toggle", () => {
+      persistSidebarState();
+      updateNavToggleButton();
+    });
+  });
+
+  requestAnimationFrame(() => {
+    updateNavToggleButton();
+    if (Number.isFinite(state.scrollTop)) {
+      sidebar.scrollTop = state.scrollTop;
+      return;
+    }
+    const activeLink = sidebar.querySelector("a.active");
+    if (activeLink) sidebar.scrollTop = Math.max(0, activeLink.offsetTop - sidebar.clientHeight / 2);
+  });
+
+  let scrollTimer = 0;
+  sidebar.addEventListener("scroll", () => {
+    window.clearTimeout(scrollTimer);
+    scrollTimer = window.setTimeout(persistSidebarState, 80);
+  }, { passive: true });
+}
+
+restoreSidebarState();
+
+function updateNavToggleButton() {
+  if (!sidebar || !sidebarActionButton) return;
+  const groups = [...sidebar.querySelectorAll("details.chapter-group")];
+  const allOpen = groups.length > 0 && groups.every((group) => group.open);
+  const label = allOpen ? "\u6536\u62e2\u6240\u6709\u7ae0\u8282" : "\u5c55\u5f00\u6240\u6709\u7ae0\u8282";
+  sidebarActionButton.dataset.state = allOpen ? "collapse" : "expand";
+  sidebarActionButton.setAttribute("aria-label", label);
+  sidebarActionButton.title = label;
+}
+
+sidebarActionButton?.addEventListener("click", () => {
+  const groups = [...sidebar.querySelectorAll("details.chapter-group")];
+  const shouldOpen = !groups.every((group) => group.open);
+  groups.forEach((group) => {
+    group.open = shouldOpen;
+  });
+  persistSidebarState();
+  updateNavToggleButton();
+});
+
+const scaleStorageKey = "nmr-interface-scale";
+const themeStorageKey = "nmr-interface-theme";
+let scaleMode = "auto";
+let appliedScale = 1;
+
+function storedValue(key, fallback) {
+  try {
+    return localStorage.getItem(key) || fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function saveValue(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    // The display setting still applies for the current page.
+  }
+}
+
+function automaticScale() {
+  if (window.innerWidth <= 1040) return 1;
+  return Math.min(1.2, Math.max(0.95, window.innerWidth / 1800));
+}
+
+function applyScale(scale, mode = scaleMode) {
+  appliedScale = Math.min(1.4, Math.max(0.8, scale));
+  root.style.setProperty("--sidebar-w", `${Math.round(340 * appliedScale)}px`);
+  root.style.setProperty("--page-w", `${Math.round(1180 * appliedScale)}px`);
+  root.style.setProperty("--reader-font", `${(15 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--reader-heading", `${(20 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--reader-title", `${(34 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--sidebar-font", `${(13 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--sidebar-small", `${(11 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--paper-pad", `${Math.round(44 * appliedScale)}px`);
+  if (zoomValue) zoomValue.textContent = mode === "auto" ? `\u81ea\u52a8 ${Math.round(appliedScale * 100)}%` : `${Math.round(appliedScale * 100)}%`;
+  if (zoomAutoButton) zoomAutoButton.setAttribute("aria-pressed", String(mode === "auto"));
+}
+
+function setScaleMode(value) {
+  if (value === "auto") {
+    scaleMode = "auto";
+    applyScale(automaticScale(), scaleMode);
+    saveValue(scaleStorageKey, scaleMode);
+    return;
+  }
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return;
+  scaleMode = String(Math.min(1.4, Math.max(0.8, numeric)));
+  applyScale(Number(scaleMode), scaleMode);
+  saveValue(scaleStorageKey, scaleMode);
+}
+
+function adjustScale(delta) {
+  setScaleMode((Math.round((appliedScale + delta) * 10) / 10).toFixed(1));
+}
+
+function applyTheme(theme) {
+  const selected = ["sage", "mist", "sand", "mauve", "gray"].includes(theme) ? theme : "sage";
+  root.dataset.theme = selected;
+  themeButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.theme === selected)));
+  saveValue(themeStorageKey, selected);
+}
+
+setScaleMode(storedValue(scaleStorageKey, "auto"));
+applyTheme(storedValue(themeStorageKey, "sage"));
+
+displayButton?.addEventListener("click", (event) => {
+  event.stopPropagation();
+  const willOpen = displayPanel.hidden;
+  displayPanel.hidden = !willOpen;
+  displayButton.setAttribute("aria-expanded", String(willOpen));
+});
+
+displayPanel?.addEventListener("click", (event) => event.stopPropagation());
+zoomOutButton?.addEventListener("click", () => adjustScale(-0.1));
+zoomInButton?.addEventListener("click", () => adjustScale(0.1));
+zoomAutoButton?.addEventListener("click", () => setScaleMode("auto"));
+themeButtons.forEach((button) => button.addEventListener("click", () => applyTheme(button.dataset.theme)));
+
+document.addEventListener("click", () => {
+  if (!displayPanel || displayPanel.hidden) return;
+  displayPanel.hidden = true;
+  displayButton?.setAttribute("aria-expanded", "false");
+});
+
+let scaleResizeTimer = 0;
+window.addEventListener("resize", () => {
+  if (scaleMode !== "auto") return;
+  window.clearTimeout(scaleResizeTimer);
+  scaleResizeTimer = window.setTimeout(() => applyScale(automaticScale(), "auto"), 100);
+}, { passive: true });
+
+toolbar.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-view]");
+  if (!button || !toolbar.contains(button)) return;
+  event.preventDefault();
+  activateView(button.dataset.view);
+});
+
+navButton.addEventListener("click", () => {
+  const open = body.classList.toggle("nav-open");
+  navButton.setAttribute("aria-expanded", String(open));
+});
+
+document.querySelectorAll(".sidebar a").forEach((link) => link.addEventListener("click", () => {
+  persistSidebarState();
+  body.classList.remove("nav-open");
+  navButton.setAttribute("aria-expanded", "false");
+}));
+
+document.addEventListener("keydown", (event) => {
+  const target = event.target;
+  if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target?.isContentEditable) return;
+  if (event.ctrlKey || event.metaKey || event.altKey) return;
+  if (event.key === "1") setLanguage("en");
+  if (event.key === "2") setLanguage("bilingual");
+  if (event.key === "3") setOriginalMode(true);
+  if (event.key.toLowerCase() === "o") cycleView();
+});
+
+setLanguage(localStorage.getItem("nmr-reading-mode") || "en");
+}
+</script></body></html>

@@ -1,0 +1,517 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Item 2.7: ADEQUATE"><title>2.7 ADEQUATE — 50 and More Essential NMR Experiments</title><link rel="stylesheet" href="../shared/site.css?v=1"><script>window.NMR_EXPERIMENT = Object.freeze({"meta":{"number":"2.7","slug":"2-7","kind":"item","title":"ADEQUATE","titleZh":"ADEQUATE","pages":[{"id":"pdf-71","pdfPage":71,"bookPage":61,"en":"content/pages/pdf-71.en.html","zh":"content/pages/pdf-71.zh.html"},{"id":"pdf-72","pdfPage":72,"bookPage":62,"en":"content/pages/pdf-72.en.html","zh":"content/pages/pdf-72.zh.html"},{"id":"pdf-73","pdfPage":73,"bookPage":63,"en":"content/pages/pdf-73.en.html","zh":"content/pages/pdf-73.zh.html"},{"id":"pdf-74","pdfPage":74,"bookPage":64,"en":"content/pages/pdf-74.en.html","zh":"content/pages/pdf-74.zh.html"}],"chapter":"Advanced Organic NMR Spectroscopy"},"english":{"pdf-71":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>Experiment 2.7</h3>\r\n<h3>ADEQUATE</h3>\r\n<h3>1. Purpose</h3>\r\n<p>The INADEQUATE Experiment described in chapter 2.6 suffers from its inherent low sensitivity. Since the detection of carbon\u2013carbon connectivities is probably the most important task in structure elucidation of natural products [4, 7, 10], where usually only limited material is available, a family of improved pulse sequences has been developed and termed ADEQUATE (Adequate sensitivity DoublE QUAnTum spEctroscopy). In contrast to Experiment 2.6, these experiments detect carbon\u2013carbon connectivities by proton observation. We show here the result of 1,1-ADEQUATE, where the correlation works via 1J(C,H) and 1J(C,C), using our 3 % strychnine standard in CDCl3. The method lacks the generality of the normal 2D INADEQUATE since connectivities between two quaternary carbon atoms Cq\u2013Cq cannot be detected; however, it is possible to see a Cq\u2013CHn moiety.</p>\r\n<h3>2. Variants</h3>\r\n<p>The first variant of the basic idea was published under the name INEPT-INADEQUATE, suggesting an INEPT polarization transfer from 1H to 13C, collecting an INADEQUATE in the indirect dimension with a subsequent back transfer [1]. This original pulse sequence was then considerably improved including chirp pulses and was given the name ADEQUATE [2\u22125]. The standard ADEQUATE works in the [1,1] form, meaning a polarization transfer via 1JCH is being used and the INADEQUATE step also works via 1JCC. There have been proposals for extended forms like [1,n] and [n,1] ADEQUATE [3]. Other modifications of the experiment have been developed to accurately measure C,C spin coupling constants, employing a J scaling. [9] Further variants include multiplicity editing [8] or the ACCORDION principle [6]. New adiabatic pulses correct for JCC changes due to the finite length of the chirp pulses [11].</p>\r\n<h3>3. Pulse Scheme and Phase Cycle</h3>\r\n<figure class=\"figure source-figure source-figure-wide\" data-figure-id=\"pdf-71-vector-1\"><img alt=\"Scheme 2.7-1\" loading=\"lazy\" src=\"../assets/pulse-sequences/pdf-71-vector-1.webp\"/><figcaption>Scheme 2.7-1</figcaption></figure>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">Source sidebar</div>\r\n<p>The major challenge in designing a 1H-detected INADEQUATE experiment is the suppression of signals originating from 12C-bound protons bound to 13C\u221213C fragments at natural isotopic abundance. It turns out that pulsed field gradients (PFGs), which have been successfully used to suppress the water signal by this order of magnitude (4), are invaluable for this application.</p>\r\n<p>Taken from ref. [1]</p>\r\n<h4>Common values:</h4>\r\n<p class=\"parameter-list\">p1, p3, p5, p7, p9: 90\u00b0 1H transmitter pulse<br>p2, p4, p6, p8, p10: 180\u00b0 1H transmitter pulse<br>p12, p14, p18, p20: 90\u00b0 13C transmitter pulse<br>d1: relaxation delay<br>t1: evolution increment<br>p11, p21: 180\u00b0-CHIRP pulse for inversion<br>p13, p15, p17, p19: 180\u00b0-CHIRP pulse for refocussing d2 = 1/[4J(C,H)] d3 = 1/[4J(C,C)] d4 = gradient lengths</p>\r\n</aside>\r\n</div>\r\n","pdf-72":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>4. Acquisition</h3>\r\n<h4>Special values used for the spectrum shown:</h4>\r\n<p>Sample: 3 % strychnine in CDCl3 Time requirement: 10 h Spectrometer: Bruker Avance 700 with 5-mm-cryo probe</p>\r\n<p class=\"parameter-list\">td2: 1K data points in F2<br>td1: 256 data points in F1<br>sw2: 9 ppm<br>sw1: 310 ppm<br>aq2: 0.08 s<br>aq1: 0.0023 s<br>o1: center of 1H NMR spectrum [4.5 ppm]<br>o2: center of 13C NMR spectrum [77.5 ppm]<br>p16: 60\u00b0 13C transmitter pulse<br>p11, p21: chirped 180\u00b0 13C transmitter pulse (500 \u03bcs, Crp60,0.5,20.1)<br>p13, p15, p17, p19: chirped 180\u00b013C transmitter pulse (2 ms, Crp60comp.4)<br>d1: 2 s<br>d2: 1/[4J(C,H)] = 1.72 ms, calculated from 1J(C,H) \u2248 145 Hz<br>d3: 1/[4J(C,C)] = 6.25 ms, calculated from1J(C,C) \u2248 40 Hz<br>d4: 1.05 ms = effective gradient duration<br>d5: d3 minus effective gradient duration<br>d6: 1/[6J(C,H)] = 1.15 ms, calculated from 1J(C,H) \u2248 145 Hz<br>g1, g2, g3: Gradient strength ratio: (\u221278.4) : (\u221277.4) : (\u00b159), sign of g3 varied according to echo-antiecho mode. Decoupler attenuation and 90\u00b0 pulse for GARP [70 \u03bcs, 14 dB]<br>ns: 64<br>ds: 16</p>\r\n<h3>5. Processing</h3>\r\n<p>Apply zero-filling to obtain a matrix of 2048\u00d71024 real data points. Use an exponential window in F2 with lb = 3 Hz and a S/2-shifted squared sinusoidal window in F1. Choose the echo-antiecho FT mode of the software corresponding to the acquisition technique.</p>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-72-vector-1\"><img alt=\"Scheme 2.7-2\" loading=\"lazy\" src=\"../assets/chemical-structures/pdf-72-vector-1.webp\"/><figcaption>Scheme 2.7-2</figcaption></figure>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">Source sidebar</div>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-72-fig-1\"><img alt=\"Fig. 2.7-1 G. Otting *1958\" loading=\"lazy\" src=\"../assets/figures/pdf-72-fig-1.webp\"/><figcaption>Fig. 2.7-1 G. Otting *1958</figcaption></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-72-fig-2\"><img alt=\"Fig. 2.7-2 C. Griesinger *1960\" loading=\"lazy\" src=\"../assets/figures/pdf-72-fig-2.webp\"/><figcaption>Fig. 2.7-2 C. Griesinger *1960</figcaption></figure>\r\n</aside>\r\n</div>\r\n","pdf-73":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<figure class=\"figure source-figure source-figure-wide\" data-figure-id=\"pdf-73-fig-1\"><img alt=\"Fig. 2.7-3 2D-ADEQUATE spectrum of strychnine\" loading=\"lazy\" src=\"../assets/spectra/pdf-73-fig-1.webp\"/><figcaption>Fig. 2.7-3 2D-ADEQUATE spectrum of strychnine</figcaption></figure>\r\n<h3>6. Result</h3>\r\n<p>The figure shows the full region of the 1,1-ADEQUATE spectrum obtained on an Avance-700 spectrometer using a cryo probe. We start the interpretation of the figure at the right-hand side. Here we find H-13 at GH = 1.27 ppm. In the strychnine structure, C-13 at GC = 48.2 ppm is connected to three other carbon atoms, C-8, C-12 and C-14. Therefore we find the three correlation signals at the corresponding double-quantum frequencies 108.3 = 48.2 + 60.1 (=GC-13 + GC-8), 125.1= 48.2 + 76.9 (=GC-13 + GC-12) and 79.8 = 48.2 + 31.6 (=GC-13 + GC-14).</p>\r\n<p>In the middle of the spectrum we find the signal of proton H-12 at GH = 4.28 ppm. In the strychnine structure the carbon atom C-12 is bound to C-13 and C-11. We expect therefore two correlation signals at the double-quantum frequencies GC = 119.3 and 125.1. This corresponds to GC-12 = 76.85 + GC-11 (42.48) and GC-12 = 76.9 + GC-13(48.2) and confirms the binding situation for C-12. Note that the double quantum value of 125.1 was already seen from proton H-13. The protons H-23 (GH = 4.0 to 4.2) are situated on a carbon with only one carbon atom neighbor. Therefore their correlation signals are found at GC-23 = 64.60 + GC-22 (127.34) giving 191.9.</p>\r\n<p>Similarly all the other correlation signals can be assigned using the table of chemical shift data for strychnine in the appendix.</p>\r\n<h3>7. Comments</h3>\r\n<p>In the preparation period p of the sequence we find an INEPT transfer from protons to 13C. The antiphase 13C magnetization</p>\r\n<p>y z I I C H 2 , present after p12, develops C,C spin coupling to a second 13C nucleus yielding</p>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">Source sidebar</div>\r\n<p>[1] J. Weigelt, G. Otting, \"1H deected INEPT-INADEQUATE at natural 13C abundance\" J. Magn. Reson. Ser. A. 1995, 113, 128\u2212130.</p>\r\n<p>[2] B. Reif, M. K\u00f6ck, R. Kerssebaum, H. Kang, W. Fenical, C. Griesinger, \"ADEQUATE, a new set of experiments to determine the constitution of small molecules at natural abundance\" J. Magn. Reson. Ser. A 1996, 118, 282\u2212285.</p>\r\n<p>[3] B. Reif, M. K\u00f6ck, R. Kerssebaum, J. Schleucher, C. Griesinger, \"Determination of 1J, 2J, and 3J carbon\u2013carbon coupling constants at natural abundance\" J. Magn. Reson. Ser. B 1996, 112, 295\u2212301.</p>\r\n<p>[4] M. K\u00f6ck, B. Reif, W. Fenical, C. Griesinger, \"Differentiation of HMBC two- and three-bond correlations: A method to simplify the structure determination of natural products\" Tetrahedron Letters 1996, 37, 363\u2212366.</p>\r\n</aside>\r\n</div>\r\n","pdf-74":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<p>z x z I I I C C H 4 . This is transformed into double-quantum coherence with respect to carbon by p14 at the end of section p. In the evolution period e the double-quantum chemical shifts of 13C develop during t1. The mixing period m has two purposes. The double-quantum 13C coherences have to be reconverted to single-quantum coherences, which is achieved by a 60\u00b0 pulse p16, giving a higher efficiency for this process than in the original experiment. The gradient g1 dephases signals that are in the double-quantum state and gradient g2 further dephases the 13C coherences after reconversion into proton-13C antiphase magnetization. Finally, the situation must be prepared for the back transfer to protons, which is achieved by the refocusing elements [g2, d5, p17, d3]. The back transfer is performed with sensitivity enhancement using the PEP principle as already described in Experiment 1.5.</p>\r\n<p>a term</p>\r\n<p>Note that both 1J(C,H) and 1J(C,C) vary widely in organic compounds and the success of the experiment relies on reasonably well-chosen values. According to Reference [4] it is very advisable to use adiabatic 180\u00b0 pulses for this sequence. p11 and p21 are adiabatic inversion pulses, whereas p13, p15, p17 and p19 comprise of adiabatic refocussing pulses.</p>\r\n<h3>8. Questions</h3>\r\n<p>A. Calculate the theoretical improvement of ADEQUATE versus INADEQUATE.</p>\r\n<p>B. How good should the signal suppression for normal proton signals be in order that the desired signals become visible?</p>\r\n<p>C. Correlation signals displayed by H-22, H-23a and H-23b, H-20a and H-20b seem to be all at the same horizontal line at 191.5 ppm. Explain.</p>\r\n<h3>9. Own Observations</h3>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">Source sidebar</div>\r\n<p>[5] M. K\u00f6ck, R. Kerssebaum, W. Bermel, \"A broadband ADE- QUATE pulse sequence using chirp pulses\" Magn. Reson. Chem. 2003, 41, 65\u221269.</p>\r\n<p>[6] R. T. Williamson, B. L. Marquez, W. H. Gerwick F. E. Koehn, \"ACCORD-ADEQUATE: an improved technique for the acquisition of inverse-detected INADEQUATE\" Magn. Reson. Chem. 2001, 39, 544\u2013548.</p>\r\n<p>[7] S. W. Meyer and M. K\u00f6ck, \"NMR studies of phakellins and isophakellins\" J. Nat. Prod. 2008, 71, 1524\u20131529.</p>\r\n<p>[8] K. E. K\u00f6v\u00e9r, and P. Forg\u00f3, \"J-modulated ADEQUATE (JM- ADEQUATE) experiment for accurate measurement of carbon\u2013carbon coupling constants\" J. Magn. Reson. 2004, 166, 47\u2013 52.</p>\r\n<p>[9] T. Parella, F. Sanchez-Ferrando, \"Improved multiplicity-edited ADEQUATE experiments\" J. Magn. Reson. 2004, 166,123\u2013 128.</p>\r\n<p>[10] H. He, J. E. Janso, R. T. Williamson, H. Y. Yang, G. T. Carter, \"Cytosporacin, a highly unsaturated polyketide: Application of the ACCORD-ADEQUATE experiment to the structural determination of natural products\" J. Org. Chem. 2003, 68, 6079\u22126082.</p>\r\n<p>[11] C. M. Thiele, W. Bermel, \"J-modulated ADEQUATE experiments using different kinds of refocusing pulses\" Magn. Reson. Chem. 2007, 45, 889\u2013894.</p>\r\n<p>[12] G. E. Martin, B. D. Hilton, M. R. Willcott, K. A. Blinov \"HS- QC-1,n-ADEQUATE: a new approach to long-range 13C\u221213C correlation by covariance processing\" Magn. Reson. Chem. 2011, 49, 641\u2212647.</p>\r\n<p>[13] R. T. Williamson, A. V. Buevich, G. E. Martin \"Experimental and theoretical investigation of 1JCC and nJCC coupling constants in strychnine\" Org. Lett. 2012, 14, 5098\u22125101.</p>\r\n</aside>\r\n</div>\r\n"},"chinese":{"pdf-71":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>\u5b9e\u9a8c 2.7</h3>\r\n<h3>ADEQUATE</h3>\r\n<h3>1. \u76ee\u7684</h3>\r\n<p>\u57282.6\u7ae0\u4e2d\u63cf\u8ff0\u7684\"\u4e0d\u5145\u5206\u5b9e\u9a8c\"\u56e0\u5176\u56fa\u6709\u7684\u4f4e\u7075\u654f\u5ea6\u800c\u53d7\u82e6.\u7531\u4e8e\u78b3\u78b3\u8fde\u63a5\u7684\u68c0\u6d4b\u53ef\u80fd\u662f\u81ea\u7136\u4ea7\u54c1\u7ed3\u6784\u9610\u660e\u4e2d\u6700\u91cd\u8981\u7684\u4efb\u52a1 [4, 7, 10],\u901a\u5e38\u53ea\u6709\u6709\u9650\u7684\u6750\u6599\u53ef\u7528,\u56e0\u6b64\u5f00\u53d1\u4e86\u4e00\u7cfb\u5217\u6539\u8fdb\u7684\u8109\u51b2\u5e8f\u5217,\u79f0\u4e3a\"\u9002\u5e94\u6027\u611f\u5ea6douE QUANTum\u5149\u8c31\u5b66\". \u4e0e2.6\u5b9e\u9a8c\u4e0d\u540c,\u8fd9\u4e9b\u5b9e\u9a8c\u901a\u8fc7\u8d28\u5b50\u89c2\u5bdf\u68c0\u6d4b\u5230\u78b3\u78b3\u8fde\u63a5.\u6211\u4eec\u5728\u8fd9\u91cc\u663e\u793a\u4e861,1-ADEQUATE\u7684\u7ed3\u679c,\u5176\u4e2d\u76f8\u5173\u6027\u901a\u8fc71J(C,H) \u548c1J(C,C) \u8fd0\u884c,\u4f7f\u7528\u6211\u4eec\u76843%\u7684\u7ed3\u6807\u51c6\u5728CDCl3. \u8be5\u65b9\u6cd5\u7f3a\u4e4f\u6b63\u5e38\u76842DINADEQUATE\u7684\u4e00\u822c\u6027,\u56e0\u4e3a\u4e24\u4e2a\u56db\u78b3\u539f\u5b50CqCq\u4e4b\u95f4\u7684\u8fde\u63a5\u4e0d\u80fd\u88ab\u68c0\u6d4b\u5230;\u7136\u800c,\u53ef\u4ee5\u770b\u5230CqCHn\u5206\u91cf.</p>\r\n<h3>2. \u53d8\u4f53</h3>\r\n<p>\u57fa\u672c\u6982\u5ff5\u7684\u7b2c\u4e00\u79cd\u53d8\u4f53\u4ee5INEPT-INADEQUATE\u4e3a\u540d\u53d1\u8868,\u5efa\u8baeINEPT\u7684\u6781\u5316\u8f6c\u79fb\u4ece1H\u523013C, \u540e\u7eed\u80cc\u8f6c\u7684t\u5c3a\u5bf8 [1].\u6b64\u6b21\u539f\u59cb\u8109\u51b2\u5e8f\u5217,\u5305\u62ec\u8109\u51b2,\u5f97\u5230\u4e86\u76f8\u5f53\u7684\u6539\u8fdb,\u5e76\u88ab\u547d\u540d\u4e3aADEQUATE [2\u22125]. \u6807\u51c6 ADEQUATE \u5728 [1,1] \u5f62\u5f0f\u4e0a\u8fd0\u884c,\u8fd9\u610f\u5473\u7740\u901a\u8fc71JCH\u8fdb\u884c\u6781\u5316\u8f6c\u79fb,\u800cINADEQUATE \u6b65\u9aa4\u4e5f\u901a\u8fc71JCC\u8fd0\u884c. \u5df2\u63d0\u51fa[1,n]\u548c[n,1] ADEQUATE [3]\u7b49\u6269\u5c55\u8868\u683c\u7684\u5efa\u8bae. \u5176\u4ed6\u6539\u9020\u7684\u5b9e\u9a8c\u5df2\u7ecf\u5f00\u53d1\u51fa,\u4ee5\u51c6\u786e\u6d4b\u91cfC,C\u81ea\u65cb\u8026\u5408\u5e38\u6570,\u4f7f\u7528J\u5c3a\u5ea6. [9] \u5176\u4ed6\u53d8\u4f53\u5305\u62ec\u591a\u91cd\u6027\u7f16\u8f91 [8]\u6216ACCORDION\u539f\u7406 [6].\u7531\u4e8e\u8109\u51b2\u7684\u6709\u9650\u957f\u5ea6,\u65b0\u7684\u7edd\u70ed\u8109\u51b2\u5bf9JCC\u53d8\u5316\u8fdb\u884c\u4e86\u6b63\u786e\u7684\u6d4b\u8bd5. [11].</p>\r\n<h3>3. \u8109\u51b2\u65b9\u6848\u4e0e\u76f8\u4f4d\u5faa\u73af</h3>\r\n<figure class=\"figure source-figure source-figure-wide\" data-figure-id=\"pdf-71-vector-1\"><img alt=\"\u56fe\u5f0f 2.7-1\" loading=\"lazy\" src=\"../assets/pulse-sequences/pdf-71-vector-1.webp\"/><figcaption>\u56fe\u5f0f 2.7-1</figcaption></figure>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">\u539f\u4e66\u4fa7\u680f</div>\r\n<p>\u5728\u8bbe\u8ba11H\u68c0\u6d4b\u7684INADEQUATE\u5b9e\u9a8c\u4e2d,\u6700\u5927\u7684\u6311\u6218\u662f\u6291\u5236\u6765\u81ea12C\u7ed1\u5b9a\u7684\u8d28\u5b50,\u5728\u81ea\u7136\u7684\u540c\u4f4d\u7d20\u4e30\u5bcc\u5ea6\u4e0a\u4e0e13C\u221213C\u788e\u7247\u7ed3\u5408\u7684\u4fe1\u53f7.\u7ed3\u679c\u663e\u793a,\u5df2\u6210\u529f\u7528\u4e8e\u538b\u5236\u6c34\u4fe1\u53f7\u7684\u8109\u51b2\u573a\u68af\u5ea6 (PFG),\u8fd9\u4e9b\u4fe1\u53f7\u5bf9\u6b64\u5e94\u7528\u5177\u6709\u65e0\u4ef7\u503c.</p>\r\n<p>\u6765\u81ea\u6cd5\u5b98 [1]</p>\r\n<h4>\u901a\u7528\u53c2\u6570\uff1a</h4>\r\n<p class=\"parameter-list\">p1, p3, p5, p7, p9: 90\u00b0 1H transmitter pulse<br>p2, p4, p6, p8, p10: 180\u00b0 1H transmitter pulse<br>p12, p14, p18, p20: 90\u00b0 13C transmitter pulse<br>d1: relaxation delay<br>t1: evolution increment<br>p11, p21: 180\u00b0-CHIRP pulse for inversion<br>p13, p15, p17, p19: 180\u00b0-CHIRP pulse for refocussing d2 = 1/[4J(C,H)] d3 = 1/[4J(C,C)] d4 = gradient lengths</p>\r\n</aside>\r\n</div>\r\n","pdf-72":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>4. \u91c7\u96c6</h3>\r\n<h4>\u56fe\u793a\u8c31\u56fe\u91c7\u7528\u7684\u5177\u4f53\u53c2\u6570\uff1a</h4>\r\n<p>\u6837\u672c:CDCl3\u4e2d\u76843 %\u77f3 \u65f6\u95f4\u8981\u6c42:10h \u8c31\u4eea:\u5e03\u9c81\u514b Avance 700 \u914d\u59075mm\u5149\u63a2\u5934</p>\r\n<p class=\"parameter-list\">td2: 1K data points in F2<br>td1: 256 data points in F1<br>sw2: 9 ppm<br>sw1: 310 ppm<br>aq2: 0.08 s<br>aq1: 0.0023 s<br>o1: center of 1H NMR spectrum [4.5 ppm]<br>o2: center of 13C NMR spectrum [77.5 ppm]<br>p16: 60\u00b0 13C transmitter pulse<br>p11, p21: chirped 180\u00b0 13C transmitter pulse (500 \u03bcs, Crp60,0.5,20.1)<br>p13, p15, p17, p19: chirped 180\u00b013C transmitter pulse (2 ms, Crp60comp.4)<br>d1: 2 s<br>d2: 1/[4J(C,H)] = 1.72 ms, calculated from 1J(C,H) \u2248 145 Hz<br>d3: 1/[4J(C,C)] = 6.25 ms, calculated from1J(C,C) \u2248 40 Hz<br>d4: 1.05 ms = effective gradient duration<br>d5: d3 minus effective gradient duration<br>d6: 1/[6J(C,H)] = 1.15 ms, calculated from 1J(C,H) \u2248 145 Hz<br>g1, g2, g3: Gradient strength ratio: (\u221278.4) : (\u221277.4) : (\u00b159), sign of g3 varied according to echo-antiecho mode. Decoupler attenuation and 90\u00b0 pulse for GARP [70 \u03bcs, 14 dB]<br>ns: 64<br>ds: 16</p>\r\n<h3>5. \u5904\u7406</h3>\r\n<p>\u5e94\u7528\u96f6\u586b\u5145\u4ee5\u83b7\u5f972048\u00d71024\u7684\u5b9e\u6570\u636e\u70b9\u77e9\u9635.\u4f7f\u7528F2\u4e2d\u7684\u6307\u6570\u7a97\u53e3,lb=3 Hz\u548cF1\u4e2d\u7684S/2\u8f6c\u6362\u7684\u5e73\u65b9\u6b63\u5f26\u7a97.\u9009\u62e9\u4e0e\u91c7\u96c6\u6280\u672f\u76f8\u5e94\u7684\u8f6f\u4ef6\u7684\u56de\u6ce2\u2014\u53cd\u56de\u6ce2FT\u6a21\u5f0f.</p>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-72-vector-1\"><img alt=\"\u56fe\u5f0f 2.7-2\" loading=\"lazy\" src=\"../assets/chemical-structures/pdf-72-vector-1.webp\"/><figcaption>\u56fe\u5f0f 2.7-2</figcaption></figure>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">\u539f\u4e66\u4fa7\u680f</div>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-72-fig-1\"><img alt=\"\u56fe 2.7-1 G. Otting *1958\" loading=\"lazy\" src=\"../assets/figures/pdf-72-fig-1.webp\"/><figcaption>\u56fe 2.7-1 G. Otting *1958</figcaption></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-72-fig-2\"><img alt=\"\u56fe 2.7-2 C. Griesinger *1960\" loading=\"lazy\" src=\"../assets/figures/pdf-72-fig-2.webp\"/><figcaption>\u56fe 2.7-2 C. Griesinger *1960</figcaption></figure>\r\n</aside>\r\n</div>\r\n","pdf-73":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<figure class=\"figure source-figure source-figure-wide\" data-figure-id=\"pdf-73-fig-1\"><img alt=\"\u56fe 2.7-3 2D-ADEQUATE \u58eb\u7684\u5b81\u8c31\" loading=\"lazy\" src=\"../assets/spectra/pdf-73-fig-1.webp\"/><figcaption>\u56fe 2.7-3 2D-ADEQUATE \u58eb\u7684\u5b81\u8c31</figcaption></figure>\r\n<h3>6. \u7ed3\u679c</h3>\r\n<p>\u56fe\u663e\u793a\u4e86\u4f7f\u7528\u5149\u63a2\u5934\u5728Avance-700\u8c31\u4eea\u4e0a\u83b7\u5f97\u76841,1-ADEQUATE\u8c31\u56fe\u7684\u5168\u90e8\u533a\u57df.\u6211\u4eec\u5728\u53f3\u4fa7\u5f00\u59cb\u89e3\u91ca\u8fd9\u4e2a\u56fe.\u8fd9\u91cc\u6211\u4eec\u53d1\u73b0H-13\u5728GH =1.27ppm. \u5728\u58eb\u7684\u5b81\u7ed3\u6784\u4e2d,C-13\u5728GC =48.2ppm\u4e0e\u5176\u4ed6\u4e09\u4e2a\u78b3\u539f\u5b50,C-8,C-12\u548cC-14\u76f8\u8fde. \u56e0\u6b64,\u6211\u4eec\u5728\u76f8\u5e94\u7684\u53cc\u91cf\u5b50\u9891\u7387\u4e0a\u53d1\u73b0\u4e86\u4e09\u4e2a\u76f8\u5173\u4fe1\u53f7: 108.3 = 48.2 + 60.1 (=GC-13 + GC-8), 125.1 = 48.2 + 76.9 (=GC-13 + GC-12) \u548c 79.8 = 48.2 + 31.6 (=GC-13 + GC-14).</p>\r\n<p>\u5728\u8c31\u56fe\u4e2d\u6211\u4eec\u53d1\u73b0\u8d28\u5b50H-12\u7684\u4fe1\u53f7\u5728GH=4.28ppm. \u5728\u58eb\u7684\u5b81\u7ed3\u6784\u4e2d,\u78b3\u539f\u5b50C-12\u4e0eC-13\u548cC-11\u76f8\u7ed3\u5408.\u56e0\u6b64,\u6211\u4eec\u9884\u8ba1\u5728\u53cc\u91cf\u5b50\u9891\u7387GC=119.3\u548c125.1\u7684\u4e24\u79cd\u76f8\u5173\u4fe1\u53f7.\u8fd9\u76f8\u5e94\u4e8eGC-12=76.85 +GC-11 (42.48) \u548cGC-12 =76.9 +GC-13(48.2) \u5e76\u8bc1\u5b9e\u4e86C-12\u7684\u7ed3\u5408\u60c5\u51b5. \u503c\u5f97\u6ce8\u610f\u7684\u662f,\u4ece\u8d28\u5b50H-13\u4e2d\u5df2\u7ecf\u89c2\u5bdf\u5230125.1\u7684\u53cc\u91cf\u5b50\u503c.\u8d28\u5b50H-23 (GH = 4.0\u81f3 4.2) \u4f4d\u4e8e\u4e00\u4e2a\u53ea\u6709\u4e00\u4e2a\u78b3\u539f\u5b50\u90bb\u5c45\u7684\u78b3\u4e0a.\u56e0\u6b64,\u5b83\u4eec\u7684\u76f8\u5173\u6027\u4fe1\u53f7\u5728GC-23 = 64.60 + GC-22 (127.34) \u4e0a\u53d1\u73b0,\u7ed3\u679c\u662f191.9.</p>\r\n<p>\u540c\u6837,\u6240\u6709\u5176\u4ed6\u76f8\u5173\u4fe1\u53f7\u90fd\u53ef\u4ee5\u4f7f\u7528\u9644\u4ef6\u4e2d\u7684\u65bd\u7279\u91cc\u5c3c\u5316\u5b66\u4f4d\u79fb\u6570\u636e\u8868\u5206\u914d.</p>\r\n<h3>7. \u8bf4\u660e</h3>\r\n<p>\u5728\u5e8f\u5217\u7684\u51c6\u5907\u9636\u6bb5 p \u4e2d,\u6211\u4eec\u53d1\u73b0INEPT\u4ece\u8d28\u5b50\u8f6c\u79fb\u523013C.</p>\r\n<p>y z I I C H 2 , present after p12, develops C,C spin coupling to a second 13C nucleus yielding</p>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">\u539f\u4e66\u4fa7\u680f</div>\r\n<p>[1] J. Weigelt, G. Otting, \"1H deected INEPT-INADEQUATE at natural 13C abundance\" J. Magn. Reson. Ser. A. 1995, 113, 128\u2212130.</p>\r\n<p>[2] B. Reif, M. K\u00f6ck, R. Kerssebaum, H. Kang, W. Fenical, C. Griesinger, \"ADEQUATE, a new set of experiments to determine the constitution of small molecules at natural abundance\" J. Magn. Reson. Ser. A 1996, 118, 282\u2212285.</p>\r\n<p>[3] B. Reif, M. K\u00f6ck, R. Kerssebaum, J. Schleucher, C. Griesinger, \"Determination of 1J, 2J, and 3J carbon\u2013carbon coupling constants at natural abundance\" J. Magn. Reson. Ser. B 1996, 112, 295\u2212301.</p>\r\n<p>[4] M. K\u00f6ck, B. Reif, W. Fenical, C. Griesinger, \"Differentiation of HMBC two- and three-bond correlations: A method to simplify the structure determination of natural products\" Tetrahedron Letters 1996, 37, 363\u2212366.</p>\r\n</aside>\r\n</div>\r\n","pdf-74":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<p>z x z I I I C C H 4\u3002\u51c6\u5907\u9636\u6bb5 p \u7ed3\u675f\u65f6\uff0cp14 \u5c06\u5176\u8f6c\u5316\u4e3a\u76f8\u5bf9\u4e8e\u78b3\u7684\u53cc\u91cf\u5b50\u76f8\u5e72\u3002\u5728\u6f14\u5316\u9636\u6bb5 e \u4e2d\uff0c13C \u7684\u53cc\u91cf\u5b50\u5316\u5b66\u4f4d\u79fb\u5728 t1 \u671f\u95f4\u6f14\u5316\u3002\u6df7\u5408\u9636\u6bb5 m \u6709\u4e24\u4e2a\u76ee\u7684\u3002\u9996\u5148\u5fc5\u987b\u628a 13C \u53cc\u91cf\u5b50\u76f8\u5e72\u91cd\u65b0\u8f6c\u5316\u4e3a\u5355\u91cf\u5b50\u76f8\u5e72\uff1b\u8fd9\u91cc\u7528 60\u00b0 \u8109\u51b2 p16 \u5b9e\u73b0\uff0c\u5176\u6548\u7387\u9ad8\u4e8e\u539f\u59cb\u5b9e\u9a8c\u3002\u68af\u5ea6 g1 \u4f7f\u5904\u4e8e\u53cc\u91cf\u5b50\u6001\u7684\u4fe1\u53f7\u53bb\u76f8\uff1b\u5728\u76f8\u5e72\u91cd\u65b0\u8f6c\u5316\u4e3a\u8d28\u5b50\u201313C \u53cd\u76f8\u78c1\u5316\u540e\uff0c\u68af\u5ea6 g2 \u4f7f 13C \u76f8\u5e72\u8fdb\u4e00\u6b65\u53bb\u76f8\u3002\u6700\u540e\u8fd8\u5fc5\u987b\u4e3a\u5411\u8d28\u5b50\u7684\u53cd\u5411\u8f6c\u79fb\u51c6\u5907\u9002\u5f53\u72b6\u6001\uff0c\u8fd9\u7531\u91cd\u805a\u5355\u5143\uff3bg2\u3001d5\u3001p17\u3001d3\uff3d\u5b9e\u73b0\u3002\u53cd\u5411\u8f6c\u79fb\u91c7\u7528 PEP \u539f\u7406\u8fdb\u884c\u7075\u654f\u5ea6\u589e\u5f3a\uff0c\u5177\u4f53\u5df2\u5728\u5b9e\u9a8c 1.5 \u4e2d\u8bf4\u660e\u3002</p>\r\n<p>\u4e00\u4e2a\u672f\u8bed</p>\r\n<p>\u5e94\u6ce8\u610f\uff0c\u6709\u673a\u5316\u5408\u7269\u4e2d\u7684 1J(C,H) \u548c 1J(C,C) \u5747\u6709\u5f88\u5bbd\u7684\u53d8\u5316\u8303\u56f4\uff0c\u5b9e\u9a8c\u80fd\u5426\u6210\u529f\u53d6\u51b3\u4e8e\u662f\u5426\u9009\u62e9\u4e86\u5408\u7406\u7684\u53c2\u6570\u503c\u3002\u6839\u636e\u6587\u732e\uff3b4\uff3d\uff0c\u5f3a\u70c8\u5efa\u8bae\u5728\u8be5\u5e8f\u5217\u4e2d\u4f7f\u7528\u7edd\u70ed 180\u00b0 \u8109\u51b2\u3002p11 \u548c p21 \u4e3a\u7edd\u70ed\u53cd\u8f6c\u8109\u51b2\uff0c\u800c p13\u3001p15\u3001p17 \u548c p19 \u4e3a\u7edd\u70ed\u91cd\u805a\u8109\u51b2\u3002</p>\r\n<h3>8. \u95ee\u9898</h3>\r\n<p>A. \u8ba1\u7b97\u9002\u5408\u4e0e\u4e0d\u9002\u7684\u7406\u8bba\u6539\u5584.</p>\r\n<p>B. \u5bf9\u4e8e\u6b63\u5e38\u7684\u8d28\u5b50\u4fe1\u53f7,\u4fe1\u53f7\u6291\u5236\u5e94\u8be5\u6709\u591a\u597d,\u4ee5\u4fbf\u53ef\u89c1\u7684\u4fe1\u53f7?</p>\r\n<p>C. . H-22,H-23a\u548cH-23b,H-20a\u548cH-20b\u663e\u793a\u7684\u76f8\u5173\u4fe1\u53f7\u4f3c\u4e4e\u90fd\u5728191.5ppm\u7684\u6c34\u5e73\u7ebf\u4e0a.\u89e3\u91ca.</p>\r\n<h3>9. \u81ea\u884c\u89c2\u5bdf</h3>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">\u539f\u4e66\u4fa7\u680f</div>\r\n<p>[5] M. K\u00f6ck, R. Kerssebaum, W. Bermel, \"A broadband ADE- QUATE pulse sequence using chirp pulses\" Magn. Reson. Chem. 2003, 41, 65\u221269.</p>\r\n<p>[6] R. T. Williamson, B. L. Marquez, W. H. Gerwick F. E. Koehn, \"ACCORD-ADEQUATE: an improved technique for the acquisition of inverse-detected INADEQUATE\" Magn. Reson. Chem. 2001, 39, 544\u2013548.</p>\r\n<p>[7] S. W. Meyer and M. K\u00f6ck, \"NMR studies of phakellins and isophakellins\" J. Nat. Prod. 2008, 71, 1524\u20131529.</p>\r\n<p>[8] K. E. K\u00f6v\u00e9r, and P. Forg\u00f3, \"J-modulated ADEQUATE (JM- ADEQUATE) experiment for accurate measurement of carbon\u2013carbon coupling constants\" J. Magn. Reson. 2004, 166, 47\u2013 52.</p>\r\n<p>[9] T. Parella, F. Sanchez-Ferrando, \"Improved multiplicity-edited ADEQUATE experiments\" J. Magn. Reson. 2004, 166,123\u2013 128.</p>\r\n<p>[10] H. He, J. E. Janso, R. T. Williamson, H. Y. Yang, G. T. Carter, \"Cytosporacin, a highly unsaturated polyketide: Application of the ACCORD-ADEQUATE experiment to the structural determination of natural products\" J. Org. Chem. 2003, 68, 6079\u22126082.</p>\r\n<p>[11] C. M. Thiele, W. Bermel, \"J-modulated ADEQUATE experiments using different kinds of refocusing pulses\" Magn. Reson. Chem. 2007, 45, 889\u2013894.</p>\r\n<p>[12] G. E. Martin, B. D. Hilton, M. R. Willcott, K. A. Blinov \"HS- QC-1,n-ADEQUATE: a new approach to long-range 13C\u221213C correlation by covariance processing\" Magn. Reson. Chem. 2011, 49, 641\u2212647.</p>\r\n<p>[13] R. T. Williamson, A. V. Buevich, G. E. Martin \"Experimental and theoretical investigation of 1JCC and nJCC coupling constants in strychnine\" Org. Lett. 2012, 14, 5098\u22125101.</p>\r\n</aside>\r\n</div>\r\n"},"figurePlacements":{}});</script></head>
+    <body data-language="en" data-asset-prefix="../assets"><header class="topbar"><div class="brand"><h1><a href="../../index.html">50 and More Essential NMR Experiments</a></h1><p>核磁共振实验方法、脉冲序列与谱图实践</p></div><div class="toolbar" aria-label="阅读模式">
+  <div class="language-switcher" role="group" aria-label="语言模式">
+    <button class="view-icon" type="button" data-view="en" aria-label="原文" title="原文 · 快捷键 1 / O 循环" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h11v17h-11zM9 8h6M9 11h6M9 14h4.5" /></svg></button>
+    <button class="view-icon" type="button" data-view="bilingual" aria-label="双语对照" title="双语对照 · 快捷键 2 / O 循环" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 4.5h7v15h-7zM13.5 4.5h7v15h-7zM6 9h2M6 12h2M16 9h2M16 12h2" /></svg></button>
+  </div>
+  <button id="toggle-original" class="view-icon" type="button" data-view="original" aria-label="原页对照" aria-pressed="false" title="原页对照 · 快捷键 3 / O 循环"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5h16v17H4zM7 7h10M7 10h10M7 13h6M7 16h4" /></svg></button>
+  <div class="display-control">
+    <button id="toggle-display-settings" class="view-icon" type="button" aria-label="显示设置" aria-expanded="false" aria-controls="display-settings" title="缩放与主题">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10M14 4v6M6 14v6" /></svg>
+    </button>
+    <section id="display-settings" class="display-panel" aria-label="显示设置" hidden>
+      <div class="display-panel-heading"><strong>显示设置</strong><span>在页面间自动保留</span></div>
+      <div class="display-setting-row"><span>界面缩放</span><div class="zoom-controls" role="group" aria-label="界面缩放"><button id="zoom-out" type="button" aria-label="缩小">−</button><output id="zoom-value" aria-live="polite">自动</output><button id="zoom-in" type="button" aria-label="放大">+</button></div></div>
+      <button id="zoom-auto" class="auto-scale-button" type="button" aria-pressed="true">按窗口自动适应</button>
+      <div class="display-setting-row theme-setting"><span>主题颜色</span>
+  <div class="theme-options" role="group" aria-label="主题颜色">
+    <button type="button" data-theme="sage" aria-label="鼠尾草绿" title="鼠尾草绿" aria-pressed="true"></button>
+    <button type="button" data-theme="mist" aria-label="雾蓝" title="雾蓝" aria-pressed="false"></button>
+    <button type="button" data-theme="sand" aria-label="暖砂" title="暖砂" aria-pressed="false"></button>
+    <button type="button" data-theme="mauve" aria-label="灰紫" title="灰紫" aria-pressed="false"></button>
+    <button type="button" data-theme="gray" aria-label="浅灰" title="浅灰" aria-pressed="false"></button>
+  </div></div>
+    </section>
+  </div>
+</div></header>
+    <button id="toggle-nav" class="mobile-nav-button" type="button" aria-expanded="false" aria-label="打开内容目录" title="内容目录"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14" /></svg></button>
+    <div class="layout"><nav class="sidebar" aria-label="内容目录">
+    <a class="sidebar-home-link" href="../../index.html">目录与搜索</a>
+    <div class="sidebar-section-heading"><p class="sidebar-label">内容目录</p><div class="sidebar-tree-actions" role="group" aria-label="目录章节控制"><button type="button" data-nav-action="toggle" data-state="expand" aria-label="展开所有章节" title="展开所有章节"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7l5 5 5-5M3 3h14" /></svg></button></div></div>
+    <div class="sidebar-tree"><details class="chapter-group" data-chapter="F">
+      <summary><span>第 F 章</span><small>Front Matter</small></summary><ol><li><a href="f-1.html"><span>F.1</span><span>Front Matter</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="1">
+      <summary><span>第 1 章</span><small>The Organic Set of NMR Spectra</small></summary><ol><li><a href="1.html"><span>1</span><span>The Organic Set of NMR Spectra</span></a></li>
+<li><a href="1-1.html"><span>1.1</span><span>The 1H NMR Experiment</span></a></li>
+<li><a href="1-2.html"><span>1.2</span><span>APT-13C NMR</span></a></li>
+<li><a href="1-3.html"><span>1.3</span><span>COSY</span></a></li>
+<li><a href="1-4.html"><span>1.4</span><span>NOESY</span></a></li>
+<li><a href="1-5.html"><span>1.5</span><span>HSQC</span></a></li>
+<li><a href="1-6.html"><span>1.6</span><span>HMBC</span></a></li></ol>
+    </details>
+<details class="chapter-group active-chapter" data-chapter="2" open>
+      <summary><span>第 2 章</span><small>Advanced Organic NMR Spectroscopy</small></summary><ol><li><a href="2.html"><span>2</span><span>Advanced Organic NMR Spectroscopy</span></a></li>
+<li><a href="2-1.html"><span>2.1</span><span>2D J-Resolved 1H NMR Spectroscopy</span></a></li>
+<li><a href="2-2.html"><span>2.2</span><span>ROESY</span></a></li>
+<li><a href="2-3.html"><span>2.3</span><span>TOCSY</span></a></li>
+<li><a href="2-4.html"><span>2.4</span><span>HSQC-TOCSY</span></a></li>
+<li><a href="2-5.html"><span>2.5</span><span>HOESY</span></a></li>
+<li><a href="2-6.html"><span>2.6</span><span>INADEQUATE</span></a></li>
+<li><a class="active" aria-current="page" href="2-7.html"><span>2.7</span><span>ADEQUATE</span></a></li>
+<li><a href="2-8.html"><span>2.8</span><span>J-HMBC</span></a></li>
+<li><a href="2-9.html"><span>2.9</span><span>Gated Decoupling</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="3">
+      <summary><span>第 3 章</span><small>Selective Methods</small></summary><ol><li><a href="3.html"><span>3</span><span>Selective Methods</span></a></li>
+<li><a href="3-1.html"><span>3.1</span><span>Water suppression by Presaturation</span></a></li>
+<li><a href="3-2.html"><span>3.2</span><span>Solvent Suppression by 1D-NOESY</span></a></li>
+<li><a href="3-3.html"><span>3.3</span><span>Water Suppression by SOGGY Excitation Sculpting</span></a></li>
+<li><a href="3-4.html"><span>3.4</span><span>Solvent Suppression using WET</span></a></li>
+<li><a href="3-5.html"><span>3.5</span><span>SELTOCSY</span></a></li>
+<li><a href="3-6.html"><span>3.6</span><span>SELNOESY</span></a></li>
+<li><a href="3-7.html"><span>3.7</span><span>SELINCOR</span></a></li>
+<li><a href="3-8.html"><span>3.8</span><span>SELINQUATE</span></a></li>
+<li><a href="3-9.html"><span>3.9</span><span>Band Selective HMBC</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="4">
+      <summary><span>第 4 章</span><small>Heteronuclear NMR</small></summary><ol><li><a href="4.html"><span>4</span><span>Heteronuclear NMR</span></a></li>
+<li><a href="4-1.html"><span>4.1</span><span>11B NMR Spectroscopy</span></a></li>
+<li><a href="4-2.html"><span>4.2</span><span>15N NMR Spectroscopy</span></a></li>
+<li><a href="4-3.html"><span>4.3</span><span>17O NMR Spectroscopy</span></a></li>
+<li><a href="4-4.html"><span>4.4</span><span>19F NMR Spectroscopy</span></a></li>
+<li><a href="4-5.html"><span>4.5</span><span>29Si NMR Spectroscopy</span></a></li>
+<li><a href="4-6.html"><span>4.6</span><span>57Fe NMR Spectroscopy</span></a></li>
+<li><a href="4-7.html"><span>4.7</span><span>195Pt NMR Spectroscopy</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="5">
+      <summary><span>第 5 章</span><small>Experiments in Physical Organic Chemistry</small></summary><ol><li><a href="5.html"><span>5</span><span>Experiments in Physical Organic Chemistry</span></a></li>
+<li><a href="5-1.html"><span>5.1</span><span>Measurement of the Spin–Lattice Relaxation Time T1</span></a></li>
+<li><a href="5-2.html"><span>5.2</span><span>Measurement of the Spin–Spin Relaxation Time T2</span></a></li>
+<li><a href="5-3.html"><span>5.3</span><span>Dynamic 1H NMR Spectroscopy</span></a></li>
+<li><a href="5-4.html"><span>5.4</span><span>Diffusion Measurement with DOSY</span></a></li>
+<li><a href="5-5.html"><span>5.5</span><span>Residual Dipolar Couplings (RDC)</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="6">
+      <summary><span>第 6 章</span><small>Organic Chemistry Applications</small></summary><ol><li><a href="6.html"><span>6</span><span>Organic Chemistry Applications</span></a></li>
+<li><a href="6-1.html"><span>6.1</span><span>ASIS</span></a></li>
+<li><a href="6-2.html"><span>6.2</span><span>Chirality Determination</span></a></li>
+<li><a href="6-3.html"><span>6.3</span><span>Advanced Mosher Method</span></a></li>
+<li><a href="6-4.html"><span>6.4</span><span>Quantitative NMR and Relaxation Reagents</span></a></li>
+<li><a href="6-5.html"><span>6.5</span><span>Determination of Association Constants Ka</span></a></li>
+<li><a href="6-6.html"><span>6.6</span><span>STD NMR</span></a></li>
+<li><a href="6-7.html"><span>6.7</span><span>A Kinetic Experiment</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="7">
+      <summary><span>第 7 章</span><small>An Excursion to the Solid State and to Structural Biology</small></summary><ol><li><a href="7.html"><span>7</span><span>An Excursion to the Solid State and to Structural Biology</span></a></li>
+<li><a href="7-1.html"><span>7.1</span><span>The CP/MAS Experiment</span></a></li>
+<li><a href="7-2.html"><span>7.2</span><span>High-Resolution Magic-Angle Spinning</span></a></li>
+<li><a href="7-3.html"><span>7.3</span><span>HN-HSQC</span></a></li>
+<li><a href="7-4.html"><span>7.4</span><span>HNCA</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="8">
+      <summary><span>第 8 章</span><small>Maintenance and Calibration</small></summary><ol><li><a href="8.html"><span>8</span><span>Maintenance and Calibration</span></a></li>
+<li><a href="8-1.html"><span>8.1</span><span>Calibration of Pulse Duration in the Transmitter Channel</span></a></li>
+<li><a href="8-2.html"><span>8.2</span><span>Calibration of the Pulse Duration in the Indirect Channel</span></a></li>
+<li><a href="8-3.html"><span>8.3</span><span>Shaped Pulses</span></a></li>
+<li><a href="8-4.html"><span>8.4</span><span>Adiabatic Pulses</span></a></li>
+<li><a href="8-5.html"><span>8.5</span><span>Temperature Calibration in NMR</span></a></li>
+<li><a href="8-6.html"><span>8.6</span><span>Calibration of Pulsed Field Gradients</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="A">
+      <summary><span>第 A 章</span><small>Appendix</small></summary><ol><li><a href="a-1.html"><span>A.1</span><span>Answers</span></a></li>
+<li><a href="a-2.html"><span>A.2</span><span>Pulse Programs</span></a></li>
+<li><a href="a-3.html"><span>A.3</span><span>Elementary Product Operator Formalism Rules</span></a></li>
+<li><a href="a-4.html"><span>A.4</span><span>Chemical Shift and Spin-Coupling Data for Strychnine</span></a></li>
+<li><a href="a-5.html"><span>A.5</span><span>Picture Credits</span></a></li>
+<li><a href="a-6.html"><span>A.6</span><span>Index</span></a></li></ol>
+    </details></div>
+    <footer class="sidebar-copyright"><p class="copyright-owner">© 2026 <a href="mailto:wuhaifeng@ustc.edu.cn">wuhaifeng@ustc.edu.cn</a></p><p>本文档仅供小范围、非公开的学术交流与学习参考；未经许可，不得复制、转载、转发、公开传播或用于商业用途。</p></footer>
+  </nav><main><article class="experiment paper" data-experiment="2.7" aria-labelledby="item-title"><header class="experiment-heading"><p class="experiment-label">Item 2.7</p><h2 class="experiment-title" id="item-title">ADEQUATE</h2><p class="experiment-title-zh" lang="zh-CN">ADEQUATE</p><p class="range-line">PDF 71–74 · 原书 61–64 · Advanced Organic NMR Spectroscopy</p></header><section class="page-block" id="pdf-71" data-pdf="71" data-book="61">
+        <span class="page-marker">原书第 61 页 · PDF 第 71 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-71"></div><div class="content-pane content-zh" data-page="pdf-71"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-71.webp" alt="原书 PDF 第 71 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-72" data-pdf="72" data-book="62">
+        <span class="page-marker">原书第 62 页 · PDF 第 72 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-72"></div><div class="content-pane content-zh" data-page="pdf-72"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-72.webp" alt="原书 PDF 第 72 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-73" data-pdf="73" data-book="63">
+        <span class="page-marker">原书第 63 页 · PDF 第 73 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-73"></div><div class="content-pane content-zh" data-page="pdf-73"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-73.webp" alt="原书 PDF 第 73 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-74" data-pdf="74" data-book="64">
+        <span class="page-marker">原书第 64 页 · PDF 第 74 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-74"></div><div class="content-pane content-zh" data-page="pdf-74"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-74.webp" alt="原书 PDF 第 74 页" loading="lazy">
+      </section></article></main></div><script>if (!window.NMR_APP_LOADED) {
+window.NMR_APP_LOADED = true;
+
+const body = document.body;
+const experiment = window.NMR_EXPERIMENT;
+const scanButton = document.querySelector("#toggle-original");
+const navButton = document.querySelector("#toggle-nav");
+const toolbar = document.querySelector(".toolbar");
+const sidebar = document.querySelector(".sidebar");
+const sidebarActionButton = document.querySelector("button[data-nav-action='toggle']");
+const root = document.documentElement;
+const displayButton = document.querySelector("#toggle-display-settings");
+const displayPanel = document.querySelector("#display-settings");
+const zoomOutButton = document.querySelector("#zoom-out");
+const zoomInButton = document.querySelector("#zoom-in");
+const zoomAutoButton = document.querySelector("#zoom-auto");
+const zoomValue = document.querySelector("#zoom-value");
+const themeButtons = [...document.querySelectorAll("button[data-theme]")];
+const viewButtons = [...document.querySelectorAll("button[data-view]")];
+const languageButtons = viewButtons.filter((button) => button.dataset.view !== "original");
+const referenceScans = [...document.querySelectorAll(".reference-scan")];
+
+function cloneMappedFigure(figure) {
+  const mapped = figure.cloneNode(true);
+  mapped.classList.add("mapped-figure");
+  mapped.querySelectorAll("img").forEach((image) => {
+    image.alt = `\u4e2d\u6587\u680f\u5bf9\u5e94\u56fe\u50cf\uff1a${image.alt || "\u539f\u4e66\u56fe\u50cf"}`;
+    image.loading = "lazy";
+  });
+  const caption = document.createElement("figcaption");
+  caption.textContent = mapped.querySelector("img") ? "\u4e2d\u6587\u680f\u5bf9\u5e94\u56fe\u50cf" : "\u4e2d\u6587\u680f\u5bf9\u5e94\u65b9\u7a0b";
+  mapped.append(caption);
+  return mapped;
+}
+
+function mapFigures(page, pageId) {
+  const englishPane = page.querySelector(".content-en");
+  const chinesePane = page.querySelector(".content-zh");
+  const englishFigures = [...englishPane.querySelectorAll("figure")];
+  const chineseFigureIds = new Set([...chinesePane.querySelectorAll("figure[data-figure-id]")]
+    .map((figure) => figure.dataset.figureId));
+  const placements = experiment.figurePlacements[pageId] ?? englishFigures.map((_, source) => ({ source, atEnd: true }));
+
+  for (const { source, before, after, atEnd } of placements) {
+    const figure = englishFigures[source];
+    if (!figure) continue;
+    if (figure.dataset.figureId && chineseFigureIds.has(figure.dataset.figureId)) continue;
+    const mapped = cloneMappedFigure(figure);
+    const anchors = [...chinesePane.querySelectorAll("h3, p")];
+    if (before) {
+      const anchor = anchors.find((node) => node.textContent.trim().startsWith(before));
+      if (anchor) {
+        anchor.before(mapped);
+        continue;
+      }
+    }
+    if (after) {
+      const anchor = anchors.find((node) => node.textContent.trim().startsWith(after));
+      if (anchor) {
+        anchor.after(mapped);
+        continue;
+      }
+    }
+    if (atEnd || (!before && !after)) chinesePane.append(mapped);
+  }
+}
+
+function populateExperiment() {
+  if (!experiment) return;
+  document.querySelectorAll(".page-block").forEach((page) => {
+    const pageId = page.id;
+    const englishPane = page.querySelector(".content-en");
+    const chinesePane = page.querySelector(".content-zh");
+    englishPane.innerHTML = experiment.english[pageId] || "<p>English transcription pending.</p>";
+    chinesePane.innerHTML = experiment.chinese[pageId] || "<p>\u4e2d\u6587\u7ffb\u8bd1\u5f85\u8865\u3002</p>";
+    mapFigures(page, pageId);
+  });
+
+  const assetPrefix = body.dataset.assetPrefix || "assets";
+  document.querySelectorAll("figure.worksheet img").forEach((image) => {
+    image.src = `${assetPrefix}/worksheets/observations-grid.svg`;
+    image.alt = "Blank NMR observation grid";
+  });
+}
+
+function alignLocationHash() {
+  if (!window.location.hash) return;
+  let targetId;
+  try {
+    targetId = decodeURIComponent(window.location.hash.slice(1));
+  } catch {
+    targetId = window.location.hash.slice(1);
+  }
+  const target = document.getElementById(targetId);
+  if (!target) return;
+
+  const align = () => target.scrollIntoView({ block: "start", behavior: "instant" });
+  requestAnimationFrame(() => requestAnimationFrame(align));
+  window.addEventListener("load", align, { once: true });
+  document.fonts?.ready.then(align).catch(() => {});
+
+  // Page fragments and lazy figures are inserted after the browser's native
+  // hash jump.  Keep the target aligned briefly while those elements settle.
+  if ("ResizeObserver" in window) {
+    const paper = document.querySelector(".paper");
+    if (paper) {
+      const observer = new ResizeObserver(align);
+      observer.observe(paper);
+      window.setTimeout(() => observer.disconnect(), 1500);
+    }
+  }
+}
+
+const scanObserver = "IntersectionObserver" in window
+  ? new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const image = entry.target;
+        if (!image.src && image.dataset.src) image.src = image.dataset.src;
+        scanObserver.unobserve(image);
+      });
+    }, { rootMargin: "900px 0px" })
+  : null;
+
+function armReferenceScans() {
+  referenceScans.forEach((image) => {
+    if (image.src || !image.dataset.src) return;
+    if (scanObserver) scanObserver.observe(image);
+    else image.src = image.dataset.src;
+  });
+}
+
+function setOriginalMode(enabled) {
+  body.classList.toggle("show-original", enabled);
+  scanButton.setAttribute("aria-pressed", String(enabled));
+  scanButton.setAttribute("aria-label", enabled ? "\u8fd4\u56de\u91cd\u5efa\u7a3f" : "\u539f\u9875\u5bf9\u7167");
+  scanButton.title = enabled ? "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af" : "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af";
+  languageButtons.forEach((button) => {
+    button.setAttribute("aria-pressed", String(!enabled && button.dataset.view === body.dataset.language));
+  });
+  if (enabled) armReferenceScans();
+}
+
+function setLanguage(mode) {
+  const selected = ["en", "bilingual"].includes(mode) ? mode : "en";
+  body.classList.remove("show-original");
+  scanButton.setAttribute("aria-pressed", "false");
+  scanButton.setAttribute("aria-label", "\u539f\u9875\u5bf9\u7167");
+  scanButton.title = "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af";
+  body.dataset.language = selected;
+  languageButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.view === selected)));
+  localStorage.setItem("nmr-reading-mode", selected);
+}
+
+function activateView(view) {
+  if (view === "original") {
+    setOriginalMode(!body.classList.contains("show-original"));
+    return;
+  }
+  setLanguage(view);
+}
+
+function cycleView() {
+  if (body.classList.contains("show-original")) {
+    setLanguage("en");
+    return;
+  }
+  if (body.dataset.language === "en") {
+    setLanguage("bilingual");
+    return;
+  }
+  setOriginalMode(true);
+}
+
+populateExperiment();
+alignLocationHash();
+window.addEventListener("hashchange", alignLocationHash);
+
+const sidebarStateKey = "nmr-sidebar-navigation";
+
+function readSidebarState() {
+  try {
+    return JSON.parse(sessionStorage.getItem(sidebarStateKey) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function persistSidebarState() {
+  if (!sidebar) return;
+  const openChapters = [...sidebar.querySelectorAll("details.chapter-group[open]")]
+    .map((group) => group.dataset.chapter)
+    .filter(Boolean);
+  try {
+    sessionStorage.setItem(sidebarStateKey, JSON.stringify({
+      scrollTop: sidebar.scrollTop,
+      openChapters,
+    }));
+  } catch {
+    // Some browser policies disable storage for local files; navigation still works.
+  }
+}
+
+function restoreSidebarState() {
+  if (!sidebar) return;
+  const state = readSidebarState();
+  const openChapters = new Set(Array.isArray(state.openChapters) ? state.openChapters : []);
+  sidebar.querySelectorAll("details.chapter-group").forEach((group) => {
+    if (openChapters.has(group.dataset.chapter) || group.classList.contains("active-chapter")) group.open = true;
+    group.addEventListener("toggle", () => {
+      persistSidebarState();
+      updateNavToggleButton();
+    });
+  });
+
+  requestAnimationFrame(() => {
+    updateNavToggleButton();
+    if (Number.isFinite(state.scrollTop)) {
+      sidebar.scrollTop = state.scrollTop;
+      return;
+    }
+    const activeLink = sidebar.querySelector("a.active");
+    if (activeLink) sidebar.scrollTop = Math.max(0, activeLink.offsetTop - sidebar.clientHeight / 2);
+  });
+
+  let scrollTimer = 0;
+  sidebar.addEventListener("scroll", () => {
+    window.clearTimeout(scrollTimer);
+    scrollTimer = window.setTimeout(persistSidebarState, 80);
+  }, { passive: true });
+}
+
+restoreSidebarState();
+
+function updateNavToggleButton() {
+  if (!sidebar || !sidebarActionButton) return;
+  const groups = [...sidebar.querySelectorAll("details.chapter-group")];
+  const allOpen = groups.length > 0 && groups.every((group) => group.open);
+  const label = allOpen ? "\u6536\u62e2\u6240\u6709\u7ae0\u8282" : "\u5c55\u5f00\u6240\u6709\u7ae0\u8282";
+  sidebarActionButton.dataset.state = allOpen ? "collapse" : "expand";
+  sidebarActionButton.setAttribute("aria-label", label);
+  sidebarActionButton.title = label;
+}
+
+sidebarActionButton?.addEventListener("click", () => {
+  const groups = [...sidebar.querySelectorAll("details.chapter-group")];
+  const shouldOpen = !groups.every((group) => group.open);
+  groups.forEach((group) => {
+    group.open = shouldOpen;
+  });
+  persistSidebarState();
+  updateNavToggleButton();
+});
+
+const scaleStorageKey = "nmr-interface-scale";
+const themeStorageKey = "nmr-interface-theme";
+let scaleMode = "auto";
+let appliedScale = 1;
+
+function storedValue(key, fallback) {
+  try {
+    return localStorage.getItem(key) || fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function saveValue(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    // The display setting still applies for the current page.
+  }
+}
+
+function automaticScale() {
+  if (window.innerWidth <= 1040) return 1;
+  return Math.min(1.2, Math.max(0.95, window.innerWidth / 1800));
+}
+
+function applyScale(scale, mode = scaleMode) {
+  appliedScale = Math.min(1.4, Math.max(0.8, scale));
+  root.style.setProperty("--sidebar-w", `${Math.round(340 * appliedScale)}px`);
+  root.style.setProperty("--page-w", `${Math.round(1180 * appliedScale)}px`);
+  root.style.setProperty("--reader-font", `${(15 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--reader-heading", `${(20 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--reader-title", `${(34 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--sidebar-font", `${(13 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--sidebar-small", `${(11 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--paper-pad", `${Math.round(44 * appliedScale)}px`);
+  if (zoomValue) zoomValue.textContent = mode === "auto" ? `\u81ea\u52a8 ${Math.round(appliedScale * 100)}%` : `${Math.round(appliedScale * 100)}%`;
+  if (zoomAutoButton) zoomAutoButton.setAttribute("aria-pressed", String(mode === "auto"));
+}
+
+function setScaleMode(value) {
+  if (value === "auto") {
+    scaleMode = "auto";
+    applyScale(automaticScale(), scaleMode);
+    saveValue(scaleStorageKey, scaleMode);
+    return;
+  }
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return;
+  scaleMode = String(Math.min(1.4, Math.max(0.8, numeric)));
+  applyScale(Number(scaleMode), scaleMode);
+  saveValue(scaleStorageKey, scaleMode);
+}
+
+function adjustScale(delta) {
+  setScaleMode((Math.round((appliedScale + delta) * 10) / 10).toFixed(1));
+}
+
+function applyTheme(theme) {
+  const selected = ["sage", "mist", "sand", "mauve", "gray"].includes(theme) ? theme : "sage";
+  root.dataset.theme = selected;
+  themeButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.theme === selected)));
+  saveValue(themeStorageKey, selected);
+}
+
+setScaleMode(storedValue(scaleStorageKey, "auto"));
+applyTheme(storedValue(themeStorageKey, "sage"));
+
+displayButton?.addEventListener("click", (event) => {
+  event.stopPropagation();
+  const willOpen = displayPanel.hidden;
+  displayPanel.hidden = !willOpen;
+  displayButton.setAttribute("aria-expanded", String(willOpen));
+});
+
+displayPanel?.addEventListener("click", (event) => event.stopPropagation());
+zoomOutButton?.addEventListener("click", () => adjustScale(-0.1));
+zoomInButton?.addEventListener("click", () => adjustScale(0.1));
+zoomAutoButton?.addEventListener("click", () => setScaleMode("auto"));
+themeButtons.forEach((button) => button.addEventListener("click", () => applyTheme(button.dataset.theme)));
+
+document.addEventListener("click", () => {
+  if (!displayPanel || displayPanel.hidden) return;
+  displayPanel.hidden = true;
+  displayButton?.setAttribute("aria-expanded", "false");
+});
+
+let scaleResizeTimer = 0;
+window.addEventListener("resize", () => {
+  if (scaleMode !== "auto") return;
+  window.clearTimeout(scaleResizeTimer);
+  scaleResizeTimer = window.setTimeout(() => applyScale(automaticScale(), "auto"), 100);
+}, { passive: true });
+
+toolbar.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-view]");
+  if (!button || !toolbar.contains(button)) return;
+  event.preventDefault();
+  activateView(button.dataset.view);
+});
+
+navButton.addEventListener("click", () => {
+  const open = body.classList.toggle("nav-open");
+  navButton.setAttribute("aria-expanded", String(open));
+});
+
+document.querySelectorAll(".sidebar a").forEach((link) => link.addEventListener("click", () => {
+  persistSidebarState();
+  body.classList.remove("nav-open");
+  navButton.setAttribute("aria-expanded", "false");
+}));
+
+document.addEventListener("keydown", (event) => {
+  const target = event.target;
+  if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target?.isContentEditable) return;
+  if (event.ctrlKey || event.metaKey || event.altKey) return;
+  if (event.key === "1") setLanguage("en");
+  if (event.key === "2") setLanguage("bilingual");
+  if (event.key === "3") setOriginalMode(true);
+  if (event.key.toLowerCase() === "o") cycleView();
+});
+
+setLanguage(localStorage.getItem("nmr-reading-mode") || "en");
+}
+</script></body></html>

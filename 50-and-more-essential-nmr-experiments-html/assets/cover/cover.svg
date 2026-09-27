@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="980" viewBox="0 0 720 980">
+  <rect width="720" height="980" fill="#eef4f0"/>
+  <rect x="44" y="44" width="632" height="892" rx="12" fill="#fff" stroke="#bdd1ca" stroke-width="3"/>
+  <text x="88" y="170" fill="#315f57" font-family="Georgia,serif" font-size="34">REUSABLE</text>
+  <text x="88" y="225" fill="#17201d" font-family="Georgia,serif" font-weight="700" font-size="55">Scientific</text>
+  <text x="88" y="288" fill="#17201d" font-family="Georgia,serif" font-weight="700" font-size="55">Textbook</text>
+  <path d="M90 382h540M90 410h430M90 438h500" stroke="#9eb9b1" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="360" cy="625" r="132" fill="#dceae5"/>
+  <path d="M235 655c95-170 173-169 250-26M270 552c54 128 132 171 214 86" fill="none" stroke="#47796f" stroke-width="16" stroke-linecap="round"/>
+  <text x="88" y="866" fill="#66756f" font-family="Arial,sans-serif" font-size="22">LOCAL HTML EDITION</text>
+</svg>
+

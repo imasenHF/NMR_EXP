@@ -1,0 +1,527 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Item 8.1: Calibration of Pulse Duration in the Transmitter Channel"><title>8.1 Calibration of Pulse Duration in the Transmitter Channel — 50 and More Essential NMR Experiments</title><link rel="stylesheet" href="../shared/site.css?v=1"><script>window.NMR_EXPERIMENT = Object.freeze({"meta":{"number":"8.1","slug":"8-1","kind":"item","title":"Calibration of Pulse Duration in the Transmitter Channel","titleZh":"\u53d1\u5c04\u901a\u9053\u8109\u51b2\u5bbd\u5ea6\u6821\u51c6","pages":[{"id":"pdf-245","pdfPage":245,"bookPage":235,"en":"content/pages/pdf-245.en.html","zh":"content/pages/pdf-245.zh.html"},{"id":"pdf-246","pdfPage":246,"bookPage":236,"en":"content/pages/pdf-246.en.html","zh":"content/pages/pdf-246.zh.html"},{"id":"pdf-247","pdfPage":247,"bookPage":237,"en":"content/pages/pdf-247.en.html","zh":"content/pages/pdf-247.zh.html"},{"id":"pdf-248","pdfPage":248,"bookPage":238,"en":"content/pages/pdf-248.en.html","zh":"content/pages/pdf-248.zh.html"},{"id":"pdf-249","pdfPage":249,"bookPage":239,"en":"content/pages/pdf-249.en.html","zh":"content/pages/pdf-249.zh.html"},{"id":"pdf-250","pdfPage":250,"bookPage":240,"en":"content/pages/pdf-250.en.html","zh":"content/pages/pdf-250.zh.html"}],"chapter":"Maintenance and Calibration"},"english":{"pdf-245":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>Experiment 8.1</h3>\r\n<h3>Calibration of Pulse Duration in the Transmitter Channel</h3>\r\n<h3>1. Purpose</h3>\r\n<p>For any experiment, in particular for multi-pulse experiments, one needs to know the exact flip angle of the magnetization. Therefore, the pulse lengths in all r.f. channels in use have to be calibrated before any experiment. The basic information is the knowledge of the duration of an r.f. pulse which creates a flip angle of 90\u00b0 at a certain amplifier power level.</p>\r\n<p>The flip angle depends on the r.f. magnetic field strength B1, the pulse-length pw, and the gyromagnetic ratio \u03b3 of the nucleus under observation, as expressed in radians and in degrees by Equations (1) and (2) respectively.</p>\r\n<div class=\"equation-text\"><div class=\"formula\"><span>\u03b8 [rad] = \u03b3B<sub>1</sub>\u00b7pw</span><span>(1)</span></div></div>\r\n<div class=\"equation-text\"><div class=\"formula\"><span>\u03b1 [\u00b0] = (360/2\u03c0)\u03b3B<sub>1</sub>\u00b7pw</span><span>(2)</span></div></div>\r\n<p>Often the 90\u00b0 (or S/2) pulse duration is determined by measuring the 180\u00b0 (S) or 360\u00b0 (2S) pulse lengths since these pulses give a minimum signal which is easier to detect than the maximum of intensity.</p>\r\n<p>In principle, the calibration procedure for the transmitter pulse differs from that of the pulses in other channels, because in the transmitter channel the direct observation of the pulse action is possible (the r.f. channel on which the receiver works is denoted as \"transmitter channel\"), whereas the pulses on the other channels (often denoted as \"decoupler channels\") have to be evaluated by their indirect actions on a spin system.</p>\r\n<p>In most spectrometers, the special r.f. routings between electronic components differ for various experiments. The r.f. routing may influence the behavior of the channels with respect to lengths and phase of pulses. For that reason one should calibrate the pulse durations in the identical routing mode of the experiment to be performed.</p>\r\n<h3>2. Variants</h3>\r\n<p>In simple cases a few single experiments with different pulse durations are sufficient, especially if one already roughly knows the 90\u00b0 pulse duration at a given power amplification level. For several reasons one should focus on the 360\u00b0 flip angle (see below). For special cases, especially in heteronuclear NMR with poor signal-to-noise ratio, the elegant method of Haupt [1] is recommended.</p>\r\n<p>However, the novice should perform a whole set of spectra using increasing pulse durations and a constant increment (\"array\") over wide range. This should reflect a sine shape intensity course. Thereby some</p>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">Source sidebar</div>\r\n<p>Virtually every modern nuclear magnetic resonance (NMR) experiment requires a user to know, if not calibrate, 90\u00b0 pulse widths. A 90\u00b0 pulse width (in the rotating frame) is classically defined to be the time required for the spectrometer to tip the indicated nuclear spins from their equilibrium position (along the z axis) into the xy plane. This \"tipping\", or \"nutation\" is usually defined to be a 90\u00b0 rotation around the +x axis, so that the net magnetization of the spins is tipped from the +z axis onto the \u2013y axis, unless otherwise indicated.</p>\r\n<p>Taken from ref. [2]</p>\r\n</aside>\r\n</div>\r\n","pdf-246":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<p>properties of the probe can be estimated (e.g. r.f. homogeneity) and errors can be detected (arcing /r.f. breakthrough due to high r.f. power, errors due to T1 relaxation, saturation, or radiation damping).</p>\r\n<p>It is also possible to determine the r.f. field strength by a nutation experiment at weak r.f. field and to recalculate the duration of a 90\u00b0 pulse at a certain power level assuming linear amplifiers (see [3]). This could be done quickly in one single experiment.</p>\r\n<h3>3. Pulse Scheme and Phase Cycle</h3>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-246-vector-1\"><img alt=\"Scheme 8.1-1\" loading=\"lazy\" src=\"../assets/pulse-sequences/pdf-246-vector-1.webp\"/><figcaption>Scheme 8.1-1</figcaption></figure>\r\n<h3>4. Acquisition</h3>\r\n<h4>Special values used for the spectrum shown:</h4>\r\n<p>Sample: pure CDCl3, 99.8 at % enrichment (for probes with lower sensitivity 1 to 5 % CHCl3 may be added), use a non-sealed tube for faster relaxation. Time requirement: ca. 10 min Spectrometer: Bruker Avance-700, 5mm TCI Cryoprobe</p>\r\n<p class=\"parameter-list\">td: 8388<br>d1: 5 s acqu. time: 2.0 s<br>sw: 3.0 ppm<br>o1: 7.26 ppm (on resonance of CHCl3)<br>p1: initial value 2.0 \u03bcs, increment 2.0 \u03bcs, 50 single experiments (i.e. p1= 2.0 \u03bcs ... 100.0 \u03bcs)</p>\r\n<h3>5. Processing</h3>\r\n<p>Use standard 1D processing with si = 32K and an exponential window with lb = 0.2 Hz.</p>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">Source sidebar</div>\r\n<h4>Common values:</h4>\r\n<p>d1 relaxation delay p1 transmitter pulse, to be varied</p>\r\n<p>[1] E. Haupt \"A timesaving method to determine the length of a 90\u00b0 pulse\" J. Magn. Reson. 1982, 49, 358\u2212364.</p>\r\n<p>[2] P. A. Keifer \"90\u00b0 Pulse width calibrations: How to read a pulse width array\" Concepts in Magnetic Resonance, 1999, 11, 165\u2013180.</p>\r\n<p>[3] P. S. C. Wu, G. Otting \"Rapid pulse length determination in high-resolution NMR\" J. Magn. Reson. 2005 176, 115\u2013119.</p>\r\n<p>[4] M. P. Augustine, \"Transient properties of radiation damping\" Progr. NMR Spectrosc. 2002, 40, 111\u2212150.</p>\r\n</aside>\r\n</div>\r\n","pdf-247":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>6. Result</h3>\r\n<figure class=\"figure source-figure source-figure-wide\" data-figure-id=\"pdf-247-fig-1\"><img alt=\"Scheme 8.1-1 Series of pulse responses vs. increasing pulse durations\" loading=\"lazy\" src=\"../assets/plots/pdf-247-fig-1.webp\"/><figcaption>Scheme 8.1-1 Series of pulse responses vs. increasing pulse durations</figcaption></figure>\r\n<p>Fig. 8.1-1 shows a correct sine-shaped intensity course plot against increasing pulse width on a 700 MHz cryoprobe. The reduction in intensity is due to the r.f. field inhomogeneity: the lower the homogeneity of the r.f. coil the faster the decay of the envelope of this curve. According [2] the intensity ratios of I(450\u00b0)/I(90\u00b0) and I(810\u00b0)/I(90\u00b0) could be used as a measure of r.f. homogeneity (here 91 % and 85 % , resp.).</p>\r\n<p>When performing this experiment it is important to keep the repetition time between the scans as long as 5T1. Otherwise a saturation of the signal could falsify the intensities (see Fig.8.1-3).</p>\r\n<p>On high-sensitivity probe heads and with high concentrated samples (e.g. 90 % H2O/10 % D2O samples on cryoprobes) the radiation damping effect may reduce the intensities too and may lead to wrong pulse duration values for the 180\u00b0 pulse (see Fig 8.1-4).</p>\r\n<p>Because both effects disturb the 360\u00b0 zero crossing, at least, one can determine with single experiments the 360\u00b0 pulse duration.</p>\r\n</div>\r\n<aside aria-hidden=\"true\" class=\"source-sidebar source-sidebar-empty\"></aside>\r\n</div>\r\n","pdf-248":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<figure class=\"figure source-figure source-figure-wide\" data-figure-id=\"pdf-248-fig-1\"><img alt=\"Fig. 8.1-2 Signal intensity vs pulse length, violating the T1 relaxation condition; same time scale as Fig. 8.1-1 (initial value 2 \u03bcs, increment 2 \u03bcs, last value 100 \u03bcs)\" loading=\"lazy\" src=\"../assets/plots/pdf-248-fig-1.webp\"/><figcaption>Fig. 8.1-2 Signal intensity vs pulse length, violating the T1 relaxation condition; same time scale as Fig. 8.1-1 (initial value 2 \u03bcs, increment 2 \u03bcs, last value 100 \u03bcs)</figcaption></figure>\r\n<figure class=\"figure source-figure source-figure-wide\" data-figure-id=\"pdf-248-fig-2\"><img alt=\"Fig. 8.1-3 Signal intensity vs. pulse length; violation due to radiation damping: the determination of 180\u00b0 zero crossing is nearly impossible. Same time scale as Fig. 8.1-1 (initial value 2 \u03bcs, increment 2 \u03bcs, last value 100 \u03bcs), sample 54 % H2O in D2O\" loading=\"lazy\" src=\"../assets/plots/pdf-248-fig-2.webp\"/><figcaption>Fig. 8.1-3 Signal intensity vs. pulse length; violation due to radiation damping: the determination of 180\u00b0 zero crossing is nearly impossible. Same time scale as Fig. 8.1-1 (initial value 2 \u03bcs, increment 2 \u03bcs, last value 100 \u03bcs), sample 54 % H2O in D2O</figcaption></figure>\r\n</div>\r\n<aside aria-hidden=\"true\" class=\"source-sidebar source-sidebar-empty\"></aside>\r\n</div>\r\n","pdf-249":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>7. Comments</h3>\r\n<p>Many modern probe heads, which offer high sensitivity, show a different r.f. behavior for different samples due to magnetic susceptibility characteristics of the samples. Clearly the pulse determination on the actual sample of interest is the best way, but this is not always possible because of low signal intensity. Therefore one should check the 90\u00b0 (360\u00b0, resp.) pulse durations on an example compound in different solvents.</p>\r\n<p>One aim of probe developers is to minimize the sample susceptibility effect sustaining high sensitivity.</p>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-249-fig-1\"><img alt=\"Fig. 8.1-4 A 20 \u03bcs r.f. pulse at 19.7 MHz for 57Fe NMR at a 600-MHz spectrometer\" loading=\"lazy\" src=\"../assets/photographs/pdf-249-fig-1.webp\"/><figcaption>Fig. 8.1-4 A 20 \u03bcs r.f. pulse at 19.7 MHz for 57Fe NMR at a 600-MHz spectrometer</figcaption></figure>\r\n</div>\r\n<aside aria-hidden=\"true\" class=\"source-sidebar source-sidebar-empty\"></aside>\r\n</div>\r\n","pdf-250":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>8. Questions</h3>\r\n<p>A. Why do inverse probes and cryo probes show the strongest radiation damping?</p>\r\n<p>B. There is an additional advantage to determining the 360\u00b0 pulse instead of the 180\u00b0 pulse. What it is?</p>\r\n<p>C. Biological samples with dissolved protein in buffer solutions show a large variety of pulse durations. Why?</p>\r\n<h3>9. Own Observations</h3>\r\n</div>\r\n<aside aria-hidden=\"true\" class=\"source-sidebar source-sidebar-empty\"></aside>\r\n</div>\r\n"},"chinese":{"pdf-245":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>\u5b9e\u9a8c 8.1</h3>\r\n<h3>\u53d1\u5c04\u901a\u9053\u8109\u51b2\u5bbd\u5ea6\u6821\u51c6</h3>\r\n<h3>1. \u76ee\u7684</h3>\r\n<p>\u5bf9\u4e8e\u4efb\u4f55\u5b9e\u9a8c,\u7279\u522b\u662f\u591a\u8109\u51b2\u5b9e\u9a8c,\u9700\u8981\u77e5\u9053\u78c1\u5316\u7684\u6b63\u786e\u7ffb\u8f6c\u89d2.\u56e0\u6b64,\u5728\u4efb\u4f55\u5b9e\u9a8c\u4e4b\u524d,\u6240\u6709\u4f7f\u7528\u7684RF\u901a\u9053\u4e2d\u7684\u8109\u51b2\u957f\u5ea6\u5fc5\u987b\u8fdb\u884c\u6821\u51c6.\u57fa\u672c\u4fe1\u606f\u662f\u4e86\u89e3RF\u8109\u51b2\u7684\u6301\u7eed\u65f6\u95f4,\u5728\u4e00\u5b9a\u653e\u5927\u5668\u529f\u7387\u6c34\u5e73\u4e0a\u4ea7\u751f90\u00b0\u7684\u7ffb\u8f6c\u89d2.</p>\r\n<p>\u7ffb\u8f6c\u89d2\u53d6\u51b3\u4e8e\u5bf9\u6838\u7684\u78c1\u573a\u5f3a\u5ea6B1,\u8109\u51b2\u957f\u5ea6 pw\u548c\u89c2\u6d4b\u4e2d\u7684\u6838\u7684\u78c1\u6bd4 \u03b3,\u5206\u522b\u4ee5\u8f90\u5c04\u548c\u5ea6\u4ee5\u7b49\u5f0f (1) \u548c (2) \u8868\u8fbe.</p>\r\n<div class=\"equation-text\"><div class=\"formula\"><span>\u03b8 [rad] = \u03b3B<sub>1</sub>\u00b7pw</span><span>(1)</span></div></div>\r\n<div class=\"equation-text\"><div class=\"formula\"><span>\u03b1 [\u00b0] = (360/2\u03c0)\u03b3B<sub>1</sub>\u00b7pw</span><span>(2)</span></div></div>\r\n<p>\u901a\u5e3890\u00b0 (\u6216S/2)\u8109\u51b2\u5bbd\u5ea6\u7531\u6d4b\u91cf180\u00b0 (S) \u6216360\u00b0 (2S)\u8109\u51b2\u957f\u5ea6\u6765\u786e\u5b9a,\u56e0\u4e3a\u8fd9\u4e9b\u8109\u51b2\u63d0\u4f9b\u6700\u5c0f\u4fe1\u53f7,\u6bd4\u6700\u5927\u5f3a\u5ea6\u66f4\u5bb9\u6613\u68c0\u6d4b.</p>\r\n<p>\u53d1\u5c04\u5668\u8109\u51b2\u7684\u6821\u51c6\u7a0b\u5e8f\u4e0e\u5176\u4ed6\u9053\u8109\u51b2\u7684\u6821\u51c6\u7a0b\u5e8f\u4e0d\u540c,\u56e0\u4e3a\u5728\u53d1\u5c04\u901a\u9053\u4e2d\u53ef\u4ee5\u76f4\u63a5\u89c2\u5bdf\u8109\u51b2\u4f5c\u7528 (\u63a5\u6536\u5668\u8fd0\u884c\u7684RF\u9053\u79f0\u4e3a\"\u53d1\u5c04\u901a\u9053\"),\u800c\u5176\u4ed6\u9053\u4e0a\u7684\u8109\u51b2 (\u901a\u5e38\u79f0\u4e3a\"\u79bb\u901a\u9053\") \u5fc5\u987b\u901a\u8fc7\u5176\u95f4\u63a5\u884c\u52a8\u8fdb\u884c\u8bc4\u4f30 o \u81ea\u65cb\u4f53\u7cfb.</p>\r\n<p>\u5728\u5927\u591a\u91cd\u6027\u8c31\u4eea\u4e2d,\u7535\u5b50\u5143\u4ef6\u4e4b\u95f4\u7684\u7279\u6b8aRF\u8def\u7531\u5bf9\u5404\u79cd\u5b9e\u9a8c\u4e0d\u540c.RF\u8def\u7531\u53ef\u80fd\u4f1a\u5f71\u54cd\u8109\u51b2\u7684\u957f\u5ea6\u548c\u76f8\u6bb5\u7684\u9053\u7684\u884c\u4e3a.\u56e0\u6b64,\u5e94\u5728\u5b9e\u9a8c\u4e2d\u76f8\u540c\u7684\u8def\u7531\u6a21\u5f0f\u4e0b\u6821\u51c6\u8109\u51b2\u5bbd\u5ea6.</p>\r\n<h3>2. \u53d8\u4f53</h3>\r\n<p>\u5728\u7b80\u5355\u60c5\u51b5\u4e0b,\u53ea\u6709\u51e0\u6b21\u5355\u4e00\u5b9e\u9a8c,\u4e0d\u540c\u8109\u51b2\u5bbd\u5ea6\u662f\u8db3\u591f\u7684,\u7279\u522b\u662f\u5982\u679c\u4e00\u4e2a\u4eba\u5df2\u7ecf\u5927\u81f4\u77e5\u9053\u7ed9\u5b9a\u7684\u529f\u7387\u653e\u5927\u6c34\u5e73\u768490\u00b0\u8109\u51b2\u5bbd\u5ea6.\u7531\u4e8e\u51e0\u79cd\u539f\u56e0,\u4eba\u4eec\u5e94\u8be5\u4e13\u6ce8\u4e8e360\u00b0\u7ffb\u8f6c\u89d2 (\u89c1\u4e0b).\u5bf9\u4e8e\u7279\u6b8a\u60c5\u51b5,\u7279\u522b\u662f\u4f4e\u4fe1\u53f7\u4e0e\u566a\u97f3\u6bd4\u7684\u5f02\u6838NMR,\u5efa\u8bae\u4f7f\u7528\u4f18\u96c5\u7684 Haupt\u65b9\u6cd5[1].</p>\r\n<p>\u7136\u800c,\u65b0\u624b\u5e94\u8be5\u4f7f\u7528\u589e\u52a0\u8109\u51b2\u5bbd\u5ea6\u548c\u5728\u5e7f\u6cdb\u8303\u56f4\u5185\u6301\u7eed\u589e\u52a0 (\"\u9635\u5217\") \u6765\u6267\u884c\u6574\u4e2a\u8c31\u7cfb.</p>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">\u539f\u4e66\u4fa7\u680f</div>\r\n<p>\u51e0\u4e4e\u6bcf\u4e00\u4e2a\u73b0\u4ee3\u6838\u78c1\u5171\u632f (NMR) \u5b9e\u9a8c\u90fd\u8981\u6c42\u7528\u6237\u77e5\u9053,\u5982\u679c\u4e0d\u662f\u6821\u51c6,90\u00b0\u8109\u51b2\u5bbd\u5ea6. \u5c04\u5e4590\u00b0 (\u5728\u65cb\u8f6c\u4e2d) \u7ecf\u5178\u5b9a\u4e49\u4e3a\u8c31\u4eea\u9700\u8981\u7684\u65f6\u95f4\u5c06\u6307\u5b9a\u7684\u6838\u65cb\u8f6c\u4ece\u5b83\u4eec\u7684\u5e73\u8861\u4f4d\u7f6e (al \u5411 xy \u5e73\u9762. \u8fd9\u79cd\"\u5411\",\u6216\"\u5411\"\u901a\u5e38\u5b9a\u4e49\u4e3a90\u00b0\u65cb\u8f6c\u5728+x\u8f74\u5468\u56f4,\u56e0\u6b64\u65cb\u8f6c\u7684\u51c0\u78c1\u5316\u4ece+z\u8f74\u5411y\u8f74\u5411, \u5176\u4ed6\u6307\u5b9a\u7684\u60c5\u51b5</p>\r\n<p>\u53d6\u81ea\u6cd5\u5b98 [2]</p>\r\n</aside>\r\n</div>\r\n","pdf-246":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<p>\u63a2\u5934\u7684\u6027\u80fd\u53ef\u4f30\u8ba1 (\u4f8b\u5982\u5c04\u7ebf\u5747\u6027) \u5e76\u53ef\u68c0\u6d4b\u9519\u8bef (\u7531\u4e8e\u9ad8\u5c04\u7ebf\u529f\u7387\u5bfc\u81f4/\u5c04\u7ebf\u7a81\u7834,\u7531\u4e8eT1\u5f1b\u8c6b,\u548c\u8f90\u5c04\u7f29\u7684\u9519\u8bef).</p>\r\n<p>\u901a\u8fc7\u5728\u5f31\u7684rf\u573a\u4e0a\u8fdb\u884c\u5b9a\u5b9e\u9a8c,\u8fd8\u53ef\u4ee5\u901a\u8fc7\u7ebf\u6027\u653e\u5927\u5668 (\u89c1 [3]) \u786e\u5b9arf\u573a\u5f3a\u5ea6,\u5e76\u91cd\u65b0\u8ba1\u7b97\u5728\u4e00\u5b9a\u529f\u7387\u6c34\u5e73\u4e0a90\u00b0\u8109\u51b2\u7684\u6301\u7eed\u65f6\u95f4.</p>\r\n<h3>3. \u8109\u51b2\u65b9\u6848\u4e0e\u76f8\u4f4d\u5faa\u73af</h3>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-246-vector-1\"><img alt=\"\u56fe\u5f0f 8.1-1\" loading=\"lazy\" src=\"../assets/pulse-sequences/pdf-246-vector-1.webp\"/><figcaption>\u56fe\u5f0f 8.1-1</figcaption></figure>\r\n<h3>4. \u91c7\u96c6</h3>\r\n<h4>\u56fe\u793a\u8c31\u56fe\u91c7\u7528\u7684\u5177\u4f53\u53c2\u6570\uff1a</h4>\r\n<p>\u6837\u672c:\u7eafCDCl3,99.8%\u7684\u7f29 (\u5bf9\u4e8e\u8f83\u4f4e\u7075\u654f\u5ea6\u7684\u63a2\u6d4b\u5668\u53ef\u6dfb\u52a01~5%CHCl3),\u4f7f\u7528\u975e\u5bc6\u5c01\u7ba1\u4ee5\u66f4\u5feb\u5f1b\u8c6b.\u65f6\u95f4\u8981\u6c42:\u7ea610\u5206\u949f\u8c31\u4eea:\u5e03\u9c81\u514b Avance-700,5mm TCI Cryoprobe</p>\r\n<p class=\"parameter-list\">td: 8388<br>d1: 5 s acqu. time: 2.0 s<br>sw: 3.0 ppm<br>o1: 7.26 ppm (on resonance of CHCl3)<br>p1: initial value 2.0 \u03bcs, increment 2.0 \u03bcs, 50 single experiments (i.e. p1= 2.0 \u03bcs ... 100.0 \u03bcs)</p>\r\n<h3>5. \u5904\u7406</h3>\r\n<p>\u4f7f\u7528\u6807\u51c6\u76841D\u5904\u7406,si = 32K\u548c\u4ee5lb = 0.2 Hz\u7684\u6307\u6570\u5f0f\u7a97\u53e3.</p>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">\u539f\u4e66\u4fa7\u680f</div>\r\n<h4>\u901a\u7528\u53c2\u6570\uff1a</h4>\r\n<p>d1\u5f1b\u8c6b\u5ef6\u8fdf p1\u53d1\u5c04\u5668\u8109\u51b2,\u8981\u53d8\u5316</p>\r\n<p>[1] E. Haupt \"A timesaving method to determine the length of a 90\u00b0 pulse\" J. Magn. Reson. 1982, 49, 358\u2212364.</p>\r\n<p>[2] P. A. Keifer \"90\u00b0 Pulse width calibrations: How to read a pulse width array\" Concepts in Magnetic Resonance, 1999, 11, 165\u2013180.</p>\r\n<p>[3] P. S. C. Wu, G. Otting \"Rapid pulse length determination in high-resolution NMR\" J. Magn. Reson. 2005 176, 115\u2013119.</p>\r\n<p>[4] M. P. Augustine, \"Transient properties of radiation damping\" Progr. NMR Spectrosc. 2002, 40, 111\u2212150.</p>\r\n</aside>\r\n</div>\r\n","pdf-247":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>6. \u7ed3\u679c</h3>\r\n<figure class=\"figure source-figure source-figure-wide\" data-figure-id=\"pdf-247-fig-1\"><img alt=\"\u56fe\u5f0f 8.1-1 \u968f\u8109\u51b2\u5bbd\u5ea6\u589e\u52a0\u800c\u53d8\u5316\u7684\u4e00\u7cfb\u5217\u8109\u51b2\u54cd\u5e94\" loading=\"lazy\" src=\"../assets/plots/pdf-247-fig-1.webp\"/><figcaption>\u56fe\u5f0f 8.1-1 \u968f\u8109\u51b2\u5bbd\u5ea6\u589e\u52a0\u800c\u53d8\u5316\u7684\u4e00\u7cfb\u5217\u8109\u51b2\u54cd\u5e94</figcaption></figure>\r\n<p>\u56fe 8.1-1 \u663e\u793a\u4e86\u5728 700 MHz \u4f4e\u6e29\u63a2\u5934\u4e0a\uff0c\u968f\u8109\u51b2\u5bbd\u5ea6\u589e\u52a0\u800c\u53d8\u5316\u7684\u6b63\u786e\u6b63\u5f26\u5f62\u5f3a\u5ea6\u66f2\u7ebf\u3002\u5f3a\u5ea6\u964d\u4f4e\u6e90\u4e8e\u5c04\u9891\u573a\u4e0d\u5747\u5300\u6027\uff1a\u5c04\u9891\u7ebf\u5708\u5747\u5300\u6027\u8d8a\u5dee\uff0c\u8be5\u66f2\u7ebf\u5305\u7edc\u8870\u51cf\u8d8a\u5feb\u3002\u6839\u636e\u6587\u732e [2]\uff0cI(450\u00b0)/I(90\u00b0) \u548c I(810\u00b0)/I(90\u00b0) \u7684\u5f3a\u5ea6\u6bd4\u53ef\u4ee5\u7528\u6765\u8861\u91cf\u5c04\u9891\u5747\u5300\u6027\uff08\u672c\u4f8b\u5206\u522b\u4e3a 91% \u548c 85%\uff09\u3002</p>\r\n<p>\u5728\u6267\u884c\u8fd9\u79cd\u5b9e\u9a8c\u65f6,\u91cd\u8981\u7684\u662f\u8981\u4fdd\u6301\u626b\u63cf\u4e4b\u95f4\u7684\u91cd\u590d\u65f6\u95f4\u4e3a5T1\u7b49.\u5426\u5219\u4fe1\u53f7\u7684\u548c\u53ef\u80fd\u4f1a\u4f2a\u9020\u5f3a\u5ea6 (\u89c1\u56fe8.1-3).</p>\r\n<p>\u5728\u9ad8\u7075\u654f\u5ea6\u63a2\u5934\u548c\u9ad8\u5ea6\u6837\u672c (\u4f8b\u598290% H2O/10% D2O\u6837\u672c\u5728\u63a2\u5934\u4e0a) \u4e0a,\u8f90\u5c04\u7f29\u6548\u5e94\u4e5f\u53ef\u80fd\u964d\u4f4e\u5f3a\u5ea6,\u5e76\u53ef\u80fd\u5bfc\u81f4180\u00b0\u8109\u51b2\u5bbd\u5ea6\u503c\u9519\u8bef (\u89c1\u56fe8.1-4).</p>\r\n<p>\u56e0\u4e3a\u8fd9\u4e24\u79cd\u6548\u5e94\u90fd\u6270\u4e71\u4e86360\u00b0\u96f6\u4ea4\u53c9,\u81f3\u5c11,\u53ef\u4ee5\u901a\u8fc7\u5355\u4e00\u5b9e\u9a8c\u786e\u5b9a360\u00b0\u8109\u51b2\u5bbd\u5ea6.</p>\r\n</div>\r\n<aside aria-hidden=\"true\" class=\"source-sidebar source-sidebar-empty\"></aside>\r\n</div>\r\n","pdf-248":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<figure class=\"figure source-figure source-figure-wide\" data-figure-id=\"pdf-248-fig-1\"><img alt=\"\u56fe 8.1-2 \u4fe1\u53f7\u5f3a\u5ea6\u4e0e\u8109\u51b2\u957f\u5ea6,\u8fdd\u53cdT1\u5f1b\u8c6b\u6761\u4ef6;\u4e0e 8.1-1 \u56fe\u76f8\u540c\u7684\u65f6\u95f4\u5c3a\u5ea6 (\u521d\u59cb\u503c2\u03bcs,\u589e\u957f2\u03bcs,\u6700\u540e\u503c100\u03bcs)\" loading=\"lazy\" src=\"../assets/plots/pdf-248-fig-1.webp\"/><figcaption>\u56fe 8.1-2 \u4fe1\u53f7\u5f3a\u5ea6\u4e0e\u8109\u51b2\u957f\u5ea6,\u8fdd\u53cdT1\u5f1b\u8c6b\u6761\u4ef6;\u4e0e 8.1-1 \u56fe\u76f8\u540c\u7684\u65f6\u95f4\u5c3a\u5ea6 (\u521d\u59cb\u503c2\u03bcs,\u589e\u957f2\u03bcs,\u6700\u540e\u503c100\u03bcs)</figcaption></figure>\r\n<figure class=\"figure source-figure source-figure-wide\" data-figure-id=\"pdf-248-fig-2\"><img alt=\"\u56fe 8.1-3 \u786e\u5b9a180\u00b0\u96f6\u4ea4\u53c9\u51e0\u4e4e\u4e0d\u53ef\u80fd. \u4e0e\u56fe8.1-1\u7684\u65f6\u95f4\u5c3a\u5ea6\u76f8\u540c (\u521d\u59cb\u503c2\u03bcs,\u589e\u957f2\u03bcs,\u6700\u540e\u503c100\u03bcs),D2O\u4e2d\u6837\u672c54%H2O\" loading=\"lazy\" src=\"../assets/plots/pdf-248-fig-2.webp\"/><figcaption>\u56fe 8.1-3 \u786e\u5b9a180\u00b0\u96f6\u4ea4\u53c9\u51e0\u4e4e\u4e0d\u53ef\u80fd. \u4e0e\u56fe8.1-1\u7684\u65f6\u95f4\u5c3a\u5ea6\u76f8\u540c (\u521d\u59cb\u503c2\u03bcs,\u589e\u957f2\u03bcs,\u6700\u540e\u503c100\u03bcs),D2O\u4e2d\u6837\u672c54%H2O</figcaption></figure>\r\n</div>\r\n<aside aria-hidden=\"true\" class=\"source-sidebar source-sidebar-empty\"></aside>\r\n</div>\r\n","pdf-249":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>7. \u8bf4\u660e</h3>\r\n<p>\u8bb8\u591a\u73b0\u4ee3\u63a2\u5934,\u5177\u6709\u9ad8\u5ea6\u7075\u654f\u5ea6,\u7531\u4e8e\u6837\u672c\u7684\u78c1\u6027\u7075\u654f\u5ea6\u7279\u6027,\u5bf9\u4e0d\u540c\u7684\u6837\u672c\u8868\u73b0\u51fa\u4e0d\u540c\u7684RF\u884c\u4e3a.\u663e\u7136,\u5b9e\u9645\u7684\u611f\u5174\u8da3\u6837\u672c\u4e0a\u7684\u8109\u51b2\u786e\u5b9a\u662f\u6700\u597d\u7684\u65b9\u6cd5,\u4f46\u7531\u4e8e\u4fe1\u53f7\u5f3a\u5ea6\u4f4e,\u8fd9\u5e76\u4e0d\u603b\u662f\u53ef\u80fd. \u56e0\u6b64,\u5728\u4e0d\u540c\u6eb6\u5242\u4e2d\u7684\u793a\u4f8b\u5316\u5408\u7269\u4e0a,\u5e94\u68c0\u67e590\u00b0 (360\u00b0,\u5206\u522b) \u7684\u8109\u51b2\u5bbd\u5ea6.</p>\r\n<p>\u63a2\u5934\u5f00\u53d1\u4eba\u5458\u7684\u4e00\u9879\u76ee\u6807\u662f\u5c3d\u91cf\u51cf\u5c11\u6837\u54c1\u7075\u654f\u5ea6\u6548\u5e94,\u7ef4\u6301\u9ad8\u7075\u654f\u5ea6.</p>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-249-fig-1\"><img alt=\"\u56fe 8.1-4 \u5bf9\u4e8e600 MHz\u8c31\u4eea\u768457Fe NMR,\u5728 19.7 MHz \u768420 \u03bcs rf\u8109\u51b2\" loading=\"lazy\" src=\"../assets/photographs/pdf-249-fig-1.webp\"/><figcaption>\u56fe 8.1-4 \u5bf9\u4e8e600 MHz\u8c31\u4eea\u768457Fe NMR,\u5728 19.7 MHz \u768420 \u03bcs rf\u8109\u51b2</figcaption></figure>\r\n</div>\r\n<aside aria-hidden=\"true\" class=\"source-sidebar source-sidebar-empty\"></aside>\r\n</div>\r\n","pdf-250":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>8. \u95ee\u9898</h3>\r\n<p>A. \u4e3a\u4ec0\u4e48\u53cd\u5411\u63a2\u6d4b\u5668\u548c\u5316\u63a2\u6d4b\u5668\u663e\u793a\u51fa\u6700\u5f3a\u7684\u8f90\u5c04\u7f29?</p>\r\n<p>B. \u786e\u5b9a360\u5ea6\u8109\u51b2\u800c\u4e0d\u662f180\u5ea6\u8109\u51b2\u6709\u989d\u5916\u7684\u4f18\u52bf.</p>\r\n<p>C. \u751f\u7269\u6837\u672c\u4e2d\u6eb6\u89e3\u7684\u86cb\u767d\u8d28\u5728\u7f13\u51b2\u6eb6\u6db2\u4e2d\u663e\u793a\u51fa\u5927\u91cf\u7684\u8109\u51b2\u5bbd\u5ea6.</p>\r\n<h3>9. \u81ea\u884c\u89c2\u5bdf</h3>\r\n</div>\r\n<aside aria-hidden=\"true\" class=\"source-sidebar source-sidebar-empty\"></aside>\r\n</div>\r\n"},"figurePlacements":{}});</script></head>
+    <body data-language="en" data-asset-prefix="../assets"><header class="topbar"><div class="brand"><h1><a href="../../index.html">50 and More Essential NMR Experiments</a></h1><p>核磁共振实验方法、脉冲序列与谱图实践</p></div><div class="toolbar" aria-label="阅读模式">
+  <div class="language-switcher" role="group" aria-label="语言模式">
+    <button class="view-icon" type="button" data-view="en" aria-label="原文" title="原文 · 快捷键 1 / O 循环" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h11v17h-11zM9 8h6M9 11h6M9 14h4.5" /></svg></button>
+    <button class="view-icon" type="button" data-view="bilingual" aria-label="双语对照" title="双语对照 · 快捷键 2 / O 循环" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 4.5h7v15h-7zM13.5 4.5h7v15h-7zM6 9h2M6 12h2M16 9h2M16 12h2" /></svg></button>
+  </div>
+  <button id="toggle-original" class="view-icon" type="button" data-view="original" aria-label="原页对照" aria-pressed="false" title="原页对照 · 快捷键 3 / O 循环"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5h16v17H4zM7 7h10M7 10h10M7 13h6M7 16h4" /></svg></button>
+  <div class="display-control">
+    <button id="toggle-display-settings" class="view-icon" type="button" aria-label="显示设置" aria-expanded="false" aria-controls="display-settings" title="缩放与主题">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10M14 4v6M6 14v6" /></svg>
+    </button>
+    <section id="display-settings" class="display-panel" aria-label="显示设置" hidden>
+      <div class="display-panel-heading"><strong>显示设置</strong><span>在页面间自动保留</span></div>
+      <div class="display-setting-row"><span>界面缩放</span><div class="zoom-controls" role="group" aria-label="界面缩放"><button id="zoom-out" type="button" aria-label="缩小">−</button><output id="zoom-value" aria-live="polite">自动</output><button id="zoom-in" type="button" aria-label="放大">+</button></div></div>
+      <button id="zoom-auto" class="auto-scale-button" type="button" aria-pressed="true">按窗口自动适应</button>
+      <div class="display-setting-row theme-setting"><span>主题颜色</span>
+  <div class="theme-options" role="group" aria-label="主题颜色">
+    <button type="button" data-theme="sage" aria-label="鼠尾草绿" title="鼠尾草绿" aria-pressed="true"></button>
+    <button type="button" data-theme="mist" aria-label="雾蓝" title="雾蓝" aria-pressed="false"></button>
+    <button type="button" data-theme="sand" aria-label="暖砂" title="暖砂" aria-pressed="false"></button>
+    <button type="button" data-theme="mauve" aria-label="灰紫" title="灰紫" aria-pressed="false"></button>
+    <button type="button" data-theme="gray" aria-label="浅灰" title="浅灰" aria-pressed="false"></button>
+  </div></div>
+    </section>
+  </div>
+</div></header>
+    <button id="toggle-nav" class="mobile-nav-button" type="button" aria-expanded="false" aria-label="打开内容目录" title="内容目录"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14" /></svg></button>
+    <div class="layout"><nav class="sidebar" aria-label="内容目录">
+    <a class="sidebar-home-link" href="../../index.html">目录与搜索</a>
+    <div class="sidebar-section-heading"><p class="sidebar-label">内容目录</p><div class="sidebar-tree-actions" role="group" aria-label="目录章节控制"><button type="button" data-nav-action="toggle" data-state="expand" aria-label="展开所有章节" title="展开所有章节"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7l5 5 5-5M3 3h14" /></svg></button></div></div>
+    <div class="sidebar-tree"><details class="chapter-group" data-chapter="F">
+      <summary><span>第 F 章</span><small>Front Matter</small></summary><ol><li><a href="f-1.html"><span>F.1</span><span>Front Matter</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="1">
+      <summary><span>第 1 章</span><small>The Organic Set of NMR Spectra</small></summary><ol><li><a href="1.html"><span>1</span><span>The Organic Set of NMR Spectra</span></a></li>
+<li><a href="1-1.html"><span>1.1</span><span>The 1H NMR Experiment</span></a></li>
+<li><a href="1-2.html"><span>1.2</span><span>APT-13C NMR</span></a></li>
+<li><a href="1-3.html"><span>1.3</span><span>COSY</span></a></li>
+<li><a href="1-4.html"><span>1.4</span><span>NOESY</span></a></li>
+<li><a href="1-5.html"><span>1.5</span><span>HSQC</span></a></li>
+<li><a href="1-6.html"><span>1.6</span><span>HMBC</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="2">
+      <summary><span>第 2 章</span><small>Advanced Organic NMR Spectroscopy</small></summary><ol><li><a href="2.html"><span>2</span><span>Advanced Organic NMR Spectroscopy</span></a></li>
+<li><a href="2-1.html"><span>2.1</span><span>2D J-Resolved 1H NMR Spectroscopy</span></a></li>
+<li><a href="2-2.html"><span>2.2</span><span>ROESY</span></a></li>
+<li><a href="2-3.html"><span>2.3</span><span>TOCSY</span></a></li>
+<li><a href="2-4.html"><span>2.4</span><span>HSQC-TOCSY</span></a></li>
+<li><a href="2-5.html"><span>2.5</span><span>HOESY</span></a></li>
+<li><a href="2-6.html"><span>2.6</span><span>INADEQUATE</span></a></li>
+<li><a href="2-7.html"><span>2.7</span><span>ADEQUATE</span></a></li>
+<li><a href="2-8.html"><span>2.8</span><span>J-HMBC</span></a></li>
+<li><a href="2-9.html"><span>2.9</span><span>Gated Decoupling</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="3">
+      <summary><span>第 3 章</span><small>Selective Methods</small></summary><ol><li><a href="3.html"><span>3</span><span>Selective Methods</span></a></li>
+<li><a href="3-1.html"><span>3.1</span><span>Water suppression by Presaturation</span></a></li>
+<li><a href="3-2.html"><span>3.2</span><span>Solvent Suppression by 1D-NOESY</span></a></li>
+<li><a href="3-3.html"><span>3.3</span><span>Water Suppression by SOGGY Excitation Sculpting</span></a></li>
+<li><a href="3-4.html"><span>3.4</span><span>Solvent Suppression using WET</span></a></li>
+<li><a href="3-5.html"><span>3.5</span><span>SELTOCSY</span></a></li>
+<li><a href="3-6.html"><span>3.6</span><span>SELNOESY</span></a></li>
+<li><a href="3-7.html"><span>3.7</span><span>SELINCOR</span></a></li>
+<li><a href="3-8.html"><span>3.8</span><span>SELINQUATE</span></a></li>
+<li><a href="3-9.html"><span>3.9</span><span>Band Selective HMBC</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="4">
+      <summary><span>第 4 章</span><small>Heteronuclear NMR</small></summary><ol><li><a href="4.html"><span>4</span><span>Heteronuclear NMR</span></a></li>
+<li><a href="4-1.html"><span>4.1</span><span>11B NMR Spectroscopy</span></a></li>
+<li><a href="4-2.html"><span>4.2</span><span>15N NMR Spectroscopy</span></a></li>
+<li><a href="4-3.html"><span>4.3</span><span>17O NMR Spectroscopy</span></a></li>
+<li><a href="4-4.html"><span>4.4</span><span>19F NMR Spectroscopy</span></a></li>
+<li><a href="4-5.html"><span>4.5</span><span>29Si NMR Spectroscopy</span></a></li>
+<li><a href="4-6.html"><span>4.6</span><span>57Fe NMR Spectroscopy</span></a></li>
+<li><a href="4-7.html"><span>4.7</span><span>195Pt NMR Spectroscopy</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="5">
+      <summary><span>第 5 章</span><small>Experiments in Physical Organic Chemistry</small></summary><ol><li><a href="5.html"><span>5</span><span>Experiments in Physical Organic Chemistry</span></a></li>
+<li><a href="5-1.html"><span>5.1</span><span>Measurement of the Spin–Lattice Relaxation Time T1</span></a></li>
+<li><a href="5-2.html"><span>5.2</span><span>Measurement of the Spin–Spin Relaxation Time T2</span></a></li>
+<li><a href="5-3.html"><span>5.3</span><span>Dynamic 1H NMR Spectroscopy</span></a></li>
+<li><a href="5-4.html"><span>5.4</span><span>Diffusion Measurement with DOSY</span></a></li>
+<li><a href="5-5.html"><span>5.5</span><span>Residual Dipolar Couplings (RDC)</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="6">
+      <summary><span>第 6 章</span><small>Organic Chemistry Applications</small></summary><ol><li><a href="6.html"><span>6</span><span>Organic Chemistry Applications</span></a></li>
+<li><a href="6-1.html"><span>6.1</span><span>ASIS</span></a></li>
+<li><a href="6-2.html"><span>6.2</span><span>Chirality Determination</span></a></li>
+<li><a href="6-3.html"><span>6.3</span><span>Advanced Mosher Method</span></a></li>
+<li><a href="6-4.html"><span>6.4</span><span>Quantitative NMR and Relaxation Reagents</span></a></li>
+<li><a href="6-5.html"><span>6.5</span><span>Determination of Association Constants Ka</span></a></li>
+<li><a href="6-6.html"><span>6.6</span><span>STD NMR</span></a></li>
+<li><a href="6-7.html"><span>6.7</span><span>A Kinetic Experiment</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="7">
+      <summary><span>第 7 章</span><small>An Excursion to the Solid State and to Structural Biology</small></summary><ol><li><a href="7.html"><span>7</span><span>An Excursion to the Solid State and to Structural Biology</span></a></li>
+<li><a href="7-1.html"><span>7.1</span><span>The CP/MAS Experiment</span></a></li>
+<li><a href="7-2.html"><span>7.2</span><span>High-Resolution Magic-Angle Spinning</span></a></li>
+<li><a href="7-3.html"><span>7.3</span><span>HN-HSQC</span></a></li>
+<li><a href="7-4.html"><span>7.4</span><span>HNCA</span></a></li></ol>
+    </details>
+<details class="chapter-group active-chapter" data-chapter="8" open>
+      <summary><span>第 8 章</span><small>Maintenance and Calibration</small></summary><ol><li><a href="8.html"><span>8</span><span>Maintenance and Calibration</span></a></li>
+<li><a class="active" aria-current="page" href="8-1.html"><span>8.1</span><span>Calibration of Pulse Duration in the Transmitter Channel</span></a></li>
+<li><a href="8-2.html"><span>8.2</span><span>Calibration of the Pulse Duration in the Indirect Channel</span></a></li>
+<li><a href="8-3.html"><span>8.3</span><span>Shaped Pulses</span></a></li>
+<li><a href="8-4.html"><span>8.4</span><span>Adiabatic Pulses</span></a></li>
+<li><a href="8-5.html"><span>8.5</span><span>Temperature Calibration in NMR</span></a></li>
+<li><a href="8-6.html"><span>8.6</span><span>Calibration of Pulsed Field Gradients</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="A">
+      <summary><span>第 A 章</span><small>Appendix</small></summary><ol><li><a href="a-1.html"><span>A.1</span><span>Answers</span></a></li>
+<li><a href="a-2.html"><span>A.2</span><span>Pulse Programs</span></a></li>
+<li><a href="a-3.html"><span>A.3</span><span>Elementary Product Operator Formalism Rules</span></a></li>
+<li><a href="a-4.html"><span>A.4</span><span>Chemical Shift and Spin-Coupling Data for Strychnine</span></a></li>
+<li><a href="a-5.html"><span>A.5</span><span>Picture Credits</span></a></li>
+<li><a href="a-6.html"><span>A.6</span><span>Index</span></a></li></ol>
+    </details></div>
+    <footer class="sidebar-copyright"><p class="copyright-owner">© 2026 <a href="mailto:wuhaifeng@ustc.edu.cn">wuhaifeng@ustc.edu.cn</a></p><p>本文档仅供小范围、非公开的学术交流与学习参考；未经许可，不得复制、转载、转发、公开传播或用于商业用途。</p></footer>
+  </nav><main><article class="experiment paper" data-experiment="8.1" aria-labelledby="item-title"><header class="experiment-heading"><p class="experiment-label">Item 8.1</p><h2 class="experiment-title" id="item-title">Calibration of Pulse Duration in the Transmitter Channel</h2><p class="experiment-title-zh" lang="zh-CN">发射通道脉冲宽度校准</p><p class="range-line">PDF 245–250 · 原书 235–240 · Maintenance and Calibration</p></header><section class="page-block" id="pdf-245" data-pdf="245" data-book="235">
+        <span class="page-marker">原书第 235 页 · PDF 第 245 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-245"></div><div class="content-pane content-zh" data-page="pdf-245"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-245.webp" alt="原书 PDF 第 245 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-246" data-pdf="246" data-book="236">
+        <span class="page-marker">原书第 236 页 · PDF 第 246 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-246"></div><div class="content-pane content-zh" data-page="pdf-246"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-246.webp" alt="原书 PDF 第 246 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-247" data-pdf="247" data-book="237">
+        <span class="page-marker">原书第 237 页 · PDF 第 247 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-247"></div><div class="content-pane content-zh" data-page="pdf-247"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-247.webp" alt="原书 PDF 第 247 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-248" data-pdf="248" data-book="238">
+        <span class="page-marker">原书第 238 页 · PDF 第 248 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-248"></div><div class="content-pane content-zh" data-page="pdf-248"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-248.webp" alt="原书 PDF 第 248 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-249" data-pdf="249" data-book="239">
+        <span class="page-marker">原书第 239 页 · PDF 第 249 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-249"></div><div class="content-pane content-zh" data-page="pdf-249"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-249.webp" alt="原书 PDF 第 249 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-250" data-pdf="250" data-book="240">
+        <span class="page-marker">原书第 240 页 · PDF 第 250 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-250"></div><div class="content-pane content-zh" data-page="pdf-250"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-250.webp" alt="原书 PDF 第 250 页" loading="lazy">
+      </section></article></main></div><script>if (!window.NMR_APP_LOADED) {
+window.NMR_APP_LOADED = true;
+
+const body = document.body;
+const experiment = window.NMR_EXPERIMENT;
+const scanButton = document.querySelector("#toggle-original");
+const navButton = document.querySelector("#toggle-nav");
+const toolbar = document.querySelector(".toolbar");
+const sidebar = document.querySelector(".sidebar");
+const sidebarActionButton = document.querySelector("button[data-nav-action='toggle']");
+const root = document.documentElement;
+const displayButton = document.querySelector("#toggle-display-settings");
+const displayPanel = document.querySelector("#display-settings");
+const zoomOutButton = document.querySelector("#zoom-out");
+const zoomInButton = document.querySelector("#zoom-in");
+const zoomAutoButton = document.querySelector("#zoom-auto");
+const zoomValue = document.querySelector("#zoom-value");
+const themeButtons = [...document.querySelectorAll("button[data-theme]")];
+const viewButtons = [...document.querySelectorAll("button[data-view]")];
+const languageButtons = viewButtons.filter((button) => button.dataset.view !== "original");
+const referenceScans = [...document.querySelectorAll(".reference-scan")];
+
+function cloneMappedFigure(figure) {
+  const mapped = figure.cloneNode(true);
+  mapped.classList.add("mapped-figure");
+  mapped.querySelectorAll("img").forEach((image) => {
+    image.alt = `\u4e2d\u6587\u680f\u5bf9\u5e94\u56fe\u50cf\uff1a${image.alt || "\u539f\u4e66\u56fe\u50cf"}`;
+    image.loading = "lazy";
+  });
+  const caption = document.createElement("figcaption");
+  caption.textContent = mapped.querySelector("img") ? "\u4e2d\u6587\u680f\u5bf9\u5e94\u56fe\u50cf" : "\u4e2d\u6587\u680f\u5bf9\u5e94\u65b9\u7a0b";
+  mapped.append(caption);
+  return mapped;
+}
+
+function mapFigures(page, pageId) {
+  const englishPane = page.querySelector(".content-en");
+  const chinesePane = page.querySelector(".content-zh");
+  const englishFigures = [...englishPane.querySelectorAll("figure")];
+  const chineseFigureIds = new Set([...chinesePane.querySelectorAll("figure[data-figure-id]")]
+    .map((figure) => figure.dataset.figureId));
+  const placements = experiment.figurePlacements[pageId] ?? englishFigures.map((_, source) => ({ source, atEnd: true }));
+
+  for (const { source, before, after, atEnd } of placements) {
+    const figure = englishFigures[source];
+    if (!figure) continue;
+    if (figure.dataset.figureId && chineseFigureIds.has(figure.dataset.figureId)) continue;
+    const mapped = cloneMappedFigure(figure);
+    const anchors = [...chinesePane.querySelectorAll("h3, p")];
+    if (before) {
+      const anchor = anchors.find((node) => node.textContent.trim().startsWith(before));
+      if (anchor) {
+        anchor.before(mapped);
+        continue;
+      }
+    }
+    if (after) {
+      const anchor = anchors.find((node) => node.textContent.trim().startsWith(after));
+      if (anchor) {
+        anchor.after(mapped);
+        continue;
+      }
+    }
+    if (atEnd || (!before && !after)) chinesePane.append(mapped);
+  }
+}
+
+function populateExperiment() {
+  if (!experiment) return;
+  document.querySelectorAll(".page-block").forEach((page) => {
+    const pageId = page.id;
+    const englishPane = page.querySelector(".content-en");
+    const chinesePane = page.querySelector(".content-zh");
+    englishPane.innerHTML = experiment.english[pageId] || "<p>English transcription pending.</p>";
+    chinesePane.innerHTML = experiment.chinese[pageId] || "<p>\u4e2d\u6587\u7ffb\u8bd1\u5f85\u8865\u3002</p>";
+    mapFigures(page, pageId);
+  });
+
+  const assetPrefix = body.dataset.assetPrefix || "assets";
+  document.querySelectorAll("figure.worksheet img").forEach((image) => {
+    image.src = `${assetPrefix}/worksheets/observations-grid.svg`;
+    image.alt = "Blank NMR observation grid";
+  });
+}
+
+function alignLocationHash() {
+  if (!window.location.hash) return;
+  let targetId;
+  try {
+    targetId = decodeURIComponent(window.location.hash.slice(1));
+  } catch {
+    targetId = window.location.hash.slice(1);
+  }
+  const target = document.getElementById(targetId);
+  if (!target) return;
+
+  const align = () => target.scrollIntoView({ block: "start", behavior: "instant" });
+  requestAnimationFrame(() => requestAnimationFrame(align));
+  window.addEventListener("load", align, { once: true });
+  document.fonts?.ready.then(align).catch(() => {});
+
+  // Page fragments and lazy figures are inserted after the browser's native
+  // hash jump.  Keep the target aligned briefly while those elements settle.
+  if ("ResizeObserver" in window) {
+    const paper = document.querySelector(".paper");
+    if (paper) {
+      const observer = new ResizeObserver(align);
+      observer.observe(paper);
+      window.setTimeout(() => observer.disconnect(), 1500);
+    }
+  }
+}
+
+const scanObserver = "IntersectionObserver" in window
+  ? new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const image = entry.target;
+        if (!image.src && image.dataset.src) image.src = image.dataset.src;
+        scanObserver.unobserve(image);
+      });
+    }, { rootMargin: "900px 0px" })
+  : null;
+
+function armReferenceScans() {
+  referenceScans.forEach((image) => {
+    if (image.src || !image.dataset.src) return;
+    if (scanObserver) scanObserver.observe(image);
+    else image.src = image.dataset.src;
+  });
+}
+
+function setOriginalMode(enabled) {
+  body.classList.toggle("show-original", enabled);
+  scanButton.setAttribute("aria-pressed", String(enabled));
+  scanButton.setAttribute("aria-label", enabled ? "\u8fd4\u56de\u91cd\u5efa\u7a3f" : "\u539f\u9875\u5bf9\u7167");
+  scanButton.title = enabled ? "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af" : "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af";
+  languageButtons.forEach((button) => {
+    button.setAttribute("aria-pressed", String(!enabled && button.dataset.view === body.dataset.language));
+  });
+  if (enabled) armReferenceScans();
+}
+
+function setLanguage(mode) {
+  const selected = ["en", "bilingual"].includes(mode) ? mode : "en";
+  body.classList.remove("show-original");
+  scanButton.setAttribute("aria-pressed", "false");
+  scanButton.setAttribute("aria-label", "\u539f\u9875\u5bf9\u7167");
+  scanButton.title = "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af";
+  body.dataset.language = selected;
+  languageButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.view === selected)));
+  localStorage.setItem("nmr-reading-mode", selected);
+}
+
+function activateView(view) {
+  if (view === "original") {
+    setOriginalMode(!body.classList.contains("show-original"));
+    return;
+  }
+  setLanguage(view);
+}
+
+function cycleView() {
+  if (body.classList.contains("show-original")) {
+    setLanguage("en");
+    return;
+  }
+  if (body.dataset.language === "en") {
+    setLanguage("bilingual");
+    return;
+  }
+  setOriginalMode(true);
+}
+
+populateExperiment();
+alignLocationHash();
+window.addEventListener("hashchange", alignLocationHash);
+
+const sidebarStateKey = "nmr-sidebar-navigation";
+
+function readSidebarState() {
+  try {
+    return JSON.parse(sessionStorage.getItem(sidebarStateKey) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function persistSidebarState() {
+  if (!sidebar) return;
+  const openChapters = [...sidebar.querySelectorAll("details.chapter-group[open]")]
+    .map((group) => group.dataset.chapter)
+    .filter(Boolean);
+  try {
+    sessionStorage.setItem(sidebarStateKey, JSON.stringify({
+      scrollTop: sidebar.scrollTop,
+      openChapters,
+    }));
+  } catch {
+    // Some browser policies disable storage for local files; navigation still works.
+  }
+}
+
+function restoreSidebarState() {
+  if (!sidebar) return;
+  const state = readSidebarState();
+  const openChapters = new Set(Array.isArray(state.openChapters) ? state.openChapters : []);
+  sidebar.querySelectorAll("details.chapter-group").forEach((group) => {
+    if (openChapters.has(group.dataset.chapter) || group.classList.contains("active-chapter")) group.open = true;
+    group.addEventListener("toggle", () => {
+      persistSidebarState();
+      updateNavToggleButton();
+    });
+  });
+
+  requestAnimationFrame(() => {
+    updateNavToggleButton();
+    if (Number.isFinite(state.scrollTop)) {
+      sidebar.scrollTop = state.scrollTop;
+      return;
+    }
+    const activeLink = sidebar.querySelector("a.active");
+    if (activeLink) sidebar.scrollTop = Math.max(0, activeLink.offsetTop - sidebar.clientHeight / 2);
+  });
+
+  let scrollTimer = 0;
+  sidebar.addEventListener("scroll", () => {
+    window.clearTimeout(scrollTimer);
+    scrollTimer = window.setTimeout(persistSidebarState, 80);
+  }, { passive: true });
+}
+
+restoreSidebarState();
+
+function updateNavToggleButton() {
+  if (!sidebar || !sidebarActionButton) return;
+  const groups = [...sidebar.querySelectorAll("details.chapter-group")];
+  const allOpen = groups.length > 0 && groups.every((group) => group.open);
+  const label = allOpen ? "\u6536\u62e2\u6240\u6709\u7ae0\u8282" : "\u5c55\u5f00\u6240\u6709\u7ae0\u8282";
+  sidebarActionButton.dataset.state = allOpen ? "collapse" : "expand";
+  sidebarActionButton.setAttribute("aria-label", label);
+  sidebarActionButton.title = label;
+}
+
+sidebarActionButton?.addEventListener("click", () => {
+  const groups = [...sidebar.querySelectorAll("details.chapter-group")];
+  const shouldOpen = !groups.every((group) => group.open);
+  groups.forEach((group) => {
+    group.open = shouldOpen;
+  });
+  persistSidebarState();
+  updateNavToggleButton();
+});
+
+const scaleStorageKey = "nmr-interface-scale";
+const themeStorageKey = "nmr-interface-theme";
+let scaleMode = "auto";
+let appliedScale = 1;
+
+function storedValue(key, fallback) {
+  try {
+    return localStorage.getItem(key) || fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function saveValue(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    // The display setting still applies for the current page.
+  }
+}
+
+function automaticScale() {
+  if (window.innerWidth <= 1040) return 1;
+  return Math.min(1.2, Math.max(0.95, window.innerWidth / 1800));
+}
+
+function applyScale(scale, mode = scaleMode) {
+  appliedScale = Math.min(1.4, Math.max(0.8, scale));
+  root.style.setProperty("--sidebar-w", `${Math.round(340 * appliedScale)}px`);
+  root.style.setProperty("--page-w", `${Math.round(1180 * appliedScale)}px`);
+  root.style.setProperty("--reader-font", `${(15 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--reader-heading", `${(20 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--reader-title", `${(34 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--sidebar-font", `${(13 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--sidebar-small", `${(11 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--paper-pad", `${Math.round(44 * appliedScale)}px`);
+  if (zoomValue) zoomValue.textContent = mode === "auto" ? `\u81ea\u52a8 ${Math.round(appliedScale * 100)}%` : `${Math.round(appliedScale * 100)}%`;
+  if (zoomAutoButton) zoomAutoButton.setAttribute("aria-pressed", String(mode === "auto"));
+}
+
+function setScaleMode(value) {
+  if (value === "auto") {
+    scaleMode = "auto";
+    applyScale(automaticScale(), scaleMode);
+    saveValue(scaleStorageKey, scaleMode);
+    return;
+  }
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return;
+  scaleMode = String(Math.min(1.4, Math.max(0.8, numeric)));
+  applyScale(Number(scaleMode), scaleMode);
+  saveValue(scaleStorageKey, scaleMode);
+}
+
+function adjustScale(delta) {
+  setScaleMode((Math.round((appliedScale + delta) * 10) / 10).toFixed(1));
+}
+
+function applyTheme(theme) {
+  const selected = ["sage", "mist", "sand", "mauve", "gray"].includes(theme) ? theme : "sage";
+  root.dataset.theme = selected;
+  themeButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.theme === selected)));
+  saveValue(themeStorageKey, selected);
+}
+
+setScaleMode(storedValue(scaleStorageKey, "auto"));
+applyTheme(storedValue(themeStorageKey, "sage"));
+
+displayButton?.addEventListener("click", (event) => {
+  event.stopPropagation();
+  const willOpen = displayPanel.hidden;
+  displayPanel.hidden = !willOpen;
+  displayButton.setAttribute("aria-expanded", String(willOpen));
+});
+
+displayPanel?.addEventListener("click", (event) => event.stopPropagation());
+zoomOutButton?.addEventListener("click", () => adjustScale(-0.1));
+zoomInButton?.addEventListener("click", () => adjustScale(0.1));
+zoomAutoButton?.addEventListener("click", () => setScaleMode("auto"));
+themeButtons.forEach((button) => button.addEventListener("click", () => applyTheme(button.dataset.theme)));
+
+document.addEventListener("click", () => {
+  if (!displayPanel || displayPanel.hidden) return;
+  displayPanel.hidden = true;
+  displayButton?.setAttribute("aria-expanded", "false");
+});
+
+let scaleResizeTimer = 0;
+window.addEventListener("resize", () => {
+  if (scaleMode !== "auto") return;
+  window.clearTimeout(scaleResizeTimer);
+  scaleResizeTimer = window.setTimeout(() => applyScale(automaticScale(), "auto"), 100);
+}, { passive: true });
+
+toolbar.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-view]");
+  if (!button || !toolbar.contains(button)) return;
+  event.preventDefault();
+  activateView(button.dataset.view);
+});
+
+navButton.addEventListener("click", () => {
+  const open = body.classList.toggle("nav-open");
+  navButton.setAttribute("aria-expanded", String(open));
+});
+
+document.querySelectorAll(".sidebar a").forEach((link) => link.addEventListener("click", () => {
+  persistSidebarState();
+  body.classList.remove("nav-open");
+  navButton.setAttribute("aria-expanded", "false");
+}));
+
+document.addEventListener("keydown", (event) => {
+  const target = event.target;
+  if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target?.isContentEditable) return;
+  if (event.ctrlKey || event.metaKey || event.altKey) return;
+  if (event.key === "1") setLanguage("en");
+  if (event.key === "2") setLanguage("bilingual");
+  if (event.key === "3") setOriginalMode(true);
+  if (event.key.toLowerCase() === "o") cycleView();
+});
+
+setLanguage(localStorage.getItem("nmr-reading-mode") || "en");
+}
+</script></body></html>

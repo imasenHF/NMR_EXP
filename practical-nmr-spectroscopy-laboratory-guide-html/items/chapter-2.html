@@ -1,0 +1,1046 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Chapter 2: Multiple Irradiation and Multiple Pulse Experiments"><title>2 Multiple Irradiation and Multiple Pulse Experiments — Practical NMR Spectroscopy Laboratory Guide</title><link rel="icon" href="../shared/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../shared/site.css?v=1"><script>window.NMR_EXPERIMENT = Object.freeze({"meta":{"number":"2","slug":"chapter-2","kind":"chapter","title":"Multiple Irradiation and Multiple Pulse Experiments","titleZh":"\u591a\u91cd\u7167\u5c04\u4e0e\u591a\u8109\u51b2\u5b9e\u9a8c","pages":[{"id":"source-34","pdfPage":34,"bookPage":25,"en":"content/pages/source-34.en.html","zh":"content/pages/source-34.zh.html"},{"id":"source-35","pdfPage":35,"bookPage":26,"en":"content/pages/source-35.en.html","zh":"content/pages/source-35.zh.html"},{"id":"source-36","pdfPage":36,"bookPage":27,"en":"content/pages/source-36.en.html","zh":"content/pages/source-36.zh.html"},{"id":"source-37","pdfPage":37,"bookPage":28,"en":"content/pages/source-37.en.html","zh":"content/pages/source-37.zh.html"},{"id":"source-38","pdfPage":38,"bookPage":29,"en":"content/pages/source-38.en.html","zh":"content/pages/source-38.zh.html"},{"id":"source-39","pdfPage":39,"bookPage":30,"en":"content/pages/source-39.en.html","zh":"content/pages/source-39.zh.html"},{"id":"source-40","pdfPage":40,"bookPage":31,"en":"content/pages/source-40.en.html","zh":"content/pages/source-40.zh.html"},{"id":"source-41","pdfPage":41,"bookPage":32,"en":"content/pages/source-41.en.html","zh":"content/pages/source-41.zh.html"},{"id":"source-42","pdfPage":42,"bookPage":33,"en":"content/pages/source-42.en.html","zh":"content/pages/source-42.zh.html"},{"id":"source-43","pdfPage":43,"bookPage":34,"en":"content/pages/source-43.en.html","zh":"content/pages/source-43.zh.html"},{"id":"source-44","pdfPage":44,"bookPage":35,"en":"content/pages/source-44.en.html","zh":"content/pages/source-44.zh.html"},{"id":"source-45","pdfPage":45,"bookPage":36,"en":"content/pages/source-45.en.html","zh":"content/pages/source-45.zh.html"},{"id":"source-46","pdfPage":46,"bookPage":37,"en":"content/pages/source-46.en.html","zh":"content/pages/source-46.zh.html"},{"id":"source-47","pdfPage":47,"bookPage":38,"en":"content/pages/source-47.en.html","zh":"content/pages/source-47.zh.html"}],"figurePlacements":{"source-37":[{"source":0,"before":"\u56fe2.1 \u5728F2\u4e2dFourier\u8f6c\u6362\u540e,\u6c28\u57faT1-IR\u6570\u636e\u96c6\u7684\u663e\u73b0\u4e0d\u89c1 (\u547d\u4ee4xf2)."}],"source-38":[{"source":0,"before":"\u56fe2.2 T1\u8ba1\u7b97\u4f8b\u8868:\u6ce8\u610f,\u4e3a\u6700\u9ad8\u503c\u7ea66.34ppm\u7684\u8ba1\u7b97T1\u4e3a440ms."}],"source-42":[{"source":0,"before":"\u56fe 2.3 \u8f90\u5c04\u9891\u8c31 (4.56ppm) \u548c\u57fa\u56e0\u6837\u672c\u4e0a\u7684\u53c2\u8003\u9891\u8c31\u7684\u591a\u6b21\u663e\u793a\u6a21\u5f0f\u5728500MHz\u4e0a\u65b9\u6269\u5c55. \u6ce8\u610f1.09\u7684\u89c4\u6a21\u56e0\u5b50,\u4ee5\u4f7f\u8f90\u5c04\u9891\u8c31\u7684\u5cf0\u503c\u57283.1ppm"}],"source-45":[{"source":0,"before":"\u56fe2.4 DEPT\u5b9e\u9a8c\u4e2d\u9884\u671faCHa,aCH2a\u548caCH3\u4fe1\u53f7\u5f3a\u5ea6\u4e0e1H\u8109\u51b2P0\u89d2\u76f8\u6bd4."}],"source-46":[{"source":0,"before":"\u56fe2.5 \u901a\u8fc7\u591a\u6b21\u663e\u793a\u6a21\u5f0f\u663e\u793aCDCl3\u4e2d\u8272\u8c3113C\u548cDEPT.\u4ece\u5e95\u5230\u4e0a:\u6807\u51c613C,DEPT-45,DEPT-90,DEPT-135. \u8bf7\u6ce8\u610f,\u4efb\u4f55DEPT\u5149"}]},"chapter":"Multiple Irradiation and Multiple Pulse Experiments","navigationSections":[{"id":"section-source-34-1","pageId":"source-34","title":"OVERVIEW","titleZh":"\u6982\u8ff0","kind":"section"},{"id":"section-source-34-2","pageId":"source-34","title":"SAMPLE AND SPECTROMETER REQUIREMENTS","titleZh":"\u6837\u54c1\u4e0e\u8c31\u4eea\u8981\u6c42","kind":"section"},{"id":"section-source-34-3","pageId":"source-34","title":"ACTIVITIES","titleZh":"\u5b9e\u9a8c\u5185\u5bb9","kind":"section"},{"id":"section-source-34-4","pageId":"source-34","title":"Part 1\u20141H T1 (Spin\u2013Lattice) Relaxation Measurement","titleZh":"\u7b2c 1 \u90e8\u5206\u2014\u2014\u00b9H T1\uff08\u81ea\u65cb\u2013\u6676\u683c\uff09\u5f1b\u8c6b\u6d4b\u91cf","kind":"part"},{"id":"section-source-39-5","pageId":"source-39","title":"Part 2\u2014Homonuclear Decoupling","titleZh":"\u7b2c 2 \u90e8\u5206\u2014\u2014\u540c\u6838\u53bb\u8026","kind":"part"},{"id":"section-source-41-6","pageId":"source-41","title":"Part 3\u2014nOe-difference","titleZh":"\u7b2c 3 \u90e8\u5206\u2014\u2014nOe \u5dee\u8c31","kind":"part"},{"id":"section-source-43-7","pageId":"source-43","title":"Part 4\u20141H-decoupled 13C Spectra with and without nOe","titleZh":"\u7b2c 4 \u90e8\u5206\u2014\u2014\u5e26\u4e0e\u4e0d\u5e26 nOe \u7684 \u00b9H \u53bb\u8026 \u00b9\u00b3C \u8c31","kind":"part"},{"id":"section-source-44-8","pageId":"source-44","title":"Part 5\u201413C DEPT Spectra","titleZh":"\u7b2c 5 \u90e8\u5206\u2014\u2014\u00b9\u00b3C DEPT \u8c31","kind":"part"},{"id":"section-source-45-9","pageId":"source-45","title":"SUMMARY","titleZh":"\u5c0f\u7ed3","kind":"section"}]},"english":{"source-34":"<h3>CHAPTER 2</h3>\r\n<h3>Multiple Irradiation and Multiple Pulse</h3>\r\n<h3>Experiments</h3>\r\n<h3>OVERVIEW</h3>\r\n<p>This Chapter\u2019s exercises are designed to introduce you to some moresophisticated NMR experiments. We will run several multiple irradiation and multiple pulse experiments, including a 1H T1 inversion-recovery (T1-IR) measurement, 1H homonuclear decoupling and selective nOe, 13C acquisitions with and without nOe, and 13C DEPT. Topics covered will include pulse sequences, homo- and heteronuclear decoupling, and T1 data acquisition and analysis. We will use the quinine sample for these experiments, and the spectra obtained will assist in the chemical shift assignments for this molecule. The material covered in this chapter is in Chapters 2\u20134 of the Claridge book.</p>\r\n<h3>SAMPLE AND SPECTROMETER REQUIREMENTS</h3>\r\n<p>This chapter\u2019s exercises will use sample A. Since the NMR experiments in this chapter are simple 1D acquisitions, there are no special requirements for the spectrometer hardware. The combination of the sample concentration and the spectrometer\u2019s 13C sensitivity should be such that the exercises in parts 4 and 5 can be completed in a reasonable amount of time.</p>\r\n<h3>ACTIVITIES</h3>\r\n<h3>Part 1\u20141H T1 (Spin\u2013Lattice) Relaxation Measurement</h3>\r\n<p>1. Put the quinine/CDCl3 sample in the magnet. Lock and shim the sample and tune the probe for 1H. 2. Run a 1H spectrum using the standard parameters. Optimize the observe window for 1H (O1 and SW) and rerun the spectrum (we will also carry out this operation for 2D NMR experiments).</p>\r\n\r\n","source-35":"<p>3. Copy the optimized spectrum to a new expno (wrpa / re or new). There are several steps we need to go through to set up the T1-IR experiment. First, in eda set the pulse program (PULPROG) to \u201ct1ir,\u201d then set the parameter mode (1,2,3 icon in the upper left) to 2D. To display the pulse sequence use edcpul or the PulseProg tab. 4. Now we need to edit the VD list file. The VD is the delay between the 180\u00b0 inversion pulse and the 90\u00b0 read pulse in the sequence. Type edlist vd, enter a filename in the \u201cNew file\u201d field (e.g., \u201cquin-t1.xyz\u201d where xyz 5 your initials), and an editing window will open with a blank text file. Enter the following VD values as shown (one entry per line), without any units (default unit is seconds):</p>\r\n<p>0.001 0.2 0.4 0.7 1.0 2.0 4.0 7.0 Click the OK button to save the file and exit the editor. Note: For TopSpin versions 2, the procedure is a little different, as follows. Upon typing edlist vd, a \u201cParameter Lists\u201d window will pop up. Go to the \u201cFile\u201d pulldown in the upper left corner and select \u201cNew.\u201d Enter your filename in the \u201cNew Name\u201d field of the second pop-up window, click the \u201cOK\u201d button, then enter the text in the new file window. When you are finished editing the file, go to the \u201cFile\u201d pulldown, select \u201cClose\u201d then confirm that you want to save the changes. If the \u201cParameter Lists\u201d window stays visible go to \u201cFile\u201d - \u201cClose\u201d to remove it. 5. Go back to the AcquPars tab and enter the following:</p>\r\n<p>FnMODE</p>\r\n<h3>QF</h3>\r\n<h3>TD (F2)</h3>\r\n<h3>16K</h3>\r\n<h3>TD (F1)</h3>\r\n<p>8 (this is equal to the number of delays in the VD list)</p>\r\n<h3>NS</h3>\r\n<p>8</p>\r\n<h3>DS</h3>\r\n<p>4</p>\r\n","source-36":"<p>6. Now type ased to enter the parsed acquisition parameter input (the software reads the pulse program and asks for the relevant pulse program inputs) and enter the following:</p>\r\n<h3>D1</h3>\r\n<p>12 (seconds) (relaxation delay)</p>\r\n<h3>VDLIST</h3>\r\n<p>Enter filename used in step 4 above</p>\r\n<p>Enter the value you obtained in Chapter 1 1H p90 calibration</p>\r\n<h3>P1</h3>\r\n<p>Enter the value used in Chapter 1 1H p90 calibration</p>\r\n<h3>PL1</h3>\r\n<p>7. Now use the ProcPars tab or type edp and enter the following processing parameters:</p>\r\n<h3>SI (F2)</h3>\r\n<h3>16K</h3>\r\n<h3>SI (F1)</h3>\r\n<p>8</p>\r\n<h3>WDW (F2)</h3>\r\n<h3>EM</h3>\r\n<h3>LB (F2)</h3>\r\n<p>1</p>\r\n<p>PH_mod (F2) pk</p>\r\n<p>PH_mod (F1) no</p>\r\n<h3>MC2</h3>\r\n<h3>QF</h3>\r\n<p>8. Start the experiment with zg. This will take ca. 25 min. 9. After the experiment has completed, type rser 1 to read the first FID (of 8). In the new window, do ef and then phase this spectrum with all peaks inverted (this spectrum has the shortest VD). When exiting the phase routine use the save 2D icon or type .s2d which will save the phase corrections to the T1-IR (2D) dataset. Note: You also could read the last FID (#8) and phase its spectrum positive (normal fashion) and save these corrections. 10. Type to2d to return to the original 2D dataset. 11. Process the data using xf2 (Fourier transform in F2\u2014the acquisition dimension). This will give a 2D display of the set of 8 spectra in a contour plot format. 12. Right-click on the 2D display to open \u201cDisplay Properties,\u201d check \u201cShow projections\u201d and click \u201cF2 projection only.\u201d 13. Right-click on the upper projection and select \u201cExternal Projection\u201d and in the menu that appears enter the expno of the 1D spectrum you ran prior to this T1-IR run. 14. If you click the \u201coblique mode\u201d button on the icon bar, or type .st you will see a 3D stacked plot. This is shown in Figure 2.1.</p>\r\n","source-37":"<figure class=\"figure source-figure\"><img src=\"../assets/figures/page-037-fig-1.webp\" alt=\"Figure from source page 37.\" loading=\"lazy\"></figure>\r\n<p class=\"figure-caption\">Figure 2.1 Oblique display of the quinine T1-IR dataset after Fourier transformation in F2 (command xf2).</p>\r\n<p>15. Type slice then select \u201cRows &amp; Columns\u201d then click \u201cInteractive row/column display\u201d and \u201cOK,\u201d then click the \u201cScan rows\u201d (z) button and move the mouse pointer to look at the 1D spectra that make up the dataset. Click the \u201creturn\u201d icon (\u21b5) in the icon bar to exit this mode. 16. To calculate the T1 values, go to the \u201cAnalysis\u201d pulldown and select \u201cT1/T2 relaxation\u201d (see Figure 2.2 for an illustration of the relaxation calculation window): a. Click \u201cExtract Slice\u201d from the NMR Relaxation Guide (right-</p>\r\n<p>hand side) pane, then in the pop-up window select \u201cSpectrum\u201d then enter 8 for the \u201cSlice Number5\u201d (to pick the last spectrum of the dataset) followed by \u201cOK\u201d b. Click \u201cDefine Ranges\u201d (rhs pane), then click the range icon</p>\r\n<p>(\u23b5, the left-most icon) in the icon bar above the displayed spectrum (like selecting a region in the integration mode); for TopSpin versions 2, click \u201cPeaks/Ranges (rhs pane), then in the pop-up window select \u201cManual Integration\u201d followed by</p>\r\n<h3>\u201cOK\u201d</h3>\r\n","source-38":"<figure class=\"figure source-figure\"><img src=\"../assets/figures/page-038-fig-1.webp\" alt=\"Figure from source page 38.\" loading=\"lazy\"></figure>\r\n<p class=\"figure-caption\">Figure 2.2 Example of T1 calculation routine display. Note the calculated T1 of ca. 440 ms for the peak at ca. 6.34 ppm.</p>\r\n<p>c. Select ranges (by left-clicking and dragging) 6\u20138 peaks from</p>\r\n<p>the spectrum for the T1 calculation (we recommend only selecting single, well-separated peaks) d. Click the Save Region icon (the diskette picture) and then select</p>\r\n<p>\u201cExport Regions to Relaxation Module &amp; .ret.\u201d e. Click \u201cRelaxation Window\u201d (rhs pane), the defaults should be OK</p>\r\n<p>(in TopSpin versions 2 a \u201cRelaxation Parameters\u201d window pops up, click \u201cOK\u201d to keep the defaults), then choose the \u201cIntensity\u201d button in the \u201cFitting Type\u201d pane which shows up on the left-hand side of the main window f. Click the \u201cCalculate Fitting Parameters for All\u201d button ( ..)</p>\r\n<p>at the far left of the upper icon bar\u2014this does the T1 calculations for the peaks in the selected ranges g. Click \u201cDisplay Report\u201d (rhs pane), then in the pop-up text window</p>\r\n<p>click \u201cSave as\u201d (for Topspin versions 2, use the \u201cFile\u201d pulldown - \u201cSave as\u201d then click the \u201cHome\u201d icon\u2014looks like a little house) and enter a filename (e.g., quin-t1-calc.xyz, xyz as in step 4)</p>\r\n","source-39":"<p>h. Click \u201cPrint/Export\u201d (rhs pane) to obtain a hardcopy output;</p>\r\n<p>in TopSpin versions 2, in the still-displayed text window, use \u201cFile\u201d-\u201cPrint\u201d and confirm printing in the print pop-up windows i. Topspin versions 2 only: use \u201cFile\u201d-\u201cClose\u201d in the text</p>\r\n<p>window j. Click \u201cClose\u201d (top of rhs pane) to exit the T1/T2 fitting routine 17. Include a copy of the T1 calculations printout in your lab report, along with a printout of the T1-IR pulse sequence (use edcpul or the PulseProg tab, then print the screen).</p>\r\n<h3>Part 2\u2014Homonuclear Decoupling</h3>\r\n<p>1. Create a new expno or dataset\u2014we recommend using an expno at the start of a decade (e.g., 51). This will be the reference spectrum. Load the standard parameters and then set the following parameters:</p>\r\n<h3>PULPROG</h3>\r\n<p>zg</p>\r\n<h3>D1</h3>\r\n<p>5 (seconds)</p>\r\n<h3>O1P</h3>\r\n<p>6 ppm</p>\r\n<h3>SW</h3>\r\n<p>14 ppm</p>\r\n<p>90\u00b0 pulse (use your calibrated values from Chapter 1)</p>\r\n<h3>P1/PL1</h3>\r\n<h3>LB</h3>\r\n<p>0.5</p>\r\n<p>Turn sample spinning off and recheck the shims. Check the RG then rerun this experiment. Use abs after phase correction. 2. Copy this experiment to an expno one unit higher (e.g., wrpa 52 followed by re 52). 3. Set up the homodecoupling pulse sequence. First enter the pulse program \u201czghd.2\u201d in the pulse program field of the AcquPars tab or the eda menu. Scroll down to the \u201cNucleus 2\u201d field, click on the \u201cNucleus 2\u201d link (TopSpin versions 2 only) then click \u201cEdit.\u201d In the RF routing window that opens, set click the list field under \u201cF2\u201d and select 1H, then click on the \u201cDefault\u201d button at the bottom of the screen (TopSpin versions 2 only; this sets the RF routing. This can also be accomplished manually by clicking on the \u201cF2\u201d button followed by the \u201cSGU2\u201d button). Finally, click the \u201cSave\u201d button at the bottom of the window. Note that the RF routing window can be opened at any time using the edasp command.</p>\r\n","source-40":"<p>4. Click the PulseProg tab to view the pulse program and the necessary parameters. Set the following parameters in the AcquPar tab or using eda:</p>\r\n<p>AQ_mod qsim or DQD (some spectrometers will require qsim for this parameter)</p>\r\n<h3>DIGMOD</h3>\r\n<p>Homodecoupling-digital</p>\r\n<h3>HDDUTY[%]</h3>\r\n<p>20</p>\r\n<p>Then in ased set the following:</p>\r\n<h3>PL2</h3>\r\n<p>120 dB</p>\r\n<h3>PL24</h3>\r\n<p>63 dB</p>\r\n<p>5. TopSpin uses the terms \u201cO1\u201d and \u201cO2\u201d to refer to the offset frequencies (from the spectrometer\u2019s base frequency) for the RF observe transmitter (the spectrum center frequency) and the RF decoupler, respectively. For homonuclear decoupling we will need to determine one or more values of O2 to set up the decoupling properly. 6. Expand the spectrum about the peak you want to decouple. Click with the left mouse button on the Set RF icon in the icon bar above the spectrum or type .seto123 . Then move the cursor to the desired decoupling frequency and left-click. In the O1/O2/O3 window that pops up, click on the O2 button with the left mouse button. This will set the O2 value and exit the Set RF screen and return to the normal spectrum display. 7. Obtain the spectrum with decoupling and use abs for baseline correction. Examine the spectrum to see if the desired peak is completely decoupled. If necessary, increase the decoupling power by changing PL24 from 63 to 60 dB, and repeat. Adjust again in</p>\r\n<p>23 dB steps if necessary. Consult your spectrometer administrator you if you need to use a power level higher than (i.e., a PL14 setting lower numerically than) 30 dB. Note: If an error appears regarding \u201cInvalid acquisition time. . .\u201d try reducing the SW by ca. 1 ppm and retry the acquisition. 8. Using the multiple-spectrum display (click the icon or type .md, then type re expno where expno is the experiment number of the reference spectrum, e.g., 51 as given in step 1; alternatively use the browser window and the drag-and-drop function to load the reference spectrum data folder into the spectrum window), compare the current spectrum with the reference. Look for peak-shape changes due to the decoupling.</p>\r\n","source-41":"<p>9. Copy this experiment to a new expno. Repeat the decoupling experiment using a different O2 value (i.e., decouple a different peak), and check the decoupled spectrum as above. 10. Plot both decoupled spectra and the reference spectrum in a way that demonstrates the effect of the decoupling.</p>\r\n<h3>Part 3\u2014nOe-difference</h3>\r\n<p>1. Copy your reference spectrum from Part 2 to a new decade (e.g., re 51 wrpa 61 followed byre 61). 2. Copy your first decoupled experiment from Part 2 to the next expno (e.g., re 52 wrpa 62 followed by re 62). 3. Set up the nOe-difference pulse sequence\u2014enter the pulse program \u201czgf2pr\u201d in the pulse program field of the AcquPars tab. 4. Click the PulseProg tab to view the pulse program and the necessary parameters. Set the parameters in the AcquPar tab or using ased according to the pulse program suggestions. Use 69 dB for the starting value of PL14. Be sure to reset the parameters AQ_mod to \u201cDQD\u201d and DIGMOD to \u201cdigital.\u201d These are the normal settings. 5. Expand the spectrum about the peak you want to irradiate and set the O2 value as in Part 2. 6. Obtain the spectrum with irradiation, phase the spectrum carefully, and use abs after processing. Examine the spectrum to see if the irradiated peak is gone. If necessary, increase the irradiation power by changing PL14 from 63 to 60 dB, and repeat. Adjust again in 3 dB steps if necessary. Note: The PL14 power level selection should include the considerations that it be sufficient to saturate the intended signal effectively, but also have minimal impact upon adjacent signals. Further, PL14 should not be higher than what the spectrometer or the sample can tolerate (given its long irradiation time). Consult your spectrometer administrator you if you need to use a power level higher than (i.e., a PL14 setting lower numerically than) 30 dB. 7. Using the multiple-spectrum display (click the icon or type .md), compare the current spectrum with the reference. If the two spectra are on top of each other, you will see the missing, saturated, peak. Look closely for peaks which show a (slightly) higher intensity in the irradiated spectrum when compared to the reference\u2014these peaks are from the positive nOe interaction which should be the case for the quinine sample.</p>\r\n","source-42":"<figure class=\"figure source-figure\"><img src=\"../assets/figures/page-042-fig-1.webp\" alt=\"Figure from source page 42.\" loading=\"lazy\"></figure>\r\n<p class=\"figure-caption\">Figure 2.3 Multiple display mode display of an irradiated spectrum (at 4.56 ppm) and the reference spectrum on the quinine sample at 500 MHz, upfield expansion. Note the scale factor of 1.09 required to equalize the intensity of the peak at ca. 3.1 ppm in the irradiated spectrum relative to the reference spectrum, indicating an approximate 9% nOe.</p>\r\n<p>8. To obtain an approximate value for the nOe enhancement in the multiple display mode, ensure that the two spectra are separated in the display using the \u201cToggle the display layout\u201d icon (two spectra and arrow z). Then, click the unfilled box on the upper right-hand side of the display to select the reference spectrum for manipulation. Click the \u201cToggle the display layout\u201d icon again to place both spectra on top of each other. Then, click the \u201cScale the selected spectra\u201d icon (circled in purple in Figure 2.3) and adjust the vertical scale of the reference spectrum so that any peak of interest matches its intensity in the irradiated spectrum. You will see the scale factor on the left side of the display, usually this will be slightly larger than 1, e.g., 1.09, representing an approximate 9% nOe (Figure 2.3). 9. Copy this experiment to a new expno. Repeat the experiment using a different O2 value (i.e., irradiate a different peak), check the irradiated spectrum as above.</p>\r\n","source-43":"<p>10. Repeat for other O2 values as desired with each in a new experiment. 11. Optional: The quality of the experiment can be improved by rerunning the reference spectrum to include off-resonance irradiation\u2014 in other words, leaving the O2 irradiation on in the same way as for the nOe experiment but with the O2 value set such that the irradiation is not on a peak. To do this, copy your first nOe experiment from step 3, above, to a new expno. Use the .set0123 command to set the O2 to an area of the spectrum where there are no peaks, such as ca. 6 ppm. Set the PL14 value to be equal to the highest power level you used for any of the peaks you irradiated. Now run this experiment, and after obtaining the spectrum repeat the multiple display exercise. See if your nOe percentages differ from the previous values. 12. Plot at least two irradiated spectra along with the reference spectrum.</p>\r\n<h3>Part 4\u20141H-decoupled 13C Spectra with and without nOe</h3>\r\n<p>1. Create a new dataset. Check or carry out locking and shimming with spinning on. 2. If necessary (e.g., if this is the first experiment of a new lab period) obtain the 1H spectrum using standard parameters. Check that the shimming is acceptable. 3. New expno. Set up a 13C experiment using standard parameters and</p>\r\n<h3>NS = 128</h3>\n<p>or higher, if needed, to get a good signal. Check probe tuning on 1H and 13C. For reference we will call this expno 2. 4. Copy the 13C experiment to expno 3. Change the pulse program from \u201czgpg30\u201d to \u201czgig30.\u201d Use edpul or the PulseProg tab to see the differences between the two pulse sequences. 5. Go back to expno 2. If your spectrometer is running TopSpin 1.x, type multizg and enter 2 when asked for the number of experiments. This au program will then run expnos 2 and 3 in sequence. Note: the expnos must be sequentially numbered for multizg to work. This will take about 15 min if 128 scans are used for each expno. If your spectrometer is running TopSpin 2.x, you may use the software\u2019s queuing functionality instead. In this case, simply type zg in each expno you want to run and the software will run them one after the other. For queuing to work the expnos do not have to be sequential. 6. After multizg or all queued experiments complete, go back to expno 2 and process the data. Then process the data in expno 3. You also may process the FIDs directly after each is acquired.</p>\r\n","source-44":"<p>7. In expno 2, touch up the phasing if necessary and apply abs. Pick a couple of peaks to check the signal-to-noise ratio of, using sinocal. Make a note of the peaks\u2019 locations, the noise region that you use, and the s/n values you obtain. 8. Repeat step 7 in expno 3 for the same peaks and noise region. Note the effect of the nOe irradiation on the s/n.</p>\r\n<h3>Part 5\u201413C DEPT Spectra</h3>\r\n<p>1. Copy the 13C expno 2 (step 3) to a new expno (e.g., 4). Set up a DEPT-45 experiment using ased and the following parameters:</p>\r\n<h3>PULPROG</h3>\r\n<p>dept</p>\r\n<p>13C 90\u00b0 pulse length (use your calibrated value from Chapter 1 labs)</p>\r\n<h3>P1</h3>\r\n<p>Power level for your 13C 90\u00b0 pulse calibration</p>\r\n<h3>PL1</h3>\r\n<p>1H 90\u00b0 pulse length (use your calibrated value from Chapter 1 labs)</p>\r\n<h3>P3</h3>\r\n<p>Power level for your 1H 90\u00b0 pulse calibration</p>\r\n<h3>PL2</h3>\r\n<p>45\u00b0 1H pulse length</p>\r\n<h3>P0</h3>\r\n<h3>CNST2</h3>\r\n<p>145 (approximate one-bond JC\u2013H value in Hz)</p>\r\n<h3>NS</h3>\r\n<p>64 or as necessary to get a good signal (should be a multiple of 4)</p>\r\n<p>2. Duplicate this expno to two new expnos such that all three are numerically in sequence. In the next expno, change the P0 parameter to be a 90\u00b0 1H pulse, and in the last expno set P0 to be a 135\u00b0 pulse (i.e., 1.5 \u00d7 the 90\u00b0 1H pulse length). This 1H pulse duration determines the intensity and phase of the different types of 13C peak as shown in the figure (Figure 2.4). 3. Go back to the first expno of the three and run all three experiments using either multizg (TopSpin 1.x) or the queuing functionality (TopSpin 2.x and higher). This will take about 20 min if each experiment has 64 scans. 4. After the data is acquired process the first spectrum (the DEPT-45) of the three and phase all peaks positive. Then use multiefp to process all three spectra with the same phase corrections. If your spectrometer does not have the au program multiefp installed, you must make a note of the phase correction parameters PHC0 and PHC1 obtained after phasing the DEPT-45 spectrum. Enter these phasing parameters into the DEPT-90 and DEPT-135 datasets before processing the datasets in turn using efp. 5. Use multiple display to show all spectra together and print that screen. This is shown in the figure below. Determine the number</p>\r\n","source-45":"<figure class=\"figure source-figure\"><img src=\"../assets/figures/page-045-fig-1.webp\" alt=\"Figure from source page 45.\" loading=\"lazy\"></figure>\r\n<p class=\"figure-caption\">Figure 2.4 Expected intensity of aCHa, aCH2a, and aCH3 signals versus 1H pulse P0 angle in the DEPT experiment.</p>\r\n<p>and type of each 13C resonance (e.g., aCHa, aCH2a, aCH3 and quaternary) (Figure 2.5). 6. Duplicate the DEPT-135 dataset to a new expno. We will now check the impact of changing the JC\u2013H value. Set up two new DEPT-135 datasets as done in step 2, above, and in one new dataset set CNST2 5 130 (Hz) and in the other set CNST2 5 160. 7. Run these experiments as in step 3 and process as in step 4. Compare the phasing behavior of the peaks, and create a multispectrum plot using multiple display to show this.</p>\r\n<h3>SUMMARY</h3>\r\n<p>Your lab report should include the following:</p>\r\n<p>1. T1 calculation printout and the T1-IR pulse sequence printout. 2. Decoupling: Reference and at least two decoupled spectra using the same plot region. 3. NOe-difference: Plotted as in question 2 above. 4. 13C spectra: Reference and no-nOe spectra using the same region with at least one peak\u2019s s/n values in the title.</p>\r\n","source-46":"<figure class=\"figure source-figure\"><img src=\"../assets/figures/page-046-fig-1.webp\" alt=\"Figure from source page 46.\" loading=\"lazy\"></figure>\r\n<p class=\"figure-caption\">Figure 2.5 13C and DEPT spectra of quinine in CDCl3 shown using the multiple display mode. From bottom to top: standard 13C, DEPT-45, DEPT-90, DEPT-135. Note that the quaternary carbon resonances are not present in any of the DEPT spectra.</p>\r\n<p>5. DEPT spectra: Screen print (as in Figure 2.5) of the reference and three DEPT spectra with different P0 values, expanded as appropriate to get the best display. 6. DEPT spectra: Another screen print of the three DEPT-135 spectra with different JC\u2013H values, expanded as appropriate to get the best display. 7. Suggested questions for consideration: a. What was the difference in signal-to-noise ratio for the selected</p>\r\n<p>peaks in the 13C spectra obtained with and without nOe? b. Referring to question (a), is this s/n difference consistent with</p>\r\n<p>expectations? Why? c. Make up a table of each quinine 13C chemical shift and its multi-</p>\r\n<p>plicity (quaternary, aCHa, etc.)</p>\r\n","source-47":"<p>d. How did changing the J-value optimization affect the DEPT</p>\r\n<p>spectra? Can you tell what the best JC\u2013H value setting is for quinine, and what criteria would you use? e. Can you make any further chemical shift assignments for</p>\r\n<p>quinine?</p>\r\n"},"chinese":{"source-34":"<h3>\u7b2c 2 \u7ae0</h3>\n<h3>\u591a\u91cd\u7167\u5c04\u4e0e\u591a\u8109\u51b2\u5b9e\u9a8c</h3>\n<h3>\u5b9e\u9a8c</h3>\n<h3>\u6982\u8ff0</h3>\n<p>\u672c\u7ae0\u7ec3\u4e60\u65e8\u5728\u4ecb\u7ecd\u4e00\u4e9b\u66f4\u4e3a\u590d\u6742\u7684 NMR \u5b9e\u9a8c\u3002\u6211\u4eec\u5c06\u8fdb\u884c\u82e5\u5e72\u591a\u91cd\u7167\u5c04\u548c\u591a\u8109\u51b2\u5b9e\u9a8c\uff0c\u5305\u62ec \u00b9H T1 \u53cd\u8f6c\u6062\u590d\uff08T1-IR\uff09\u6d4b\u91cf\u3001\u00b9H \u540c\u6838\u53bb\u8026\u548c\u9009\u62e9\u6027 nOe\u3001\u5e26\u548c\u4e0d\u5e26 nOe \u7684 \u00b9\u00b3C \u91c7\u96c6\uff0c\u4ee5\u53ca \u00b9\u00b3C DEPT\u3002\u5185\u5bb9\u6db5\u76d6\u8109\u51b2\u5e8f\u5217\u3001\u540c\u6838\u4e0e\u5f02\u6838\u53bb\u8026\uff0c\u4ee5\u53ca T1 \u6570\u636e\u91c7\u96c6\u548c\u5206\u6790\u3002\u6211\u4eec\u5c06\u4f7f\u7528\u594e\u5b81\u6837\u54c1\u8fdb\u884c\u8fd9\u4e9b\u5b9e\u9a8c\uff0c\u6240\u5f97\u8c31\u56fe\u5c06\u6709\u52a9\u4e8e\u8be5\u5206\u5b50\u7684\u5316\u5b66\u4f4d\u79fb\u5f52\u5c5e\u3002\u672c\u7ae0\u6db5\u76d6\u7684\u5185\u5bb9\u5bf9\u5e94 Claridge \u4e00\u4e66\u7684\u7b2c 2\u20134 \u7ae0\u3002</p>\n<h3>\u6837\u54c1\u4e0e\u8c31\u4eea\u8981\u6c42</h3>\n<p>\u672c\u7ae0\u7ec3\u4e60\u5c06\u4f7f\u7528\u6837\u54c1 A\u3002\u7531\u4e8e\u672c\u7ae0\u7684 NMR \u5b9e\u9a8c\u5747\u4e3a\u7b80\u5355\u7684\u4e00\u7ef4\u91c7\u96c6\uff0c\u8c31\u4eea\u786c\u4ef6\u6ca1\u6709\u7279\u6b8a\u8981\u6c42\u3002\u6837\u54c1\u6d53\u5ea6\u4e0e\u8c31\u4eea\u7684 \u00b9\u00b3C \u7075\u654f\u5ea6\u5e94\u76f8\u5339\u914d\uff0c\u4ee5\u4fbf\u5728\u5408\u7406\u65f6\u95f4\u5185\u5b8c\u6210\u7b2c 4 \u548c\u7b2c 5 \u90e8\u5206\u7684\u7ec3\u4e60\u3002</p>\n<h3>\u5b9e\u9a8c\u5185\u5bb9</h3>\n<h3>\u7b2c 1 \u90e8\u5206\u2014\u2014\u00b9H T1\uff08\u81ea\u65cb\u2013\u6676\u683c\uff09\u5f1b\u8c6b\u6d4b\u91cf</h3>\n<p>1. \u5c06\u594e\u5b81/CDCl3 \u6837\u54c1\u653e\u5165\u78c1\u4f53\u3002\u5bf9\u6837\u54c1\u8fdb\u884c\u9501\u573a\u548c\u5300\u573a\uff0c\u5e76\u5c06\u63a2\u5934\u8c03\u8c10\u81f3 \u00b9H\u30022. \u4f7f\u7528\u6807\u51c6\u53c2\u6570\u8fd0\u884c \u00b9H \u8c31\u3002\u4f18\u5316 \u00b9H \u7684\u89c2\u6d4b\u7a97\u53e3\uff08O1 \u548c SW\uff09\uff0c\u7136\u540e\u91cd\u65b0\u8fd0\u884c\u8c31\u56fe\uff08\u5bf9\u4e8e\u4e8c\u7ef4 NMR \u5b9e\u9a8c\uff0c\u6211\u4eec\u4e5f\u4f1a\u8fdb\u884c\u8fd9\u9879\u64cd\u4f5c\uff09\u3002</p>\n","source-35":"<p>3. \u5c06\u4f18\u5316\u540e\u7684\u8c31\u56fe\u590d\u5236\u5230\u65b0\u7684 <code>expno</code>\uff08<code>wrpa / re</code> \u6216 <code>new</code>\uff09\u3002\u8bbe\u7f6e T1-IR \u5b9e\u9a8c\u9700\u8981\u7ecf\u8fc7\u51e0\u4e2a\u6b65\u9aa4\u3002\u9996\u5148\uff0c\u5728 <code>eda</code> \u4e2d\u5c06\u8109\u51b2\u7a0b\u5e8f\uff08<code>PULPROG</code>\uff09\u8bbe\u4e3a\u201ct1ir\u201d\uff0c\u518d\u5c06\u53c2\u6570\u6a21\u5f0f\uff08\u5de6\u4e0a\u89d2\u7684 1\u30012\u30013 \u56fe\u6807\uff09\u8bbe\u4e3a 2D\u3002\u8981\u663e\u793a\u8109\u51b2\u5e8f\u5217\uff0c\u53ef\u4f7f\u7528 <code>edcpul</code> \u6216 <code>PulseProg</code> \u9009\u9879\u5361\u30024. \u73b0\u5728\u9700\u8981\u7f16\u8f91 VD \u5217\u8868\u6587\u4ef6\u3002VD \u662f\u5e8f\u5217\u4e2d 180\u00b0 \u53cd\u8f6c\u8109\u51b2\u4e0e 90\u00b0 \u8bfb\u51fa\u8109\u51b2\u4e4b\u95f4\u7684\u5ef6\u8fdf\u3002\u8f93\u5165 <code>edlist vd</code>\uff0c\u5728\u201cNew file\u201d\u5b57\u6bb5\u4e2d\u8f93\u5165\u6587\u4ef6\u540d\uff08\u4f8b\u5982\u201cquin-t1.xyz\u201d\uff0c\u5176\u4e2d xyz \u4e3a\u4f60\u7684\u59d3\u540d\u9996\u5b57\u6bcd\uff09\uff0c\u968f\u5373\u4f1a\u6253\u5f00\u4e00\u4e2a\u542b\u7a7a\u767d\u6587\u672c\u6587\u4ef6\u7684\u7f16\u8f91\u7a97\u53e3\u3002\u6309\u5982\u4e0b\u6240\u793a\u8f93\u5165 VD \u503c\uff08\u6bcf\u884c\u4e00\u4e2a\u6761\u76ee\uff09\uff0c\u4e0d\u5e26\u5355\u4f4d\uff08\u9ed8\u8ba4\u5355\u4f4d\u4e3a\u79d2\uff09\uff1a</p>\n<p>0.001\u30000.2\u30000.4\u30000.7\u30001.0\u30002.0\u30004.0\u30007.0\u3002\u5355\u51fb\u201cOK\u201d\u6309\u94ae\u4fdd\u5b58\u6587\u4ef6\u5e76\u9000\u51fa\u7f16\u8f91\u5668\u3002\u6ce8\uff1a\u5bf9\u4e8e TopSpin 2 \u7248\uff0c\u6b65\u9aa4\u7565\u6709\u4e0d\u540c\u3002\u8f93\u5165 <code>edlist vd</code> \u540e\uff0c\u4f1a\u5f39\u51fa\u201cParameter Lists\u201d\u7a97\u53e3\u3002\u5728\u5de6\u4e0a\u89d2\u7684\u201cFile\u201d\u4e0b\u62c9\u83dc\u5355\u4e2d\u9009\u62e9\u201cNew\u201d\u3002\u5728\u7b2c\u4e8c\u4e2a\u5f39\u51fa\u7a97\u53e3\u7684\u201cNew Name\u201d\u5b57\u6bb5\u4e2d\u8f93\u5165\u6587\u4ef6\u540d\uff0c\u5355\u51fb\u201cOK\u201d\u6309\u94ae\uff0c\u7136\u540e\u5728\u65b0\u6587\u4ef6\u7a97\u53e3\u4e2d\u8f93\u5165\u6587\u672c\u3002\u5b8c\u6210\u6587\u4ef6\u7f16\u8f91\u540e\uff0c\u5728\u201cFile\u201d\u4e0b\u62c9\u83dc\u5355\u4e2d\u9009\u62e9\u201cClose\u201d\uff0c\u518d\u786e\u8ba4\u8981\u4fdd\u5b58\u66f4\u6539\u3002\u82e5\u201cParameter Lists\u201d\u7a97\u53e3\u4ecd\u663e\u793a\uff0c\u8bf7\u4f9d\u6b21\u9009\u62e9\u201cFile\u201d\u2013\u201cClose\u201d\u5c06\u5176\u5173\u95ed\u30025. \u8fd4\u56de <code>AcquPars</code> \u9009\u9879\u5361\uff0c\u5e76\u8f93\u5165\u4ee5\u4e0b\u5185\u5bb9\uff1a</p>\n<p>FnMODE</p>\n<h3>QF</h3>\n<h3>TD (F2)</h3>\n<h3>16K</h3>\n<h3>TD (F1)</h3>\n<p>8\uff08\u8fd9\u7b49\u4e8e VD \u5217\u8868\u4e2d\u7684\u5ef6\u8fdf\u6570\uff09</p>\n<h3>NS</h3>\n<p>8</p>\n<h3>DS</h3>\n<p>4</p>\n","source-36":"<p>6. \u73b0\u5728\u8f93\u5165 <code>ased</code>\uff0c\u8fdb\u5165\u5df2\u89e3\u6790\u7684\u91c7\u96c6\u53c2\u6570\u8f93\u5165\u754c\u9762\uff08\u8f6f\u4ef6\u4f1a\u8bfb\u53d6\u8109\u51b2\u7a0b\u5e8f\uff0c\u5e76\u8981\u6c42\u8f93\u5165\u76f8\u5173\u7684\u8109\u51b2\u7a0b\u5e8f\u53c2\u6570\uff09\uff0c\u7136\u540e\u8f93\u5165\u4ee5\u4e0b\u5185\u5bb9\uff1a</p>\n<h3>D1</h3>\n<p>12\uff08\u79d2\uff09\uff08\u5f1b\u8c6b\u5ef6\u8fdf\uff09</p>\n<h3>VDLIST</h3>\n<p>\u8f93\u5165\u4e0a\u6587\u7b2c 4 \u6b65\u6240\u7528\u7684\u6587\u4ef6\u540d</p>\n<p>\u8f93\u5165\u4f60\u5728\u7b2c 1 \u7ae0 \u00b9H p90 \u6821\u51c6\u4e2d\u5f97\u5230\u7684\u6570\u503c</p>\n<h3>P1</h3>\n<p>\u8f93\u5165\u7b2c 1 \u7ae0 \u00b9H p90 \u6821\u51c6\u4e2d\u6240\u7528\u7684\u6570\u503c</p>\n<h3>PL1</h3>\n<p>7. \u73b0\u5728\u4f7f\u7528 <code>ProcPars</code> \u9009\u9879\u5361\uff0c\u6216\u8f93\u5165 <code>edp</code>\uff0c\u5e76\u952e\u5165\u4ee5\u4e0b\u5904\u7406\u53c2\u6570\uff1a</p>\n<h3>SI (F2)</h3>\n<h3>16K</h3>\n<h3>SI (F1)</h3>\n<p>8</p>\n<h3>WDW (F2)</h3>\n<h3>EM</h3>\n<h3>LB (F2)</h3>\n<p>1</p>\n<p>PH_mod (F2)\u3000pk</p>\n<p>PH_mod (F1)\u3000no</p>\n<h3>MC2</h3>\n<h3>QF</h3>\n<p>8. \u4f7f\u7528 <code>zg</code> \u542f\u52a8\u5b9e\u9a8c\uff0c\u7ea6\u9700 25 \u5206\u949f\u30029. \u5b9e\u9a8c\u5b8c\u6210\u540e\uff0c\u8f93\u5165 <code>rser 1</code> \u8bfb\u53d6\u7b2c\u4e00\u4e2a FID\uff08\u5171 8 \u4e2a\uff09\u3002\u5728\u65b0\u7a97\u53e3\u4e2d\u6267\u884c <code>ef</code>\uff0c\u7136\u540e\u5bf9\u8be5\u8c31\u56fe\u8fdb\u884c\u76f8\u4f4d\u6821\u6b63\uff0c\u4f7f\u6240\u6709\u5cf0\u5012\u7f6e\uff08\u8be5\u8c31\u56fe\u7684 VD \u6700\u77ed\uff09\u3002\u9000\u51fa\u76f8\u4f4d\u6821\u6b63\u7a0b\u5e8f\u65f6\uff0c\u4f7f\u7528\u201c\u4fdd\u5b58 2D\u201d\u56fe\u6807\u6216\u8f93\u5165 <code>.s2d</code>\uff1b\u8fd9\u4f1a\u5c06\u76f8\u4f4d\u6821\u6b63\u4fdd\u5b58\u81f3 T1-IR\uff082D\uff09\u6570\u636e\u96c6\u3002\u6ce8\uff1a\u4e5f\u53ef\u8bfb\u53d6\u6700\u540e\u4e00\u4e2a FID\uff08#8\uff09\uff0c\u5c06\u5176\u8c31\u56fe\u8c03\u6210\u6b63\u76f8\uff08\u5e38\u89c4\u65b9\u5f0f\uff09\u540e\u4fdd\u5b58\u8fd9\u4e9b\u6821\u6b63\u300210. \u8f93\u5165 <code>to2d</code> \u8fd4\u56de\u539f\u59cb 2D \u6570\u636e\u96c6\u300211. \u4f7f\u7528 <code>xf2</code> \u5904\u7406\u6570\u636e\uff08\u5728 F2\uff0c\u5373\u91c7\u96c6\u7ef4\uff0c\u8fdb\u884c\u5085\u91cc\u53f6\u53d8\u6362\uff09\u3002\u8fd9\u5c06\u4ee5\u7b49\u9ad8\u7ebf\u56fe\u5f62\u5f0f\u663e\u793a\u7531 8 \u5f20\u8c31\u56fe\u7ec4\u6210\u7684\u4e8c\u7ef4\u56fe\u300212. \u5728 2D \u663e\u793a\u533a\u53f3\u952e\u5355\u51fb\u4ee5\u6253\u5f00\u201cDisplay Properties\u201d\uff0c\u52fe\u9009\u201cShow projections\u201d\uff0c\u5e76\u5355\u51fb\u201cF2 projection only\u201d\u300213. \u5728\u4e0a\u65b9\u6295\u5f71\u56fe\u4e0a\u53f3\u952e\u5355\u51fb\uff0c\u9009\u62e9\u201cExternal Projection\u201d\uff0c\u7136\u540e\u5728\u51fa\u73b0\u7684\u83dc\u5355\u4e2d\u8f93\u5165\u4f60\u5728\u672c\u6b21 T1-IR \u8fd0\u884c\u524d\u6240\u91c7\u96c6\u7684\u4e00\u7ef4\u8c31\u7684 <code>expno</code>\u300214. \u82e5\u5355\u51fb\u56fe\u6807\u680f\u4e2d\u7684\u201coblique mode\u201d\u6309\u94ae\uff0c\u6216\u8f93\u5165 <code>.st</code>\uff0c\u5c06\u770b\u5230\u4e09\u7ef4\u5806\u53e0\u56fe\uff0c\u5982\u56fe 2.1 \u6240\u793a\u3002</p>\n","source-37":"<p class=\"figure-caption\">\u56fe 2.1\u3000\u5728 F2 \u7ef4\u8fdb\u884c\u5085\u91cc\u53f6\u53d8\u6362\uff08\u547d\u4ee4 <code>xf2</code>\uff09\u540e\u7684\u594e\u5b81 T1-IR \u6570\u636e\u96c6\u659c\u89c6\u663e\u793a\u3002</p>\n<p>15. \u8f93\u5165 <code>slice</code>\uff0c\u9009\u62e9\u201cRows &amp; Columns\u201d\uff0c\u518d\u5355\u51fb\u201cInteractive row/column display\u201d\u548c\u201cOK\u201d\uff1b\u968f\u540e\u5355\u51fb\u201cScan rows\u201d\uff08z\uff09\u6309\u94ae\u5e76\u79fb\u52a8\u9f20\u6807\u6307\u9488\uff0c\u5373\u53ef\u67e5\u770b\u6784\u6210\u6570\u636e\u96c6\u7684\u4e00\u7ef4\u8c31\u3002\u5355\u51fb\u56fe\u6807\u680f\u4e2d\u7684\u201creturn\u201d\u56fe\u6807\uff08\u21b5\uff09\u9000\u51fa\u6b64\u6a21\u5f0f\u300216. \u8981\u8ba1\u7b97 T1 \u503c\uff0c\u5728\u201cAnalysis\u201d\u4e0b\u62c9\u83dc\u5355\u4e2d\u9009\u62e9\u201cT1/T2 relaxation\u201d\uff08\u5f1b\u8c6b\u8ba1\u7b97\u7a97\u53e3\u793a\u4f8b\u89c1\u56fe 2.2\uff09\uff1aa. \u5728 NMR Relaxation Guide\uff08\u53f3-</p>\n<p>\u4fa7\uff09\u7a97\u683c\u4e2d\u5355\u51fb\u201cExtract Slice\u201d\uff0c\u7136\u540e\u5728\u5f39\u51fa\u7a97\u53e3\u4e2d\u9009\u62e9\u201cSpectrum\u201d\uff0c\u5728\u201cSlice Number5\u201d\u4e2d\u8f93\u5165 8\uff08\u4ee5\u9009\u53d6\u6570\u636e\u96c6\u7684\u6700\u540e\u4e00\u5f20\u8c31\u56fe\uff09\uff0c\u518d\u5355\u51fb\u201cOK\u201d\u3002b. \u5355\u51fb\u201cDefine Ranges\u201d\uff08\u53f3\u4fa7\u7a97\u683c\uff09\uff0c\u7136\u540e\u5355\u51fb\u663e\u793a\u8c31\u56fe\u4e0a\u65b9\u56fe\u6807\u680f\u4e2d\u7684\u8303\u56f4\u56fe\u6807</p>\n<p>\uff08\u23b5\uff0c\u6700\u5de6\u4fa7\u56fe\u6807\uff1b\u5176\u7528\u6cd5\u7c7b\u4f3c\u4e8e\u5728\u79ef\u5206\u6a21\u5f0f\u4e2d\u9009\u62e9\u533a\u57df\uff09\uff1b\u5bf9\u4e8e TopSpin 2 \u7248\uff0c\u5355\u51fb\u201cPeaks/Ranges\u201d\uff08\u53f3\u4fa7\u7a97\u683c\uff09\uff0c\u7136\u540e\u5728\u5f39\u51fa\u7a97\u53e3\u4e2d\u9009\u62e9\u201cManual Integration\u201d\uff0c\u518d\u5355\u51fb</p>\n<h3>\u201cOK\u201d</h3>\n","source-38":"<p class=\"figure-caption\">\u56fe 2.2\u3000T1 \u8ba1\u7b97\u7a0b\u5e8f\u663e\u793a\u793a\u4f8b\u3002\u8bf7\u6ce8\u610f\uff0c\u7ea6 6.34 ppm \u5904\u5cf0\u7684\u8ba1\u7b97 T1 \u7ea6\u4e3a 440 ms\u3002</p>\r\n<p>c. \u4ece\u8c31\u56fe\u4e2d\u9009\u62e9 6\u20138 \u4e2a\u5cf0\u7684\u8303\u56f4\uff08\u7528\u9f20\u6807\u5de6\u952e\u5355\u51fb\u5e76\u62d6\u52a8\uff09\uff0c\u7528\u4e8e</p>\r\n<p>T1 \u8ba1\u7b97\uff08\u5efa\u8bae\u53ea\u9009\u62e9\u5f7c\u6b64\u5206\u79bb\u826f\u597d\u7684\u5355\u4e2a\u5cf0\uff09\u3002d. \u5355\u51fb\u201cSave Region\u201d\u56fe\u6807\uff08\u8f6f\u76d8\u56fe\u6848\uff09\uff0c\u7136\u540e\u9009\u62e9</p>\r\n<p>\u201cExport Regions to Relaxation Module &amp; .ret\u201d\u3002e. \u5355\u51fb\u201cRelaxation Window\u201d\uff08\u53f3\u4fa7\u7a97\u683c\uff09\uff1b\u9ed8\u8ba4\u8bbe\u7f6e\u5e94\u53ef\u63a5\u53d7</p>\r\n<p>\uff08\u5728 TopSpin 2 \u7248\u4e2d\u4f1a\u5f39\u51fa\u201cRelaxation Parameters\u201d\u7a97\u53e3\uff0c\u5355\u51fb\u201cOK\u201d\u4ee5\u4fdd\u7559\u9ed8\u8ba4\u503c\uff09\uff0c\u7136\u540e\u5728\u4e3b\u7a97\u53e3\u5de6\u4fa7\u51fa\u73b0\u7684\u201cFitting Type\u201d\u7a97\u683c\u4e2d\u9009\u62e9\u201cIntensity\u201d\u6309\u94ae\u3002f. \u5355\u51fb\u201cCalculate Fitting Parameters for All\u201d\u6309\u94ae\uff08..\uff09 \uff0c\u8be5\u6309\u94ae\u4f4d\u4e8e\u4e0a\u65b9\u56fe\u6807\u680f\u7684\u6700\u5de6\u4fa7\uff1b\u5b83\u5c06\u5bf9\u6240\u9009\u8303\u56f4\u5185\u7684\u5cf0\u8fdb\u884c T1 \u8ba1\u7b97\u3002</p>\r\n<p>g. \u5355\u51fb\u201cDisplay Report\u201d\uff08\u53f3\u4fa7\u7a97\u683c\uff09\uff0c\u7136\u540e\u5728\u5f39\u51fa\u7684\u6587\u672c\u7a97\u53e3\u4e2d\u5355\u51fb</p>\r\n<p>\u201cSave as\u201d\uff08\u5bf9\u4e8e TopSpin 2 \u7248\uff0c\u4f7f\u7528\u201cFile\u201d\u4e0b\u62c9\u83dc\u5355\u2013\u201cSave as\u201d\uff0c\u518d\u5355\u51fb\u201cHome\u201d\u56fe\u6807\u2014\u2014\u5176\u5f62\u72b6\u50cf\u4e00\u5ea7\u5c0f\u623f\u5b50\uff09\uff0c\u5e76\u8f93\u5165\u6587\u4ef6\u540d\uff08\u4f8b\u5982 <code>quin-t1-calc.xyz</code>\uff1bxyz \u4e0e\u7b2c 4 \u6b65\u76f8\u540c\uff09\u3002</p>\r\n","source-39":"<p>h. \u5355\u51fb\u201cPrint/Export\u201d\uff08\u53f3\u4fa7\u7a97\u683c\uff09\uff0c\u83b7\u5f97\u7eb8\u8d28\u8f93\u51fa\uff1b</p>\n<p>\u5728 TopSpin 2 \u7248\u4e2d\uff0c\u4e8e\u4ecd\u663e\u793a\u7684\u6587\u672c\u7a97\u53e3\u5185\u4f7f\u7528\u201cFile\u201d\u2013\u201cPrint\u201d\uff0c\u5e76\u5728\u6253\u5370\u5f39\u51fa\u7a97\u53e3\u4e2d\u786e\u8ba4\u6253\u5370\u3002</p>\n<p>i. \u4ec5\u9650 TopSpin 2 \u7248\uff1a\u5728\u6587\u672c\u7a97\u53e3\u4e2d\u4f7f\u7528\u201cFile\u201d\u2013\u201cClose\u201d\u3002j. \u5355\u51fb\u201cClose\u201d\uff08\u53f3\u4fa7\u7a97\u683c\u9876\u90e8\uff09\u9000\u51fa T1/T2 \u62df\u5408\u7a0b\u5e8f\u300217. \u5728\u5b9e\u9a8c\u62a5\u544a\u4e2d\u9644\u4e0a T1 \u8ba1\u7b97\u7ed3\u679c\u7684\u6253\u5370\u4ef6\uff0c\u4ee5\u53ca T1-IR \u8109\u51b2\u5e8f\u5217\u7684\u6253\u5370\u4ef6\uff08\u4f7f\u7528 <code>edcpul</code> \u6216 <code>PulseProg</code> \u9009\u9879\u5361\uff0c\u7136\u540e\u6253\u5370\u5c4f\u5e55\uff09\u3002</p>\n<h3>\u7b2c 2 \u90e8\u5206\u2014\u2014\u540c\u6838\u53bb\u8026</h3>\n<p>1. \u65b0\u5efa\u4e00\u4e2a <code>expno</code> \u6216\u6570\u636e\u96c6\u2014\u2014\u5efa\u8bae\u4f7f\u7528\u5341\u4f4d\u6570\u8d77\u59cb\u7684 <code>expno</code>\uff08\u4f8b\u5982 51\uff09\u3002\u8fd9\u5c06\u4f5c\u4e3a\u53c2\u6bd4\u8c31\u3002\u52a0\u8f7d\u6807\u51c6\u53c2\u6570\uff0c\u7136\u540e\u8bbe\u7f6e\u4ee5\u4e0b\u53c2\u6570\uff1a</p>\n<h3>PULPROG</h3>\n<p>zg</p>\n<h3>D1</h3>\n<p>5\uff08\u79d2\uff09</p>\n<h3>O1P</h3>\n<p>6 ppm</p>\n<h3>SW</h3>\n<p>14 ppm</p>\n<p>90\u00b0 \u8109\u51b2\uff08\u4f7f\u7528\u4f60\u5728\u7b2c 1 \u7ae0\u6821\u51c6\u5f97\u5230\u7684\u6570\u503c\uff09</p>\n<h3>P1/PL1</h3>\n<h3>LB</h3>\n<p>0.5</p>\n<p>\u5173\u95ed\u6837\u54c1\u65cb\u8f6c\uff0c\u518d\u6b21\u68c0\u67e5\u5300\u573a\u3002\u68c0\u67e5 RG\uff0c\u7136\u540e\u91cd\u65b0\u8fd0\u884c\u672c\u5b9e\u9a8c\u3002\u76f8\u4f4d\u6821\u6b63\u540e\u4f7f\u7528 <code>abs</code>\u30022. \u5c06\u672c\u5b9e\u9a8c\u590d\u5236\u5230\u9ad8\u4e00\u4e2a\u5355\u4f4d\u7684 <code>expno</code>\uff08\u4f8b\u5982\u5148\u8f93\u5165 <code>wrpa 52</code>\uff0c\u518d\u8f93\u5165 <code>re 52</code>\uff09\u30023. \u8bbe\u7f6e\u540c\u6838\u53bb\u8026\u8109\u51b2\u5e8f\u5217\u3002\u9996\u5148\uff0c\u5728 <code>AcquPars</code> \u9009\u9879\u5361\u6216 <code>eda</code> \u83dc\u5355\u7684\u8109\u51b2\u7a0b\u5e8f\u5b57\u6bb5\u4e2d\u8f93\u5165\u8109\u51b2\u7a0b\u5e8f\u201czghd.2\u201d\u3002\u5411\u4e0b\u6eda\u52a8\u5230\u201cNucleus 2\u201d\u5b57\u6bb5\uff0c\u5355\u51fb\u201cNucleus 2\u201d\u94fe\u63a5\uff08\u4ec5\u9650 TopSpin 2 \u7248\uff09\uff0c\u518d\u5355\u51fb\u201cEdit\u201d\u3002\u5728\u6253\u5f00\u7684 RF \u8def\u7531\u7a97\u53e3\u4e2d\uff0c\u5355\u51fb\u201cF2\u201d\u4e0b\u65b9\u7684\u5217\u8868\u5b57\u6bb5\u5e76\u9009\u62e9 \u00b9H\uff1b\u7136\u540e\u5355\u51fb\u5c4f\u5e55\u5e95\u90e8\u7684\u201cDefault\u201d\u6309\u94ae\uff08\u4ec5\u9650 TopSpin 2 \u7248\uff1b\u6b64\u64cd\u4f5c\u8bbe\u7f6e RF \u8def\u7531\u3002\u4e5f\u53ef\u624b\u52a8\u4f9d\u6b21\u5355\u51fb\u201cF2\u201d\u6309\u94ae\u548c\u201cSGU2\u201d\u6309\u94ae\u5b8c\u6210\uff09\u3002\u6700\u540e\uff0c\u5355\u51fb\u7a97\u53e3\u5e95\u90e8\u7684\u201cSave\u201d\u6309\u94ae\u3002\u8bf7\u6ce8\u610f\uff0c\u53ef\u968f\u65f6\u4f7f\u7528 <code>edasp</code> \u547d\u4ee4\u6253\u5f00 RF \u8def\u7531\u7a97\u53e3\u3002</p>\n","source-40":"<p>4. \u5355\u51fb <code>PulseProg</code> \u9009\u9879\u5361\u4ee5\u67e5\u770b\u8109\u51b2\u7a0b\u5e8f\u53ca\u6240\u9700\u53c2\u6570\u3002\u5728 <code>AcquPar</code> \u9009\u9879\u5361\u4e2d\u6216\u4f7f\u7528 <code>eda</code> \u8bbe\u7f6e\u4ee5\u4e0b\u53c2\u6570\uff1a</p>\r\n<p><code>AQ_mod</code>\uff1a<code>qsim</code> \u6216 <code>DQD</code>\uff08\u6709\u4e9b\u8c31\u4eea\u5728\u6b64\u53c2\u6570\u4e2d\u9700\u8981 <code>qsim</code>\uff09</p>\r\n<h3>DIGMOD</h3>\r\n<p>Homodecoupling-digital</p>\r\n<h3>HDDUTY[%]</h3>\r\n<p>20</p>\r\n<p>\u7136\u540e\u5728 <code>ased</code> \u4e2d\u8bbe\u7f6e\u4ee5\u4e0b\u5185\u5bb9\uff1a</p>\r\n<h3>PL2</h3>\r\n<p>120 dB</p>\r\n<h3>PL24</h3>\r\n<p>63 dB</p>\r\n<p>5. TopSpin \u7528\u672f\u8bed\u201cO1\u201d\u548c\u201cO2\u201d\u5206\u522b\u6307 RF \u89c2\u6d4b\u53d1\u5c04\u673a\uff08\u8c31\u56fe\u4e2d\u5fc3\u9891\u7387\uff09\u4e0e RF \u53bb\u8026\u5668\u76f8\u5bf9\u4e8e\u8c31\u4eea\u57fa\u51c6\u9891\u7387\u7684\u504f\u7f6e\u9891\u7387\u3002\u5bf9\u4e8e\u540c\u6838\u53bb\u8026\uff0c\u9700\u8981\u786e\u5b9a\u4e00\u4e2a\u6216\u591a\u4e2a O2 \u503c\uff0c\u4ee5\u6b63\u786e\u8bbe\u7f6e\u53bb\u8026\u30026. \u5c55\u5f00\u4f60\u8981\u53bb\u8026\u7684\u5cf0\u9644\u8fd1\u7684\u8c31\u56fe\u3002\u5728\u8c31\u56fe\u4e0a\u65b9\u56fe\u6807\u680f\u4e2d\uff0c\u7528\u9f20\u6807\u5de6\u952e\u5355\u51fb\u201cSet RF\u201d\u56fe\u6807\uff0c\u6216\u8f93\u5165 <code>.seto123</code>\u3002\u7136\u540e\u5c06\u5149\u6807\u79fb\u81f3\u6240\u9700\u7684\u53bb\u8026\u9891\u7387\u5e76\u5de6\u952e\u5355\u51fb\u3002\u5728\u5f39\u51fa\u7684 O1/O2/O3 \u7a97\u53e3\u4e2d\uff0c\u7528\u9f20\u6807\u5de6\u952e\u5355\u51fb O2 \u6309\u94ae\u3002\u8fd9\u5c06\u8bbe\u7f6e O2 \u503c\u3001\u9000\u51fa\u201cSet RF\u201d\u754c\u9762\uff0c\u5e76\u8fd4\u56de\u6b63\u5e38\u8c31\u56fe\u663e\u793a\u30027. \u91c7\u96c6\u53bb\u8026\u8c31\u56fe\uff0c\u5e76\u4f7f\u7528 <code>abs</code> \u8fdb\u884c\u57fa\u7ebf\u6821\u6b63\u3002\u68c0\u67e5\u8c31\u56fe\uff0c\u786e\u8ba4\u76ee\u6807\u5cf0\u662f\u5426\u5df2\u5b8c\u5168\u53bb\u8026\u3002\u5fc5\u8981\u65f6\uff0c\u5c06 PL24 \u4ece 63 dB \u6539\u4e3a 60 dB \u4ee5\u63d0\u9ad8\u53bb\u8026\u529f\u7387\uff0c\u7136\u540e\u91cd\u590d\u64cd\u4f5c\uff1b\u5982\u6709\u5fc5\u8981\uff0c\u518d\u4ee5</p>\r\n<p>2\u20133 dB \u7684\u6b65\u957f\u8c03\u6574\u3002\u82e5\u9700\u4f7f\u7528\u9ad8\u4e8e 30 dB \u7684\u529f\u7387\u7ea7\uff08\u5373\u6570\u503c\u4f4e\u4e8e 30 dB \u7684 PL14 \u8bbe\u7f6e\uff09\uff0c\u8bf7\u54a8\u8be2\u8c31\u4eea\u7ba1\u7406\u5458\u3002\u6ce8\uff1a\u82e5\u51fa\u73b0\u201cInvalid acquisition time. . .\u201d\u9519\u8bef\uff0c\u8bf7\u5c1d\u8bd5\u5c06 SW \u51cf\u5c0f\u7ea6 1 ppm \u540e\u91cd\u65b0\u91c7\u96c6\u30028. \u4f7f\u7528\u591a\u8c31\u663e\u793a\uff08\u5355\u51fb\u56fe\u6807\u6216\u8f93\u5165 <code>.md</code>\uff0c\u7136\u540e\u8f93\u5165 <code>re expno</code>\uff1b\u5176\u4e2d <code>expno</code> \u4e3a\u53c2\u6bd4\u8c31\u7684\u5b9e\u9a8c\u53f7\uff0c\u4f8b\u5982\u7b2c 1 \u6b65\u7ed9\u51fa\u7684 51\uff1b\u4e5f\u53ef\u4f7f\u7528\u6d4f\u89c8\u5668\u7a97\u53e3\u7684\u62d6\u653e\u529f\u80fd\uff0c\u5c06\u53c2\u6bd4\u8c31\u6570\u636e\u6587\u4ef6\u5939\u8f7d\u5165\u8c31\u56fe\u7a97\u53e3\uff09\uff0c\u5c06\u5f53\u524d\u8c31\u56fe\u4e0e\u53c2\u6bd4\u8c31\u6bd4\u8f83\u3002\u89c2\u5bdf\u53bb\u8026\u5f15\u8d77\u7684\u5cf0\u5f62\u53d8\u5316\u3002</p>\r\n","source-41":"<p>9. \u5c06\u672c\u5b9e\u9a8c\u590d\u5236\u5230\u65b0\u7684 <code>expno</code>\u3002\u4f7f\u7528\u4e0d\u540c\u7684 O2 \u503c\u91cd\u590d\u53bb\u8026\u5b9e\u9a8c\uff08\u5373\u5bf9\u4e0d\u540c\u7684\u5cf0\u53bb\u8026\uff09\uff0c\u5e76\u6309\u4e0a\u8ff0\u65b9\u6cd5\u68c0\u67e5\u53bb\u8026\u8c31\u300210. \u4ee5\u80fd\u591f\u663e\u793a\u53bb\u8026\u6548\u679c\u7684\u65b9\u5f0f\uff0c\u5c06\u4e24\u5f20\u53bb\u8026\u8c31\u548c\u53c2\u6bd4\u8c31\u4f5c\u56fe\u3002</p>\n<h3>\u7b2c 3 \u90e8\u5206\u2014\u2014nOe \u5dee\u8c31</h3>\n<p>1. \u5c06\u7b2c 2 \u90e8\u5206\u7684\u53c2\u6bd4\u8c31\u590d\u5236\u5230\u65b0\u7684\u5341\u4f4d\u7ec4\u4e2d\uff08\u4f8b\u5982\uff0c\u8f93\u5165 <code>re 51 wrpa 61</code>\uff0c\u7136\u540e\u8f93\u5165 <code>re 61</code>\uff09\u30022. \u5c06\u7b2c 2 \u90e8\u5206\u7684\u7b2c\u4e00\u9879\u53bb\u8026\u5b9e\u9a8c\u590d\u5236\u5230\u4e0b\u4e00\u4e2a <code>expno</code>\uff08\u4f8b\u5982\uff0c\u8f93\u5165 <code>re 52 wrpa 62</code>\uff0c\u7136\u540e\u8f93\u5165 <code>re 62</code>\uff09\u30023. \u8bbe\u7f6e nOe \u5dee\u8c31\u8109\u51b2\u5e8f\u5217\u2014\u2014\u5728 <code>AcquPars</code> \u9009\u9879\u5361\u7684\u8109\u51b2\u7a0b\u5e8f\u5b57\u6bb5\u4e2d\u8f93\u5165\u201czgf2pr\u201d\u30024. \u5355\u51fb <code>PulseProg</code> \u9009\u9879\u5361\u67e5\u770b\u8109\u51b2\u7a0b\u5e8f\u548c\u6240\u9700\u53c2\u6570\u3002\u6309\u8109\u51b2\u7a0b\u5e8f\u7684\u5efa\u8bae\uff0c\u5728 <code>AcquPar</code> \u9009\u9879\u5361\u4e2d\u6216\u4f7f\u7528 <code>ased</code> \u8bbe\u7f6e\u53c2\u6570\u3002PL14 \u7684\u8d77\u59cb\u503c\u4f7f\u7528 69 dB\u3002\u52a1\u5fc5\u5c06 <code>AQ_mod</code> \u91cd\u8bbe\u4e3a\u201cDQD\u201d\u3001<code>DIGMOD</code> \u91cd\u8bbe\u4e3a\u201cdigital\u201d\uff1b\u8fd9\u4e9b\u662f\u6b63\u5e38\u8bbe\u7f6e\u30025. \u5c55\u5f00\u5f85\u7167\u5c04\u5cf0\u9644\u8fd1\u7684\u8c31\u56fe\uff0c\u5e76\u6309\u7b2c 2 \u90e8\u5206\u7684\u65b9\u6cd5\u8bbe\u7f6e O2 \u503c\u30026. \u91c7\u96c6\u5e26\u7167\u5c04\u7684\u8c31\u56fe\uff0c\u4ed4\u7ec6\u8fdb\u884c\u76f8\u4f4d\u6821\u6b63\uff0c\u5904\u7406\u540e\u4f7f\u7528 <code>abs</code>\u3002\u68c0\u67e5\u53d7\u7167\u5c04\u5cf0\u662f\u5426\u6d88\u5931\u3002\u5fc5\u8981\u65f6\uff0c\u5c06 PL14 \u4ece 63 dB \u6539\u4e3a 60 dB \u4ee5\u63d0\u9ad8\u7167\u5c04\u529f\u7387\uff0c\u7136\u540e\u91cd\u590d\u64cd\u4f5c\uff1b\u5982\u6709\u5fc5\u8981\uff0c\u518d\u4ee5 3 dB \u7684\u6b65\u957f\u8c03\u6574\u3002\u6ce8\uff1a\u9009\u62e9 PL14 \u529f\u7387\u7ea7\u65f6\uff0c\u65e2\u8981\u4fdd\u8bc1\u80fd\u6709\u6548\u9971\u548c\u76ee\u6807\u4fe1\u53f7\uff0c\u53c8\u8981\u5c3d\u91cf\u51cf\u5c0f\u5bf9\u76f8\u90bb\u4fe1\u53f7\u7684\u5f71\u54cd\u3002\u6b64\u5916\uff0c\u9274\u4e8e\u7167\u5c04\u65f6\u95f4\u8f83\u957f\uff0cPL14 \u4e0d\u5e94\u9ad8\u4e8e\u8c31\u4eea\u6216\u6837\u54c1\u6240\u80fd\u627f\u53d7\u7684\u6c34\u5e73\u3002\u82e5\u9700\u4f7f\u7528\u9ad8\u4e8e 30 dB \u7684\u529f\u7387\u7ea7\uff08\u5373\u6570\u503c\u4f4e\u4e8e 30 dB \u7684 PL14 \u8bbe\u7f6e\uff09\uff0c\u8bf7\u54a8\u8be2\u8c31\u4eea\u7ba1\u7406\u5458\u30027. \u4f7f\u7528\u591a\u8c31\u663e\u793a\uff08\u5355\u51fb\u56fe\u6807\u6216\u8f93\u5165 <code>.md</code>\uff09\uff0c\u5c06\u5f53\u524d\u8c31\u56fe\u4e0e\u53c2\u6bd4\u8c31\u6bd4\u8f83\u3002\u82e5\u4e24\u5f20\u8c31\u56fe\u5f7c\u6b64\u53e0\u52a0\uff0c\u5c06\u770b\u5230\u6d88\u5931\u7684\u9971\u548c\u5cf0\u3002\u4ed4\u7ec6\u89c2\u5bdf\u53d7\u7167\u5c04\u8c31\u4e2d\u5f3a\u5ea6\u6bd4\u53c2\u6bd4\u8c31\u7565\u9ad8\u7684\u5cf0\u2014\u2014\u8fd9\u4e9b\u5cf0\u6765\u81ea\u6b63 nOe \u76f8\u4e92\u4f5c\u7528\uff1b\u5bf9\u4e8e\u594e\u5b81\u6837\u54c1\uff0c\u5e94\u51fa\u73b0\u8fd9\u79cd\u60c5\u51b5\u3002</p>\n","source-42":"<p class=\"figure-caption\">\u56fe 2.3\u3000\u5728 500 MHz \u594e\u5b81\u6837\u54c1\u4e0a\uff0c\u4ee5\u591a\u8c31\u663e\u793a\u6a21\u5f0f\u663e\u793a\u7684\u53d7\u7167\u5c04\u8c31\uff084.56 ppm\uff09\u548c\u53c2\u6bd4\u8c31\u7684\u9ad8\u573a\u5c55\u5f00\u56fe\u3002\u8bf7\u6ce8\u610f\uff0c\u4e3a\u4f7f\u53d7\u7167\u5c04\u8c31\u4e2d\u7ea6 3.1 ppm \u5cf0\u7684\u5f3a\u5ea6\u4e0e\u53c2\u6bd4\u8c31\u76f8\u7b49\uff0c\u9700\u91c7\u7528 1.09 \u7684\u7f29\u653e\u56e0\u5b50\uff0c\u8fd9\u8868\u660e nOe \u7ea6\u4e3a 9%\u3002</p>\n<p>8. \u8981\u5728\u591a\u8c31\u663e\u793a\u6a21\u5f0f\u4e2d\u83b7\u5f97 nOe \u589e\u5f3a\u7684\u8fd1\u4f3c\u503c\uff0c\u5148\u7528\u201cToggle the display layout\u201d\u56fe\u6807\uff08\u4e24\u5f20\u8c31\u56fe\u548c\u7bad\u5934 z\uff09\u4f7f\u4e24\u5f20\u8c31\u56fe\u5728\u663e\u793a\u533a\u5206\u5f00\u3002\u968f\u540e\uff0c\u5355\u51fb\u663e\u793a\u533a\u53f3\u4e0a\u65b9\u7684\u7a7a\u767d\u65b9\u6846\uff0c\u9009\u5b9a\u53c2\u6bd4\u8c31\u4ee5\u4fbf\u64cd\u4f5c\u3002\u518d\u6b21\u5355\u51fb\u201cToggle the display layout\u201d\u56fe\u6807\uff0c\u4f7f\u4e24\u5f20\u8c31\u56fe\u76f8\u4e92\u53e0\u52a0\u3002\u7136\u540e\u5355\u51fb\u201cScale the selected spectra\u201d\u56fe\u6807\uff08\u56fe 2.3 \u4e2d\u4ee5\u7d2b\u8272\u5708\u51fa\uff09\uff0c\u8c03\u6574\u53c2\u6bd4\u8c31\u7684\u5782\u76f4\u6807\u5ea6\uff0c\u4f7f\u4efb\u4e00\u611f\u5174\u8da3\u5cf0\u7684\u5f3a\u5ea6\u4e0e\u53d7\u7167\u5c04\u8c31\u4e2d\u5bf9\u5e94\u5cf0\u76f8\u5339\u914d\u3002\u663e\u793a\u533a\u5de6\u4fa7\u4f1a\u663e\u793a\u7f29\u653e\u56e0\u5b50\uff1b\u8be5\u503c\u901a\u5e38\u7565\u5927\u4e8e 1\uff0c\u4f8b\u5982 1.09\uff0c\u4ee3\u8868\u7ea6 9% \u7684 nOe\uff08\u56fe 2.3\uff09\u30029. \u5c06\u672c\u5b9e\u9a8c\u590d\u5236\u5230\u65b0\u7684 <code>expno</code>\u3002\u4f7f\u7528\u4e0d\u540c\u7684 O2 \u503c\u91cd\u590d\u5b9e\u9a8c\uff08\u5373\u7167\u5c04\u4e0d\u540c\u7684\u5cf0\uff09\uff0c\u5e76\u6309\u4e0a\u8ff0\u65b9\u6cd5\u68c0\u67e5\u53d7\u7167\u5c04\u8c31\u3002</p>\n","source-43":"<p>10. \u6309\u9700\u8981\u5bf9\u5176\u4ed6 O2 \u503c\u91cd\u590d\u64cd\u4f5c\uff0c\u6bcf\u4e2a\u503c\u5747\u4f7f\u7528\u4e00\u4e2a\u65b0\u7684\u5b9e\u9a8c\u300211. \u53ef\u9009\uff1a\u91cd\u65b0\u91c7\u96c6\u5305\u542b\u79bb\u5171\u632f\u7167\u5c04\u7684\u53c2\u6bd4\u8c31\uff0c\u53ef\u63d0\u9ad8\u5b9e\u9a8c\u8d28\u91cf\u2014\u2014\u6362\u8a00\u4e4b\uff0c\u4fdd\u6301\u4e0e nOe \u5b9e\u9a8c\u76f8\u540c\u7684 O2 \u7167\u5c04\uff0c\u4f46\u5c06 O2 \u8bbe\u5728\u4e0d\u5bf9\u5e94\u4efb\u4f55\u5cf0\u7684\u4f4d\u7f6e\u3002\u4e3a\u6b64\uff0c\u5c06\u4e0a\u8ff0\u7b2c 3 \u6b65\u7684\u7b2c\u4e00\u9879 nOe \u5b9e\u9a8c\u590d\u5236\u5230\u65b0\u7684 <code>expno</code>\u3002\u4f7f\u7528 <code>.set0123</code> \u547d\u4ee4\u5c06 O2 \u8bbe\u5728\u8c31\u56fe\u4e2d\u6ca1\u6709\u5cf0\u7684\u533a\u57df\uff0c\u4f8b\u5982\u7ea6 6 ppm\u3002\u5c06 PL14 \u8bbe\u4e3a\u4f60\u5bf9\u4efb\u4e00\u53d7\u7167\u5c04\u5cf0\u6240\u7528\u7684\u6700\u9ad8\u529f\u7387\u7ea7\u3002\u8fd0\u884c\u672c\u5b9e\u9a8c\uff0c\u83b7\u5f97\u8c31\u56fe\u540e\u91cd\u590d\u591a\u8c31\u663e\u793a\u64cd\u4f5c\uff0c\u89c2\u5bdf nOe \u767e\u5206\u6bd4\u662f\u5426\u4e0d\u540c\u4e8e\u5148\u524d\u6570\u503c\u300212. \u81f3\u5c11\u5c06\u4e24\u5f20\u53d7\u7167\u5c04\u8c31\u4e0e\u53c2\u6bd4\u8c31\u4e00\u8d77\u4f5c\u56fe\u3002</p>\n<h3>\u7b2c 4 \u90e8\u5206\u2014\u2014\u5e26\u4e0e\u4e0d\u5e26 nOe \u7684 \u00b9H \u53bb\u8026 \u00b9\u00b3C \u8c31</h3>\n<p>1. \u65b0\u5efa\u6570\u636e\u96c6\u3002\u5f00\u542f\u65cb\u8f6c\u540e\u68c0\u67e5\u6216\u8fdb\u884c\u9501\u573a\u4e0e\u5300\u573a\u30022. \u5982\u6709\u5fc5\u8981\uff08\u4f8b\u5982\uff0c\u8fd9\u662f\u4e00\u4e2a\u65b0\u7684\u5b9e\u9a8c\u65f6\u6bb5\u7684\u7b2c\u4e00\u4e2a\u5b9e\u9a8c\uff09\uff0c\u4f7f\u7528\u6807\u51c6\u53c2\u6570\u91c7\u96c6 \u00b9H \u8c31\u3002\u68c0\u67e5\u5300\u573a\u662f\u5426\u5408\u683c\u30023. \u65b0\u5efa <code>expno</code>\u3002\u4f7f\u7528\u6807\u51c6\u53c2\u6570\u8bbe\u7f6e \u00b9\u00b3C \u5b9e\u9a8c\uff0c\u5e76\u8bbe\u7f6e</p>\n<h3>NS = 128</h3>\n<p>\uff1b\u5982\u6709\u5fc5\u8981\u53ef\u63d0\u9ad8\u8be5\u6570\u503c\u4ee5\u83b7\u5f97\u826f\u597d\u4fe1\u53f7\u3002\u68c0\u67e5\u63a2\u5934\u5728 \u00b9H \u548c \u00b9\u00b3C \u4e0a\u7684\u8c03\u8c10\u3002\u4e3a\u4fbf\u4e8e\u5f15\u7528\uff0c\u5c06\u6b64 <code>expno</code> \u79f0\u4e3a 2\u30024. \u5c06 \u00b9\u00b3C \u5b9e\u9a8c\u590d\u5236\u5230 <code>expno 3</code>\u3002\u5c06\u8109\u51b2\u7a0b\u5e8f\u4ece\u201czgpg30\u201d\u6539\u4e3a\u201czgig30\u201d\u3002\u4f7f\u7528 <code>edpul</code> \u6216 <code>PulseProg</code> \u9009\u9879\u5361\u67e5\u770b\u4e24\u4e2a\u8109\u51b2\u5e8f\u5217\u7684\u5dee\u5f02\u30025. \u8fd4\u56de <code>expno 2</code>\u3002\u82e5\u8c31\u4eea\u8fd0\u884c TopSpin 1.x\uff0c\u8f93\u5165 <code>multizg</code>\uff0c\u5728\u8be2\u95ee\u5b9e\u9a8c\u6570\u76ee\u65f6\u8f93\u5165 2\u3002\u8be5 <code>au</code> \u7a0b\u5e8f\u4f1a\u4f9d\u6b21\u8fd0\u884c <code>expno 2</code> \u548c <code>expno 3</code>\u3002\u6ce8\uff1a\u8981\u4f7f\u7528 <code>multizg</code>\uff0c\u5404 <code>expno</code> \u5fc5\u987b\u8fde\u7eed\u7f16\u53f7\u3002\u82e5\u6bcf\u4e2a <code>expno</code> \u4f7f\u7528 128 \u6b21\u626b\u63cf\uff0c\u7ea6\u9700 15 \u5206\u949f\u3002\u82e5\u8c31\u4eea\u8fd0\u884c TopSpin 2.x\uff0c\u5219\u53ef\u6539\u7528\u8f6f\u4ef6\u7684\u961f\u5217\u529f\u80fd\u3002\u6b64\u65f6\uff0c\u53ea\u9700\u5728\u6bcf\u4e2a\u5f85\u8fd0\u884c\u7684 <code>expno</code> \u4e2d\u8f93\u5165 <code>zg</code>\uff0c\u8f6f\u4ef6\u4f1a\u4f9d\u6b21\u8fd0\u884c\u5b83\u4eec\u3002\u4f7f\u7528\u961f\u5217\u65f6\uff0c\u5404 <code>expno</code> \u65e0\u987b\u8fde\u7eed\u30026. <code>multizg</code> \u6216\u6240\u6709\u6392\u961f\u5b9e\u9a8c\u5b8c\u6210\u540e\uff0c\u8fd4\u56de <code>expno 2</code> \u5904\u7406\u6570\u636e\uff1b\u518d\u5904\u7406 <code>expno 3</code> \u7684\u6570\u636e\u3002\u4e5f\u53ef\u5728\u6bcf\u4e2a FID \u91c7\u96c6\u5b8c\u6210\u540e\u7acb\u5373\u5904\u7406\u3002</p>\n","source-44":"<p>7. \u5728 <code>expno 2</code> \u4e2d\uff0c\u5fc5\u8981\u65f6\u5fae\u8c03\u76f8\u4f4d\u5e76\u5e94\u7528 <code>abs</code>\u3002\u4f7f\u7528 <code>sinocal</code> \u9009\u53d6\u51e0\u4e2a\u5cf0\u68c0\u67e5\u4fe1\u566a\u6bd4\u3002\u8bb0\u5f55\u5cf0\u7684\u4f4d\u7f6e\u3001\u6240\u7528\u7684\u566a\u58f0\u533a\u57df\u548c\u5f97\u5230\u7684 s/n \u503c\u30028. \u5728 <code>expno 3</code> \u4e2d\uff0c\u5bf9\u76f8\u540c\u7684\u5cf0\u548c\u566a\u58f0\u533a\u57df\u91cd\u590d\u7b2c 7 \u6b65\u3002\u6ce8\u610f nOe \u7167\u5c04\u5bf9 s/n \u7684\u5f71\u54cd\u3002</p>\n<h3>\u7b2c 5 \u90e8\u5206\u2014\u2014\u00b9\u00b3C DEPT \u8c31</h3>\n<p>1. \u5c06 \u00b9\u00b3C <code>expno 2</code>\uff08\u7b2c 3 \u6b65\uff09\u590d\u5236\u5230\u65b0\u7684 <code>expno</code>\uff08\u4f8b\u5982 4\uff09\u3002\u4f7f\u7528 <code>ased</code> \u548c\u4ee5\u4e0b\u53c2\u6570\u8bbe\u7f6e DEPT-45 \u5b9e\u9a8c\uff1a</p>\n<h3>PULPROG</h3>\n<p>dept</p>\n<p>\u00b9\u00b3C 90\u00b0 \u8109\u51b2\u5bbd\u5ea6\uff08\u4f7f\u7528\u4f60\u5728\u7b2c 1 \u7ae0\u5b9e\u9a8c\u4e2d\u6821\u51c6\u7684\u6570\u503c\uff09</p>\n<h3>P1</h3>\n<p>\u00b9\u00b3C 90\u00b0 \u8109\u51b2\u6821\u51c6\u6240\u5bf9\u5e94\u7684\u529f\u7387\u7ea7</p>\n<h3>PL1</h3>\n<p>\u00b9H 90\u00b0 \u8109\u51b2\u5bbd\u5ea6\uff08\u4f7f\u7528\u4f60\u5728\u7b2c 1 \u7ae0\u5b9e\u9a8c\u4e2d\u6821\u51c6\u7684\u6570\u503c\uff09</p>\n<h3>P3</h3>\n<p>\u00b9H 90\u00b0 \u8109\u51b2\u6821\u51c6\u6240\u5bf9\u5e94\u7684\u529f\u7387\u7ea7</p>\n<h3>PL2</h3>\n<p>45\u00b0 \u00b9H \u8109\u51b2\u5bbd\u5ea6</p>\n<h3>P0</h3>\n<h3>CNST2</h3>\n<p>145\uff08\u7ea6\u4e3a\u4e00\u952e J<sub>C\u2013H</sub> \u503c\uff0c\u5355\u4f4d Hz\uff09</p>\n<h3>NS</h3>\n<p>64\uff0c\u6216\u6839\u636e\u9700\u8981\u589e\u52a0\u4ee5\u83b7\u5f97\u826f\u597d\u4fe1\u53f7\uff08\u5e94\u4e3a 4 \u7684\u500d\u6570\uff09</p>\n<p>2. \u5c06\u6b64 <code>expno</code> \u590d\u5236\u4e3a\u4e24\u4e2a\u65b0\u7684 <code>expno</code>\uff0c\u4f7f\u4e09\u4e2a\u5b9e\u9a8c\u53f7\u5728\u6570\u503c\u4e0a\u8fde\u7eed\u3002\u5c06\u4e0b\u4e00\u4e2a <code>expno</code> \u7684 P0 \u53c2\u6570\u6539\u4e3a 90\u00b0 \u00b9H \u8109\u51b2\uff0c\u5728\u6700\u540e\u4e00\u4e2a <code>expno</code> \u4e2d\u5c06 P0 \u8bbe\u4e3a 135\u00b0 \u8109\u51b2\uff08\u5373 90\u00b0 \u00b9H \u8109\u51b2\u5bbd\u5ea6\u7684 1.5 \u500d\uff09\u3002\u8be5 \u00b9H \u8109\u51b2\u65f6\u957f\u51b3\u5b9a\u4e0d\u540c\u7c7b\u578b \u00b9\u00b3C \u5cf0\u7684\u5f3a\u5ea6\u548c\u76f8\u4f4d\uff0c\u5982\u56fe 2.4 \u6240\u793a\u30023. \u8fd4\u56de\u8fd9\u4e09\u4e2a\u5b9e\u9a8c\u4e2d\u7684\u7b2c\u4e00\u4e2a <code>expno</code>\uff0c\u4f7f\u7528 <code>multizg</code>\uff08TopSpin 1.x\uff09\u6216\u961f\u5217\u529f\u80fd\uff08TopSpin 2.x \u53ca\u66f4\u9ad8\u7248\u672c\uff09\u8fd0\u884c\u5168\u90e8\u4e09\u4e2a\u5b9e\u9a8c\u3002\u82e5\u6bcf\u4e2a\u5b9e\u9a8c\u5747\u4e3a 64 \u6b21\u626b\u63cf\uff0c\u7ea6\u9700 20 \u5206\u949f\u30024. \u6570\u636e\u91c7\u96c6\u5b8c\u6210\u540e\uff0c\u5904\u7406\u4e09\u5f20\u8c31\u4e2d\u7684\u7b2c\u4e00\u5f20\uff08DEPT-45\uff09\uff0c\u5c06\u6240\u6709\u5cf0\u8c03\u4e3a\u6b63\u76f8\u3002\u7136\u540e\u4f7f\u7528 <code>multiefp</code>\uff0c\u4ee5\u76f8\u540c\u7684\u76f8\u4f4d\u6821\u6b63\u5904\u7406\u5168\u90e8\u4e09\u5f20\u8c31\u3002\u82e5\u8c31\u4eea\u672a\u5b89\u88c5 <code>au</code> \u7a0b\u5e8f <code>multiefp</code>\uff0c\u5fc5\u987b\u8bb0\u5f55 DEPT-45 \u8c31\u76f8\u4f4d\u6821\u6b63\u540e\u5f97\u5230\u7684\u76f8\u4f4d\u6821\u6b63\u53c2\u6570 <code>PHC0</code> \u548c <code>PHC1</code>\u3002\u5728\u4f9d\u6b21\u4f7f\u7528 <code>efp</code> \u5904\u7406\u6570\u636e\u96c6\u524d\uff0c\u5c06\u8fd9\u4e9b\u76f8\u4f4d\u53c2\u6570\u8f93\u5165 DEPT-90 \u548c DEPT-135 \u6570\u636e\u96c6\u30025. \u4f7f\u7528\u591a\u8c31\u663e\u793a\u5c06\u6240\u6709\u8c31\u56fe\u540c\u65f6\u663e\u793a\uff0c\u5e76\u6253\u5370\u8be5\u5c4f\u5e55\uff0c\u5982\u4e0b\u56fe\u6240\u793a\u3002\u786e\u5b9a\u6570\u76ee</p>\n","source-45":"<p class=\"figure-caption\">\u56fe 2.4\u3000\u5728 DEPT \u5b9e\u9a8c\u4e2d\uff0caCHa\u3001aCH2a \u548c aCH3 \u4fe1\u53f7\u7684\u9884\u671f\u5f3a\u5ea6\u968f \u00b9H \u8109\u51b2 P0 \u7ffb\u8f6c\u89d2\u7684\u53d8\u5316\u3002</p>\n<p>\u4ee5\u53ca\u6bcf\u4e2a \u00b9\u00b3C \u5171\u632f\u7684\u7c7b\u578b\uff08\u4f8b\u5982 aCHa\u3001aCH2a\u3001aCH3 \u548c\u5b63\u78b3\uff09\uff08\u56fe 2.5\uff09\u30026. \u5c06 DEPT-135 \u6570\u636e\u96c6\u590d\u5236\u5230\u65b0\u7684 <code>expno</code>\u3002\u73b0\u5728\u68c0\u67e5\u6539\u53d8 J<sub>C\u2013H</sub> \u503c\u7684\u5f71\u54cd\u3002\u6309\u4e0a\u8ff0\u7b2c 2 \u6b65\u8bbe\u7f6e\u4e24\u4e2a\u65b0\u7684 DEPT-135 \u6570\u636e\u96c6\uff1b\u5728\u4e00\u4e2a\u65b0\u6570\u636e\u96c6\u4e2d\u8bbe <code>CNST2 = 130</code>\uff08Hz\uff09\uff0c\u5728\u53e6\u4e00\u4e2a\u4e2d\u8bbe <code>CNST2 = 160</code>\u30027. \u6309\u7b2c 3 \u6b65\u8fd0\u884c\u8fd9\u4e9b\u5b9e\u9a8c\uff0c\u5e76\u6309\u7b2c 4 \u6b65\u5904\u7406\u3002\u6bd4\u8f83\u5404\u5cf0\u7684\u76f8\u4f4d\u884c\u4e3a\uff0c\u5e76\u4f7f\u7528\u591a\u8c31\u663e\u793a\u521b\u5efa\u591a\u8c31\u56fe\u4ee5\u5c55\u793a\u8fd9\u4e00\u70b9\u3002</p>\n<h3>\u5c0f\u7ed3</h3>\n<p>\u5b9e\u9a8c\u62a5\u544a\u5e94\u5305\u62ec\u4ee5\u4e0b\u5185\u5bb9\uff1a</p>\n<p>1. T1 \u8ba1\u7b97\u7ed3\u679c\u6253\u5370\u4ef6\u548c T1-IR \u8109\u51b2\u5e8f\u5217\u6253\u5370\u4ef6\u30022. \u53bb\u8026\uff1a\u5728\u76f8\u540c\u7ed8\u56fe\u533a\u57df\u663e\u793a\u53c2\u6bd4\u8c31\u548c\u81f3\u5c11\u4e24\u5f20\u53bb\u8026\u8c31\u30023. nOe \u5dee\u8c31\uff1a\u6309\u4e0a\u6587\u95ee\u9898 2 \u7684\u65b9\u5f0f\u4f5c\u56fe\u30024. \u00b9\u00b3C \u8c31\uff1a\u5728\u76f8\u540c\u533a\u57df\u663e\u793a\u53c2\u6bd4\u8c31\u548c\u65e0 nOe \u8c31\uff0c\u5e76\u5728\u6807\u9898\u4e2d\u5217\u51fa\u81f3\u5c11\u4e00\u4e2a\u5cf0\u7684 s/n \u503c\u3002</p>\n","source-46":"<p class=\"figure-caption\">\u56fe 2.5\u3000\u4ee5\u591a\u8c31\u663e\u793a\u6a21\u5f0f\u663e\u793a\u7684 CDCl3 \u4e2d\u594e\u5b81\u7684 \u00b9\u00b3C \u548c DEPT \u8c31\u3002\u4ece\u4e0b\u81f3\u4e0a\u4f9d\u6b21\u4e3a\uff1a\u5e38\u89c4 \u00b9\u00b3C\u3001DEPT-45\u3001DEPT-90\u3001DEPT-135\u3002\u8bf7\u6ce8\u610f\uff0c\u5b63\u78b3\u5171\u632f\u5728\u4efb\u4f55\u4e00\u5f20 DEPT \u8c31\u4e2d\u5747\u4e0d\u51fa\u73b0\u3002</p>\n<p>5. DEPT \u8c31\uff1a\u53c2\u6bd4\u8c31\u4e0e\u4e09\u5f20\u4e0d\u540c P0 \u503c\u7684 DEPT \u8c31\u7684\u5c4f\u5e55\u6253\u5370\u4ef6\uff08\u5982\u56fe 2.5\uff09\uff0c\u5e94\u9002\u5f53\u5c55\u5f00\u4ee5\u83b7\u5f97\u6700\u4f73\u663e\u793a\u30026. DEPT \u8c31\uff1a\u4e09\u5f20\u4e0d\u540c J<sub>C\u2013H</sub> \u503c\u7684 DEPT-135 \u8c31\u7684\u53e6\u4e00\u4efd\u5c4f\u5e55\u6253\u5370\u4ef6\uff0c\u4ea6\u5e94\u9002\u5f53\u5c55\u5f00\u4ee5\u83b7\u5f97\u6700\u4f73\u663e\u793a\u30027. \u5efa\u8bae\u601d\u8003\u7684\u95ee\u9898\uff1aa. \u5bf9\u6240\u9009</p>\n<p>\u5cf0\u800c\u8a00\uff0c\u5e26\u548c\u4e0d\u5e26 nOe \u6240\u5f97 \u00b9\u00b3C \u8c31\u7684\u4fe1\u566a\u6bd4\u6709\u4f55\u5dee\u5f02\uff1fb. \u53c2\u7167\u95ee\u9898 (a)\uff0c\u8fd9\u79cd s/n \u5dee\u5f02\u662f\u5426\u7b26\u5408</p>\n<p>\u9884\u671f\uff1f\u4e3a\u4ec0\u4e48\uff1fc. \u5217\u51fa\u6bcf\u4e00\u4e2a\u594e\u5b81 \u00b9\u00b3C \u5316\u5b66\u4f4d\u79fb\u53ca\u5176\u591a\u91cd\u6027</p>\n<p>\uff08\u5b63\u78b3\u3001aCHa \u7b49\uff09\u7684\u8868\u683c\u3002</p>\n","source-47":"<p>d. \u6539\u53d8 J \u503c\u4f18\u5316\u5982\u4f55\u5f71\u54cd DEPT</p>\n<p>\u8c31\uff1f\u80fd\u5426\u5224\u65ad\u594e\u5b81\u7684\u6700\u4f73 J<sub>C\u2013H</sub> \u503c\u8bbe\u7f6e\u662f\u4ec0\u4e48\uff0c\u4ee5\u53ca\u4f1a\u91c7\u7528\u4f55\u79cd\u5224\u636e\uff1fe. \u80fd\u5426\u5bf9</p>\n<p>\u594e\u5b81\u4f5c\u51fa\u8fdb\u4e00\u6b65\u7684\u5316\u5b66\u4f4d\u79fb\u5f52\u5c5e\uff1f</p>\n"},"figurePlacements":{"source-37":[{"source":0,"before":"\u56fe2.1 \u5728F2\u4e2dFourier\u8f6c\u6362\u540e,\u6c28\u57faT1-IR\u6570\u636e\u96c6\u7684\u663e\u73b0\u4e0d\u89c1 (\u547d\u4ee4xf2)."}],"source-38":[{"source":0,"before":"\u56fe2.2 T1\u8ba1\u7b97\u4f8b\u8868:\u6ce8\u610f,\u4e3a\u6700\u9ad8\u503c\u7ea66.34ppm\u7684\u8ba1\u7b97T1\u4e3a440ms."}],"source-42":[{"source":0,"before":"\u56fe 2.3 \u8f90\u5c04\u9891\u8c31 (4.56ppm) \u548c\u57fa\u56e0\u6837\u672c\u4e0a\u7684\u53c2\u8003\u9891\u8c31\u7684\u591a\u6b21\u663e\u793a\u6a21\u5f0f\u5728500MHz\u4e0a\u65b9\u6269\u5c55. \u6ce8\u610f1.09\u7684\u89c4\u6a21\u56e0\u5b50,\u4ee5\u4f7f\u8f90\u5c04\u9891\u8c31\u7684\u5cf0\u503c\u57283.1ppm"}],"source-45":[{"source":0,"before":"\u56fe2.4 DEPT\u5b9e\u9a8c\u4e2d\u9884\u671faCHa,aCH2a\u548caCH3\u4fe1\u53f7\u5f3a\u5ea6\u4e0e1H\u8109\u51b2P0\u89d2\u76f8\u6bd4."}],"source-46":[{"source":0,"before":"\u56fe2.5 \u901a\u8fc7\u591a\u6b21\u663e\u793a\u6a21\u5f0f\u663e\u793aCDCl3\u4e2d\u8272\u8c3113C\u548cDEPT.\u4ece\u5e95\u5230\u4e0a:\u6807\u51c613C,DEPT-45,DEPT-90,DEPT-135. \u8bf7\u6ce8\u610f,\u4efb\u4f55DEPT\u5149"}]},"navigationSections":[{"id":"section-source-34-1","pageId":"source-34","title":"OVERVIEW","titleZh":"\u6982\u8ff0","kind":"section"},{"id":"section-source-34-2","pageId":"source-34","title":"SAMPLE AND SPECTROMETER REQUIREMENTS","titleZh":"\u6837\u54c1\u4e0e\u8c31\u4eea\u8981\u6c42","kind":"section"},{"id":"section-source-34-3","pageId":"source-34","title":"ACTIVITIES","titleZh":"\u5b9e\u9a8c\u5185\u5bb9","kind":"section"},{"id":"section-source-34-4","pageId":"source-34","title":"Part 1\u20141H T1 (Spin\u2013Lattice) Relaxation Measurement","titleZh":"\u7b2c 1 \u90e8\u5206\u2014\u2014\u00b9H T1\uff08\u81ea\u65cb\u2013\u6676\u683c\uff09\u5f1b\u8c6b\u6d4b\u91cf","kind":"part"},{"id":"section-source-39-5","pageId":"source-39","title":"Part 2\u2014Homonuclear Decoupling","titleZh":"\u7b2c 2 \u90e8\u5206\u2014\u2014\u540c\u6838\u53bb\u8026","kind":"part"},{"id":"section-source-41-6","pageId":"source-41","title":"Part 3\u2014nOe-difference","titleZh":"\u7b2c 3 \u90e8\u5206\u2014\u2014nOe \u5dee\u8c31","kind":"part"},{"id":"section-source-43-7","pageId":"source-43","title":"Part 4\u20141H-decoupled 13C Spectra with and without nOe","titleZh":"\u7b2c 4 \u90e8\u5206\u2014\u2014\u5e26\u4e0e\u4e0d\u5e26 nOe \u7684 \u00b9H \u53bb\u8026 \u00b9\u00b3C \u8c31","kind":"part"},{"id":"section-source-44-8","pageId":"source-44","title":"Part 5\u201413C DEPT Spectra","titleZh":"\u7b2c 5 \u90e8\u5206\u2014\u2014\u00b9\u00b3C DEPT \u8c31","kind":"part"},{"id":"section-source-45-9","pageId":"source-45","title":"SUMMARY","titleZh":"\u5c0f\u7ed3","kind":"section"}]});</script></head>
+    <body data-language="en" data-asset-prefix="../assets"><header class="topbar"><div class="brand"><h1><a href="../../index.html">Practical NMR Spectroscopy Laboratory Guide</a></h1><p>核磁共振实验方法、脉冲序列与谱图实践</p></div><div class="toolbar" aria-label="阅读模式">
+  <div class="language-switcher" role="group" aria-label="语言模式">
+    <button class="view-icon" type="button" data-view="en" aria-label="原文" title="原文 · 快捷键 1 / O 循环" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h11v17h-11zM9 8h6M9 11h6M9 14h4.5" /></svg></button>
+    <button class="view-icon" type="button" data-view="bilingual" aria-label="双语对照" title="双语对照 · 快捷键 2 / O 循环" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 4.5h7v15h-7zM13.5 4.5h7v15h-7zM6 9h2M6 12h2M16 9h2M16 12h2" /></svg></button>
+  </div>
+  <button id="toggle-original" class="view-icon" type="button" data-view="original" aria-label="原页对照" aria-pressed="false" title="原页对照 · 快捷键 3 / O 循环"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5h16v17H4zM7 7h10M7 10h10M7 13h6M7 16h4" /></svg></button>
+  <div class="display-control">
+    <button id="toggle-display-settings" class="view-icon" type="button" aria-label="显示设置" aria-expanded="false" aria-controls="display-settings" title="缩放与主题">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10M14 4v6M6 14v6" /></svg>
+    </button>
+    <section id="display-settings" class="display-panel" aria-label="显示设置" hidden>
+      <div class="display-panel-heading"><strong>显示设置</strong><span>在页面间自动保留</span></div>
+      <div class="display-setting-row"><span>界面缩放</span><div class="zoom-controls" role="group" aria-label="界面缩放"><button id="zoom-out" type="button" aria-label="缩小">−</button><output id="zoom-value" aria-live="polite">自动</output><button id="zoom-in" type="button" aria-label="放大">+</button></div></div>
+      <button id="zoom-auto" class="auto-scale-button" type="button" aria-pressed="true">按窗口自动适应</button>
+      <div class="display-setting-row theme-setting"><span>主题颜色</span>
+  <div class="theme-options" role="group" aria-label="主题颜色">
+    <button type="button" data-theme="sage" aria-label="鼠尾草绿" title="鼠尾草绿" aria-pressed="true"></button>
+    <button type="button" data-theme="mist" aria-label="雾蓝" title="雾蓝" aria-pressed="false"></button>
+    <button type="button" data-theme="sand" aria-label="暖砂" title="暖砂" aria-pressed="false"></button>
+    <button type="button" data-theme="mauve" aria-label="灰紫" title="灰紫" aria-pressed="false"></button>
+    <button type="button" data-theme="gray" aria-label="浅灰" title="浅灰" aria-pressed="false"></button>
+  </div></div>
+    </section>
+  </div>
+</div></header>
+    <button id="toggle-nav" class="mobile-nav-button" type="button" aria-expanded="false" aria-label="打开内容目录" title="内容目录"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14" /></svg></button>
+    <div class="layout"><nav class="sidebar" aria-label="内容目录">
+    <a class="sidebar-home-link" href="../../index.html">目录与搜索</a>
+    <div class="sidebar-section-heading"><p class="sidebar-label">内容目录</p><div class="sidebar-tree-actions" role="group" aria-label="目录章节控制"><button type="button" data-nav-action="toggle" data-state="expand" aria-label="展开所有章节" title="展开所有章节"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7l5 5 5-5M3 3h14" /></svg></button></div></div>
+    <div class="sidebar-tree"><details class="chapter-group" data-chapter="F">
+      <summary><span>第 F 章</span><small>Front Matter</small></summary><ol><li class="sidebar-item"><a href="half-title-and-title-page.html"><span>F.1</span><span>Half Title and Title Page</span></a></li>
+<li class="sidebar-item"><a href="copyright.html"><span>F.2</span><span>Copyright</span></a></li>
+<li class="sidebar-item"><a href="acknowledgments.html"><span>F.3</span><span>Acknowledgments</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="acknowledgments.html#section-source-4-1" data-section-id="section-source-4-1"><span>§</span><span>ACKNOWLEDGMENTS</span></a></li></ol></li>
+<li class="sidebar-item"><a href="introduction.html"><span>F.4</span><span>Introduction</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="introduction.html#section-source-5-1" data-section-id="section-source-5-1"><span>§</span><span>INTRODUCTION</span></a></li>
+<li><a class="sidebar-section-link" href="introduction.html#section-source-5-2" data-section-id="section-source-5-2"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="introduction.html#section-source-9-3" data-section-id="section-source-9-3"><span>§</span><span>ACTIVITIES</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="1">
+      <summary><span>第 1 章</span><small>Basics and Spectrometer Performance Checks</small></summary><ol><li class="sidebar-item"><a href="chapter-1.html"><span>1</span><span>Basics and Spectrometer Performance Checks</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-1.html#section-source-11-1" data-section-id="section-source-11-1"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-11-2" data-section-id="section-source-11-2"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-11-3" data-section-id="section-source-11-3"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-11-4" data-section-id="section-source-11-4"><span>§</span><span>Part 1—Familiarization</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-13-5" data-section-id="section-source-13-5"><span>§</span><span>Part 2—Shimming and Lineshape</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-17-6" data-section-id="section-source-17-6"><span>§</span><span>Part 3—Pulse Calibration and Sensitivity for 1H</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-19-7" data-section-id="section-source-19-7"><span>§</span><span>Part 4—Pulse Calibration and Sensitivity for 13C</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-20-8" data-section-id="section-source-20-8"><span>§</span><span>Part 5—Viewing and Editing Text Files in TopSpin</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-22-9" data-section-id="section-source-22-9"><span>§</span><span>SUMMARY</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-22-10" data-section-id="section-source-22-10"><span>§</span><span>APPENDIX 1.1 STANDARD PARAMETER SETS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-25-11" data-section-id="section-source-25-11"><span>§</span><span>APPENDIX 1.2 PROBE TUNING</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-28-12" data-section-id="section-source-28-12"><span>§</span><span>APPENDIX 1.3 QUININE SPECTRA</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-28-13" data-section-id="section-source-28-13"><span>§</span><span>APPENDIX 1.4 LINESHAPE EFFECTS OF NONSPINNING SHIMS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-28-14" data-section-id="section-source-28-14"><span>§</span><span>APPENDIX 1.5 PULSE WIDTH CALIBRATION WITH PAROPT</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group active-chapter" data-chapter="2" open>
+      <summary><span>第 2 章</span><small>Multiple Irradiation and Multiple Pulse Experiments</small></summary><ol><li class="sidebar-item"><a class="active" aria-current="page" href="chapter-2.html"><span>2</span><span>Multiple Irradiation and Multiple Pulse Experiments</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-2.html#section-source-34-1" data-section-id="section-source-34-1"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-34-2" data-section-id="section-source-34-2"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-34-3" data-section-id="section-source-34-3"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-34-4" data-section-id="section-source-34-4"><span>§</span><span>Part 1—1H T1 (Spin–Lattice) Relaxation Measurement</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-39-5" data-section-id="section-source-39-5"><span>§</span><span>Part 2—Homonuclear Decoupling</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-41-6" data-section-id="section-source-41-6"><span>§</span><span>Part 3—nOe-difference</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-43-7" data-section-id="section-source-43-7"><span>§</span><span>Part 4—1H-decoupled 13C Spectra with and without nOe</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-44-8" data-section-id="section-source-44-8"><span>§</span><span>Part 5—13C DEPT Spectra</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-45-9" data-section-id="section-source-45-9"><span>§</span><span>SUMMARY</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="3">
+      <summary><span>第 3 章</span><small>Polarization Transfer and Its Applications</small></summary><ol><li class="sidebar-item"><a href="chapter-3.html"><span>3</span><span>Polarization Transfer and Its Applications</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-3.html#section-source-48-1" data-section-id="section-source-48-1"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-48-2" data-section-id="section-source-48-2"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-48-3" data-section-id="section-source-48-3"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-48-4" data-section-id="section-source-48-4"><span>§</span><span>Part 1—Polarization Transfer via Selective Irradiation</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-50-5" data-section-id="section-source-50-5"><span>§</span><span>Part 2—Polarization Transfer via INEPT</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-51-6" data-section-id="section-source-51-6"><span>§</span><span>Part 3—Heteronuclear Correlation Experiment Setup and</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-53-7" data-section-id="section-source-53-7"><span>§</span><span>Part 4—Heteronuclear Correlation Experiment Data Processing</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-54-8" data-section-id="section-source-54-8"><span>§</span><span>Part 5—Heteronuclear Correlation Experiments on</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-57-9" data-section-id="section-source-57-9"><span>§</span><span>Part 6—Heteronuclear Correlation Experiments on</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-58-10" data-section-id="section-source-58-10"><span>§</span><span>SUMMARY</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="4">
+      <summary><span>第 4 章</span><small>Homonuclear Correlation Experiments</small></summary><ol><li class="sidebar-item"><a href="chapter-4.html"><span>4</span><span>Homonuclear Correlation Experiments</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-4.html#section-source-60-1" data-section-id="section-source-60-1"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-60-2" data-section-id="section-source-60-2"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-60-3" data-section-id="section-source-60-3"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-60-4" data-section-id="section-source-60-4"><span>§</span><span>Part 1—Quinine 1H Spectrum</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-61-5" data-section-id="section-source-61-5"><span>§</span><span>Part 2—COSY Setup</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-61-6" data-section-id="section-source-61-6"><span>§</span><span>Part 3—TOCSY Setup</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-63-7" data-section-id="section-source-63-7"><span>§</span><span>Part 4—NOESY Setup</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-63-8" data-section-id="section-source-63-8"><span>§</span><span>Part 5—2D Data Acquisition</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-64-9" data-section-id="section-source-64-9"><span>§</span><span>Part 6—COSY Data processing</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-64-10" data-section-id="section-source-64-10"><span>§</span><span>Part 7—TOCSY Data Processing</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-66-11" data-section-id="section-source-66-11"><span>§</span><span>Part 8—NOESY Data Processing</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-67-12" data-section-id="section-source-67-12"><span>§</span><span>SUMMARY</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-68-13" data-section-id="section-source-68-13"><span>§</span><span>APPENDIX 4.1 USING edprosol TO DETERMINE THE POWER</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="5">
+      <summary><span>第 5 章</span><small>PFG (Pulsed Field Gradient) Experiments</small></summary><ol><li class="sidebar-item"><a href="chapter-5.html"><span>5</span><span>PFG (Pulsed Field Gradient) Experiments</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-5.html#section-source-70-1" data-section-id="section-source-70-1"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-70-2" data-section-id="section-source-70-2"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-71-3" data-section-id="section-source-71-3"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-71-4" data-section-id="section-source-71-4"><span>§</span><span>Part 1—1D Z-Gradient Image of an H2O/D2O “Phantom”</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-73-5" data-section-id="section-source-73-5"><span>§</span><span>Part 2—pfg-Homonuclear 2D Experiments Setup</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-75-6" data-section-id="section-source-75-6"><span>§</span><span>Part 3—2D pfg-Homonuclear Experiments Data Acquisition</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-75-7" data-section-id="section-source-75-7"><span>§</span><span>Part 4—pfg-Homonuclear 2D Experiments Data Processing</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-77-8" data-section-id="section-source-77-8"><span>§</span><span>Part 5—pfg-Heteronuclear 2D Experiments Setup</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-79-9" data-section-id="section-source-79-9"><span>§</span><span>Part 6—2D Data Acquisition</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-79-10" data-section-id="section-source-79-10"><span>§</span><span>Part 7—pfg-Heteronuclear 2D Experiments Data Processing</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-80-11" data-section-id="section-source-80-11"><span>§</span><span>SUMMARY</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-81-12" data-section-id="section-source-81-12"><span>§</span><span>APPENDIX 5.1 REGARDING THE “PHANTOM” SAMPLE</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="6">
+      <summary><span>第 6 章</span><small>Introduction to NMR of Biomolecules in H2O</small></summary><ol><li class="sidebar-item"><a href="chapter-6.html"><span>6</span><span>Introduction to NMR of Biomolecules in H2O</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-6.html#section-source-83-1" data-section-id="section-source-83-1"><span>§</span><span>Introduction to NMR of Biomolecules in H2O</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-83-2" data-section-id="section-source-83-2"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-83-3" data-section-id="section-source-83-3"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-84-4" data-section-id="section-source-84-4"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-84-5" data-section-id="section-source-84-5"><span>§</span><span>Part 1—Lysozyme Spectra—Shimming and Pulse Calibration</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-87-6" data-section-id="section-source-87-6"><span>§</span><span>Part 2—Lysozyme Spectra—Water Suppression Using</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-91-7" data-section-id="section-source-91-7"><span>§</span><span>Part 3—Lysozyme Spectra—Water Suppression Using</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-92-8" data-section-id="section-source-92-8"><span>§</span><span>Part 4—Lysozyme Spectra—2D NOESY with WATERGATE Water</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-94-9" data-section-id="section-source-94-9"><span>§</span><span>Part 5—Ubiquitin Spectra—Shimming, Pulse Calibration and</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-94-10" data-section-id="section-source-94-10"><span>§</span><span>Part 6—Ubiquitin 2D 13C HSQC (Heteronuclear Single-</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-96-11" data-section-id="section-source-96-11"><span>§</span><span>Part 7—Ubiquitin 2D 15N HSQC Experiment Setup and</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-97-12" data-section-id="section-source-97-12"><span>§</span><span>Part 8—Ubiquitin 2D HSQC Experiments Data Processing</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-98-13" data-section-id="section-source-98-13"><span>§</span><span>SUMMARY</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-98-14" data-section-id="section-source-98-14"><span>§</span><span>APPENDIX 6.1 MAPPING SHIM PROFILES IN GRADSHIM</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-101-15" data-section-id="section-source-101-15"><span>§</span><span>APPENDIX 6.2 PRESAT180 PULSE SEQUENCE</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-102-16" data-section-id="section-source-102-16"><span>§</span><span>APPENDIX 6.3 X-NUCLEUS PULSE CALIBRATION</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-103-17" data-section-id="section-source-103-17"><span>§</span><span>APPENDIX 6.4 ROUTING FOR THE 15N RF CHANNEL IN THE</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="7">
+      <summary><span>第 7 章</span><small>Selective Experiments Using Shaped Pulses</small></summary><ol><li class="sidebar-item"><a href="chapter-7.html"><span>7</span><span>Selective Experiments Using Shaped Pulses</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-7.html#section-source-106-1" data-section-id="section-source-106-1"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-106-2" data-section-id="section-source-106-2"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-106-3" data-section-id="section-source-106-3"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-106-4" data-section-id="section-source-106-4"><span>§</span><span>Part 1—1H Setup</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-107-5" data-section-id="section-source-107-5"><span>§</span><span>Part 2—Selective Pulse Calculation and Simulation</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-107-6" data-section-id="section-source-107-6"><span>§</span><span>Part 3—Selective Pulse Calibration</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-109-7" data-section-id="section-source-109-7"><span>§</span><span>Part 4—Selective TOCSY with 270– Selective Pulse</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-111-8" data-section-id="section-source-111-8"><span>§</span><span>Part 5—Selective TOCSY with 180– Selective Pulse and</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-111-9" data-section-id="section-source-111-9"><span>§</span><span>Part 6—Selective NOESY with 270– Selective Pulse</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-112-10" data-section-id="section-source-112-10"><span>§</span><span>Part 7—Selective NOESY with 180– Selective Pulse and</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-112-11" data-section-id="section-source-112-11"><span>§</span><span>Part 8—Quantitation by NMR (qNMR)—Introduction</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-117-12" data-section-id="section-source-117-12"><span>§</span><span>SUMMARY</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-118-13" data-section-id="section-source-118-13"><span>§</span><span>APPENDIX 7.1 QUANTITATION SAMPLES I AND</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="8">
+      <summary><span>第 8 章</span><small>Diffusion Measurements and DOSY (Diffusion Ordered SpectroscopY)</small></summary><ol><li class="sidebar-item"><a href="chapter-8.html"><span>8</span><span>Diffusion Measurements and DOSY (Diffusion Ordered SpectroscopY)</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-8.html#section-source-120-1" data-section-id="section-source-120-1"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-8.html#section-source-121-2" data-section-id="section-source-121-2"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-8.html#section-source-121-3" data-section-id="section-source-121-3"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-8.html#section-source-121-4" data-section-id="section-source-121-4"><span>§</span><span>Part 1—VT Calibration</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-8.html#section-source-123-5" data-section-id="section-source-123-5"><span>§</span><span>Part 2—Diffusion of H2O in D2O</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-8.html#section-source-126-6" data-section-id="section-source-126-6"><span>§</span><span>Part 3—DOSY Spectrum of Sample M</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-8.html#section-source-127-7" data-section-id="section-source-127-7"><span>§</span><span>SUMMARY</span></a></li></ol></li></ol>
+    </details></div>
+    <footer class="sidebar-copyright"><p class="copyright-owner">© 2026 <a href="mailto:wuhaifeng@ustc.edu.cn">wuhaifeng@ustc.edu.cn</a></p><p>本文档仅供小范围、非公开的学术交流与学习参考；未经许可，不得复制、转载、转发、公开传播或用于商业用途。</p></footer>
+  </nav><main><article class="experiment paper" data-experiment="2" aria-labelledby="item-title"><header class="experiment-heading"><p class="experiment-label">Chapter 2</p><h2 class="experiment-title" id="item-title">Multiple Irradiation and Multiple Pulse Experiments</h2><p class="experiment-title-zh" lang="zh-CN">多重照射与多脉冲实验</p><p class="range-line">PDF 34–47 · 原书 25–38 · Multiple Irradiation and Multiple Pulse Experiments</p></header><section class="page-block" id="source-34" data-pdf="34" data-book="25">
+        <span class="page-marker">原书第 25 页 · PDF 第 34 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-34"></div><div class="content-pane content-zh" data-page="source-34"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-34.webp" alt="原书来源第 34 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-35" data-pdf="35" data-book="26">
+        <span class="page-marker">原书第 26 页 · PDF 第 35 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-35"></div><div class="content-pane content-zh" data-page="source-35"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-35.webp" alt="原书来源第 35 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-36" data-pdf="36" data-book="27">
+        <span class="page-marker">原书第 27 页 · PDF 第 36 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-36"></div><div class="content-pane content-zh" data-page="source-36"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-36.webp" alt="原书来源第 36 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-37" data-pdf="37" data-book="28">
+        <span class="page-marker">原书第 28 页 · PDF 第 37 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-37"></div><div class="content-pane content-zh" data-page="source-37"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-37.webp" alt="原书来源第 37 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-38" data-pdf="38" data-book="29">
+        <span class="page-marker">原书第 29 页 · PDF 第 38 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-38"></div><div class="content-pane content-zh" data-page="source-38"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-38.webp" alt="原书来源第 38 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-39" data-pdf="39" data-book="30">
+        <span class="page-marker">原书第 30 页 · PDF 第 39 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-39"></div><div class="content-pane content-zh" data-page="source-39"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-39.webp" alt="原书来源第 39 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-40" data-pdf="40" data-book="31">
+        <span class="page-marker">原书第 31 页 · PDF 第 40 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-40"></div><div class="content-pane content-zh" data-page="source-40"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-40.webp" alt="原书来源第 40 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-41" data-pdf="41" data-book="32">
+        <span class="page-marker">原书第 32 页 · PDF 第 41 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-41"></div><div class="content-pane content-zh" data-page="source-41"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-41.webp" alt="原书来源第 41 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-42" data-pdf="42" data-book="33">
+        <span class="page-marker">原书第 33 页 · PDF 第 42 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-42"></div><div class="content-pane content-zh" data-page="source-42"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-42.webp" alt="原书来源第 42 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-43" data-pdf="43" data-book="34">
+        <span class="page-marker">原书第 34 页 · PDF 第 43 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-43"></div><div class="content-pane content-zh" data-page="source-43"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-43.webp" alt="原书来源第 43 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-44" data-pdf="44" data-book="35">
+        <span class="page-marker">原书第 35 页 · PDF 第 44 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-44"></div><div class="content-pane content-zh" data-page="source-44"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-44.webp" alt="原书来源第 44 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-45" data-pdf="45" data-book="36">
+        <span class="page-marker">原书第 36 页 · PDF 第 45 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-45"></div><div class="content-pane content-zh" data-page="source-45"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-45.webp" alt="原书来源第 45 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-46" data-pdf="46" data-book="37">
+        <span class="page-marker">原书第 37 页 · PDF 第 46 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-46"></div><div class="content-pane content-zh" data-page="source-46"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-46.webp" alt="原书来源第 46 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-47" data-pdf="47" data-book="38">
+        <span class="page-marker">原书第 38 页 · PDF 第 47 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-47"></div><div class="content-pane content-zh" data-page="source-47"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-47.webp" alt="原书来源第 47 页" loading="lazy">
+      </section></article></main></div><script>if (!window.NMR_APP_LOADED) {
+window.NMR_APP_LOADED = true;
+
+const body = document.body;
+const experiment = window.NMR_EXPERIMENT;
+const scanButton = document.querySelector("#toggle-original");
+const navButton = document.querySelector("#toggle-nav");
+const toolbar = document.querySelector(".toolbar");
+const sidebar = document.querySelector(".sidebar");
+const sidebarActionButton = document.querySelector("button[data-nav-action='toggle']");
+const root = document.documentElement;
+const displayButton = document.querySelector("#toggle-display-settings");
+const displayPanel = document.querySelector("#display-settings");
+const zoomOutButton = document.querySelector("#zoom-out");
+const zoomInButton = document.querySelector("#zoom-in");
+const zoomAutoButton = document.querySelector("#zoom-auto");
+const zoomValue = document.querySelector("#zoom-value");
+const themeButtons = [...document.querySelectorAll("button[data-theme]")];
+const viewButtons = [...document.querySelectorAll("button[data-view]")];
+const languageButtons = viewButtons.filter((button) => button.dataset.view !== "original");
+const referenceScans = [...document.querySelectorAll(".reference-scan")];
+
+function cloneMappedFigure(figure) {
+  const mapped = figure.cloneNode(true);
+  mapped.classList.add("mapped-figure");
+  mapped.querySelectorAll("img").forEach((image) => {
+    image.alt = `\u4e2d\u6587\u680f\u5bf9\u5e94\u56fe\u50cf\uff1a${image.alt || "\u539f\u4e66\u56fe\u50cf"}`;
+    image.loading = "lazy";
+  });
+  // The translated figure caption is already a separate aligned paragraph.
+  // Avoid inserting a redundant placeholder caption under only one image.
+  return mapped;
+}
+
+function mapFigures(page, pageId) {
+  const englishPane = page.querySelector(".content-en");
+  const chinesePane = page.querySelector(".content-zh");
+  const englishFigures = [...englishPane.children].filter((node) => node.tagName === "FIGURE");
+  const chineseBlocks = [...chinesePane.children].filter((node) => node.matches("p, h3"));
+  const oldPlacements = experiment.figurePlacements[pageId] || [];
+
+  for (const [source, figure] of englishFigures.entries()) {
+    const mapped = cloneMappedFigure(figure);
+    // Original English figures sit between indexed text blocks. Insert their
+    // Chinese counterparts at the SAME boundary; the next block is commonly
+    // the translated caption, but on cover/opening pages it may be a heading.
+    // This remains valid when caption wording changes after technical editing.
+    let next = figure.nextElementSibling;
+    while (next && !next.matches("p, h3")) next = next.nextElementSibling;
+    const matched = next && chineseBlocks[Number(next.dataset.alignIndex)];
+    if (matched) {
+      matched.before(mapped);
+      continue;
+    }
+
+    // Old textual anchors are a fallback for exceptional non-parallel pages.
+    const { before, after } = oldPlacements.find((entry) => entry.source === source) || {};
+    const anchors = [...chinesePane.querySelectorAll("h3, p")];
+    if (before) {
+      const anchor = anchors.find((node) => node.textContent.trim().startsWith(before));
+      if (anchor) {
+        anchor.before(mapped);
+        continue;
+      }
+    }
+    if (after) {
+      const anchor = anchors.find((node) => node.textContent.trim().startsWith(after));
+      if (anchor) {
+        anchor.after(mapped);
+        continue;
+      }
+    }
+    // No corresponding text follows a figure on this page.
+    chinesePane.append(mapped);
+  }
+}
+
+// Normalize OCR-exported parameter lists into compact borderless tables.
+const parameterNames = new Set(["PULPROG", "NS", "DS", "PL0", "P11", "SPNAM1", "SP1", "RG", "D9", "D11", "D14", "TD0", "P1/PL1", "P6/PL10", "P11/SP1", "P17", "VDLIST", "SPOFFS1", "P12", "SP2", "SPNAM2", "SPOFFS2", "GPNAM1", "GPZ1", "GPZ2", "P16", "D8", "SI", "LB", "SW", "D1", "TD", "SI (F1)", "SI (F2)", "WDW (F2)", "EM", "LB (F2)", "PH_mod (F2)", "PH_mod (F1)", "GPNAME\u00d7", "GPNAMEX", "GPZ6", "GPZ7", "GPZ8", "P19", "P30"]);
+const nonParameterHeadings = new Set(["OVERVIEW", "ACTIVITIES", "SUMMARY", "REFERENCE", "ACQUISITION", "INTRODUCTION", "NOESY", "COSY", "COLOC", "HETCOR", "1H", "13C", "15N", "Z", "X", "A", "B*", "C*", "D*", "E", "F", "G*", "H*", "I", "J", "K*", "L*", "M"]);
+
+function looksLikeParameter(heading) {
+  const text = heading.textContent.trim();
+  if (parameterNames.has(text) || nonParameterHeadings.has(text)) return parameterNames.has(text);
+  if (/[\u3400-\u9fff]/.test(text)) {
+    if (/[\u3002\uff01\uff1f\uff1a\uff0c]|^(\u7b2c|\u9644\u5f55|\u7ae0\u8282|\u603b\u7ed3|\u6982\u8ff0|\u5b9e\u9a8c|\u6d3b\u52a8|\u4f7f\u7528|\u9009\u62e9\u6027|\u573a\u5730|\u68af\u5ea6|\u8109\u51b2|\u6821\u51c6|\u8def\u7531|\u5904\u7406|\u8c31|\u65b9\u6cd5|\u6837\u54c1|\u4eea\u5668)/.test(text)) return false;
+    const next = heading.nextElementSibling;
+    return Boolean(next?.tagName === "P" && next.textContent.trim().length <= 140);
+  }
+  if (!/^[A-Z0-9][A-Z0-9_./,:+\u00d7\u2212()\[\] -]*$/.test(text) || text.length > 24) return false;
+  if (/^(?:CHAPTER|PART|APPENDIX|FIELD|SPECTROMETER|TUNING|PROBE|PULSE|LEVEL|USING|ORDERED|DIFFUSION|SELECTIVE|MULTIPLE|HOMONUCLEAR|HETERONUCLEAR|POLARIZATION|INTRODUCTION|EXPERIMENTS?)(?:\b|\u2014)/.test(text)) return false;
+  const next = heading.nextElementSibling;
+  if (next?.tagName === "P") {
+    const value = next.textContent.trim();
+    if (value.length > 180 && !/^(?:Use|From|Set|Check|Normal|The values|Power level)/.test(value)) return false;
+  }
+  return true;
+}
+
+// A few PDF tables are exported in reading order rather than row order.  For
+// example, the source page for the T1-IR experiment arrives as
+// `FnMODE`, `QF`, `TD (F2)`, `16K`, ... with the value cells represented as
+// headings.  Keep the source fragments untouched, but normalize both the
+// normal key/paragraph form and this alternating key/value form at runtime.
+const parameterValueHeadings = new Set([
+  "QF", "QSIM", "QSEQ", "EM", "GM", "QSINE", "SINE.50", "SINE.100",
+  "1H", "13C", "15N", "16K", "32K", "64K", "128K", "256K", "4K", "2K",
+]);
+
+function parameterText(node) {
+  return node?.textContent.trim().replace(/[\uff1a:]$/, "") || "";
+}
+
+function isParameterKeyText(value) {
+  const text = value.trim().replace(/[\uff1a:]$/, "");
+  if (!text || parameterValueHeadings.has(text) || nonParameterHeadings.has(text)) return false;
+  if (parameterNames.has(text)) return true;
+  // Bruker acquisition/processing parameter families.  This intentionally
+  // excludes ordinary all-caps experiment names (DQF-COSY, NOESY, etc.).
+  return /^(?:PULPROG|FnMODE|(?:P|D|G|PL|SP|GPZ|P\d+\/PL|P\d+\/SP|GPNAM|SPNAM|SPOFFS|CPDPRG|PCPD|CNST|NUC|O\dP?|TD|SI|SW|SF|SWH|AQ|LB|WDW|PHC|PH_mod|BC_mod|SR|FCOR|MC|SSB|RG|NS|DS|DIGMOD|HDDUTY|ZGOPTNS|FILENAME|DISK|USER|GSHIM|VDLIST|TE\d+|SHIMGROUP|ND_\d+|CPD)(?:[A-Z0-9_./,()\[\] -]*)?)$/i.test(text);
+}
+
+function isParameterNode(node) {
+  if (!node || !["H3", "P"].includes(node.tagName)) return false;
+  const text = parameterText(node);
+  if (node.tagName === "P" && text.length > 32) return false;
+  return isParameterKeyText(text);
+}
+
+function isNumberedInstruction(node) {
+  return /^\s*\d+\.\s/.test(node?.textContent || "");
+}
+
+function isValueHeading(node) {
+  if (!node || !["H3", "P"].includes(node.tagName)) return false;
+  const text = parameterText(node);
+  if (!text || isNumberedInstruction(node)) return false;
+  if (parameterValueHeadings.has(text)) return true;
+  if (/^(?:[-+]?\d|\.\d|\d+\s*(?:k|K|Hz|ms|us|\u03bcs|s|dB|ppm|%|\u00b0|MHz|MHz|mM|M)\b)/.test(text)) return true;
+  return node.tagName === "H3" && !isParameterKeyText(text) && /^[A-Z0-9][A-Z0-9 .(),/%+\-]*$/.test(text) && text.length <= 28;
+}
+
+function formatParameterTables(pane) {
+  // First convert heading-shaped value cells to paragraphs. This makes the
+  // row parser deterministic for both FnMODE -> QF and TD (F2) -> 16K
+  // reading-order exports.
+  [...pane.children].forEach((node) => {
+    if (!isParameterNode(node)) return;
+    const next = node.nextElementSibling;
+    if (!isValueHeading(next)) return;
+    const value = document.createElement("p");
+    value.innerHTML = next.innerHTML;
+    next.replaceWith(value);
+  });
+  let cursor = pane.firstElementChild;
+  while (cursor) {
+    // A final value cell is occasionally emitted immediately before its key
+    // cell (SP1 followed by \u201c75 dB\u201d, for example).  Re-associate that short
+    // numeric/unit paragraph with the following parameter key.
+    if (cursor.tagName === "P" && cursor.previousElementSibling?.classList.contains("parameter-table") && isValueHeading(cursor) && isParameterNode(cursor.nextElementSibling)) {
+      const keyNode = cursor.nextElementSibling;
+      const table = document.createElement("div");
+      table.className = "parameter-table";
+      cursor.before(table);
+      const key = document.createElement("div");
+      key.className = "parameter-key";
+      key.textContent = parameterText(keyNode);
+      const value = document.createElement("div");
+      value.className = "parameter-value";
+      value.innerHTML = cursor.innerHTML;
+      table.append(key, value);
+      cursor.remove();
+      keyNode.remove();
+      cursor = table.nextElementSibling;
+      continue;
+    }
+    if (!isParameterNode(cursor)) { cursor = cursor.nextElementSibling; continue; }
+
+    const table = document.createElement("div");
+    table.className = "parameter-table";
+    table.dataset.alignIndex = cursor.dataset.alignIndex || "";
+    cursor.before(table);
+
+    // Consume one contiguous parameter run.  A row may be key + paragraph,
+    // key + value-heading, or a key with no value (when the PDF omitted it).
+    while (cursor && isParameterNode(cursor)) {
+      const keyText = parameterText(cursor);
+      const next = cursor.nextElementSibling;
+      let valueNode = null;
+      if (next && next.tagName === "P" && !isNumberedInstruction(next)) {
+        valueNode = next;
+      } else if (isValueHeading(next)) {
+        valueNode = next;
+      }
+
+      const key = document.createElement("div");
+      key.className = "parameter-key";
+      key.textContent = keyText;
+      const value = document.createElement("div");
+      value.className = "parameter-value";
+      if (valueNode) value.innerHTML = valueNode.innerHTML;
+      table.append(key, value);
+
+      cursor.remove();
+      if (valueNode) valueNode.remove();
+      cursor = table.nextElementSibling;
+    }
+
+    // Some tables export their last value immediately before the key. Fold
+    // that reversed pair into the current table instead of leaving an empty
+    // parameter heading below it.
+    if (cursor?.tagName === "P" && !isNumberedInstruction(cursor) && isParameterNode(cursor.nextElementSibling)) {
+      const keyNode = cursor.nextElementSibling;
+      const key = document.createElement("div");
+      key.className = "parameter-key";
+      key.textContent = parameterText(keyNode);
+      const value = document.createElement("div");
+      value.className = "parameter-value";
+      value.innerHTML = cursor.innerHTML;
+      table.append(key, value);
+      cursor.remove();
+      keyNode.remove();
+      cursor = table.nextElementSibling;
+    }
+    // Keep a short explanatory paragraph attached to the table when it
+    // follows a parameter run, but never swallow the next numbered step.
+    if (cursor?.tagName === "P" && !isNumberedInstruction(cursor) && cursor.textContent.trim().length <= 180
+      && !/^(?:All other|\u6240\u6709\u5176\u4ed6|\u5176\u4ed6\u53c2\u6570|Note:|\u6ce8\u610f[:\uff1a]|\u6ce8[:\uff1a]|Acquire|\u91c7\u96c6\u8c31\u56fe)/i.test(cursor.textContent.trim())) {
+      const note = document.createElement("div");
+      note.className = "parameter-note";
+      note.innerHTML = cursor.innerHTML;
+      table.append(note);
+      cursor.remove();
+      cursor = table.nextElementSibling;
+    }
+  }
+}
+
+function formatInlineParameterLists(pane) {
+  // Some appendix pulse-program lists are extracted as one semicolon-delimited
+  // paragraph (for example \u201c;pl1: ... ;pl9: ... ;sp1: ...\u201d).  Turn those
+  // lists into the same two-column table used by ordinary parameter blocks.
+  [...pane.querySelectorAll("p")].forEach((paragraph) => {
+    const text = paragraph.textContent;
+    const matches = [...text.matchAll(/(?:^|;\s*)([A-Za-z][A-Za-z0-9_]*(?:\[\%\])?)\s*:\s*/g)]
+      .filter((match) => isParameterKeyText(match[1]));
+    if (matches.length < 3) return;
+
+    const table = document.createElement("div");
+    table.className = "parameter-table";
+    table.dataset.alignIndex = paragraph.dataset.alignIndex || "";
+    matches.forEach((match, index) => {
+      const start = match.index + match[0].length;
+      const end = index + 1 < matches.length ? matches[index + 1].index : text.length;
+      const valueText = text.slice(start, end).replace(/;\s*$/, "").trim();
+      const key = document.createElement("div");
+      key.className = "parameter-key";
+      key.textContent = match[1].toUpperCase();
+      const value = document.createElement("div");
+      value.className = "parameter-value";
+      value.textContent = valueText;
+      table.append(key, value);
+    });
+    paragraph.before(table);
+    paragraph.remove();
+  });
+}
+
+function formatStepBreaks(pane) {
+  // Both languages need the same step boundaries. Work on text nodes so
+  // inline <code>, <sup> and links survive unchanged; reject citations and
+  // decimal numbers instead of applying a Latin-only innerHTML expression.
+  pane.querySelectorAll("p").forEach((paragraph) => {
+    if (paragraph.classList.contains("figure-caption")) return;
+    const walker = document.createTreeWalker(paragraph, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach((node) => {
+      if (node.parentElement?.closest("code, a, sub, sup")) return;
+      const source = node.textContent;
+      const positions = [];
+      for (const match of source.matchAll(/(?:\d{1,2}|[a-h])\.(?=\s|[\u3400-\u9fff\u201cA-Z])/gi)) {
+        const before = source.slice(0, match.index);
+        if (!before || !/[\s\u3002\uff01\uff1f\uff1b;.!?]/.test(before.at(-1))) continue;
+        if (/(?:step|steps|figure|chapter|part|section|no|fig|\u6b65\u9aa4|\u7b2c|\u56fe)\s*$/i.test(before)) continue;
+        if (/\d+\.\s*$/.test(before)) continue;
+        positions.push(match.index);
+      }
+      if (!positions.length) return;
+      const fragment = document.createDocumentFragment();
+      let start = 0;
+      positions.forEach((position) => {
+        fragment.append(document.createTextNode(source.slice(start, position).replace(/\s+$/, "")));
+        fragment.append(document.createElement("br"));
+        start = position;
+      });
+      fragment.append(document.createTextNode(source.slice(start)));
+      node.replaceWith(fragment);
+    });
+  });
+}
+
+function formatCodePage(pane, pageId) {
+  if (pageId !== "source-21") return;
+  pane.querySelectorAll("h3").forEach((heading) => {
+    if (/^(GETCURDATA|II|LOPO|LOCK|QUIT)$/.test(heading.textContent.trim())) { heading.classList.add("code-command"); heading.innerHTML = `<code>${heading.textContent.trim()}</code>`; }
+  });
+  pane.querySelectorAll("p").forEach((paragraph) => {
+    if (/^\s*(\/\*|char solvent)|FETCHPAR|STOREPAR|RSH\(/.test(paragraph.textContent)) paragraph.classList.add("code-line");
+  });
+}
+
+function formatKnownFormulas(pane, pageId) {
+  if (pageId !== "source-113") return;
+  pane.querySelectorAll("p").forEach((paragraph) => {
+    const text = paragraph.textContent.trim();
+    if (/^A\s*5\s*A0/.test(text)) paragraph.innerHTML = "A = A<sub>0</sub>N C I(\u03b8) sin \u03b8";
+    if (/^As=Ar\s*5/.test(text)) paragraph.innerHTML = "A<sub>s</sub>/A<sub>r</sub> = N<sub>s</sub>C<sub>s</sub>/(N<sub>r</sub>C<sub>r</sub>)";
+  });
+  if (pageId === "source-15") {
+    const caption = pane.querySelector(".figure-caption");
+    if (caption) caption.textContent = "Figure 1.2 \u00b9H lineshape test of a 0.1% CHCl\u2083/acetone-d\u2086 sample recorded on a Bruker AV-III 800 MHz spectrometer equipped with a TXI probe at 298 K. The nonspinning linewidth at \u00bd-height, 0.55% and 0.11% height is measured using humpcal as 0.58, 5.6, and 11.8 Hz. The manual measurement of the linewidth and approximately 0.55% height is also shown. The cursor information displays \u2018Value = 0.56 rel\u2019; this is the datapoint height relative to the peak height (cy), set to 100 cm. When measuring lineshape by hand, use a close height or interpolate between adjacent points. Low-frequency (<10 Hz) noise from floor vibration is visible at the base of the peak.";
+  }
+}
+
+function formatKnownTranscriptions(pane, pageId) {
+  // Restore a handful of high-impact OCR substitutions that otherwise make
+  // parameter instructions or equations read incorrectly in every language
+  // view.  These are source-level text repairs, not translation changes.
+  if (pageId === "source-49") pane.innerHTML = pane.innerHTML.replace(/xyz\s+5\s+your initials/g, "xyz = your initials");
+  if (pageId === "source-52") pane.innerHTML = pane.innerHTML.replace(/13C\s+5\s+F2/g, "13C = F2");
+  if (pageId === "source-72") {
+    pane.innerHTML = pane.innerHTML
+      .replace(/GPZ2[^A-Za-z0-9]+AQ/g, "GPZ2 \u00d7 AQ")
+      .replace(/GPZ1[^A-Za-z0-9]+D27/g, "GPZ1 \u00d7 D27")
+      .replace(/\)\s+5\s+\(0\.2\)[^A-Za-z0-9]+/g, ") = (0.2) \u00d7 ");
+  }
+  if (pageId === "source-128") {
+    pane.innerHTML = pane.innerHTML
+      .replace(/1\.93\s+1029\s+m2\/s/g, "1.93 \u00d7 10<sup>\u22129</sup> m<sup>2</sup>/s")
+      .replace(/2\.3\s+1029\s+m2\/s/g, "2.3 \u00d7 10<sup>\u22129</sup> m<sup>2</sup>/s");
+  }
+}
+
+function formatContinuations(pane, pageId) {
+  const firstParagraph = pane.querySelector("p");
+  if (pageId === "source-15" && firstParagraph) firstParagraph.classList.add("continuation");
+  if (firstParagraph && /^(?:and|or|but|which|where|while|back|current|then|this|these|those)\b/i.test(firstParagraph.textContent.trim())) {
+    firstParagraph.classList.add("continuation");
+  }
+  if (pageId === "source-14") {
+    const paragraphs = [...pane.querySelectorAll("p")];
+    paragraphs.filter((paragraph) => /^\s*(back 500|c\.\s*XY)/i.test(paragraph.textContent)).forEach((paragraph) => paragraph.classList.add("continuation"));
+  }
+  if (pageId === "source-22") {
+    const first = pane.querySelector("p");
+    if (first && /^\s*current experiment/i.test(first.textContent)) first.classList.add("continuation");
+  }
+}
+
+function markAlignmentBlocks(pane) {
+  [...pane.children].filter((node) => node.matches("p, h3")).forEach((node, index) => {
+    node.dataset.alignIndex = String(index);
+  });
+}
+
+function alignBilingualPages() {
+  document.querySelectorAll(".page-block").forEach((page) => {
+    const left = page.querySelector(".content-en");
+    const right = page.querySelector(".content-zh");
+    const all = [...left.children, ...right.children];
+    all.forEach((node) => {
+      if (node.dataset.alignmentMargin !== undefined) {
+        node.style.marginTop = "";
+        delete node.dataset.alignmentMargin;
+      }
+    });
+    page.querySelectorAll(".parameter-table").forEach((table) => { table.style.gridTemplateRows = ""; });
+    if (body.dataset.language !== "bilingual" || body.classList.contains("show-original") || window.innerWidth <= 640) return;
+
+    // A translated page with differently ordered heading/value cells cannot
+    // safely be synchronized by source-block index. Leave it in natural flow
+    // until its underlying transcription is corrected.
+    const source = experiment.english[page.id] || "";
+    const translation = experiment.chinese[page.id] || "";
+    const tags = (markup) => [...markup.matchAll(/<(h3|p)(?:\s[^>]*)?>/gi)].map((match) => match[1].toLowerCase()).join(",");
+    if (tags(source) !== tags(translation)) return;
+
+    // A parameter list is one outer block but contains many independently
+    // wrapping rows. Match complete lists by parameter names, then give each
+    // corresponding row the same track height in both language columns.
+    const tables = (pane) => [...pane.querySelectorAll(":scope > .parameter-table")];
+    const enTables = tables(left);
+    const zhTables = tables(right);
+    for (const enTable of enTables) {
+      const enKeys = [...enTable.querySelectorAll(":scope > .parameter-key")].map((node) => node.textContent.trim());
+      const partner = zhTables.find((table) => {
+        const keys = [...table.querySelectorAll(":scope > .parameter-key")].map((node) => node.textContent.trim());
+        return keys.length === enKeys.length && keys.length > 1 && keys.every((key, i) => key === enKeys[i]);
+      });
+      if (!partner) continue;
+      const complete = (table) => [...table.children].every((node, i) => node.classList.contains(i % 2 ? "parameter-value" : "parameter-key"));
+      if (!complete(enTable) || !complete(partner)) continue;
+      const rows = enKeys.map((_, i) => Math.ceil(Math.max(
+        enTable.children[i * 2].getBoundingClientRect().height,
+        enTable.children[i * 2 + 1].getBoundingClientRect().height,
+        partner.children[i * 2].getBoundingClientRect().height,
+        partner.children[i * 2 + 1].getBoundingClientRect().height,
+      )));
+      const tracks = rows.map((height) => `${height}px`).join(" ");
+      enTable.style.gridTemplateRows = tracks;
+      partner.style.gridTemplateRows = tracks;
+      zhTables.splice(zhTables.indexOf(partner), 1);
+    }
+
+    const indexed = (pane) => new Map([...pane.children]
+      .filter((node) => node.dataset.alignIndex !== undefined && node.dataset.alignIndex !== "")
+      .map((node) => [Number(node.dataset.alignIndex), node]));
+    const en = indexed(left);
+    const zh = indexed(right);
+    const pairs = [...en.keys()].filter((key) => zh.has(key)).sort((a, b) => a - b)
+      .map((key) => [en.get(key), zh.get(key)])
+      .filter(([enNode, zhNode]) => enNode.tagName === zhNode.tagName
+        && enNode.classList.contains("parameter-table") === zhNode.classList.contains("parameter-table"));
+    const sourceFigures = [...left.children].filter((node) => node.tagName === "FIGURE");
+    const translatedFigures = [...right.children].filter((node) => node.matches("figure.mapped-figure"));
+    sourceFigures.forEach((figure, i) => {
+      const partner = translatedFigures[i];
+      if (partner && figure.querySelector("img")?.src === partner.querySelector("img")?.src) {
+        pairs.push([figure, partner]);
+      }
+    });
+    pairs.sort(([a], [b]) => a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1);
+    // CSS vertical margin collapse can absorb a small correction, so make a
+    // second pass once the first margin adjustments have settled in layout.
+    for (let pass = 0; pass < 3; pass += 1) {
+      let changed = false;
+      for (const [enNode, zhNode] of pairs) {
+        const difference = enNode.getBoundingClientRect().top - zhNode.getBoundingClientRect().top;
+        if (Math.abs(difference) < 2) continue;
+        const earlier = difference > 0 ? zhNode : enNode;
+        const base = Number.parseFloat(getComputedStyle(earlier).marginTop) || 0;
+        earlier.style.marginTop = `${base + Math.abs(difference)}px`;
+        earlier.dataset.alignmentMargin = "1";
+        changed = true;
+      }
+      if (!changed) break;
+    }
+  });
+}
+
+let alignmentFrame = 0;
+function scheduleBilingualAlignment() {
+  if (alignmentFrame) cancelAnimationFrame(alignmentFrame);
+  alignmentFrame = requestAnimationFrame(() => {
+    alignmentFrame = 0;
+    alignBilingualPages();
+  });
+}
+
+function populateExperiment() {
+  if (!experiment) return;
+  document.querySelectorAll(".page-block").forEach((page) => {
+    const pageId = page.id;
+    const englishPane = page.querySelector(".content-en");
+    const chinesePane = page.querySelector(".content-zh");
+    englishPane.innerHTML = experiment.english[pageId] || "<p>English transcription pending.</p>";
+    chinesePane.innerHTML = experiment.chinese[pageId] || "<p>\u4e2d\u6587\u7ffb\u8bd1\u5f85\u8865\u3002</p>";
+    markAlignmentBlocks(englishPane);
+    markAlignmentBlocks(chinesePane);
+    mapFigures(page, pageId);
+    formatInlineParameterLists(englishPane);
+    formatInlineParameterLists(chinesePane);
+    formatParameterTables(englishPane);
+    formatParameterTables(chinesePane);
+    formatStepBreaks(englishPane);
+    formatStepBreaks(chinesePane);
+    formatCodePage(englishPane, pageId);
+    formatCodePage(chinesePane, pageId);
+    formatKnownTranscriptions(englishPane, pageId);
+    formatKnownTranscriptions(chinesePane, pageId);
+    formatKnownFormulas(englishPane, pageId);
+    formatKnownFormulas(chinesePane, pageId);
+    formatContinuations(englishPane, pageId);
+    formatContinuations(chinesePane, pageId);
+  });
+
+  // Add stable anchors to the small set of semantic section headings used by
+  // the sidebar. Parameter names and table-like headings remain unindexed.
+  (experiment.navigationSections || []).forEach((section) => {
+    const page = document.getElementById(section.pageId);
+    if (!page) return;
+    const panes = [page.querySelector(".content-en"), page.querySelector(".content-zh")].filter(Boolean);
+    panes.forEach((pane) => {
+      const heading = [...pane.querySelectorAll("h3")].find((node) => node.textContent.trim() === section.title || node.textContent.trim() === section.titleZh);
+      if (heading) heading.id = section.id;
+    });
+  });
+
+  const assetPrefix = body.dataset.assetPrefix || "assets";
+  document.querySelectorAll("figure.worksheet img").forEach((image) => {
+    image.src = `${assetPrefix}/worksheets/observations-grid.svg`;
+    image.alt = "Blank NMR observation grid";
+  });
+}
+
+function alignLocationHash() {
+  if (!window.location.hash) return;
+  let targetId;
+  try {
+    targetId = decodeURIComponent(window.location.hash.slice(1));
+  } catch {
+    targetId = window.location.hash.slice(1);
+  }
+  const target = document.getElementById(targetId);
+  if (!target) return;
+
+  const align = () => target.scrollIntoView({ block: "start", behavior: "instant" });
+  requestAnimationFrame(() => requestAnimationFrame(align));
+  window.addEventListener("load", align, { once: true });
+  document.fonts?.ready.then(align).catch(() => {});
+
+  // Page fragments and lazy figures are inserted after the browser's native
+  // hash jump.  Keep the target aligned briefly while those elements settle.
+  if ("ResizeObserver" in window) {
+    const paper = document.querySelector(".paper");
+    if (paper) {
+      const observer = new ResizeObserver(align);
+      observer.observe(paper);
+      window.setTimeout(() => observer.disconnect(), 1500);
+    }
+  }
+}
+
+const scanObserver = "IntersectionObserver" in window
+  ? new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const image = entry.target;
+        if (!image.src && image.dataset.src) image.src = image.dataset.src;
+        scanObserver.unobserve(image);
+      });
+    }, { rootMargin: "900px 0px" })
+  : null;
+
+function armReferenceScans() {
+  referenceScans.forEach((image) => {
+    if (image.src || !image.dataset.src) return;
+    if (scanObserver) scanObserver.observe(image);
+    else image.src = image.dataset.src;
+  });
+}
+
+function setOriginalMode(enabled) {
+  body.classList.toggle("show-original", enabled);
+  scheduleBilingualAlignment();
+  scanButton.setAttribute("aria-pressed", String(enabled));
+  scanButton.setAttribute("aria-label", enabled ? "\u8fd4\u56de\u91cd\u5efa\u7a3f" : "\u539f\u9875\u5bf9\u7167");
+  scanButton.title = enabled ? "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af" : "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af";
+  languageButtons.forEach((button) => {
+    button.setAttribute("aria-pressed", String(!enabled && button.dataset.view === body.dataset.language));
+  });
+  if (enabled) armReferenceScans();
+}
+
+function setLanguage(mode) {
+  const selected = ["en", "bilingual"].includes(mode) ? mode : "en";
+  body.classList.remove("show-original");
+  scanButton.setAttribute("aria-pressed", "false");
+  scanButton.setAttribute("aria-label", "\u539f\u9875\u5bf9\u7167");
+  scanButton.title = "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af";
+  body.dataset.language = selected;
+  scheduleBilingualAlignment();
+  languageButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.view === selected)));
+  localStorage.setItem("nmr-reading-mode", selected);
+}
+
+function activateView(view) {
+  if (view === "original") {
+    setOriginalMode(!body.classList.contains("show-original"));
+    return;
+  }
+  setLanguage(view);
+}
+
+function cycleView() {
+  if (body.classList.contains("show-original")) {
+    setLanguage("en");
+    return;
+  }
+  if (body.dataset.language === "en") {
+    setLanguage("bilingual");
+    return;
+  }
+  setOriginalMode(true);
+}
+
+populateExperiment();
+alignLocationHash();
+window.addEventListener("hashchange", alignLocationHash);
+
+const sidebarStateKey = "nmr-sidebar-navigation";
+
+function readSidebarState() {
+  try {
+    return JSON.parse(sessionStorage.getItem(sidebarStateKey) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function persistSidebarState() {
+  if (!sidebar) return;
+  const openChapters = [...sidebar.querySelectorAll("details.chapter-group[open]")]
+    .map((group) => group.dataset.chapter)
+    .filter(Boolean);
+  try {
+    sessionStorage.setItem(sidebarStateKey, JSON.stringify({
+      scrollTop: sidebar.scrollTop,
+      openChapters,
+    }));
+  } catch {
+    // Some browser policies disable storage for local files; navigation still works.
+  }
+}
+
+function restoreSidebarState() {
+  if (!sidebar) return;
+  const state = readSidebarState();
+  const openChapters = new Set(Array.isArray(state.openChapters) ? state.openChapters : []);
+  sidebar.querySelectorAll("details.chapter-group").forEach((group) => {
+    if (openChapters.has(group.dataset.chapter) || group.classList.contains("active-chapter")) group.open = true;
+    group.addEventListener("toggle", () => {
+      persistSidebarState();
+      updateNavToggleButton();
+    });
+  });
+
+  requestAnimationFrame(() => {
+    updateNavToggleButton();
+    if (Number.isFinite(state.scrollTop)) {
+      sidebar.scrollTop = state.scrollTop;
+      return;
+    }
+    const activeLink = sidebar.querySelector("a.active");
+    if (activeLink) sidebar.scrollTop = Math.max(0, activeLink.offsetTop - sidebar.clientHeight / 2);
+  });
+
+  let scrollTimer = 0;
+  sidebar.addEventListener("scroll", () => {
+    window.clearTimeout(scrollTimer);
+    scrollTimer = window.setTimeout(persistSidebarState, 80);
+  }, { passive: true });
+}
+
+restoreSidebarState();
+
+const sectionLinks = [...document.querySelectorAll(".sidebar-section-link[data-section-id]")];
+const sectionTargets = sectionLinks
+  .map((link) => document.getElementById(link.dataset.sectionId))
+  .filter(Boolean);
+const sectionObserver = "IntersectionObserver" in window && sectionTargets.length
+  ? new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        sectionLinks.forEach((link) => {
+          const active = link.dataset.sectionId === entry.target.id;
+          link.classList.toggle("active", active);
+          if (active) link.setAttribute("aria-current", "location");
+          else link.removeAttribute("aria-current");
+        });
+      });
+    }, { rootMargin: "-16% 0px -68% 0px", threshold: 0 })
+  : null;
+sectionTargets.forEach((target) => sectionObserver?.observe(target));
+
+function updateNavToggleButton() {
+  if (!sidebar || !sidebarActionButton) return;
+  const groups = [...sidebar.querySelectorAll("details.chapter-group")];
+  const allOpen = groups.length > 0 && groups.every((group) => group.open);
+  const label = allOpen ? "\u6536\u62e2\u6240\u6709\u7ae0\u8282" : "\u5c55\u5f00\u6240\u6709\u7ae0\u8282";
+  sidebarActionButton.dataset.state = allOpen ? "collapse" : "expand";
+  sidebarActionButton.setAttribute("aria-label", label);
+  sidebarActionButton.title = label;
+}
+
+sidebarActionButton?.addEventListener("click", () => {
+  const groups = [...sidebar.querySelectorAll("details.chapter-group")];
+  const shouldOpen = !groups.every((group) => group.open);
+  groups.forEach((group) => {
+    group.open = shouldOpen;
+  });
+  persistSidebarState();
+  updateNavToggleButton();
+});
+
+const scaleStorageKey = "nmr-interface-scale";
+const themeStorageKey = "nmr-interface-theme";
+let scaleMode = "auto";
+let appliedScale = 1;
+
+function storedValue(key, fallback) {
+  try {
+    return localStorage.getItem(key) || fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function saveValue(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    // The display setting still applies for the current page.
+  }
+}
+
+function automaticScale() {
+  if (window.innerWidth <= 1040) return 1;
+  return Math.min(1.2, Math.max(0.95, window.innerWidth / 1800));
+}
+
+function applyScale(scale, mode = scaleMode) {
+  appliedScale = Math.min(1.4, Math.max(0.8, scale));
+  root.style.setProperty("--sidebar-w", `${Math.round(340 * appliedScale)}px`);
+  root.style.setProperty("--page-w", `${Math.round(1180 * appliedScale)}px`);
+  root.style.setProperty("--reader-font", `${(15 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--reader-heading", `${(20 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--reader-title", `${(34 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--sidebar-font", `${(13 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--sidebar-small", `${(11 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--paper-pad", `${Math.round(44 * appliedScale)}px`);
+  if (zoomValue) zoomValue.textContent = mode === "auto" ? `\u81ea\u52a8 ${Math.round(appliedScale * 100)}%` : `${Math.round(appliedScale * 100)}%`;
+  if (zoomAutoButton) zoomAutoButton.setAttribute("aria-pressed", String(mode === "auto"));
+}
+
+function setScaleMode(value) {
+  if (value === "auto") {
+    scaleMode = "auto";
+    applyScale(automaticScale(), scaleMode);
+    saveValue(scaleStorageKey, scaleMode);
+    return;
+  }
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return;
+  scaleMode = String(Math.min(1.4, Math.max(0.8, numeric)));
+  applyScale(Number(scaleMode), scaleMode);
+  saveValue(scaleStorageKey, scaleMode);
+}
+
+function adjustScale(delta) {
+  setScaleMode((Math.round((appliedScale + delta) * 10) / 10).toFixed(1));
+}
+
+function applyTheme(theme) {
+  const selected = ["sage", "mist", "sand", "mauve", "gray"].includes(theme) ? theme : "sage";
+  root.dataset.theme = selected;
+  themeButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.theme === selected)));
+  saveValue(themeStorageKey, selected);
+}
+
+setScaleMode(storedValue(scaleStorageKey, "auto"));
+applyTheme(storedValue(themeStorageKey, "sage"));
+
+displayButton?.addEventListener("click", (event) => {
+  event.stopPropagation();
+  const willOpen = displayPanel.hidden;
+  displayPanel.hidden = !willOpen;
+  displayButton.setAttribute("aria-expanded", String(willOpen));
+});
+
+displayPanel?.addEventListener("click", (event) => event.stopPropagation());
+zoomOutButton?.addEventListener("click", () => adjustScale(-0.1));
+zoomInButton?.addEventListener("click", () => adjustScale(0.1));
+zoomAutoButton?.addEventListener("click", () => setScaleMode("auto"));
+themeButtons.forEach((button) => button.addEventListener("click", () => applyTheme(button.dataset.theme)));
+
+document.addEventListener("click", () => {
+  if (!displayPanel || displayPanel.hidden) return;
+  displayPanel.hidden = true;
+  displayButton?.setAttribute("aria-expanded", "false");
+});
+
+let scaleResizeTimer = 0;
+window.addEventListener("resize", () => {
+  scheduleBilingualAlignment();
+  if (scaleMode !== "auto") return;
+  window.clearTimeout(scaleResizeTimer);
+  scaleResizeTimer = window.setTimeout(() => applyScale(automaticScale(), "auto"), 100);
+}, { passive: true });
+
+document.fonts?.ready.then(scheduleBilingualAlignment).catch(() => {});
+document.addEventListener("load", (event) => {
+  if (event.target instanceof HTMLImageElement && event.target.closest(".bilingual-grid")) scheduleBilingualAlignment();
+}, true);
+
+toolbar.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-view]");
+  if (!button || !toolbar.contains(button)) return;
+  event.preventDefault();
+  activateView(button.dataset.view);
+});
+
+navButton.addEventListener("click", () => {
+  const open = body.classList.toggle("nav-open");
+  navButton.setAttribute("aria-expanded", String(open));
+});
+
+document.querySelectorAll(".sidebar a").forEach((link) => link.addEventListener("click", () => {
+  persistSidebarState();
+  body.classList.remove("nav-open");
+  navButton.setAttribute("aria-expanded", "false");
+}));
+
+document.addEventListener("keydown", (event) => {
+  const target = event.target;
+  if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target?.isContentEditable) return;
+  if (event.ctrlKey || event.metaKey || event.altKey) return;
+  if (event.key === "1") setLanguage("en");
+  if (event.key === "2") setLanguage("bilingual");
+  if (event.key === "3") setOriginalMode(true);
+  if (event.key.toLowerCase() === "o") cycleView();
+});
+
+setLanguage(localStorage.getItem("nmr-reading-mode") || "en");
+}
+</script></body></html>

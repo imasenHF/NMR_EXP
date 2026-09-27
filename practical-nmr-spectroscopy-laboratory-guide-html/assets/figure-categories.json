@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "assetRoot": "assets/figures",
+  "purpose": "Semantic inventory for the directly extracted PDF figures. File paths remain flat for importer compatibility.",
+  "categories": [
+    {
+      "id": "chemical-structure",
+      "labelZh": "化学结构",
+      "labelEn": "Chemical structure",
+      "descriptionZh": "分子结构式或化合物结构图。"
+    },
+    {
+      "id": "line-shape-and-processing-plots",
+      "labelZh": "线形与处理曲线",
+      "labelEn": "Line-shape and processing plots",
+      "descriptionZh": "窗口函数、脉冲校准、探头调谐和 DEPT 强度等曲线。"
+    },
+    {
+      "id": "pulse-sequences",
+      "labelZh": "脉冲序列",
+      "labelEn": "Pulse sequences",
+      "descriptionZh": "显示 RF 脉冲、梯度和延迟关系的序列图。"
+    },
+    {
+      "id": "spectra-and-spectrum-screens",
+      "labelZh": "谱图与谱图屏幕",
+      "labelEn": "Spectra and spectrum screens",
+      "descriptionZh": "一维、二维、DOSY、DEPT、HETCOR、NOESY 等谱图，包含带软件界面的谱图截图。"
+    },
+    {
+      "id": "instrument-interface-screens",
+      "labelZh": "仪器界面截图",
+      "labelEn": "Instrument interface screens",
+      "descriptionZh": "参数窗口、拟合窗口、shim 映射或通道配置等以界面为主的截图。"
+    },
+    {
+      "id": "experimental-apparatus",
+      "labelZh": "实验装置",
+      "labelEn": "Experimental apparatus",
+      "descriptionZh": "样品管、塞子和实验装配示意图。"
+    },
+    {
+      "id": "calibration-plots",
+      "labelZh": "校准图",
+      "labelEn": "Calibration plots",
+      "descriptionZh": "温度或其他仪器校准数据的拟合图。"
+    }
+  ],
+  "figures": [
+    {"file": "page-011-fig-1.webp", "sourcePage": 11, "category": "chemical-structure", "tags": ["quinine", "molecular-structure"], "descriptionZh": "奎宁化学结构。"},
+    {"file": "page-012-fig-1.webp", "sourcePage": 12, "category": "line-shape-and-processing-plots", "tags": ["window-functions", "processing"], "descriptionZh": "指数、高斯-指数和正弦钟形窗函数随采集时间的曲线。"},
+    {"file": "page-015-fig-1.webp", "sourcePage": 15, "category": "spectra-and-spectrum-screens", "tags": ["1d-spectrum", "lineshape", "screen"], "descriptionZh": "1H 线形测试的 Bruker 谱图窗口。"},
+    {"file": "page-016-fig-1.webp", "sourcePage": 16, "category": "spectra-and-spectrum-screens", "tags": ["1d-spectrum", "shim", "lineshape"], "descriptionZh": "不同 shim 条件下残余溶剂信号线形的谱图组。"},
+    {"file": "page-018-fig-1.webp", "sourcePage": 18, "category": "line-shape-and-processing-plots", "tags": ["pulse-calibration", "360-degree-pulse"], "descriptionZh": "基于变脉冲长度的 360° 脉冲校准曲线。"},
+    {"file": "page-018-fig-2.webp", "sourcePage": 18, "category": "spectra-and-spectrum-screens", "tags": ["1d-spectrum", "signal-to-noise", "screen"], "descriptionZh": "1H 信噪比测量的 Bruker 谱图窗口。"},
+    {"file": "page-026-fig-1.webp", "sourcePage": 26, "category": "line-shape-and-processing-plots", "tags": ["probe-tuning", "wobb", "trace"], "descriptionZh": "wobb 探头调谐显示及谐振凹陷曲线。"},
+    {"file": "page-029-fig-1.webp", "sourcePage": 29, "category": "spectra-and-spectrum-screens", "tags": ["1h-spectrum", "quinine"], "descriptionZh": "奎宁盐酸盐的 500 MHz 1H 谱图。"},
+    {"file": "page-029-fig-2.webp", "sourcePage": 29, "category": "spectra-and-spectrum-screens", "tags": ["13c-spectrum", "quinine"], "descriptionZh": "奎宁盐酸盐的 125 MHz 13C 谱图。"},
+    {"file": "page-030-fig-1.webp", "sourcePage": 30, "category": "spectra-and-spectrum-screens", "tags": ["1d-spectrum", "shim", "spinning-sidebands"], "descriptionZh": "非旋转 shim 对线形和旋转边带影响的谱图组。"},
+    {"file": "page-031-fig-1.webp", "sourcePage": 31, "category": "spectra-and-spectrum-screens", "tags": ["1d-spectrum", "shim", "continuation"], "descriptionZh": "图 A1.4 的续图谱图。"},
+    {"file": "page-032-fig-1.webp", "sourcePage": 32, "category": "spectra-and-spectrum-screens", "tags": ["pulse-calibration", "paropt", "screen"], "descriptionZh": "paropt 脉冲校准运行完成后的多谱图显示。"},
+    {"file": "page-037-fig-1.webp", "sourcePage": 37, "category": "spectra-and-spectrum-screens", "tags": ["t1-ir", "2d-display", "screen"], "descriptionZh": "T1-IR 数据集傅里叶变换后的斜视谱图显示。"},
+    {"file": "page-038-fig-1.webp", "sourcePage": 38, "category": "instrument-interface-screens", "tags": ["t1-fitting", "relaxation-analysis", "screen"], "descriptionZh": "T1 计算与拟合例程窗口。"},
+    {"file": "page-042-fig-1.webp", "sourcePage": 42, "category": "spectra-and-spectrum-screens", "tags": ["noe-difference", "multiple-display", "screen"], "descriptionZh": "照射谱与参考谱的多重显示。"},
+    {"file": "page-045-fig-1.webp", "sourcePage": 45, "category": "line-shape-and-processing-plots", "tags": ["dept", "pulse-angle", "intensity"], "descriptionZh": "DEPT 中 CH、CH2 和 CH3 信号强度随 1H 脉冲角变化的曲线。"},
+    {"file": "page-046-fig-1.webp", "sourcePage": 46, "category": "spectra-and-spectrum-screens", "tags": ["13c-spectrum", "dept", "multiple-display"], "descriptionZh": "奎宁标准 13C、DEPT-45、DEPT-90 和 DEPT-135 多谱图。"},
+    {"file": "page-051-fig-1.webp", "sourcePage": 51, "category": "spectra-and-spectrum-screens", "tags": ["13c-spectrum", "chcl3", "screen"], "descriptionZh": "CHCl3 实验中获得的多组 13C 谱图。"},
+    {"file": "page-053-fig-1.webp", "sourcePage": 53, "category": "spectra-and-spectrum-screens", "tags": ["hetcor", "2d-spectrum", "screen"], "descriptionZh": "CHCl3 HETCOR 谱图及 F2 垂直投影。"},
+    {"file": "page-055-fig-1.webp", "sourcePage": 55, "category": "spectra-and-spectrum-screens", "tags": ["hetcor", "2d-spectrum", "screen"], "descriptionZh": "CHCl3 双维傅里叶变换后的 HETCOR 谱图。"},
+    {"file": "page-058-fig-1.webp", "sourcePage": 58, "category": "spectra-and-spectrum-screens", "tags": ["hetcor", "quinine", "2d-spectrum"], "descriptionZh": "奎宁 HETCOR 二维谱图。"},
+    {"file": "page-066-fig-1.webp", "sourcePage": 66, "category": "spectra-and-spectrum-screens", "tags": ["tocsy", "2d-spectrum", "screen"], "descriptionZh": "奎宁 TOCSY 二维谱图。"},
+    {"file": "page-067-fig-1.webp", "sourcePage": 67, "category": "spectra-and-spectrum-screens", "tags": ["noesy", "2d-phasing", "screen"], "descriptionZh": "NOESY 二维相位校正的顶层显示。"},
+    {"file": "page-068-fig-1.webp", "sourcePage": 68, "category": "spectra-and-spectrum-screens", "tags": ["noesy", "2d-phasing", "screen"], "descriptionZh": "NOESY 二维相位校正的行显示。"},
+    {"file": "page-069-fig-1.webp", "sourcePage": 69, "category": "instrument-interface-screens", "tags": ["edprosol", "pulse-power", "screen"], "descriptionZh": "TopSpin edprosol 脉冲功率设置窗口。"},
+    {"file": "page-072-fig-1.webp", "sourcePage": 72, "category": "spectra-and-spectrum-screens", "tags": ["gradient-imaging", "1d-image", "screen"], "descriptionZh": "梯度成像中 phantom 图像宽度的测量显示。"},
+    {"file": "page-076-fig-1.webp", "sourcePage": 76, "category": "spectra-and-spectrum-screens", "tags": ["pfg-dqf-cosy", "2d-phasing", "screen"], "descriptionZh": "pfg-DQF-COSY 二维相位校正显示。"},
+    {"file": "page-077-fig-1.webp", "sourcePage": 77, "category": "spectra-and-spectrum-screens", "tags": ["pfg-dqf-cosy", "2d-spectrum", "screen"], "descriptionZh": "奎宁 pfg-DQF-COSY 二维谱图。"},
+    {"file": "page-080-fig-1.webp", "sourcePage": 80, "category": "spectra-and-spectrum-screens", "tags": ["pfg-hmqc", "2d-spectrum", "screen"], "descriptionZh": "奎宁 pfg-HMQC 二维谱图。"},
+    {"file": "page-082-fig-1.webp", "sourcePage": 82, "category": "experimental-apparatus", "tags": ["phantom", "nmr-tube", "apparatus"], "descriptionZh": "H2O/D2O phantom 的 NMR 管与涡流塞装配示意图。"},
+    {"file": "page-086-fig-1.webp", "sourcePage": 86, "category": "instrument-interface-screens", "tags": ["gradient-shimming", "parameter-window", "screen"], "descriptionZh": "梯度 shim 例程的参数输入窗口。"},
+    {"file": "page-088-fig-1.webp", "sourcePage": 88, "category": "spectra-and-spectrum-screens", "tags": ["water-suppression", "fid", "screen"], "descriptionZh": "gs 模式窗口及近共振 FID。"},
+    {"file": "page-090-fig-1.webp", "sourcePage": 90, "category": "spectra-and-spectrum-screens", "tags": ["water-suppression", "multiple-display", "screen"], "descriptionZh": "溶菌酶/水样品的多谱图水抑制比较。"},
+    {"file": "page-093-fig-1.webp", "sourcePage": 93, "category": "spectra-and-spectrum-screens", "tags": ["watergate-noesy", "2d-spectrum", "screen"], "descriptionZh": "溶菌酶/水样品的 WATERGATE-NOESY 二维谱图。"},
+    {"file": "page-097-fig-1.webp", "sourcePage": 97, "category": "spectra-and-spectrum-screens", "tags": ["hsqc", "15n", "2d-spectrum", "screen"], "descriptionZh": "泛素/水样品的 1H–15N HSQC 二维谱图。"},
+    {"file": "page-099-fig-1.webp", "sourcePage": 99, "category": "instrument-interface-screens", "tags": ["gradient-shimming", "shim-mapping", "parameter-window", "screen"], "descriptionZh": "gradshim 开始前的 shim mapping 输入窗口。"},
+    {"file": "page-100-fig-1.webp", "sourcePage": 100, "category": "spectra-and-spectrum-screens", "tags": ["gradient-shimming", "shim-profiles", "screen"], "descriptionZh": "shim mapping 完成后 Z-shim 剖面显示。"},
+    {"file": "page-104-fig-1.webp", "sourcePage": 104, "category": "instrument-interface-screens", "tags": ["edasp", "channel-routing", "screen"], "descriptionZh": "15N HSQC 双通道配置的 edasp 界面。"},
+    {"file": "page-104-fig-2.webp", "sourcePage": 104, "category": "instrument-interface-screens", "tags": ["edasp", "channel-routing", "screen"], "descriptionZh": "四通道 15N HSQC 的 edasp 通道路由界面。"},
+    {"file": "page-109-fig-1.webp", "sourcePage": 109, "category": "spectra-and-spectrum-screens", "tags": ["selective-excitation", "1d-spectrum", "screen"], "descriptionZh": "奎宁参考谱与选择性激发谱的比较。"},
+    {"file": "page-115-fig-1.webp", "sourcePage": 115, "category": "spectra-and-spectrum-screens", "tags": ["1h-spectrum", "octanol", "integration", "screen"], "descriptionZh": "水饱和 1-辛醇样品的 1H 谱图与积分。"},
+    {"file": "page-117-fig-1.webp", "sourcePage": 117, "category": "spectra-and-spectrum-screens", "tags": ["1h-spectrum", "octanol", "integration", "screen"], "descriptionZh": "水中辛醇样品的 1H 谱图。"},
+    {"file": "page-120-fig-1.webp", "sourcePage": 120, "category": "pulse-sequences", "tags": ["stimulated-echo", "bipolar-gradients", "diffusion"], "descriptionZh": "采用双极梯度的刺激回波扩散测量脉冲序列。"},
+    {"file": "page-123-fig-1.webp", "sourcePage": 123, "category": "calibration-plots", "tags": ["vt-calibration", "methanol", "temperature"], "descriptionZh": "甲醇样品的变温校准拟合图。"},
+    {"file": "page-127-fig-1.webp", "sourcePage": 127, "category": "spectra-and-spectrum-screens", "tags": ["dosy", "2d-spectrum", "sds", "atp"], "descriptionZh": "SDS/ATP 混合物的 DOSY 二维谱图。"}
+  ]
+}

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Unified searchable entry for three NMR textbook HTML editions." />
+    <title>NMR Textbook Library — 核磁共振教材资料库</title>
+    <link rel="stylesheet" href="200-and-more-nmr-experiments-html/shared/site.css?v=18" />
+    <link rel="stylesheet" href="shared/suite.css?v=1" />
+    <script src="data/suite-catalog.js"></script>
+    <script src="data/suite-search.js"></script>
+  </head>
+  <body class="library-page suite-page">
+    <header class="topbar library-topbar">
+      <div class="brand">
+        <h1>NMR Experiment Library</h1>
+        <p>从仪器基础、脉冲序列到多维与生物 NMR 的实验资料库</p>
+      </div>
+      <div class="toolbar" aria-label="显示设置">
+        <div class="display-control">
+          <button id="toggle-display-settings" class="view-icon" type="button" aria-label="显示设置" aria-expanded="false" aria-controls="display-settings" title="缩放与主题">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h10M18 7h2M4 17h2M10 17h10M14 4v6M6 14v6" /></svg>
+          </button>
+          <section id="display-settings" class="display-panel" aria-label="显示设置" hidden>
+            <div class="display-panel-heading"><strong>显示设置</strong><span>三套教材统一</span></div>
+            <div class="display-setting-row"><span>界面缩放</span><div class="zoom-controls" role="group" aria-label="界面缩放"><button id="zoom-out" type="button" aria-label="缩小">−</button><output id="zoom-value" aria-live="polite">自动</output><button id="zoom-in" type="button" aria-label="放大">+</button></div></div>
+            <button id="zoom-auto" class="auto-scale-button" type="button" aria-pressed="true">按窗口自动适应</button>
+            <div class="display-setting-row theme-setting"><span>主题颜色</span><div class="theme-options" role="group" aria-label="主题颜色"><button type="button" data-theme="sage" aria-label="鼠尾草绿" title="鼠尾草绿" aria-pressed="true"></button><button type="button" data-theme="mist" aria-label="雾蓝" title="雾蓝" aria-pressed="false"></button><button type="button" data-theme="sand" aria-label="暖砂" title="暖砂" aria-pressed="false"></button><button type="button" data-theme="mauve" aria-label="灰紫" title="灰紫" aria-pressed="false"></button><button type="button" data-theme="gray" aria-label="浅灰" title="浅灰" aria-pressed="false"></button></div></div>
+          </section>
+        </div>
+      </div>
+    </header>
+
+    <main class="suite-home">
+      <section class="suite-intro">
+        <div class="suite-intro-copy">
+          <p class="eyebrow">NMR EXPERIMENT LIBRARY</p>
+          <h2>核磁共振实验方法与波谱实践</h2>
+          <p>聚焦 NMR 仪器调谐、脉冲校准、常规与多维谱、梯度测量、蛋白质 NMR 以及实验室操作中的实验方法、参数和谱图解析。</p>
+          <label class="suite-search"><span>跨教材全文搜索</span><input id="search-input" type="search" autocomplete="off" placeholder="输入实验号、参数名、脉冲序列或中文术语" /></label>
+          <div id="search-status" class="suite-search-status" aria-live="polite"></div>
+          <ol id="search-results" class="suite-search-results"></ol>
+        </div>
+        <div class="suite-gallery" id="book-gallery" aria-label="教材封面画廊"></div>
+      </section>
+
+      <section class="suite-catalog" aria-label="三套教材章节目录">
+        <header class="suite-catalog-heading"><div><p class="eyebrow">BROWSE THE COLLECTION</p><h2>按教材与章节浏览</h2></div><p>展开章节查看具体实验和原书页码，点击即可进入对应项目。</p></header>
+        <div class="suite-columns" id="suite-columns"></div>
+      </section>
+
+      <footer class="suite-footer"><span><strong>NMR Experiment Library</strong><br />仪器设置、脉冲序列、谱图解析与实验步骤索引。</span><span>© 2026 wuhaifeng@ustc.edu.cn · 仅供小范围学术交流与学习参考</span></footer>
+    </main>
+
+    <script>
+      const books = [
+        { key: "nmr-200", short: "200 and More", columnTitle: "200 and More", title: "200 and More NMR Experiments: A Practical Course", zh: "200 个及更多 NMR 实验", dir: "200-and-more-nmr-experiments-html", pageDir: "experiments", start: "experiments/1.html", cover: "assets/cover/book-cover.webp", coverAlt: "200 and More NMR Experiments: A Practical Course 原书封面", intro: "从仪器基础、脉冲序列到多维、固体与蛋白质 NMR，系统整理实验参数、谱图与操作要点。" },
+        { key: "nmr-50-essential", short: "50 and More", columnTitle: "50 and More", title: "50 and More Essential NMR Experiments: A Detailed Guide", zh: "50 个及更多必备 NMR 实验", dir: "50-and-more-essential-nmr-experiments-html", pageDir: "items", start: "items/1.html", cover: "assets/original-pages/page-1.webp", coverAlt: "50 and More Essential NMR Experiments 原书封面", intro: "以有机化合物的谱图解析为核心，涵盖常用脉冲实验、选择性方法与可复现的实验流程。" },
+        { key: "nmr-practical", short: "Practical NMR", columnTitle: "Practical NMR", title: "Practical NMR Spectroscopy Laboratory Guide", zh: "实用 NMR 波谱学实验室指南", dir: "practical-nmr-spectroscopy-laboratory-guide-html", pageDir: "items", start: "items/chapter-1.html", cover: "assets/cover/cover.webp", coverAlt: "Practical NMR Spectroscopy Laboratory Guide 原书封面", intro: "围绕实验室操作、脉冲校准、选择性实验与数据处理，涵盖从基础检查到实际测量。" }
+      ];
+      const catalog = window.NMR_SUITE_CATALOG || {};
+      const records = window.NMR_SUITE_SEARCH || [];
+      const rangeFor = (pages) => { if (!pages?.length) return ""; const first = pages[0]?.bookPage ?? pages[0]?.[2]; const last = pages[pages.length - 1]?.bookPage ?? pages[pages.length - 1]?.[2]; return `${first}–${last}`; };
+      const itemHref = (book, item) => `${book.dir}/${book.pageDir}/${item.slug}.html`;
+
+      function renderGallery() {
+        const gallery = document.querySelector("#book-gallery");
+        gallery.innerHTML = `<div class="suite-book-tabs" role="tablist" aria-label="选择教材"></div><div class="suite-book-stages"></div>`;
+        const tabs = gallery.querySelector(".suite-book-tabs");
+        const stages = gallery.querySelector(".suite-book-stages");
+        books.forEach((book, index) => {
+          const tab = document.createElement("button"); tab.className = "suite-book-tab"; tab.type = "button"; tab.role = "tab"; tab.dataset.book = book.key; tab.setAttribute("aria-selected", String(index === 0));
+          tab.innerHTML = `<img src="${book.dir}/${book.cover}" alt="${book.coverAlt}" /><span><strong>${book.short}</strong><small>${book.zh}</small></span>`; tabs.append(tab);
+          const stage = document.createElement("article"); stage.className = "suite-book-stage"; stage.dataset.book = book.key; stage.hidden = index !== 0;
+          stage.innerHTML = `<img loading="lazy" src="${book.dir}/${book.cover}" alt="${book.coverAlt}" /><div><h3>${book.title}</h3><p>${book.intro}</p><a href="${book.dir}/${book.start}">访问页面</a></div>`; stages.append(stage);
+          tab.addEventListener("click", () => { tabs.querySelectorAll("[role=tab]").forEach((node) => node.setAttribute("aria-selected", String(node === tab))); stages.querySelectorAll(".suite-book-stage").forEach((node) => { node.hidden = node.dataset.book !== book.key; }); });
+        });
+      }
+
+      function renderCatalog() {
+        const root = document.querySelector("#suite-columns"); root.replaceChildren();
+        books.forEach((book) => {
+          const chapters = catalog[book.key] || [];
+          const chapterCount = chapters.filter((chapter) => chapter.number !== "A").length;
+          const column = document.createElement("article"); column.className = "suite-column";
+          column.innerHTML = `<header class="suite-column-header"><img loading="lazy" src="${book.dir}/${book.cover}" alt="" /><div><h3>${book.columnTitle}</h3><p>${book.title}<br />章节目录 · ${chapterCount} 章</p></div></header><div class="suite-chapter-list"></div>`;
+          const list = column.querySelector(".suite-chapter-list");
+          chapters.forEach((chapter) => {
+            const entries = chapter.entries || [];
+            const details = document.createElement("details"); details.className = "suite-chapter";
+            const summary = document.createElement("summary"); summary.innerHTML = `<span class="suite-chapter-number">${chapter.number}</span><span class="suite-chapter-title"><strong>${chapter.title}</strong>${chapter.titleZh ? `<small>${chapter.titleZh}</small>` : ""}</span><span class="suite-chapter-count">${entries.length ? `${entries.length} 项` : "章节页"}</span>`; details.append(summary);
+            const links = document.createElement("div"); links.className = "suite-chapter-links";
+            entries.forEach((item) => { const a = document.createElement("a"); a.href = item.href || itemHref(book, item); a.innerHTML = `<span>${item.number || "·"}</span><strong>${item.titleZh ? `${item.title}<br /><em>${item.titleZh}</em>` : item.title}</strong>`; links.append(a); });
+            if (!entries.length) { const a = document.createElement("a"); a.href = chapter.href; a.innerHTML = `<span>${chapter.number}</span><strong>进入章节页面</strong>`; links.append(a); }
+            details.append(links); list.append(details);
+          });
+          root.append(column);
+        });
+      }
+
+      function normalize(value) { return value.normalize("NFKC").toLocaleLowerCase().replace(/\s+/g, " ").trim(); }
+      function excerpt(text, query) { const n = normalize(text), pos = n.indexOf(query), start = Math.max(0, pos - 54), end = Math.min(text.length, Math.max(pos, 0) + query.length + 92); return `${start ? "…" : ""}${text.slice(start, end)}${end < text.length ? "…" : ""}`; }
+      function renderSearch(matches, query) { const list = document.querySelector("#search-results"), status = document.querySelector("#search-status"); list.replaceChildren(); if (!query) { status.textContent = ""; return; } status.textContent = matches.length ? `找到 ${matches.length} 个页面结果` : "未找到匹配内容"; matches.slice(0, 60).forEach((record) => { const li = document.createElement("li"), a = document.createElement("a"), strong = document.createElement("strong"), meta = document.createElement("span"), p = document.createElement("p"); strong.textContent = `${record.bookShort} · ${record.experiment} · ${record.title}`; meta.textContent = `原书 ${record.bookPage} · PDF ${record.pdfPage}`; p.textContent = excerpt(record.text, query); a.href = record.href; a.append(strong, meta, p); li.append(a); list.append(li); }); }
+
+      function initSettings() {
+        const root = document.documentElement, panel = document.querySelector("#display-settings"), toggle = document.querySelector("#toggle-display-settings"), zoomValue = document.querySelector("#zoom-value"), auto = document.querySelector("#zoom-auto"); let mode = localStorage.getItem("nmr-interface-scale") || "auto", applied = 1;
+        const applyScale = (scale, current = mode) => { applied = Math.min(1.4, Math.max(.8, scale)); root.style.setProperty("--library-w", `${Math.round(1280 * applied)}px`); root.style.setProperty("--library-title", `${(32 * applied).toFixed(1)}px`); root.style.setProperty("--library-card-title", `${(21 * applied).toFixed(1)}px`); root.style.setProperty("--library-body", `${(14 * applied).toFixed(1)}px`); zoomValue.textContent = current === "auto" ? `自动 ${Math.round(applied * 100)}%` : `${Math.round(applied * 100)}%`; auto.setAttribute("aria-pressed", String(current === "auto")); };
+        const setScale = (value) => { if (value === "auto") { mode = value; applyScale(Math.min(1.2, Math.max(.95, innerWidth / 1800)), mode); localStorage.setItem("nmr-interface-scale", mode); return; } const n = Number(value); if (Number.isFinite(n)) { mode = String(Math.min(1.4, Math.max(.8, n))); applyScale(n, mode); localStorage.setItem("nmr-interface-scale", mode); } };
+        const theme = localStorage.getItem("nmr-interface-theme") || "sage"; document.documentElement.dataset.theme = theme; document.querySelectorAll("[data-theme]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.theme === theme))); setScale(mode);
+        toggle.addEventListener("click", (e) => { e.stopPropagation(); panel.hidden = !panel.hidden; toggle.setAttribute("aria-expanded", String(!panel.hidden)); }); panel.addEventListener("click", (e) => e.stopPropagation()); document.addEventListener("click", () => { panel.hidden = true; toggle.setAttribute("aria-expanded", "false"); });
+        document.querySelector("#zoom-out").addEventListener("click", () => setScale((Math.round((applied - .1) * 10) / 10).toFixed(1))); document.querySelector("#zoom-in").addEventListener("click", () => setScale((Math.round((applied + .1) * 10) / 10).toFixed(1))); auto.addEventListener("click", () => setScale("auto")); document.querySelectorAll("[data-theme]").forEach((b) => b.addEventListener("click", () => { document.documentElement.dataset.theme = b.dataset.theme; localStorage.setItem("nmr-interface-theme", b.dataset.theme); document.querySelectorAll("[data-theme]").forEach((x) => x.setAttribute("aria-pressed", String(x === b))); })); addEventListener("resize", () => { if (mode === "auto") setScale("auto"); }, { passive: true });
+      }
+
+      renderGallery(); renderCatalog(); initSettings();
+      const input = document.querySelector("#search-input");
+      input.addEventListener("input", () => { const query = normalize(input.value); if (query.length < 2) { renderSearch([], ""); document.querySelector("#search-status").textContent = query ? "继续输入以开始搜索" : ""; return; } const terms = query.split(" ").filter(Boolean); renderSearch(records.filter((r) => { const hay = normalize(`${r.bookShort} ${r.experiment} ${r.title} ${r.text}`); return terms.every((term) => hay.includes(term)); }), query); });
+    </script>
+  </body>
+</html>

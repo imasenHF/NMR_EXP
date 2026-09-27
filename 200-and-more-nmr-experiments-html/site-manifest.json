@@ -1,0 +1,11 @@
+{
+  "id": "nmr-200",
+  "title": "200 and More NMR Experiments",
+  "titleZh": "200 个及更多 NMR 实验",
+  "chapters": 15,
+  "items": 227,
+  "sourcePages": 838,
+  "originalPageImages": 838,
+  "readingModes": ["english", "bilingual", "source-page-comparison"],
+  "imagePolicy": {"rasterFormat": "webp", "maxWidth": 1600, "maxHeight": 1200, "preserveAspectRatio": true, "preserveCrop": true, "svgPreserved": true}
+}

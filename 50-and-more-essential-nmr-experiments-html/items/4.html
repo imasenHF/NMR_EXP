@@ -1,0 +1,527 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Chapter 4: Heteronuclear NMR"><title>4 Heteronuclear NMR — 50 and More Essential NMR Experiments</title><link rel="stylesheet" href="../shared/site.css?v=1"><script>window.NMR_EXPERIMENT = Object.freeze({"meta":{"number":"4","slug":"4","kind":"chapter","title":"Heteronuclear NMR","titleZh":"\u5f02\u6838 NMR","pages":[{"id":"pdf-123","pdfPage":123,"bookPage":113,"en":"content/pages/pdf-123.en.html","zh":"content/pages/pdf-123.zh.html"},{"id":"pdf-124","pdfPage":124,"bookPage":114,"en":"content/pages/pdf-124.en.html","zh":"content/pages/pdf-124.zh.html"},{"id":"pdf-125","pdfPage":125,"bookPage":115,"en":"content/pages/pdf-125.en.html","zh":"content/pages/pdf-125.zh.html"},{"id":"pdf-126","pdfPage":126,"bookPage":116,"en":"content/pages/pdf-126.en.html","zh":"content/pages/pdf-126.zh.html"},{"id":"pdf-127","pdfPage":127,"bookPage":117,"en":"content/pages/pdf-127.en.html","zh":"content/pages/pdf-127.zh.html"},{"id":"pdf-128","pdfPage":128,"bookPage":118,"en":"content/pages/pdf-128.en.html","zh":"content/pages/pdf-128.zh.html"}],"chapter":"Heteronuclear NMR"},"english":{"pdf-123":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>Chapter 4</h3>\r\n<h3>Heteronuclear NMR</h3>\r\n<p>Although NMR in Chemistry deals mainly with the nuclei 1H and 13C, there are very interesting applications with all the spins throughout the periodic system, and especially Inorganic Chemistry will focus on these. Of course we cannot show one example for each nucleus; however, we restrict ourselves in this chapter to some selected cases: nuclei with very low abundance such as 15N, quadrupolar nuclei such as 17O and 11B, nuclei with interest both in Organic and Inorganic Chemistry (19F, 29Si), and metal nuclei with a very low frequency (57Fe) or a very wide spectral range, such as 195Pt.</p>\r\n<h3>4.1 11B NMR Spectroscopy 119</h3>\r\n<h3>4.2 15N NMR Spectroscopy 123</h3>\r\n<h3>4.3 17O NMR Spectroscopy 127</h3>\r\n<h3>4.4 19F NMR Spectroscopy 131</h3>\r\n<h3>4.5 29Si NMR Spectroscopy 135</h3>\r\n<h3>4.6 57Fe NMR Spectroscopy 141</h3>\r\n<h3>4.7 195Pt NMR Spectroscopy 145</h3>\r\n<h3>The relevant data of all nuclei are given in the initial tables of this chapter accompanied by the explanation of the \u039e scale for referencing.</h3>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-123-fig-1\"><img alt=\"Figure from source PDF page 123.\" loading=\"lazy\" src=\"../assets/chapter-figures/pdf-123-fig-1.webp\"/></figure>\r\n</div>\r\n<aside aria-hidden=\"true\" class=\"source-sidebar source-sidebar-empty\"></aside>\r\n</div>\r\n","pdf-124":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h4>Referencing in Hetereonuclear NMR</h4>\r\n<p>Referencing was a frequently discussed problem in heteronuclear NMR spectroscopy. This has now ended with a \"regulation\" issued by the IUPAC committee as published in 2001 [6]. The idea of the concept is that only one valid primary reference compound is recognized, namely tetramethylsilane (TMS). Its proton frequency is used to calculate the frequencies of all heteronuclear secondary reference compounds, which are defined and tabulated by IUPAC; these tables are reproduced here.</p>\r\n<p>The method is known as the \u039e-scale (\u201cxsi\u201d, greek capital letter). The \u039e-value is the ratio between the absolute frequency Qx of an X nucleus reference substance, recommended and measured by the authors of the IUPAC paper [6 ], and the absolute 1H frequency QTMS of TMS on the identical B0 field and sample:</p>\r\n<h4>\u03bd</h4>\r\n<h4>x X \u22c5 = \u03bd</h4>\r\n<h4>100 \u039e</h4>\r\n<p>TMS</p>\r\n<p>Once you have measured the frequency of TMS in your sample, you can calculate the absolute frequency of the (virtual) X nucleus reference signal without the need to have the X reference substances in the sample, from</p>\r\n<h4>TMS X x \u03bd \u03bd \u22c5 \u039e =</h4>\r\n<h4>(2)</h4>\r\n<p>Using the \u039e value in % (as given in the tables), one may figure that the \u039e values would be the frequencies of the reference substances scaled to the TMS frequency of 100.000 000 MHz.</p>\r\n<p>For example: assume that you have detected on a 400 MHz spectrometer the 17O frequency of some compound at QO = 54.250 399 MHz. You have measured (at the same field strength using the same lock solvent, preferably in the same tube) the frequency of the 1H TMS signal at QTMS= 400.130 021 MHz. The \u039e-value of the 17O reference compound D2O is listed in Table 4.2 as \u039e = 13.556 457 %. Using Equation (2) you first calculate the virtual 17O frequency QD2O under these conditions, which will be</p>\r\n<p>QD2O = (\u039eX/100) QTMS = 0.135 564 57 \u00d7 400.130 021 = 54.243 454 MHz.</p>\r\n<p>Therefore, the difference between the frequency QO of your compound of interest and D2O is 6945 Hz, which yields 128.03 ppm through division by QD2O.</p>\r\n<p>Note that for this procedure you never needed to measure an actual sample of the reference D2O. Moreover, for the purpose of global standardization, this should not be done; instead, the recommended values should be used worldwide. On Bruker spectrometers the calculation procedure given above simplifies to multiplying the SF-value of the proton spectrum by the appropriate \u039e-value and inserting this as SF in the heteronuclear spectrum. Even easier is the use of a macro with the name \"xsi.mf\", which is available from one of the authors of this book on request.</p>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">Source sidebar</div>\r\n<h4>(1)</h4>\r\n<p>A distinguishing feature of nuclear magnetic resonance (NMR) is that signals are isotope-specific. In other words, each signal can be firmly linked to a particular element and nuclide. Two features follow: Firstly, there is a close connection with chemistry and, in particular, with the periodic table, since almost all elements can be studied; secondly, the spin properties of each isotope need to be clearly tabulated and firmly understood. It is a principal purpose of this document to provide such information.</p>\r\n<p>Taken from ref [6]</p>\r\n</aside>\r\n</div>\r\n","pdf-125":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-full-column\">\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-125-vector-1\"><img alt=\"Table 4.1: Nuclides with I = 1/2\" loading=\"lazy\" src=\"../assets/tables/pdf-125-vector-1.webp\"/><figcaption>Table 4.1: Nuclides with I = 1/2</figcaption></figure>\r\n</div>\r\n<div class=\"source-main-column\">\r\n<p>a) values given in 6 digits after the point as measured for the standard compounds, other data calculated from the J-values in column 3. b) receptivity relative to 13C c) Me = Methyl d) This compound is extremely dangerous. Do not use it, but apply the recommended \u039e-value.</p>\r\n</div>\r\n<aside aria-hidden=\"true\" class=\"source-sidebar source-sidebar-empty\"></aside>\r\n</div>\r\n","pdf-126":"<div class=\"source-page-layout source-sidebar-right source-has-full\">\r\n<div class=\"source-full-column\">\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-126-vector-1\"><img alt=\"Table 4.2: Selected Quadrupolar Nuclei (I &gt; 1/2)\" loading=\"lazy\" src=\"../assets/tables/pdf-126-vector-1.webp\"/><figcaption>Table 4.2: Selected Quadrupolar Nuclei (I &gt; 1/2)</figcaption></figure>\r\n</div>\r\n<div class=\"source-main-column\">\r\n<p>frequency</p>\r\n<p>Natural</p>\r\n<p>Reference Receptivi-</p>\r\n<p>Gyromagnetic</p>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-126-equation-1\"><img alt=\"Figure from source PDF page 126.\" loading=\"lazy\" src=\"../assets/equations/pdf-126-equation-1.webp\"/></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-126-equation-3\"><img alt=\"Figure from source PDF page 126.\" loading=\"lazy\" src=\"../assets/equations/pdf-126-equation-3.webp\"/></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-126-equation-4\"><img alt=\"Figure from source PDF page 126.\" loading=\"lazy\" src=\"../assets/equations/pdf-126-equation-4.webp\"/></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-126-equation-5\"><img alt=\"Figure from source PDF page 126.\" loading=\"lazy\" src=\"../assets/equations/pdf-126-equation-5.webp\"/></figure>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">Source sidebar</div>\r\n<p>Nuclide Spin I Quadrupole</p>\r\n<p>moment Q</p>\r\n<p>[10\u221230m2]</p>\r\n</aside>\r\n</div>\r\n","pdf-127":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-full-column\">\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-127-table-continued\"><img alt=\"Table continued on source PDF page 127.\" loading=\"lazy\" src=\"../assets/tables/pdf-127-table-continued.webp\"/><figcaption>Table continued on source PDF page 127.</figcaption></figure>\r\n</div>\r\n<div class=\"source-main-column\">\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-127-equation-3\"><img alt=\"Figure from source PDF page 127.\" loading=\"lazy\" src=\"../assets/equations/pdf-127-equation-3.webp\"/></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-127-equation-5\"><img alt=\"Figure from source PDF page 127.\" loading=\"lazy\" src=\"../assets/equations/pdf-127-equation-5.webp\"/></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-127-equation-6\"><img alt=\"Figure from source PDF page 127.\" loading=\"lazy\" src=\"../assets/equations/pdf-127-equation-6.webp\"/></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-127-equation-7\"><img alt=\"Figure from source PDF page 127.\" loading=\"lazy\" src=\"../assets/equations/pdf-127-equation-7.webp\"/></figure>\r\n<p>a) values given in 6 digits after the point as measured for the standard compounds; other data calculated from the J-values in column 5. b) receptivity relative to 13C c) This compound is extremely dangerous. Do not use it, but apply the recommended \u039e-value.</p>\r\n<p>This procedure is especially common in structural biology, where the 15N chemical shifts of proteins are referenced and calculated using the proton signal of DSS (2,2-dimethyl-2-silapentane-5-sulfonate, sodium salt) [5]. The ratio of the frequency of the common reference compound liquid ammonia (note that in contrast to the common usage of nitromethane as a reference compound structural biologists prefer NH3) and the DSS frequency was determined to be 0.101329118. Multiplying this value by the actual DSS frequency of the sample immediately gives the frequency of liquid ammonia, which is set to GN = 0 by the spectrometer software. Correspondingly, 13C is referenced to DSS using the factor 0.25144953.</p>\r\n</div>\r\n<aside aria-hidden=\"true\" class=\"source-sidebar source-sidebar-empty\"></aside>\r\n</div>\r\n","pdf-128":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-128-fig-1\"><img alt=\"Fig. 4.0-1 Warning signs at the door of a spectrometer laboratory\" loading=\"lazy\" src=\"../assets/photographs/pdf-128-fig-1.webp\"/><figcaption>Fig. 4.0-1 Warning signs at the door of a spectrometer laboratory</figcaption></figure>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">Source sidebar</div>\r\n<p>[1] R. K. Harris, B. E. Mann (eds.), NMR and the Periodic Table, Academic Press, London, 1978.</p>\r\n<p>[2] C. Brevard, P. Granger, Handbook of High Resolution Multinuclear NMR, Wiley, Chichester, 1981.</p>\r\n<p>[3] J. Mason (ed.), Multinuclear NMR, 2nd Edition, Plenum Press, London, 1989.</p>\r\n<p>[4] S. Berger, S. Braun, H.-O. Kalinowski, NMR Spectroscopy of the Non-Metallic Elements, Wiley, Chichester, 1997.</p>\r\n<p>[5] D. S. Wishart, C. G. Bigam, J. Yao, F. Abildgaard, H. J. Dyson, E. Oldfield, J. L. Markley, B. D. Sykes, \"1H, 13C, and 15N chemical shift referencing in biomolecular NMR\" J. Biomol. NMR 1995, 6, 135\u2212140.</p>\r\n<p>[6] R. K. Harris, E. D. Becker, S. M. Cabral de Menezes, R. Goodfellow, P. Granger, \"NMR Nomenclature. Nuclear spin properties and conventions for chemical shifts\" Pure Appl. Chem. 2001, 73, 1795\u22121818.</p>\r\n</aside>\r\n</div>\r\n"},"chinese":{"pdf-123":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h3>\u7b2c 4 \u7ae0</h3>\r\n<h3>\u5f02\u6838 NMR</h3>\r\n<p>\u867d\u7136\u5316\u5b66\u4e2d\u7684NMR\u4e3b\u8981\u6d89\u53ca1H\u548c13C\u6838,\u4f46\u6709\u975e\u5e38\u6709\u8da3\u7684\u5e94\u7528\u7a0b\u5e8f\u5728\u5468\u671f\u7cfb\u7edf\u4e2d\u6240\u6709\u65cb\u8f6c,\u7279\u522b\u662f\u65e0\u673a\u5316\u5b66\u5c06\u4e13\u6ce8\u4e8e\u8fd9\u4e9b. \u5f53\u7136,\u6211\u4eec\u4e0d\u80fd\u7ed9\u6bcf\u4e2a\u6838\u4e00\u4e2a\u4f8b\u5b50,\u4f46\u6211\u4eec\u5728\u672c\u7ae0\u4e2d\u53ea\u9650\u4e8e\u4e00\u4e9b\u9009\u62e9\u7684\u4f8b\u5b50:\u975e\u5e38\u4f4e\u7684\u6838,\u598215N,\u56db\u6781\u6838,\u598217O\u548c11B,\u6709\u7740\u6709\u673a\u548c\u65e0\u673a\u5316\u5b66\u7684\u5174\u8da3\u7684\u6838 (19F,29Si),\u4ee5\u53ca\u975e\u5e38\u4f4e\u7684\u9891\u7387 (57Fe) \u6216\u975e\u5e38\u5e7f\u6cdb\u7684\u91d1\u5c5e\u6838,\u5982195Pt.</p>\r\n<h3>4.1 11B NMR \u6ce2\u8c31119</h3>\r\n<h3>4.2 15N NMR Spectroscopy 123</h3>\r\n<h3>4.3 17O NMR \u6ce2\u8c31 127</h3>\r\n<h3>4.4 19F NMR \u6ce2\u8c31131</h3>\r\n<h3>4.5 29Si NMR \u6ce2\u8c31 135</h3>\r\n<h3>4.6 57Fe NMR \u6ce2\u8c31 141</h3>\r\n<h3>4.7 195Pt NMR \u6ce2\u8c31 145</h3>\r\n<h3>\u6240\u6709\u6838\u7684\u76f8\u5173\u6570\u636e\u5728\u672c\u7ae0\u7684\u521d\u59cb\u8868\u4e2d,\u9644\u4e0a\u4e86\u5bf9\u53c2\u8003\u7684 \u039e \u5c3a\u5ea6\u7684\u89e3\u91ca.</h3>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-123-fig-1\"><img alt=\"\u6e90 PDF \u7b2c 123 \u9875\u56fe\u50cf\u3002\" loading=\"lazy\" src=\"../assets/chapter-figures/pdf-123-fig-1.webp\"/></figure>\r\n</div>\r\n<aside aria-hidden=\"true\" class=\"source-sidebar source-sidebar-empty\"></aside>\r\n</div>\r\n","pdf-124":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<h4>\u5728\u5f02\u6838NMR\u4e2d\u5f15\u7528</h4>\r\n<p>\u5f15\u7528\u662f\u5f02\u6838NMR \u6ce2\u8c31\u5b66\u4e2d\u7ecf\u5e38\u8ba8\u8bba\u7684\u95ee\u9898.\u8fd9\u73b0\u5728\u5df2\u7ed3\u675f\u4e8e2001\u5e74\u516c\u5e03\u7684IUPAC\u59d4\u5458\u4f1a\u53d1\u5e03\u7684\"\u89c4\u5219\" [6].\u8be5\u6982\u5ff5\u7684\u60f3\u6cd5\u662f\u4ec5\u627f\u8ba4\u4e00\u4e2a\u6709\u6548\u7684\u4e3b\u8981\u53c2\u8003\u5316\u5408\u7269,\u5373\u56db\u7532\u57fa (TMS). \u5b83\u7684\u8d28\u5b50\u9891\u7387\u7528\u4e8e\u8ba1\u7b97\u6240\u6709\u5f02\u6838\u4e8c\u6b21\u53c2\u8003\u5316\u5408\u7269\u7684\u9891\u7387,\u8fd9\u4e9b\u9891\u7387\u7531IUPAC\u5b9a\u4e49\u548c\u8868\u683c;\u8fd9\u4e9b\u8868\u8868\u5728\u8fd9\u91cc\u590d\u5236.</p>\r\n<p>\u8fd9\u79cd\u65b9\u6cd5\u88ab\u79f0\u4e3a \u039e-skala (xsi,\u5e0c\u814a\u5927\u5199\u5b57\u6bcd). \u039e\u503c\u662fIUPAC\u8bba\u6587\u4f5c\u8005\u63a8\u548c\u6d4b\u91cf\u7684X\u6838\u53c2\u8003\u7269\u8d28\u7edd\u5bf9\u9891\u7387Qx\u548c\u7edd\u5bf91H\u4e4b\u95f4\u7684\u6bd4\u7387 [6]. \u5728\u76f8\u540c\u7684B0\u573a\u548c\u6837\u672c\u4e0a,TMS\u7684\u9891\u7387QTMS:</p>\r\n<h4>\u03bd</h4>\r\n<h4>x X \u22c5 = \u03bd</h4>\r\n<h4>100 \u039e</h4>\r\n<p>\u6807\u51c6</p>\r\n<p>\u4e00\u65e6\u60a8\u6d4b\u91cf\u4e86\u60a8\u7684\u6837\u672c\u4e2d\u7684TMS\u9891\u7387,\u60a8\u53ef\u4ee5\u8ba1\u7b97 (\u865a\u62df) X\u6838\u53c2\u8003\u4fe1\u53f7\u7684\u7edd\u5bf9\u9891\u7387,\u800c\u65e0\u9700X Refe \u5728\u6837\u672c\u4e2d\u542b\u6709\u7684\u7269\u8d28,\u4ece</p>\r\n<h4>TMS X x \u03bd \u03bd \u22c5 \u039e =</h4>\r\n<h4>(2)</h4>\r\n<p>\u901a\u8fc7\u4f7f\u7528%\u7684 \u039e\u503c (\u5982\u8868\u4e2d\u6240\u793a),\u53ef\u4ee5\u8ba1\u7b97\u51fa \u039e\u503c\u662f\u6307\u6807\u7269\u8d28\u7684\u9891\u7387,\u4ee5100\u4e07\u4e07MHz\u7684TMS\u9891\u7387\u8fdb\u884c\u6269\u5c55.</p>\r\n<p>\u4f8b\u5982:\u5047\u8bbe\u60a8\u5728400 MHz\u8c31\u4eea\u4e0a\u68c0\u6d4b\u5230\u67d0\u5316\u5408\u726917O\u9891\u7387\u5728QO=54,250 399 MHz.\u60a8\u5df2\u7ecf\u6d4b\u91cf\u4e86 (\u4f7f\u7528\u76f8\u540c\u7684\u9501\u6eb6\u5242,\u6700\u597d\u662f\u5728\u540c\u4e00\u7ba1\u4e2d) 1H TMS\u4fe1\u53f7\u9891\u7387\u5728QTMS=400.130 021 MHz.17O\u53c2\u8003\u5316\u5408\u7269D2O\u7684 \u039e\u503c\u57284.2\u8868\u4e2d\u5217\u51fa\u4e3a \u039e = 13.556 457%. \u5728\u8fd9\u4e9b\u6761\u4ef6\u4e0b,\u9996\u5148\u8ba1\u7b97\u865a\u62df17O\u9891\u7387QD2O,</p>\r\n<p>QD2O = (\u039eX/100) QTMS = 0.135 564 57 \u00d7 400.130 021 = 54.243 454 MHz.</p>\r\n<p>\u56e0\u6b64,\u60a8\u6240\u611f\u5174\u8da3\u7684\u5316\u5408\u7269QO\u548cD2O\u7684\u9891\u7387\u5dee\u5f02\u4e3a6945Hz,\u901a\u8fc7QD2O\u7684\u5206\u4e3a128.03ppm.</p>\r\n<p>\u9700\u8981\u6ce8\u610f\u7684\u662f,\u5bf9\u4e8e\u6b64\u7a0b\u5e8f,\u4f60\u4ece\u6765\u6ca1\u6709\u9700\u8981\u6d4b\u91cf\u53c2\u8003D2O\u7684\u5b9e\u9645\u6837\u672c. \u5728\u5e03\u9c81\u514b\u8c31\u4eea\u4e0a,\u4e0a\u9762\u6240\u8ff0\u8ba1\u7b97\u7a0b\u5e8f\u7b80\u5316\u4e3a\u4e58\u4ee5\u9002\u5f53\u7684 \u039e\u503c\u5bf9\u8d28\u5b50\u8c31\u7684 SF\u503c\u5e76\u5c06\u5176\u63d2\u5165\u4e3a heteronuclear \u8c31\u4e2d\u7684 SF.\u66f4\u5bb9\u6613\u4f7f\u7528\u4e00\u4e2a\u540d\u5b57\"xsi.mf\"\u7684\u5b8f,\u8be5\u5b8f\u53ef\u5728\u672c\u4e66\u7684\u4f5c\u8005\u4e4b\u4e00\u7684\u8bf7\u6c42\u4e0a\u4f7f\u7528.</p>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">\u539f\u4e66\u4fa7\u680f</div>\r\n<h4>(1)</h4>\r\n<p>\u6838\u78c1\u5171\u632f (NMR) \u7684\u7279\u5f81\u662f,\u4fe1\u53f7\u662f\u540c\u4f4d\u7d20\u7279\u5f02\u6027\u7684.\u6362\u53e5\u8bdd\u8bf4,\u6bcf\u4e2a\u4fe1\u53f7\u90fd\u80fd\u4e0e\u7279\u5b9a\u5143\u7d20\u548c\u6838\u9178\u7d27\u5bc6\u8054\u7cfb\u5728\u4e00\u8d77.\u4ee5\u4e0b\u4e24\u4e2a\u7279\u5f81: \u9996\u5148,\u4e0e\u5316\u5b66,\u7279\u522b\u662f\u5468\u671f\u8868\u5bc6\u5207\u76f8\u5173,\u56e0\u4e3a\u51e0\u4e4e\u6240\u6709\u5143\u7d20\u90fd\u53ef\u4ee5\u88ab\u7814\u7a76;\u7b2c\u4e8c,\u6bcf\u4e2a\u540c\u4f4d\u7d20\u7684\u65cb\u8f6c\u7279\u6027\u9700\u8981\u6e05\u695a\u5730\u8868\u683c\u548c\u7262\u7262\u5730\u7406\u89e3.</p>\r\n<p>\u4ece\u8c03\u8bd5\u4e2d\u53d6\u51fa [6]</p>\r\n</aside>\r\n</div>\r\n","pdf-125":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-full-column\">\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-125-vector-1\"><img alt=\"\u8868 4.1 Nuclides with I = 1/2\" loading=\"lazy\" src=\"../assets/tables/pdf-125-vector-1.webp\"/><figcaption>\u8868 4.1 Nuclides with I = 1/2</figcaption></figure>\r\n</div>\r\n<div class=\"source-main-column\">\r\n<p>(a) \u6807\u51c6\u5316\u5408\u7269\u6d4b\u91cf\u70b9\u540e6\u4f4d\u6570\u7684\u503c,\u5176\u4ed6\u6570\u636e\u662f\u4ece3\u5217\u7684J\u503c\u8ba1\u7b97\u7684. (b) \u5bf913C\u7684\u53d7\u5bb9\u6027. (c) Me=methyl d) \u8fd9\u79cd\u5316\u5408\u7269\u6781\u5176\u5371\u9669.\u4e0d\u8981\u4f7f\u7528\u5b83,\u800c\u662f\u5e94\u4f7f\u7528\u5efa\u8bae\u7684 \u039e\u503c.</p>\r\n</div>\r\n<aside aria-hidden=\"true\" class=\"source-sidebar source-sidebar-empty\"></aside>\r\n</div>\r\n","pdf-126":"<div class=\"source-page-layout source-sidebar-right source-has-full\">\r\n<div class=\"source-full-column\">\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-126-vector-1\"><img alt=\"\u8868 4.2 \u9009\u62e9\u7684\u56db\u6781\u6838 (I &gt; 1/2)\" loading=\"lazy\" src=\"../assets/tables/pdf-126-vector-1.webp\"/><figcaption>\u8868 4.2 \u9009\u62e9\u7684\u56db\u6781\u6838 (I &gt; 1/2)</figcaption></figure>\r\n</div>\r\n<div class=\"source-main-column\">\r\n<p>\u9891\u7387</p>\r\n<p>\u81ea\u7136</p>\r\n<p>\u53c2\u8003 \u6536\u5f55</p>\r\n<p>\u7535\u78c1\u6c14</p>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-126-equation-1\"><img alt=\"\u6e90 PDF \u7b2c 126 \u9875\u56fe\u50cf\u3002\" loading=\"lazy\" src=\"../assets/equations/pdf-126-equation-1.webp\"/></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-126-equation-3\"><img alt=\"\u6e90 PDF \u7b2c 126 \u9875\u56fe\u50cf\u3002\" loading=\"lazy\" src=\"../assets/equations/pdf-126-equation-3.webp\"/></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-126-equation-4\"><img alt=\"\u6e90 PDF \u7b2c 126 \u9875\u56fe\u50cf\u3002\" loading=\"lazy\" src=\"../assets/equations/pdf-126-equation-4.webp\"/></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-126-equation-5\"><img alt=\"\u6e90 PDF \u7b2c 126 \u9875\u56fe\u50cf\u3002\" loading=\"lazy\" src=\"../assets/equations/pdf-126-equation-5.webp\"/></figure>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">\u539f\u4e66\u4fa7\u680f</div>\r\n<p>\u6838\u5b50\u65cb\u8f6c I \u56db\u5206\u4e4b\u4e00</p>\r\n<p>\u65f6\u95f4</p>\r\n<p>[10\u221230m2]</p>\r\n</aside>\r\n</div>\r\n","pdf-127":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-full-column\">\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-127-table-continued\"><img alt=\"\u8868 continued \u7ee7\u7eed\u5728\u6e90\u5934PDF\u9875127.\" loading=\"lazy\" src=\"../assets/tables/pdf-127-table-continued.webp\"/><figcaption>\u8868 continued \u7ee7\u7eed\u5728\u6e90\u5934PDF\u9875127.</figcaption></figure>\r\n</div>\r\n<div class=\"source-main-column\">\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-127-equation-3\"><img alt=\"\u6e90 PDF \u7b2c 127 \u9875\u56fe\u50cf\u3002\" loading=\"lazy\" src=\"../assets/equations/pdf-127-equation-3.webp\"/></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-127-equation-5\"><img alt=\"\u6e90 PDF \u7b2c 127 \u9875\u56fe\u50cf\u3002\" loading=\"lazy\" src=\"../assets/equations/pdf-127-equation-5.webp\"/></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-127-equation-6\"><img alt=\"\u6e90 PDF \u7b2c 127 \u9875\u56fe\u50cf\u3002\" loading=\"lazy\" src=\"../assets/equations/pdf-127-equation-6.webp\"/></figure>\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-127-equation-7\"><img alt=\"\u6e90 PDF \u7b2c 127 \u9875\u56fe\u50cf\u3002\" loading=\"lazy\" src=\"../assets/equations/pdf-127-equation-7.webp\"/></figure>\r\n<p>\u6839\u636e\u6807\u51c6\u5316\u5408\u7269\u6d4b\u91cf\u70b9,\u5728\u6807\u51c6\u5316\u5408\u7269\u4e4b\u540e\u76846\u4f4d\u6570\u4e2d\u8868\u793a\u7684\u503c;\u5176\u4ed6\u6570\u636e\u662f\u4ece\u7b2c5\u5217\u7684J\u503c\u8ba1\u7b97\u7684. \u5b50\u662f\u975e\u5e38\u5371\u9669\u7684.\u4e0d\u8981\u4f7f\u7528\u5b83,\u800c\u662f\u4f7f\u7528\u5efa\u8bae\u7684X\u503c.</p>\r\n<p>\u8fd9\u79cd\u7a0b\u5e8f\u5728\u7ed3\u6784\u751f\u7269\u5b66\u4e2d\u7279\u522b\u5e38\u89c1,\u5176\u4e2d\u4f7f\u7528DSS (2,2-dimethyl-2-silapentane-5-sulfonate,\u76d0) [5]\u7684\u8d28\u5b50\u4fe1\u53f7\u8fdb\u884c\u5f15\u7528\u548c\u8ba1\u7b97\u86cb\u767d\u8d28\u768415N\u5316\u5b66\u4f4d\u79fb. \u53c2\u8003\u5e38\u89c1\u5316\u5408\u7269\u6db2\u6001\u6c28\u7684\u9891\u7387\u6bd4\u7387 (\u6ce8\u610f,\u4e0e\u4e59\u70ef\u4f5c\u4e3a\u53c2\u8003\u5316\u5408\u7269\u5e38\u7528\u7684\u7ed3\u6784\u751f\u7269\u5b66\u5bb6\u504f\u597dNH3) \u548cDSS\u9891\u7387\u7684\u6bd4\u7387\u786e\u5b9a\u4e3a0.101329118.\u4e58\u4ee5\u6837\u54c1\u5b9e\u9645DSS\u9891\u7387,\u7acb\u5373\u5f97\u5230\u6db2\u6001\u6c28\u7684\u9891\u7387,\u8be5\u9891\u7387\u7531\u8c31\u4eea\u8f6f\u4ef6\u8bbe\u7f6e\u4e3aGN = 0. \u76f8\u5e94,13C\u4f7f\u75280.25144953\u7684\u56e0\u5b50\u5f15\u7528\u5230DSS.</p>\r\n</div>\r\n<aside aria-hidden=\"true\" class=\"source-sidebar source-sidebar-empty\"></aside>\r\n</div>\r\n","pdf-128":"<div class=\"source-page-layout source-sidebar-right\">\r\n<div class=\"source-main-column\">\r\n<figure class=\"figure source-figure\" data-figure-id=\"pdf-128-fig-1\"><img alt=\"\u56fe 4.0-1 \u8c31\u4eea\u5b9e\u9a8c\u5ba4\u95e8\u4e0a\u8b66\u544a\u6807\u5fd7\" loading=\"lazy\" src=\"../assets/photographs/pdf-128-fig-1.webp\"/><figcaption>\u56fe 4.0-1 \u8c31\u4eea\u5b9e\u9a8c\u5ba4\u95e8\u4e0a\u8b66\u544a\u6807\u5fd7</figcaption></figure>\r\n</div>\r\n<aside class=\"source-sidebar\">\r\n<div class=\"source-sidebar-label\">\u539f\u4e66\u4fa7\u680f</div>\r\n<p>[1] R. K. Harris, B. E. Mann (eds.), NMR and the Periodic Table, Academic Press, London, 1978.</p>\r\n<p>[2] C. Brevard, P. Granger, Handbook of High Resolution Multinuclear NMR, Wiley, Chichester, 1981.</p>\r\n<p>[3] J. Mason (ed.), Multinuclear NMR, 2nd Edition, Plenum Press, London, 1989.</p>\r\n<p>[4] S. Berger, S. Braun, H.-O. Kalinowski, NMR Spectroscopy of the Non-Metallic Elements, Wiley, Chichester, 1997.</p>\r\n<p>[5] D. S. Wishart, C. G. Bigam, J. Yao, F. Abildgaard, H. J. Dyson, E. Oldfield, J. L. Markley, B. D. Sykes, \"1H, 13C, and 15N chemical shift referencing in biomolecular NMR\" J. Biomol. NMR 1995, 6, 135\u2212140.</p>\r\n<p>[6] R. K. Harris, E. D. Becker, S. M. Cabral de Menezes, R. Goodfellow, P. Granger, \"NMR Nomenclature. Nuclear spin properties and conventions for chemical shifts\" Pure Appl. Chem. 2001, 73, 1795\u22121818.</p>\r\n</aside>\r\n</div>\r\n"},"figurePlacements":{}});</script></head>
+    <body data-language="en" data-asset-prefix="../assets"><header class="topbar"><div class="brand"><h1><a href="../../index.html">50 and More Essential NMR Experiments</a></h1><p>核磁共振实验方法、脉冲序列与谱图实践</p></div><div class="toolbar" aria-label="阅读模式">
+  <div class="language-switcher" role="group" aria-label="语言模式">
+    <button class="view-icon" type="button" data-view="en" aria-label="原文" title="原文 · 快捷键 1 / O 循环" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h11v17h-11zM9 8h6M9 11h6M9 14h4.5" /></svg></button>
+    <button class="view-icon" type="button" data-view="bilingual" aria-label="双语对照" title="双语对照 · 快捷键 2 / O 循环" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 4.5h7v15h-7zM13.5 4.5h7v15h-7zM6 9h2M6 12h2M16 9h2M16 12h2" /></svg></button>
+  </div>
+  <button id="toggle-original" class="view-icon" type="button" data-view="original" aria-label="原页对照" aria-pressed="false" title="原页对照 · 快捷键 3 / O 循环"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5h16v17H4zM7 7h10M7 10h10M7 13h6M7 16h4" /></svg></button>
+  <div class="display-control">
+    <button id="toggle-display-settings" class="view-icon" type="button" aria-label="显示设置" aria-expanded="false" aria-controls="display-settings" title="缩放与主题">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10M14 4v6M6 14v6" /></svg>
+    </button>
+    <section id="display-settings" class="display-panel" aria-label="显示设置" hidden>
+      <div class="display-panel-heading"><strong>显示设置</strong><span>在页面间自动保留</span></div>
+      <div class="display-setting-row"><span>界面缩放</span><div class="zoom-controls" role="group" aria-label="界面缩放"><button id="zoom-out" type="button" aria-label="缩小">−</button><output id="zoom-value" aria-live="polite">自动</output><button id="zoom-in" type="button" aria-label="放大">+</button></div></div>
+      <button id="zoom-auto" class="auto-scale-button" type="button" aria-pressed="true">按窗口自动适应</button>
+      <div class="display-setting-row theme-setting"><span>主题颜色</span>
+  <div class="theme-options" role="group" aria-label="主题颜色">
+    <button type="button" data-theme="sage" aria-label="鼠尾草绿" title="鼠尾草绿" aria-pressed="true"></button>
+    <button type="button" data-theme="mist" aria-label="雾蓝" title="雾蓝" aria-pressed="false"></button>
+    <button type="button" data-theme="sand" aria-label="暖砂" title="暖砂" aria-pressed="false"></button>
+    <button type="button" data-theme="mauve" aria-label="灰紫" title="灰紫" aria-pressed="false"></button>
+    <button type="button" data-theme="gray" aria-label="浅灰" title="浅灰" aria-pressed="false"></button>
+  </div></div>
+    </section>
+  </div>
+</div></header>
+    <button id="toggle-nav" class="mobile-nav-button" type="button" aria-expanded="false" aria-label="打开内容目录" title="内容目录"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14" /></svg></button>
+    <div class="layout"><nav class="sidebar" aria-label="内容目录">
+    <a class="sidebar-home-link" href="../../index.html">目录与搜索</a>
+    <div class="sidebar-section-heading"><p class="sidebar-label">内容目录</p><div class="sidebar-tree-actions" role="group" aria-label="目录章节控制"><button type="button" data-nav-action="toggle" data-state="expand" aria-label="展开所有章节" title="展开所有章节"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7l5 5 5-5M3 3h14" /></svg></button></div></div>
+    <div class="sidebar-tree"><details class="chapter-group" data-chapter="F">
+      <summary><span>第 F 章</span><small>Front Matter</small></summary><ol><li><a href="f-1.html"><span>F.1</span><span>Front Matter</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="1">
+      <summary><span>第 1 章</span><small>The Organic Set of NMR Spectra</small></summary><ol><li><a href="1.html"><span>1</span><span>The Organic Set of NMR Spectra</span></a></li>
+<li><a href="1-1.html"><span>1.1</span><span>The 1H NMR Experiment</span></a></li>
+<li><a href="1-2.html"><span>1.2</span><span>APT-13C NMR</span></a></li>
+<li><a href="1-3.html"><span>1.3</span><span>COSY</span></a></li>
+<li><a href="1-4.html"><span>1.4</span><span>NOESY</span></a></li>
+<li><a href="1-5.html"><span>1.5</span><span>HSQC</span></a></li>
+<li><a href="1-6.html"><span>1.6</span><span>HMBC</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="2">
+      <summary><span>第 2 章</span><small>Advanced Organic NMR Spectroscopy</small></summary><ol><li><a href="2.html"><span>2</span><span>Advanced Organic NMR Spectroscopy</span></a></li>
+<li><a href="2-1.html"><span>2.1</span><span>2D J-Resolved 1H NMR Spectroscopy</span></a></li>
+<li><a href="2-2.html"><span>2.2</span><span>ROESY</span></a></li>
+<li><a href="2-3.html"><span>2.3</span><span>TOCSY</span></a></li>
+<li><a href="2-4.html"><span>2.4</span><span>HSQC-TOCSY</span></a></li>
+<li><a href="2-5.html"><span>2.5</span><span>HOESY</span></a></li>
+<li><a href="2-6.html"><span>2.6</span><span>INADEQUATE</span></a></li>
+<li><a href="2-7.html"><span>2.7</span><span>ADEQUATE</span></a></li>
+<li><a href="2-8.html"><span>2.8</span><span>J-HMBC</span></a></li>
+<li><a href="2-9.html"><span>2.9</span><span>Gated Decoupling</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="3">
+      <summary><span>第 3 章</span><small>Selective Methods</small></summary><ol><li><a href="3.html"><span>3</span><span>Selective Methods</span></a></li>
+<li><a href="3-1.html"><span>3.1</span><span>Water suppression by Presaturation</span></a></li>
+<li><a href="3-2.html"><span>3.2</span><span>Solvent Suppression by 1D-NOESY</span></a></li>
+<li><a href="3-3.html"><span>3.3</span><span>Water Suppression by SOGGY Excitation Sculpting</span></a></li>
+<li><a href="3-4.html"><span>3.4</span><span>Solvent Suppression using WET</span></a></li>
+<li><a href="3-5.html"><span>3.5</span><span>SELTOCSY</span></a></li>
+<li><a href="3-6.html"><span>3.6</span><span>SELNOESY</span></a></li>
+<li><a href="3-7.html"><span>3.7</span><span>SELINCOR</span></a></li>
+<li><a href="3-8.html"><span>3.8</span><span>SELINQUATE</span></a></li>
+<li><a href="3-9.html"><span>3.9</span><span>Band Selective HMBC</span></a></li></ol>
+    </details>
+<details class="chapter-group active-chapter" data-chapter="4" open>
+      <summary><span>第 4 章</span><small>Heteronuclear NMR</small></summary><ol><li><a class="active" aria-current="page" href="4.html"><span>4</span><span>Heteronuclear NMR</span></a></li>
+<li><a href="4-1.html"><span>4.1</span><span>11B NMR Spectroscopy</span></a></li>
+<li><a href="4-2.html"><span>4.2</span><span>15N NMR Spectroscopy</span></a></li>
+<li><a href="4-3.html"><span>4.3</span><span>17O NMR Spectroscopy</span></a></li>
+<li><a href="4-4.html"><span>4.4</span><span>19F NMR Spectroscopy</span></a></li>
+<li><a href="4-5.html"><span>4.5</span><span>29Si NMR Spectroscopy</span></a></li>
+<li><a href="4-6.html"><span>4.6</span><span>57Fe NMR Spectroscopy</span></a></li>
+<li><a href="4-7.html"><span>4.7</span><span>195Pt NMR Spectroscopy</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="5">
+      <summary><span>第 5 章</span><small>Experiments in Physical Organic Chemistry</small></summary><ol><li><a href="5.html"><span>5</span><span>Experiments in Physical Organic Chemistry</span></a></li>
+<li><a href="5-1.html"><span>5.1</span><span>Measurement of the Spin–Lattice Relaxation Time T1</span></a></li>
+<li><a href="5-2.html"><span>5.2</span><span>Measurement of the Spin–Spin Relaxation Time T2</span></a></li>
+<li><a href="5-3.html"><span>5.3</span><span>Dynamic 1H NMR Spectroscopy</span></a></li>
+<li><a href="5-4.html"><span>5.4</span><span>Diffusion Measurement with DOSY</span></a></li>
+<li><a href="5-5.html"><span>5.5</span><span>Residual Dipolar Couplings (RDC)</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="6">
+      <summary><span>第 6 章</span><small>Organic Chemistry Applications</small></summary><ol><li><a href="6.html"><span>6</span><span>Organic Chemistry Applications</span></a></li>
+<li><a href="6-1.html"><span>6.1</span><span>ASIS</span></a></li>
+<li><a href="6-2.html"><span>6.2</span><span>Chirality Determination</span></a></li>
+<li><a href="6-3.html"><span>6.3</span><span>Advanced Mosher Method</span></a></li>
+<li><a href="6-4.html"><span>6.4</span><span>Quantitative NMR and Relaxation Reagents</span></a></li>
+<li><a href="6-5.html"><span>6.5</span><span>Determination of Association Constants Ka</span></a></li>
+<li><a href="6-6.html"><span>6.6</span><span>STD NMR</span></a></li>
+<li><a href="6-7.html"><span>6.7</span><span>A Kinetic Experiment</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="7">
+      <summary><span>第 7 章</span><small>An Excursion to the Solid State and to Structural Biology</small></summary><ol><li><a href="7.html"><span>7</span><span>An Excursion to the Solid State and to Structural Biology</span></a></li>
+<li><a href="7-1.html"><span>7.1</span><span>The CP/MAS Experiment</span></a></li>
+<li><a href="7-2.html"><span>7.2</span><span>High-Resolution Magic-Angle Spinning</span></a></li>
+<li><a href="7-3.html"><span>7.3</span><span>HN-HSQC</span></a></li>
+<li><a href="7-4.html"><span>7.4</span><span>HNCA</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="8">
+      <summary><span>第 8 章</span><small>Maintenance and Calibration</small></summary><ol><li><a href="8.html"><span>8</span><span>Maintenance and Calibration</span></a></li>
+<li><a href="8-1.html"><span>8.1</span><span>Calibration of Pulse Duration in the Transmitter Channel</span></a></li>
+<li><a href="8-2.html"><span>8.2</span><span>Calibration of the Pulse Duration in the Indirect Channel</span></a></li>
+<li><a href="8-3.html"><span>8.3</span><span>Shaped Pulses</span></a></li>
+<li><a href="8-4.html"><span>8.4</span><span>Adiabatic Pulses</span></a></li>
+<li><a href="8-5.html"><span>8.5</span><span>Temperature Calibration in NMR</span></a></li>
+<li><a href="8-6.html"><span>8.6</span><span>Calibration of Pulsed Field Gradients</span></a></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="A">
+      <summary><span>第 A 章</span><small>Appendix</small></summary><ol><li><a href="a-1.html"><span>A.1</span><span>Answers</span></a></li>
+<li><a href="a-2.html"><span>A.2</span><span>Pulse Programs</span></a></li>
+<li><a href="a-3.html"><span>A.3</span><span>Elementary Product Operator Formalism Rules</span></a></li>
+<li><a href="a-4.html"><span>A.4</span><span>Chemical Shift and Spin-Coupling Data for Strychnine</span></a></li>
+<li><a href="a-5.html"><span>A.5</span><span>Picture Credits</span></a></li>
+<li><a href="a-6.html"><span>A.6</span><span>Index</span></a></li></ol>
+    </details></div>
+    <footer class="sidebar-copyright"><p class="copyright-owner">© 2026 <a href="mailto:wuhaifeng@ustc.edu.cn">wuhaifeng@ustc.edu.cn</a></p><p>本文档仅供小范围、非公开的学术交流与学习参考；未经许可，不得复制、转载、转发、公开传播或用于商业用途。</p></footer>
+  </nav><main><article class="experiment paper" data-experiment="4" aria-labelledby="item-title"><header class="experiment-heading"><p class="experiment-label">Chapter 4</p><h2 class="experiment-title" id="item-title">Heteronuclear NMR</h2><p class="experiment-title-zh" lang="zh-CN">异核 NMR</p><p class="range-line">PDF 123–128 · 原书 113–118 · Heteronuclear NMR</p></header><section class="page-block" id="pdf-123" data-pdf="123" data-book="113">
+        <span class="page-marker">原书第 113 页 · PDF 第 123 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-123"></div><div class="content-pane content-zh" data-page="pdf-123"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-123.webp" alt="原书 PDF 第 123 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-124" data-pdf="124" data-book="114">
+        <span class="page-marker">原书第 114 页 · PDF 第 124 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-124"></div><div class="content-pane content-zh" data-page="pdf-124"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-124.webp" alt="原书 PDF 第 124 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-125" data-pdf="125" data-book="115">
+        <span class="page-marker">原书第 115 页 · PDF 第 125 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-125"></div><div class="content-pane content-zh" data-page="pdf-125"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-125.webp" alt="原书 PDF 第 125 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-126" data-pdf="126" data-book="116">
+        <span class="page-marker">原书第 116 页 · PDF 第 126 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-126"></div><div class="content-pane content-zh" data-page="pdf-126"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-126.webp" alt="原书 PDF 第 126 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-127" data-pdf="127" data-book="117">
+        <span class="page-marker">原书第 117 页 · PDF 第 127 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-127"></div><div class="content-pane content-zh" data-page="pdf-127"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-127.webp" alt="原书 PDF 第 127 页" loading="lazy">
+      </section>
+<section class="page-block" id="pdf-128" data-pdf="128" data-book="118">
+        <span class="page-marker">原书第 118 页 · PDF 第 128 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="pdf-128"></div><div class="content-pane content-zh" data-page="pdf-128"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-128.webp" alt="原书 PDF 第 128 页" loading="lazy">
+      </section></article></main></div><script>if (!window.NMR_APP_LOADED) {
+window.NMR_APP_LOADED = true;
+
+const body = document.body;
+const experiment = window.NMR_EXPERIMENT;
+const scanButton = document.querySelector("#toggle-original");
+const navButton = document.querySelector("#toggle-nav");
+const toolbar = document.querySelector(".toolbar");
+const sidebar = document.querySelector(".sidebar");
+const sidebarActionButton = document.querySelector("button[data-nav-action='toggle']");
+const root = document.documentElement;
+const displayButton = document.querySelector("#toggle-display-settings");
+const displayPanel = document.querySelector("#display-settings");
+const zoomOutButton = document.querySelector("#zoom-out");
+const zoomInButton = document.querySelector("#zoom-in");
+const zoomAutoButton = document.querySelector("#zoom-auto");
+const zoomValue = document.querySelector("#zoom-value");
+const themeButtons = [...document.querySelectorAll("button[data-theme]")];
+const viewButtons = [...document.querySelectorAll("button[data-view]")];
+const languageButtons = viewButtons.filter((button) => button.dataset.view !== "original");
+const referenceScans = [...document.querySelectorAll(".reference-scan")];
+
+function cloneMappedFigure(figure) {
+  const mapped = figure.cloneNode(true);
+  mapped.classList.add("mapped-figure");
+  mapped.querySelectorAll("img").forEach((image) => {
+    image.alt = `\u4e2d\u6587\u680f\u5bf9\u5e94\u56fe\u50cf\uff1a${image.alt || "\u539f\u4e66\u56fe\u50cf"}`;
+    image.loading = "lazy";
+  });
+  const caption = document.createElement("figcaption");
+  caption.textContent = mapped.querySelector("img") ? "\u4e2d\u6587\u680f\u5bf9\u5e94\u56fe\u50cf" : "\u4e2d\u6587\u680f\u5bf9\u5e94\u65b9\u7a0b";
+  mapped.append(caption);
+  return mapped;
+}
+
+function mapFigures(page, pageId) {
+  const englishPane = page.querySelector(".content-en");
+  const chinesePane = page.querySelector(".content-zh");
+  const englishFigures = [...englishPane.querySelectorAll("figure")];
+  const chineseFigureIds = new Set([...chinesePane.querySelectorAll("figure[data-figure-id]")]
+    .map((figure) => figure.dataset.figureId));
+  const placements = experiment.figurePlacements[pageId] ?? englishFigures.map((_, source) => ({ source, atEnd: true }));
+
+  for (const { source, before, after, atEnd } of placements) {
+    const figure = englishFigures[source];
+    if (!figure) continue;
+    if (figure.dataset.figureId && chineseFigureIds.has(figure.dataset.figureId)) continue;
+    const mapped = cloneMappedFigure(figure);
+    const anchors = [...chinesePane.querySelectorAll("h3, p")];
+    if (before) {
+      const anchor = anchors.find((node) => node.textContent.trim().startsWith(before));
+      if (anchor) {
+        anchor.before(mapped);
+        continue;
+      }
+    }
+    if (after) {
+      const anchor = anchors.find((node) => node.textContent.trim().startsWith(after));
+      if (anchor) {
+        anchor.after(mapped);
+        continue;
+      }
+    }
+    if (atEnd || (!before && !after)) chinesePane.append(mapped);
+  }
+}
+
+function populateExperiment() {
+  if (!experiment) return;
+  document.querySelectorAll(".page-block").forEach((page) => {
+    const pageId = page.id;
+    const englishPane = page.querySelector(".content-en");
+    const chinesePane = page.querySelector(".content-zh");
+    englishPane.innerHTML = experiment.english[pageId] || "<p>English transcription pending.</p>";
+    chinesePane.innerHTML = experiment.chinese[pageId] || "<p>\u4e2d\u6587\u7ffb\u8bd1\u5f85\u8865\u3002</p>";
+    mapFigures(page, pageId);
+  });
+
+  const assetPrefix = body.dataset.assetPrefix || "assets";
+  document.querySelectorAll("figure.worksheet img").forEach((image) => {
+    image.src = `${assetPrefix}/worksheets/observations-grid.svg`;
+    image.alt = "Blank NMR observation grid";
+  });
+}
+
+function alignLocationHash() {
+  if (!window.location.hash) return;
+  let targetId;
+  try {
+    targetId = decodeURIComponent(window.location.hash.slice(1));
+  } catch {
+    targetId = window.location.hash.slice(1);
+  }
+  const target = document.getElementById(targetId);
+  if (!target) return;
+
+  const align = () => target.scrollIntoView({ block: "start", behavior: "instant" });
+  requestAnimationFrame(() => requestAnimationFrame(align));
+  window.addEventListener("load", align, { once: true });
+  document.fonts?.ready.then(align).catch(() => {});
+
+  // Page fragments and lazy figures are inserted after the browser's native
+  // hash jump.  Keep the target aligned briefly while those elements settle.
+  if ("ResizeObserver" in window) {
+    const paper = document.querySelector(".paper");
+    if (paper) {
+      const observer = new ResizeObserver(align);
+      observer.observe(paper);
+      window.setTimeout(() => observer.disconnect(), 1500);
+    }
+  }
+}
+
+const scanObserver = "IntersectionObserver" in window
+  ? new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const image = entry.target;
+        if (!image.src && image.dataset.src) image.src = image.dataset.src;
+        scanObserver.unobserve(image);
+      });
+    }, { rootMargin: "900px 0px" })
+  : null;
+
+function armReferenceScans() {
+  referenceScans.forEach((image) => {
+    if (image.src || !image.dataset.src) return;
+    if (scanObserver) scanObserver.observe(image);
+    else image.src = image.dataset.src;
+  });
+}
+
+function setOriginalMode(enabled) {
+  body.classList.toggle("show-original", enabled);
+  scanButton.setAttribute("aria-pressed", String(enabled));
+  scanButton.setAttribute("aria-label", enabled ? "\u8fd4\u56de\u91cd\u5efa\u7a3f" : "\u539f\u9875\u5bf9\u7167");
+  scanButton.title = enabled ? "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af" : "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af";
+  languageButtons.forEach((button) => {
+    button.setAttribute("aria-pressed", String(!enabled && button.dataset.view === body.dataset.language));
+  });
+  if (enabled) armReferenceScans();
+}
+
+function setLanguage(mode) {
+  const selected = ["en", "bilingual"].includes(mode) ? mode : "en";
+  body.classList.remove("show-original");
+  scanButton.setAttribute("aria-pressed", "false");
+  scanButton.setAttribute("aria-label", "\u539f\u9875\u5bf9\u7167");
+  scanButton.title = "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af";
+  body.dataset.language = selected;
+  languageButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.view === selected)));
+  localStorage.setItem("nmr-reading-mode", selected);
+}
+
+function activateView(view) {
+  if (view === "original") {
+    setOriginalMode(!body.classList.contains("show-original"));
+    return;
+  }
+  setLanguage(view);
+}
+
+function cycleView() {
+  if (body.classList.contains("show-original")) {
+    setLanguage("en");
+    return;
+  }
+  if (body.dataset.language === "en") {
+    setLanguage("bilingual");
+    return;
+  }
+  setOriginalMode(true);
+}
+
+populateExperiment();
+alignLocationHash();
+window.addEventListener("hashchange", alignLocationHash);
+
+const sidebarStateKey = "nmr-sidebar-navigation";
+
+function readSidebarState() {
+  try {
+    return JSON.parse(sessionStorage.getItem(sidebarStateKey) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function persistSidebarState() {
+  if (!sidebar) return;
+  const openChapters = [...sidebar.querySelectorAll("details.chapter-group[open]")]
+    .map((group) => group.dataset.chapter)
+    .filter(Boolean);
+  try {
+    sessionStorage.setItem(sidebarStateKey, JSON.stringify({
+      scrollTop: sidebar.scrollTop,
+      openChapters,
+    }));
+  } catch {
+    // Some browser policies disable storage for local files; navigation still works.
+  }
+}
+
+function restoreSidebarState() {
+  if (!sidebar) return;
+  const state = readSidebarState();
+  const openChapters = new Set(Array.isArray(state.openChapters) ? state.openChapters : []);
+  sidebar.querySelectorAll("details.chapter-group").forEach((group) => {
+    if (openChapters.has(group.dataset.chapter) || group.classList.contains("active-chapter")) group.open = true;
+    group.addEventListener("toggle", () => {
+      persistSidebarState();
+      updateNavToggleButton();
+    });
+  });
+
+  requestAnimationFrame(() => {
+    updateNavToggleButton();
+    if (Number.isFinite(state.scrollTop)) {
+      sidebar.scrollTop = state.scrollTop;
+      return;
+    }
+    const activeLink = sidebar.querySelector("a.active");
+    if (activeLink) sidebar.scrollTop = Math.max(0, activeLink.offsetTop - sidebar.clientHeight / 2);
+  });
+
+  let scrollTimer = 0;
+  sidebar.addEventListener("scroll", () => {
+    window.clearTimeout(scrollTimer);
+    scrollTimer = window.setTimeout(persistSidebarState, 80);
+  }, { passive: true });
+}
+
+restoreSidebarState();
+
+function updateNavToggleButton() {
+  if (!sidebar || !sidebarActionButton) return;
+  const groups = [...sidebar.querySelectorAll("details.chapter-group")];
+  const allOpen = groups.length > 0 && groups.every((group) => group.open);
+  const label = allOpen ? "\u6536\u62e2\u6240\u6709\u7ae0\u8282" : "\u5c55\u5f00\u6240\u6709\u7ae0\u8282";
+  sidebarActionButton.dataset.state = allOpen ? "collapse" : "expand";
+  sidebarActionButton.setAttribute("aria-label", label);
+  sidebarActionButton.title = label;
+}
+
+sidebarActionButton?.addEventListener("click", () => {
+  const groups = [...sidebar.querySelectorAll("details.chapter-group")];
+  const shouldOpen = !groups.every((group) => group.open);
+  groups.forEach((group) => {
+    group.open = shouldOpen;
+  });
+  persistSidebarState();
+  updateNavToggleButton();
+});
+
+const scaleStorageKey = "nmr-interface-scale";
+const themeStorageKey = "nmr-interface-theme";
+let scaleMode = "auto";
+let appliedScale = 1;
+
+function storedValue(key, fallback) {
+  try {
+    return localStorage.getItem(key) || fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function saveValue(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    // The display setting still applies for the current page.
+  }
+}
+
+function automaticScale() {
+  if (window.innerWidth <= 1040) return 1;
+  return Math.min(1.2, Math.max(0.95, window.innerWidth / 1800));
+}
+
+function applyScale(scale, mode = scaleMode) {
+  appliedScale = Math.min(1.4, Math.max(0.8, scale));
+  root.style.setProperty("--sidebar-w", `${Math.round(340 * appliedScale)}px`);
+  root.style.setProperty("--page-w", `${Math.round(1180 * appliedScale)}px`);
+  root.style.setProperty("--reader-font", `${(15 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--reader-heading", `${(20 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--reader-title", `${(34 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--sidebar-font", `${(13 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--sidebar-small", `${(11 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--paper-pad", `${Math.round(44 * appliedScale)}px`);
+  if (zoomValue) zoomValue.textContent = mode === "auto" ? `\u81ea\u52a8 ${Math.round(appliedScale * 100)}%` : `${Math.round(appliedScale * 100)}%`;
+  if (zoomAutoButton) zoomAutoButton.setAttribute("aria-pressed", String(mode === "auto"));
+}
+
+function setScaleMode(value) {
+  if (value === "auto") {
+    scaleMode = "auto";
+    applyScale(automaticScale(), scaleMode);
+    saveValue(scaleStorageKey, scaleMode);
+    return;
+  }
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return;
+  scaleMode = String(Math.min(1.4, Math.max(0.8, numeric)));
+  applyScale(Number(scaleMode), scaleMode);
+  saveValue(scaleStorageKey, scaleMode);
+}
+
+function adjustScale(delta) {
+  setScaleMode((Math.round((appliedScale + delta) * 10) / 10).toFixed(1));
+}
+
+function applyTheme(theme) {
+  const selected = ["sage", "mist", "sand", "mauve", "gray"].includes(theme) ? theme : "sage";
+  root.dataset.theme = selected;
+  themeButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.theme === selected)));
+  saveValue(themeStorageKey, selected);
+}
+
+setScaleMode(storedValue(scaleStorageKey, "auto"));
+applyTheme(storedValue(themeStorageKey, "sage"));
+
+displayButton?.addEventListener("click", (event) => {
+  event.stopPropagation();
+  const willOpen = displayPanel.hidden;
+  displayPanel.hidden = !willOpen;
+  displayButton.setAttribute("aria-expanded", String(willOpen));
+});
+
+displayPanel?.addEventListener("click", (event) => event.stopPropagation());
+zoomOutButton?.addEventListener("click", () => adjustScale(-0.1));
+zoomInButton?.addEventListener("click", () => adjustScale(0.1));
+zoomAutoButton?.addEventListener("click", () => setScaleMode("auto"));
+themeButtons.forEach((button) => button.addEventListener("click", () => applyTheme(button.dataset.theme)));
+
+document.addEventListener("click", () => {
+  if (!displayPanel || displayPanel.hidden) return;
+  displayPanel.hidden = true;
+  displayButton?.setAttribute("aria-expanded", "false");
+});
+
+let scaleResizeTimer = 0;
+window.addEventListener("resize", () => {
+  if (scaleMode !== "auto") return;
+  window.clearTimeout(scaleResizeTimer);
+  scaleResizeTimer = window.setTimeout(() => applyScale(automaticScale(), "auto"), 100);
+}, { passive: true });
+
+toolbar.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-view]");
+  if (!button || !toolbar.contains(button)) return;
+  event.preventDefault();
+  activateView(button.dataset.view);
+});
+
+navButton.addEventListener("click", () => {
+  const open = body.classList.toggle("nav-open");
+  navButton.setAttribute("aria-expanded", String(open));
+});
+
+document.querySelectorAll(".sidebar a").forEach((link) => link.addEventListener("click", () => {
+  persistSidebarState();
+  body.classList.remove("nav-open");
+  navButton.setAttribute("aria-expanded", "false");
+}));
+
+document.addEventListener("keydown", (event) => {
+  const target = event.target;
+  if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target?.isContentEditable) return;
+  if (event.ctrlKey || event.metaKey || event.altKey) return;
+  if (event.key === "1") setLanguage("en");
+  if (event.key === "2") setLanguage("bilingual");
+  if (event.key === "3") setOriginalMode(true);
+  if (event.key.toLowerCase() === "o") cycleView();
+});
+
+setLanguage(localStorage.getItem("nmr-reading-mode") || "en");
+}
+</script></body></html>

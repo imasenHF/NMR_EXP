@@ -1,0 +1,44 @@
+{
+  "name": "nmr-textbook-suite",
+  "displayName": "NMR Textbook HTML Suite",
+  "imagePolicy": {
+    "rasterFormat": "webp",
+    "maxWidth": 1600,
+    "maxHeight": 1200,
+    "preserveAspectRatio": true,
+    "preserveCrop": true,
+    "svgPreserved": true
+  },
+  "unifiedEntry": {
+    "entry": "index.html",
+    "server": "serve.ps1",
+    "launcher": "START_READING.cmd",
+    "searches": ["nmr-200", "nmr-50-essential", "nmr-practical"]
+  },
+  "projects": [
+    {
+      "id": "nmr-200",
+      "title": "200 and More NMR Experiments: A Practical Course",
+      "titleZh": "200 个及更多 NMR 实验",
+      "directory": "200-and-more-nmr-experiments-html",
+      "entry": "index.html",
+      "searchIndex": "data/search-index.js"
+    },
+    {
+      "id": "nmr-50-essential",
+      "title": "50 and More Essential NMR Experiments: A Detailed Guide",
+      "titleZh": "50 个及更多必备 NMR 实验：详细指南",
+      "directory": "50-and-more-essential-nmr-experiments-html",
+      "entry": "index.html",
+      "searchIndex": "data/search-index.js"
+    },
+    {
+      "id": "nmr-practical",
+      "title": "Practical NMR Spectroscopy Laboratory Guide",
+      "titleZh": "实用 NMR 波谱学实验室指南：使用 Bruker 波谱仪",
+      "directory": "practical-nmr-spectroscopy-laboratory-guide-html",
+      "entry": "index.html",
+      "searchIndex": "data/search-index.js"
+    }
+  ]
+}

@@ -1,0 +1,1021 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Chapter 8: Diffusion Measurements and DOSY (Diffusion Ordered SpectroscopY)"><title>8 Diffusion Measurements and DOSY (Diffusion Ordered SpectroscopY) — Practical NMR Spectroscopy Laboratory Guide</title><link rel="icon" href="../shared/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../shared/site.css?v=1"><script>window.NMR_EXPERIMENT = Object.freeze({"meta":{"number":"8","slug":"chapter-8","kind":"chapter","title":"Diffusion Measurements and DOSY (Diffusion Ordered SpectroscopY)","titleZh":"\u6269\u6563\u6d4b\u91cf\u4e0e DOSY\uff08\u6269\u6563\u6709\u5e8f\u8c31\uff09","pages":[{"id":"source-120","pdfPage":120,"bookPage":113,"en":"content/pages/source-120.en.html","zh":"content/pages/source-120.zh.html"},{"id":"source-121","pdfPage":121,"bookPage":114,"en":"content/pages/source-121.en.html","zh":"content/pages/source-121.zh.html"},{"id":"source-122","pdfPage":122,"bookPage":115,"en":"content/pages/source-122.en.html","zh":"content/pages/source-122.zh.html"},{"id":"source-123","pdfPage":123,"bookPage":116,"en":"content/pages/source-123.en.html","zh":"content/pages/source-123.zh.html"},{"id":"source-124","pdfPage":124,"bookPage":117,"en":"content/pages/source-124.en.html","zh":"content/pages/source-124.zh.html"},{"id":"source-125","pdfPage":125,"bookPage":118,"en":"content/pages/source-125.en.html","zh":"content/pages/source-125.zh.html"},{"id":"source-126","pdfPage":126,"bookPage":119,"en":"content/pages/source-126.en.html","zh":"content/pages/source-126.zh.html"},{"id":"source-127","pdfPage":127,"bookPage":120,"en":"content/pages/source-127.en.html","zh":"content/pages/source-127.zh.html"},{"id":"source-128","pdfPage":128,"bookPage":121,"en":"content/pages/source-128.en.html","zh":"content/pages/source-128.zh.html"}],"figurePlacements":{"source-120":[{"source":0,"before":"\u56fe 8.1 \u901a\u8fc7\u4f7f\u7528\u53cc\u6781\u573a\u68af\u5ea6\u8fdb\u884cNMR\u6269\u6563\u6d4b\u91cf\u7684\u523a\u6fc0\u56de\u58f0\u8109\u51b2\u5e8f\u5217."}],"source-123":[{"source":0,"before":"\u56fe8.2 \u91c7\u7528500 MHz\u9891\u8c31\u4eea\u4e2d\u7cbe\u786e\u7684\u9187\u6837\u672c\u7684VT\u6821\u51c6\u56fe\u7247,\u914d\u5907\u4e00\u4e2a5mm BBFO Z-\u68af\u5ea6\u63a2\u6d4b\u5668,\u7528\u4e8e\u5728\u7ea6283304K\u8303\u56f4\u5185\u7684\u6837\u672c\u6e29\u5ea6.\u4e24\u4e2a\u4e0d\u540c\u7684\u7ebf\u8868"}],"source-127":[{"source":0,"before":"\u56fe8.4 DOSY\u8c313.6 mg/mL SDS\u548c2 mg/mL ATP\u572850 mM NaPi pH 5 6.8 D2O\u6eb6\u6db2\u4e2d.HOD\u7684\u81ea\u6211\u6269\u6563\u7cfb\u6570\u4f5c\u4e3a\u5185\u90e8\u63a7\u5236,"}]},"chapter":"Diffusion Measurements and DOSY (Diffusion Ordered SpectroscopY)","navigationSections":[{"id":"section-source-120-1","pageId":"source-120","title":"OVERVIEW","titleZh":"\u6982\u8ff0","kind":"section"},{"id":"section-source-121-2","pageId":"source-121","title":"SAMPLE AND SPECTROMETER REQUIREMENTS","titleZh":"\u6837\u54c1\u548c\u8c31\u4eea\u8981\u6c42","kind":"section"},{"id":"section-source-121-3","pageId":"source-121","title":"ACTIVITIES","titleZh":"\u5b9e\u9a8c\u5185\u5bb9","kind":"section"},{"id":"section-source-121-4","pageId":"source-121","title":"Part 1\u2014VT Calibration","titleZh":"\u7b2c 1 \u90e8\u5206\u2014\u2014VT \u6821\u51c6","kind":"part"},{"id":"section-source-123-5","pageId":"source-123","title":"Part 2\u2014Diffusion of H2O in D2O","titleZh":"\u7b2c 2 \u90e8\u5206\u2014\u2014D 2 O \u4e2d H 2 O \u7684\u6269\u6563","kind":"part"},{"id":"section-source-126-6","pageId":"source-126","title":"Part 3\u2014DOSY Spectrum of Sample M","titleZh":"\u7b2c 3 \u90e8\u5206\u2014\u2014\u6837\u54c1 M \u7684 DOSY \u8c31","kind":"part"},{"id":"section-source-127-7","pageId":"source-127","title":"SUMMARY","titleZh":"\u603b\u7ed3","kind":"section"}]},"english":{"source-120":"<h3>CHAPTER 8</h3>\r\n<h3>Diffusion Measurements and DOSY (Diffusion</h3>\r\n<h3>Ordered SpectroscopY)</h3>\r\n<h3>OVERVIEW</h3>\r\n<p>Modern NMR spectrometers can readily measure self-diffusion coefficients for molecules in solution with effective MW ranging from 18 Da (water) to more than 10,000 Da. In this chapter you will acquire DOSY (Diffusion Ordered SpectroscopY) spectra for residual water in a D2O sample and then a test sample (M). The purpose of the water DOSY is to check the gradient calibration we performed with the imaging method in Chapter 5. The test sample M shows that molecules of different sizes in a mixture can be \u201cseparated\u201d spectroscopically according to each component\u2019s self-diffusion coefficient. This material is covered in Chapter 9 of the Claridge book.</p>\r\n<p>A block pulse sequence diagram for a stimulated echo diffusion experiment with bipolar field gradients is shown in Figure 8.1.</p>\r\n<p>The observed signal intensity (I0) is given as</p>\r\n<p>\u2013 \u00b0</p>\r\n<p>I = I<sub>0</sub>e<sup>\u2212D\u03b3\u00b2g\u00b2\u03b4\u00b2(\u0394 \u2212 \u03b4/3 \u2212 \u03c4/2)</sup></p>\n<p>3 2 \u03c4 2</p>\r\n<figure class=\"figure source-figure\"><img src=\"../assets/figures/page-120-fig-1.webp\" alt=\"Figure from source page 120.\" loading=\"lazy\"></figure>\r\n<p class=\"figure-caption\">Figure 8.1 Stimulated echo pulse sequence for NMR diffusion measurement employing bipolar field gradients.</p>\r\n\r\n","source-121":"<p>where I is the observed signal intensity, D is the diffusion coefficient, g is the gradient, \u03b3 is the gyromagnetic ratio, and \u0394, \u03b4 and \u03c4 are diffusion time, length of gradient, and delay between gradients, respectively. A natural logarithm plot of I against \u03b32g2\u03b42(\u03942\u03b4/32\u03c4/2) gives a negative slope as 2D.</p>\r\n<p>An important component of diffusion measurements is the temperature of the sample, since the self-diffusion coefficient is sensitive to temperature. Before we start any diffusion measurements we will go through the process of calibrating your spectrometer\u2019s variable sample temperature (VT) control system. This is a useful exercise in general since the sample temperature is relevant to many NMR measurements.</p>\r\n<h3>SAMPLE AND SPECTROMETER REQUIREMENTS</h3>\r\n<p>This chapter\u2019s exercises will use samples K, L, and M. Since we are investigating diffusion using pulsed field gradient experiments the spectrometer and probe must be equipped with the appropriate field gradient hardware. The spectrometer also should be equipped with a VT control system in order to get the best diffusion results and to be able to do the VT calibration experiment, but it is not strictly required to perform the diffusion experiments.</p>\r\n<h3>ACTIVITIES</h3>\r\n<h3>Part 1\u2014VT Calibration</h3>\r\n<p>Here we will conduct a sample temperature calibration using the neat methanol sample, which has a calibration range from 240 to 310 K. When calibrating sample-temperatures above 310 K, a sample of pure ethylene glycol is used instead.</p>\r\n<p>1. Put sample K into the magnet. Turn down the lock power and turn off the lock and the lock sweep function. Leave sample spinning off. Note: You may carry out the temperature calibration with the sample spinning, but for our diffusion measurements in Parts 2 and 3 we will leave the spinning off. Therefore we will do our calibration now with spinning off. 2. In \u201cedte\u201d window, check under the \u201ccorrection\u201d tab that to make sure that the slope is 1.0 and the offset is 0 (if changes are to be made, record the prior values).</p>\r\n","source-122":"<p>3. Set a desired target temperature (this is the read temperature). A temperature of ca. 298 K (which is what we will use in Parts 2 and 3) can usually be obtained without the use of any cooling equipment for the probe VT gas. If a significantly higher or lower sample temperature is desired, make sure that the probe is specified for the desired temperature, and that the cooling and heating hardware are available, enabled, and have sufficient power. Adjust the maximum heater power (limit) consistent with the set temperature; for most spectrometers, a limit at or below 10% (of maximum power) will suffice for this experiment. If the final read temperature is unstable, the temperature controller may be tuned using the \u201cTune\u201d function in edte. Check with your spectrometer administrator before attempting this. 4. After steady temperature is achieved, record the gas flow rate, chiller condition (on/off), and heater power. If necessary, e.g., if the sample temperature is unstable, the gas flow rate can be adjusted, but you will need to wait for equilibration after the change. On the authors\u2019 spectrometers we normally use a gas flow rate of 535 (occasionally 670) L/h. 5. Acquire a 1H spectrum (1 scan only; with a short P1 pulse length of 1 \u03bcs or shorter). Since we cannot lock this sample, you will need to shim this sample by using the 1H FID in the gs-mode as described in Chapter 7, Part 9a, step 4. Shim enough so that both the hydroxyl and methyl signals are reasonably sharp and their positions can be accurately read (with an uncertainty of ca. 1 Hz or better). 6. Set appropriate MI and MAXI values so that the pps command can pick both the aOH and aCH3 peaks. Record their chemical shift difference (\u0394) in ppm and calculate the actual sample temperature by using the equation T5 4032 29.53\u0394\u201323.87\u03942 (Eqn (3.22) in the Claridge book, 2nd ed.). 7. Repeat steps 2\u20134 as many times as needed, with different target temperatures. For the diffusion experiments in Parts 2 and 3 we would recommend covering a sample temperature range of 288\u2013303 K using 5-degree (K 5 \u00b0C) steps (or smaller, a minimum of four experiments) for the calibration exercise. If your spectrometer does not have any VT gas cooling equipment, a sample temperature of 288 K might not be attainable. In this case just let the sample temperature equilibrate at its lowest point with the heater power limit set to 0%.</p>\r\n","source-123":"<figure class=\"figure source-figure\"><img src=\"../assets/figures/page-123-fig-1.webp\" alt=\"Figure from source page 123.\" loading=\"lazy\"></figure>\r\n<p class=\"figure-caption\">Figure 8.2 VT calibration plots using the neat methanol sample in a 500 MHz spectrometer equipped with a 5-mm BBFO Z-gradient probe for sample-temperatures over the range of ca. 283\u2013304 K. The two different lines represent VT operation with or without the use of a refrigerated chiller to cool the probe VT gas.</p>\r\n<p>8. Plot the actual sample temperature against the read temperature using all the data points you have acquired, as shown in Figure 8.2. 9. Make a note of the relevant conditions for your calibration plot (chiller on/off, spinning on/off, sample and read temperatures, etc.).</p>\r\n<h3>Part 2\u2014Diffusion of H2O in D2O</h3>\r\n<p>1. Replace sample K in the spectrometer with sample L (if you do not have sample L a sample of D2O may be used, with a small amount of H2O added if desired). After the desired temperature (25\u00b0C/298 K recommended) is set and equilibrated, lock, shim, tune the probe for 1H, and acquire the 1H spectrum. Then optimize the observe window and rerun (for samples in D2O/H2O, the transmitter frequency O1 is frequently placed at the location of the water peak). For the diffusion experiments an acquisition time (AQ) of ca. 1\u20131.5 s is adequate. 2. Copy to a new expno. Set PULPROG 5 zg, then carry out the 1H 90\u00b0 pulse calibration as in Chapter 1, Part 3, step 3 and make a note of the result. You may use the paropt program to automate the pulse calibration process, if desired.</p>\r\n","source-124":"<p>3. Copy to a new expno (for the DOSY experiment). In the ased window set the following:</p>\r\n<h3>PULPROG</h3>\r\n<p>ledbpgp2s1d</p>\r\n<h3>NS</h3>\r\n<p>8 (or a multiple of 8 if needed for sensitivity)</p>\r\n<h3>DS</h3>\r\n<p>4</p>\r\n<h3>D1</h3>\r\n<p>3 s</p>\r\n<p>200 \u03bcs</p>\r\n<h3>D16</h3>\r\n<h3>D20</h3>\r\n<p>50 ms</p>\r\n<h3>D21</h3>\r\n<p>2 ms</p>\r\n<p>1H 90\u00b0 pulse calibration from step 2, above</p>\r\n<h3>P1/PL1</h3>\r\n<p>500 \u03bcs</p>\r\n<h3>P19</h3>\r\n<h3>P30</h3>\r\n<p>2 ms</p>\r\n<h3>GPNAME\u00d7</h3>\r\n<h3>SINE.100</h3>\r\n<p>12</p>\r\n<h3>GPZ6</h3>\r\n<p>217.13</p>\r\n<h3>GPZ7</h3>\r\n<p>213.17</p>\r\n<h3>GPZ8</h3>\r\n<p>Check that the calculated delays DELTA1 and DELTA2 are small positive numbers. If they are not, check for an error or an unrealistic value in one of the input parameters. 4. Set processing parameters SI = TD/2 and LB = 1. Do rga, then acquire and process the spectrum. 5. Copy this to a new experiment, then change GPZ6 to 195. Acquire and process the spectrum exactly the same way as above but without doing rga. 6. Compare the spectrum obtained in step 5 with that from step 4. In the step 5 spectrum, the signal(s) of interest should be ca. 10% (or less) of the intensity of the corresponding signal(s) in the step 4 spectrum. If this is not the case, increase P30 to up to 5 ms and/or increase D20 (up to the order of T1). Reduce D21 if needed to make sure DELTA1 and DELTA2 remain small positive values. If the expected diffusion coefficient is small, the gradient pulse shapes (GPNAME\u00d7) may be changed to a smoothed square pulse (GRADREC5m). 7. If you made any parameter changes in step 6, you will need to repeat steps 4\u20136 again. Check to make sure that the final spectrum has sufficient signal intensity for the peak(s) of interest. Increase the number of scans (in multiples of 8) if needed.</p>\n","source-125":"<p>8. Create a new experiment based on your final experiment from step 5. In eda set the following:</p>\r\n<h3>PULPROG</h3>\r\n<p>ledbpgp2s</p>\r\n<p>1\u20132\u20133 1-2 (change 1D\u20132D)</p>\r\n<p>FnMODE QF (magnitude-mode)</p>\r\n<h3>DS</h3>\r\n<p>8</p>\r\n<h3>TD</h3>\r\n<h3>32 (F1)</h3>\r\n<h3>ND_010</h3>\r\n<p>1</p>\r\n<p>1100</p>\r\n<h3>GPZ6</h3>\r\n<p>9. Now use the ProcPars tab or type edp and enter the following processing parameters:</p>\r\n<h3>SI (F2)</h3>\r\n<p>Set equal to TD (F2)/2</p>\r\n<h3>SI (F1)</h3>\r\n<p>32</p>\r\n<h3>WDW (F2)</h3>\r\n<h3>EM</h3>\r\n<h3>LB (F2)</h3>\r\n<p>1</p>\r\n<p>PH_mod (F2) pk</p>\r\n<p>PH_mod (F1) no</p>\r\n<p>10. After the sample has equilibrated at least 10 min at the target temperature, start the data acquisition by xau dosy 2 95 32 l y n. This construct means the following: execute the au program \u201cdosy\u201d with the gradient strength (GPZ6) increasing linearly in 32 steps (same as TD(F1) in step 8) from 2% to 95%, to begin immediately and without doing rga. 11. Before doing the data processing, check the gradient calibration by using either gradpar or setpre. Enter the gradient calibration value obtained from the 1D image method used in Chapter 5, Part 1. The gradient calibration has a direct impact on the measured diffusion coefficient. If the gradient calibration is updated, execute xau dosy restore and then reprocess the DOSY spectrum. 12. Do xf2, followed by abs2, setdiffparm, and then eddosy. Normally the default parameters are sufficient for the DOSY experiment on HDO in D2O. Click on the 2D DOSY spectrum display within the eddosy sub-window. To reprocess the data for any reason, start over from the xf2 step. NOTES: While the phase corrections are inherited from the previous 1Ds, you may still need to confirm that all FIDs are acquired and phased properly.</p>\r\n","source-126":"<p>The ABF1 and ABF2 parameters may need to be adjusted for the abs2 baseline correction to give the optimum result. The I1max and I1min parameters may be used to ignore certain large or small signals in eddosy.</p>\n<p>13. Click on spectrum window within the eddosy sub-window to start DOSY fitting. The 2D DOSY spectrum should appear (if not, click the Spectrum tab), with the <sup>1</sup>H chemical shift for the horizontal axis and the self-diffusion coefficient for the vertical axis. Proton signals from the same molecule should have the same diffusion coefficient.</p>\n<p>14. The self-diffusion coefficient of HDO in D<sub>2</sub>O at 25\u00b0C is 1.90 \u00d7 10<sup>\u22129</sup> m<sup>2</sup>/s. If your DOSY spectrum shows the peak at a significantly different diffusion coefficient than this, adjust the gradient calibration used in step 11. Then repeat steps 12 and 13 so that the observed HDO peak appears at 1.90 \u00d7 10<sup>\u22129</sup> m<sup>2</sup>/s or at log D = \u22128.72, as shown in Figure 8.3. If the temperature has been calibrated and the experiments are performed properly, the gradient strength calibration should be close to the one obtained from the 1D image method used in Chapter 5, Part 1.</p>\n<h3>Part 3\u2014DOSY Spectrum of Sample M</h3>\n<p>1. Replace sample L in the spectrometer with sample M, the SDS/ATP sample. This sample is made up using 3.6 mg/mL SDS and 2 mM ATP in 50 mM NaPi pH 6.8 D<sub>2</sub>O buffer. However, you can</p>\n<p class=\"figure-caption\">Figure 8.3 DOSY spectrum of HDO in D<sub>2</sub>O. With the Z-gradient calibration of 6.0 G/mm, the HDO self-diffusion coefficient is measured in the DOSY spectrum as 1.9 \u00d7 10<sup>\u22129</sup> m<sup>2</sup>/s at 25\u00b0C, or at log D = \u22128.72.</p>\n","source-127":"<figure class=\"figure source-figure\"><img src=\"../assets/figures/page-127-fig-1.webp\" alt=\"Figure from source page 127.\" loading=\"lazy\"></figure>\r\n<p class=\"figure-caption\">Figure 8.4 DOSY spectrum of 3.6 mg/mL SDS and 2 mg/mL ATP in 50 mM NaPi, pH = 6.8, D<sub>2</sub>O solution. HOD\u2019s self-diffusion coefficient serves as an internal control, with its reading being slightly lower than in pure D<sub>2</sub>O solvent, presumably due to the presence of SDS, ATP, and buffer.</p>\n<p>use your own sample for this step, if desired. After the desired temperature (25\u00b0C/298 K recommended) is set and equilibrated, lock, shim, tune the probe for 1H, and acquire the 1H spectrum. Then optimize the observe window and rerun (for samples in D2O, the transmitter frequency O1 is frequently placed at water peak). Here again an acquisition time of ca. 1\u20131.5 s is adequate. 2. Acquire DOSY spectrum as described in Part 2. Note: Since both SDS and ATP diffuse slower than water, you may need to increase P30 (up to 5 ms) and/or D20 (to 100 ms or more, depending on T1). In the eddosy step, DISPmax and DISPmin (using the logarithmic scale) can be set to \u22128.5 and \u221210.5. 3. You may adjust the various options in the eddosy parameter settings. You can toggle the curve fitting mode between peak integrals or intensities, or I1max. Figure 8.4 shows the DOSY spectrum of sample M.</p>\n<h3>SUMMARY</h3>\r\n<p>Your lab report should include the following:</p>\r\n<p>1. A plot of a methanol spectrum from Part 1 showing the distance (\u0394, in ppm) between the aOH and aCH3</p>\r\n<p>1H peaks. Include both</p>\r\n","source-128":"<p>the temperature set point and the measured temperature in the title text of the plot. 2. A plot of the temperature calibration data you obtained from part 1. 3. A DOSY plot of HDO in D2O, including a list of experimental parameters such as field strength, probe, sample details, temperature, pulse sequence, \u0394 and \u03b4. 4. A DOSY plot of SDS and ATP, with experimental parameters as above. 5. Suggested questions for consideration: a. Can you suggest a reason for why methanol\u2019s aOH chemical</p>\r\n<p>shift is sensitive to temperature? b. Explain why the diffusion of HDO in D2O (1.93 \u00d7 10<sup>\u22129</sup> m<sup>2</sup>/s) is</p>\n<p>slower than H2O in H2O (consensus value of 2.3 \u00d7 10<sup>\u22129</sup> m<sup>2</sup>/s) (Table 1 in M. Holz and H. Weingartner, J. Magn. Reson. 1991, 92, 115\u2013125). c. Estimate the average size of SDS micelles using some simple</p>\n<p>assumptions: reference ATP is monomeric and spheric, volume is proportional to MW, and D is inversely proportional to radius r. d. Temperature gradients in the sample can cause convection.</p>\r\n<p>Evaluate the impact on the diffusion coefficient measurement due to convection for small and large species (e.g., water and SDS micelles). e. Regarding sample M, are you able to observe the diffusion co-</p>\r\n<p>efficient of HDO in this sample? How does this value compare with your expectations?</p>\r\n"},"chinese":{"source-120":"<h3>\u7b2c 8 \u7ae0</h3><h3>\u6269\u6563\u6d4b\u91cf\u4e0e DOSY\uff08\u6269\u6563\u6709\u5e8f\u8c31\uff09</h3><h3>\uff08Diffusion Ordered SpectroscopY\uff09</h3><h3>\u6982\u8ff0</h3>\n<p>\u73b0\u4ee3 NMR \u8c31\u4eea\u53ef\u4ee5\u65b9\u4fbf\u5730\u6d4b\u91cf\u6eb6\u6db2\u4e2d\u5206\u5b50\u7684\u81ea\u6269\u6563\u7cfb\u6570\uff0c\u9002\u7528\u7684\u6709\u6548\u5206\u5b50\u91cf\u8303\u56f4\u4ece 18 Da\uff08\u6c34\uff09\u5230 10,000 Da \u4ee5\u4e0a\u3002\u672c\u7ae0\u5c06\u5148\u91c7\u96c6 D<sub>2</sub>O \u6837\u54c1\u4e2d\u6b8b\u4f59\u6c34\u7684 DOSY\uff0c\u518d\u91c7\u96c6\u6d4b\u8bd5\u6837\u54c1 M \u7684 DOSY\u3002\u6c34\u6837 DOSY \u7528\u4e8e\u68c0\u67e5\u7b2c 5 \u7ae0\u901a\u8fc7\u6210\u50cf\u65b9\u6cd5\u5b8c\u6210\u7684\u68af\u5ea6\u6821\u51c6\uff1b\u6d4b\u8bd5\u6837\u54c1 M \u5219\u663e\u793a\u6df7\u5408\u7269\u4e2d\u4e0d\u540c\u5927\u5c0f\u7684\u5206\u5b50\u53ef\u4ee5\u4f9d\u636e\u5404\u81ea\u7684\u81ea\u6269\u6563\u7cfb\u6570\u5728\u8c31\u5b66\u4e0a\u201c\u5206\u79bb\u201d\u3002\u76f8\u5173\u5185\u5bb9\u89c1 Claridge \u8457\u4f5c\u7b2c 9 \u7ae0\u3002</p>\n<p>\u5e26\u53cc\u6781\u6027\u573a\u68af\u5ea6\u7684 stimulated-echo \u6269\u6563\u5b9e\u9a8c\u5757\u8109\u51b2\u5e8f\u5217\u5982\u56fe 8.1 \u6240\u793a\u3002</p><p>\u89c2\u6d4b\u5230\u7684\u4fe1\u53f7\u5f3a\u5ea6\uff08I\uff09\u4e3a</p><p>\u2212</p><p>I = I<sub>0</sub> exp[\u2212D\u03b3<sup>2</sup>g<sup>2</sup>\u03b4<sup>2</sup>(\u0394 \u2212 \u03b4/3 \u2212 \u03c4/2)]</p><p>\uff08stimulated-echo \u6269\u6563\u8870\u51cf\u9879\uff09</p>\n<p>\u56fe 8.1 \u91c7\u7528\u53cc\u6781\u6027\u573a\u68af\u5ea6\u8fdb\u884c NMR \u6269\u6563\u6d4b\u91cf\u7684 stimulated-echo \u8109\u51b2\u5e8f\u5217\u3002</p>\n","source-121":"<p>\u5176\u4e2d I \u4e3a\u89c2\u6d4b\u4fe1\u53f7\u5f3a\u5ea6\uff0cD \u4e3a\u6269\u6563\u7cfb\u6570\uff0cg \u4e3a\u68af\u5ea6\uff0c\u03b3 \u4e3a\u65cb\u78c1\u6bd4\uff1b\u0394\u3001\u03b4 \u548c \u03c4 \u5206\u522b\u4e3a\u6269\u6563\u65f6\u95f4\u3001\u68af\u5ea6\u8109\u51b2\u957f\u5ea6\u4ee5\u53ca\u4e24\u4e2a\u68af\u5ea6\u4e4b\u95f4\u7684\u5ef6\u8fdf\u3002\u5c06 ln(I) \u5bf9 \u03b3<sup>2</sup>g<sup>2</sup>\u03b4<sup>2</sup>(\u0394 \u2212 \u03b4/3 \u2212 \u03c4/2) \u4f5c\u56fe\uff0c\u6240\u5f97\u659c\u7387\u4e3a \u2212D\u3002</p>\n<p>\u6269\u6563\u6d4b\u91cf\u7684\u4e00\u4e2a\u91cd\u8981\u56e0\u7d20\u662f\u6837\u54c1\u6e29\u5ea6\uff0c\u56e0\u4e3a\u81ea\u6269\u6563\u7cfb\u6570\u5bf9\u6e29\u5ea6\u654f\u611f\u3002\u5728\u5f00\u59cb\u6269\u6563\u6d4b\u91cf\u524d\uff0c\u6211\u4eec\u5148\u6821\u51c6\u8c31\u4eea\u7684\u53d8\u6e29\uff08VT\uff09\u63a7\u5236\u7cfb\u7edf\u3002\u8fd9\u4e00\u7ec3\u4e60\u5177\u6709\u666e\u904d\u7528\u9014\uff0c\u56e0\u4e3a\u6837\u54c1\u6e29\u5ea6\u4e0e\u8bb8\u591a NMR \u6d4b\u91cf\u90fd\u6709\u5173\u3002</p>\n<h3>\u6837\u54c1\u548c\u8c31\u4eea\u8981\u6c42</h3>\n<p>\u672c\u7ae0\u4f7f\u7528\u6837\u54c1 K\u3001L \u548c M\u3002\u7531\u4e8e\u8981\u901a\u8fc7\u8109\u51b2\u573a\u68af\u5ea6\u5b9e\u9a8c\u7814\u7a76\u6269\u6563\uff0c\u8c31\u4eea\u548c\u63a2\u5934\u5fc5\u987b\u914d\u5907\u76f8\u5e94\u7684\u573a\u68af\u5ea6\u786c\u4ef6\u3002\u8c31\u4eea\u6700\u597d\u8fd8\u914d\u6709 VT \u63a7\u5236\u7cfb\u7edf\uff0c\u4ee5\u83b7\u5f97\u6700\u4f73\u6269\u6563\u7ed3\u679c\u5e76\u5b8c\u6210 VT \u6821\u51c6\u5b9e\u9a8c\uff0c\u4f46\u6269\u6563\u5b9e\u9a8c\u672c\u8eab\u5e76\u975e\u4e25\u683c\u5fc5\u9700\u3002</p>\n<h3>\u5b9e\u9a8c\u5185\u5bb9</h3>\n<h3>\u7b2c 1 \u90e8\u5206\u2014\u2014VT \u6821\u51c6</h3>\n<p>\u8fd9\u91cc\u7528\u7eaf\u7532\u9187\u6837\u54c1\u8fdb\u884c\u6837\u54c1\u6e29\u5ea6\u6821\u51c6\uff0c\u5176\u6821\u51c6\u8303\u56f4\u4e3a 240\u2013310 K\u3002\u6821\u51c6\u9ad8\u4e8e 310 K \u7684\u6e29\u5ea6\u65f6\uff0c\u5219\u6539\u7528\u7eaf\u4e59\u4e8c\u9187\u3002</p>\n<p>1. \u5c06\u6837\u54c1 K \u653e\u5165\u78c1\u4f53\u3002\u964d\u4f4e\u9501\u573a\u529f\u7387\u5e76\u5173\u95ed\u9501\u573a\u53ca\u9501\u573a\u626b\u63cf\uff1b\u4fdd\u6301\u6837\u54c1\u4e0d\u65cb\u8f6c\u3002\u6ce8\uff1a\u4e5f\u53ef\u5728\u6837\u54c1\u65cb\u8f6c\u65f6\u6821\u51c6\u6e29\u5ea6\uff0c\u4f46\u7b2c 2\u30013 \u90e8\u5206\u7684\u6269\u6563\u6d4b\u91cf\u5c06\u5173\u95ed\u65cb\u8f6c\uff0c\u56e0\u6b64\u672c\u6b21\u6821\u51c6\u4e5f\u5173\u95ed\u65cb\u8f6c\u30022. \u5728 edte \u7a97\u53e3\u7684\u201ccorrection\u201d\u9009\u9879\u5361\u4e2d\u68c0\u67e5 slope \u662f\u5426\u4e3a 1.0\u3001offset \u662f\u5426\u4e3a 0\uff1b\u5982\u9700\u4fee\u6539\uff0c\u5148\u8bb0\u5f55\u539f\u503c\u3002</p>\n","source-122":"<p>3. \u8bbe\u7f6e\u76ee\u6807\u6e29\u5ea6\uff08\u5373\u8bfb\u6570\u6e29\u5ea6\uff09\u3002\u901a\u5e38\u4e0d\u4f7f\u7528\u63a2\u5934 VT \u6c14\u4f53\u51b7\u5374\u4e5f\u53ef\u8fbe\u5230\u7ea6 298 K\uff08\u7b2c 2\u30013 \u90e8\u5206\u5c06\u4f7f\u7528\u8be5\u6e29\u5ea6\uff09\u3002\u82e5\u9700\u8981\u660e\u663e\u66f4\u9ad8\u6216\u66f4\u4f4e\u7684\u6e29\u5ea6\uff0c\u5e94\u786e\u8ba4\u63a2\u5934\u9002\u7528\u4e8e\u8be5\u6e29\u5ea6\uff0c\u5e76\u786e\u8ba4\u51b7\u5374\u3001\u52a0\u70ed\u786c\u4ef6\u53ef\u7528\u3001\u5df2\u542f\u7528\u4e14\u529f\u7387\u8db3\u591f\u3002\u6839\u636e\u8bbe\u5b9a\u6e29\u5ea6\u8c03\u6574\u6700\u5927\u52a0\u70ed\u529f\u7387\u9650\u5236\uff1b\u5bf9\u5927\u591a\u6570\u8c31\u4eea\uff0c\u672c\u5b9e\u9a8c\u8bbe\u4e3a\u6700\u5927\u529f\u7387\u7684 10% \u6216\u66f4\u4f4e\u5373\u53ef\u3002\u82e5\u6700\u7ec8\u8bfb\u6570\u6e29\u5ea6\u4e0d\u7a33\u5b9a\uff0c\u53ef\u5728 edte \u4e2d\u7528\u201cTune\u201d\u529f\u80fd\u8c03\u8282\u6e29\u63a7\u5668\uff0c\u4f46\u5e94\u5148\u54a8\u8be2\u8c31\u4eea\u7ba1\u7406\u5458\u30024. \u6e29\u5ea6\u7a33\u5b9a\u540e\u8bb0\u5f55\u6c14\u4f53\u6d41\u91cf\u3001\u51b7\u5374\u5668\u72b6\u6001\uff08\u5f00/\u5173\uff09\u548c\u52a0\u70ed\u529f\u7387\u3002\u5fc5\u8981\u65f6\u53ef\u8c03\u8282\u6c14\u4f53\u6d41\u91cf\uff0c\u4f46\u8c03\u8282\u540e\u9700\u7b49\u5f85\u91cd\u65b0\u5e73\u8861\u3002\u4f5c\u8005\u6240\u7528\u8c31\u4eea\u901a\u5e38\u91c7\u7528 535 L/h\uff08\u6709\u65f6 670 L/h\uff09\u7684\u6c14\u4f53\u6d41\u91cf\u30025. \u91c7\u96c6\u4e00\u5f20 <sup>1</sup>H \u8c31\uff08\u4ec5 1 \u6b21\u626b\u63cf\uff0cP1 \u8109\u51b2\u957f\u5ea6\u77ed\u4e8e 1 \u03bcs\uff09\u3002\u7531\u4e8e\u8be5\u6837\u54c1\u65e0\u6cd5\u9501\u573a\uff0c\u5e94\u6309\u7b2c 7 \u7ae0\u7b2c 9a \u90e8\u5206\u6b65\u9aa4 4 \u6240\u8ff0\uff0c\u5728 gs \u6a21\u5f0f\u4e2d\u7528 <sup>1</sup>H FID \u5bf9\u6837\u54c1\u5300\u573a\u3002\u5300\u573a\u5e94\u8fbe\u5230\u7f9f\u57fa\u548c\u7532\u57fa\u4fe1\u53f7\u90fd\u8db3\u591f\u5c16\u9510\uff0c\u5e76\u53ef\u51c6\u786e\u8bfb\u51fa\u5cf0\u4f4d\uff08\u4e0d\u786e\u5b9a\u5ea6\u7ea6 1 Hz \u6216\u66f4\u597d\uff09\u30026. \u8bbe\u7f6e\u5408\u9002\u7684 MI \u548c MAXI \u503c\uff0c\u4f7f pps \u547d\u4ee4\u80fd\u591f\u62fe\u53d6 aOH \u4e0e aCH<sub>3</sub> \u5cf0\u3002\u8bb0\u5f55\u4e8c\u8005\u7684\u5316\u5b66\u4f4d\u79fb\u5dee \u0394\uff08ppm\uff09\uff0c\u5e76\u7528 T = 4032/(29.53 \u2212 23.87\u0394) \u7684 Claridge \u65b9\u7a0b\uff08\u7b2c 2 \u7248 Eqn 3.22\uff09\u8ba1\u7b97\u5b9e\u9645\u6837\u54c1\u6e29\u5ea6\u30027. \u6839\u636e\u9700\u8981\u7528\u4e0d\u540c\u76ee\u6807\u6e29\u5ea6\u91cd\u590d\u6b65\u9aa4 2\u20134\u3002\u5bf9\u4e8e\u7b2c 2\u30013 \u90e8\u5206\u7684\u6269\u6563\u5b9e\u9a8c\uff0c\u5efa\u8bae\u4ee5 5 K\uff08K = \u00b0C\uff09\u6b65\u957f\u8986\u76d6 288\u2013303 K\uff08\u81f3\u5c11 4 \u4e2a\u5b9e\u9a8c\uff09\u3002\u5982\u679c\u8c31\u4eea\u6ca1\u6709 VT \u6c14\u4f53\u51b7\u5374\u8bbe\u5907\uff0c\u53ef\u80fd\u65e0\u6cd5\u8fbe\u5230 288 K\uff1b\u6b64\u65f6\u5c06\u6837\u54c1\u5728\u52a0\u70ed\u529f\u7387\u9650\u5236\u4e3a 0% \u65f6\u5e73\u8861\u5230\u6700\u4f4e\u6e29\u5ea6\u5373\u53ef\u3002</p>\n","source-123":"<p class=\"figure-caption\">\u56fe 8.2 500 MHz \u8c31\u4eea\u3001\u914d\u5907 5 mm BBFO Z \u68af\u5ea6\u63a2\u5934\u65f6\uff0c\u7eaf\u7532\u9187\u6837\u54c1\u5728\u7ea6 283\u2013304 K \u8303\u56f4\u5185\u7684 VT \u6821\u51c6\u56fe\u3002\u4e24\u6761\u7ebf\u5206\u522b\u8868\u793a\u4f7f\u7528\u6216\u4e0d\u4f7f\u7528\u51b7\u51bb\u51b7\u5374\u5668\u51b7\u5374\u63a2\u5934 VT \u6c14\u4f53\u65f6\u7684 VT \u64cd\u4f5c\u3002</p>\n<p>8. \u7528\u83b7\u5f97\u7684\u6240\u6709\u6570\u636e\u70b9\u7ed8\u5236\u5b9e\u9645\u6837\u54c1\u6e29\u5ea6\u5bf9\u8bfb\u6570\u6e29\u5ea6\u7684\u56fe\uff0c\u5982\u56fe 8.2 \u6240\u793a\u30029. \u8bb0\u5f55\u6821\u51c6\u56fe\u7684\u76f8\u5173\u6761\u4ef6\uff08\u51b7\u5374\u5668\u5f00/\u5173\u3001\u6837\u54c1\u65cb\u8f6c\u5f00/\u5173\u3001\u6837\u54c1\u6e29\u5ea6\u548c\u8bfb\u6570\u6e29\u5ea6\u7b49\uff09\u3002</p>\n<h3>\u7b2c 2 \u90e8\u5206\u2014\u2014D<sub>2</sub>O \u4e2d H<sub>2</sub>O \u7684\u6269\u6563</h3>\n<p>1. \u5c06\u6837\u54c1 K \u6362\u6210\u6837\u54c1 L\uff08\u5982\u679c\u6ca1\u6709\u6837\u54c1 L\uff0c\u53ef\u4f7f\u7528 D<sub>2</sub>O\uff0c\u5e76\u6309\u9700\u8981\u52a0\u5165\u5c11\u91cf H<sub>2</sub>O\uff09\u3002\u8bbe\u7f6e\u5e76\u5e73\u8861\u5230\u76ee\u6807\u6e29\u5ea6\uff08\u5efa\u8bae 25\u00b0C/298 K\uff09\u540e\uff0c\u9501\u573a\u3001\u5300\u573a\u3001\u8c03\u8c10 <sup>1</sup>H \u63a2\u5934\u5e76\u91c7\u96c6 <sup>1</sup>H \u8c31\u3002\u968f\u540e\u4f18\u5316\u89c2\u6d4b\u7a97\u53e3\u5e76\u91cd\u65b0\u91c7\u96c6\uff08\u5bf9 D<sub>2</sub>O/H<sub>2</sub>O \u6837\u54c1\uff0c\u53d1\u5c04\u9891\u7387 O1 \u901a\u5e38\u7f6e\u4e8e\u6c34\u5cf0\u4f4d\u7f6e\uff09\u3002\u6269\u6563\u5b9e\u9a8c\u7684\u91c7\u96c6\u65f6\u95f4 AQ \u7ea6 1\u20131.5 s \u5373\u53ef\u30022. \u590d\u5236\u5230\u65b0\u7684 expno\u3002\u5c06 PULPROG \u8bbe\u4e3a zg\uff0c\u7136\u540e\u6309\u7b2c 1 \u7ae0\u7b2c 3 \u90e8\u5206\u6b65\u9aa4 3 \u6821\u51c6 <sup>1</sup>H 90\u00b0 \u8109\u51b2\u5e76\u8bb0\u5f55\u7ed3\u679c\uff1b\u4e5f\u53ef\u6309\u9700\u8981\u4f7f\u7528 paropt \u81ea\u52a8\u6821\u51c6\u3002</p>\n","source-124":"<p>3. \u590d\u5236\u5230\u65b0\u7684 expno\uff08\u7528\u4e8e DOSY \u5b9e\u9a8c\uff09\u3002\u5728 ased \u7a97\u53e3\u4e2d\u8bbe\u7f6e\u4ee5\u4e0b\u53c2\u6570\uff1a</p><h3>PULPROG</h3><p>ledbpgp2s1d</p><h3>NS</h3><p>8\uff08\u82e5\u9700\u8981\u7075\u654f\u5ea6\uff0c\u53ef\u7528 8 \u7684\u500d\u6570\uff09</p><h3>DS</h3><p>4</p><h3>D1</h3><p>3 s</p><p>200 \u03bcs</p><h3>D16</h3><h3>D20</h3><p>50 ms</p><h3>D21</h3><p>2 ms</p><p>\u7b2c 2 \u6b65\u5f97\u5230\u7684 <sup>1</sup>H 90\u00b0\u8109\u51b2\u6821\u51c6\u503c</p><h3>P1/PL1</h3><p>500 \u03bcs</p><h3>P19</h3><h3>P30</h3><p>2 ms</p><h3>GPNAME\u00d7</h3><h3>SINE.100</h3><p>12</p><h3>GPZ6</h3><p>217.13</p><h3>GPZ7</h3><p>213.17</p><h3>GPZ8</h3><p>\u68c0\u67e5\u8ba1\u7b97\u5f97\u5230\u7684 DELTA1 \u548c DELTA2 \u662f\u5426\u4e3a\u8f83\u5c0f\u7684\u6b63\u6570\uff1b\u5982\u679c\u4e0d\u662f\uff0c\u8bf7\u68c0\u67e5\u8f93\u5165\u53c2\u6570\u662f\u5426\u6709\u9519\u8bef\u6216\u4e0d\u5408\u7406\u30024. \u8bbe\u7f6e\u5904\u7406\u53c2\u6570 SI = TD/2\u3001LB = 1\u3002\u6267\u884c rga\uff0c\u7136\u540e\u91c7\u96c6\u5e76\u5904\u7406\u8c31\u56fe\u30025. \u590d\u5236\u5230\u65b0\u5b9e\u9a8c\uff0c\u5c06 GPZ6 \u6539\u4e3a 195\u3002\u5b8c\u5168\u6309\u4e0a\u4e00\u6b65\u7684\u65b9\u5f0f\u91c7\u96c6\u548c\u5904\u7406\uff0c\u4f46\u4e0d\u8981\u518d\u6b21\u6267\u884c rga\u30026. \u6bd4\u8f83\u6b65\u9aa4 5 \u4e0e\u6b65\u9aa4 4 \u7684\u8c31\u56fe\uff1b\u6b65\u9aa4 5 \u4e2d\u76ee\u6807\u4fe1\u53f7\u5e94\u7ea6\u4e3a\u6b65\u9aa4 4 \u4e2d\u76f8\u5e94\u4fe1\u53f7\u5f3a\u5ea6\u7684 10% \u6216\u66f4\u4f4e\u3002\u82e5\u4e0d\u6ee1\u8db3\uff0c\u5219\u5c06 P30 \u589e\u81f3\u6700\u591a 5 ms \u548c/\u6216\u5c06 D20 \u589e\u81f3\u63a5\u8fd1 T1 \u7684\u91cf\u7ea7\uff1b\u5fc5\u8981\u65f6\u51cf\u5c0f D21\uff0c\u786e\u4fdd DELTA1\u3001DELTA2 \u4ecd\u4e3a\u5c0f\u7684\u6b63\u503c\u3002\u82e5\u9884\u8ba1\u6269\u6563\u7cfb\u6570\u5f88\u5c0f\uff0c\u53ef\u5c06\u68af\u5ea6\u8109\u51b2\u5f62\u72b6 GPNAME\u00d7 \u6539\u4e3a\u5e73\u6ed1\u65b9\u6ce2 GRADREC5m\u30027. \u82e5\u6b65\u9aa4 6 \u4fee\u6539\u4e86\u53c2\u6570\uff0c\u9700\u8981\u91cd\u65b0\u6267\u884c\u6b65\u9aa4 4\u20136\uff1b\u786e\u8ba4\u6700\u7ec8\u8c31\u56fe\u5bf9\u76ee\u6807\u5cf0\u5177\u6709\u8db3\u591f\u4fe1\u53f7\u3002\u5fc5\u8981\u65f6\u4ee5 8 \u7684\u500d\u6570\u589e\u52a0\u626b\u63cf\u6570\u3002</p>\n","source-125":"<p>8. \u4ee5\u6b65\u9aa4 5 \u7684\u6700\u7ec8\u5b9e\u9a8c\u4e3a\u57fa\u7840\u521b\u5efa\u65b0\u5b9e\u9a8c\u3002\u5728 eda \u4e2d\u8bbe\u7f6e\uff1a</p><h3>PULPROG</h3><p>ledbpgp2s</p><p>1\u20132\u20133 1\u20132\uff08\u7531 1D \u6539\u4e3a 2D\uff09</p><p>FnMODE QF\uff08\u5e45\u5ea6\u6a21\u5f0f\uff09</p><h3>DS</h3><p>8</p><h3>TD</h3><h3>32 (F1)</h3><h3>ND_010</h3><p>1</p><p>1100</p><h3>GPZ6</h3><p>9. \u4f7f\u7528 ProcPars \u9009\u9879\u5361\u6216\u8f93\u5165 edp\uff0c\u8bbe\u7f6e\u4ee5\u4e0b\u5904\u7406\u53c2\u6570\uff1a</p><h3>SI (F2)</h3><p>\u8bbe\u4e3a TD (F2)/2</p><h3>SI (F1)</h3><p>32</p><h3>WDW (F2)</h3><h3>EM</h3><h3>LB (F2)</h3><p>1</p><p>PH_mod (F2) = pk</p><p>PH_mod (F1) = no</p><p>10. \u5728\u76ee\u6807\u6e29\u5ea6\u4e0b\u81f3\u5c11\u5e73\u8861 10 \u5206\u949f\u540e\uff0c\u6267\u884c xau dosy 2 95 32 l y n \u5f00\u59cb\u91c7\u96c6\u3002\u8be5\u547d\u4ee4\u8c03\u7528 au \u7a0b\u5e8f dosy\uff0c\u4f7f\u68af\u5ea6\u5f3a\u5ea6\uff08GPZ6\uff09\u4ece 2% \u5230 95% \u7ebf\u6027\u5206\u6210 32 \u6b65\uff08\u5373\u6b65\u9aa4 8 \u7684 TD(F1)\uff09\uff0c\u7acb\u5373\u5f00\u59cb\u4e14\u4e0d\u6267\u884c rga\u300211. \u5904\u7406\u524d\u7528 gradpar \u6216 setpre \u68c0\u67e5\u68af\u5ea6\u6821\u51c6\u3002\u8f93\u5165\u7b2c 5 \u7ae0\u7b2c 1 \u90e8\u5206\u4f7f\u7528 1D \u6210\u50cf\u65b9\u6cd5\u5f97\u5230\u7684\u68af\u5ea6\u6821\u51c6\u503c\uff1b\u8be5\u6821\u51c6\u4f1a\u76f4\u63a5\u5f71\u54cd\u6d4b\u5f97\u7684\u6269\u6563\u7cfb\u6570\u3002\u82e5\u66f4\u65b0\u4e86\u6821\u51c6\uff0c\u6267\u884c xau dosy restore\uff0c\u7136\u540e\u91cd\u65b0\u5904\u7406 DOSY \u8c31\u300212. \u6267\u884c xf2\uff0c\u518d\u6267\u884c abs2\u3001setdiffparm \u548c eddosy\u3002\u5bf9 D<sub>2</sub>O \u4e2d HDO \u7684 DOSY\uff0c\u9ed8\u8ba4\u53c2\u6570\u901a\u5e38\u8db3\u591f\u3002\u5728 eddosy \u5b50\u7a97\u53e3\u4e2d\u5355\u51fb 2D DOSY \u8c31\u663e\u793a\u533a\u57df\u3002\u82e5\u8981\u91cd\u65b0\u5904\u7406\uff0c\u4ece xf2 \u5f00\u59cb\u3002\u6ce8\uff1a\u867d\u7136\u76f8\u4f4d\u6821\u6b63\u7ee7\u627f\u81ea\u4e4b\u524d\u7684 1D \u8c31\uff0c\u4ecd\u9700\u786e\u8ba4\u6240\u6709 FID \u5747\u5df2\u6b63\u786e\u91c7\u96c6\u5e76\u8c03\u76f8\u3002</p>\n","source-126":"<p>\u4e3a\u4f7f <code>abs2</code> \u57fa\u7ebf\u6821\u6b63\u53d6\u5f97\u6700\u4f73\u6548\u679c\uff0c\u53ef\u80fd\u9700\u8981\u8c03\u6574 ABF1 \u548c ABF2 \u53c2\u6570\u3002I1max \u548c I1min \u53c2\u6570\u53ef\u7528\u4e8e\u5728 <code>eddosy</code> \u4e2d\u5ffd\u7565\u8fc7\u5927\u6216\u8fc7\u5c0f\u7684\u4fe1\u53f7\u3002</p>\n<p>13. \u5728 <code>eddosy</code> \u5b50\u7a97\u53e3\u4e2d\u5355\u51fb\u8c31\u56fe\u7a97\u53e3\u5f00\u59cb DOSY \u62df\u5408\u3002\u5e94\u51fa\u73b0\u4e8c\u7ef4 DOSY \u8c31\uff08\u82e5\u672a\u51fa\u73b0\uff0c\u5355\u51fb Spectrum \u9009\u9879\u5361\uff09\uff1b\u6a2a\u8f74\u4e3a <sup>1</sup>H \u5316\u5b66\u4f4d\u79fb\uff0c\u7eb5\u8f74\u4e3a\u81ea\u6269\u6563\u7cfb\u6570\u3002\u540c\u4e00\u5206\u5b50\u7684\u8d28\u5b50\u4fe1\u53f7\u5e94\u5177\u6709\u76f8\u540c\u7684\u6269\u6563\u7cfb\u6570\u3002</p>\n<p>14. 25\u00b0C \u65f6 D<sub>2</sub>O \u4e2d HDO \u7684\u81ea\u6269\u6563\u7cfb\u6570\u4e3a 1.90 \u00d7 10<sup>\u22129</sup> m<sup>2</sup>/s\u3002\u5982\u679c DOSY \u8c31\u663e\u793a\u7684\u5cf0\u4f4d\u5bf9\u5e94\u663e\u8457\u4e0d\u540c\u7684\u6269\u6563\u7cfb\u6570\uff0c\u5e94\u8c03\u6574\u6b65\u9aa4 11 \u4f7f\u7528\u7684\u68af\u5ea6\u6821\u51c6\uff0c\u7136\u540e\u91cd\u590d\u6b65\u9aa4 12\u300113\uff0c\u4f7f HDO \u5cf0\u51fa\u73b0\u5728 1.90 \u00d7 10<sup>\u22129</sup> m<sup>2</sup>/s\uff0c\u6216 log D = \u22128.72 \u7684\u4f4d\u7f6e\uff0c\u5982\u56fe 8.3 \u6240\u793a\u3002\u82e5\u6e29\u5ea6\u5df2\u6821\u51c6\u4e14\u5b9e\u9a8c\u64cd\u4f5c\u6b63\u786e\uff0c\u68af\u5ea6\u5f3a\u5ea6\u6821\u51c6\u503c\u5e94\u63a5\u8fd1\u7b2c 5 \u7ae0\u7b2c 1 \u90e8\u5206\u4e00\u7ef4\u6210\u50cf\u65b9\u6cd5\u6240\u5f97\u503c\u3002</p>\n<h3>\u7b2c 3 \u90e8\u5206\u2014\u2014\u6837\u54c1 M \u7684 DOSY \u8c31</h3>\n<p>1. \u5c06\u8c31\u4eea\u4e2d\u7684\u6837\u54c1 L \u6362\u6210\u6837\u54c1 M\uff0c\u5373 SDS/ATP \u6837\u54c1\u3002\u8be5\u6837\u54c1\u7531 3.6 mg/mL SDS \u548c 2 mM ATP \u914d\u5236\u4e8e 50 mM NaPi\u3001pH 6.8 \u7684 D<sub>2</sub>O \u7f13\u51b2\u6db2\u4e2d\u3002\u4e0d\u8fc7\uff0c\u4f60\u4e5f\u53ef\u4ee5</p>\n<p class=\"figure-caption\">\u56fe 8.3 D<sub>2</sub>O \u4e2d HDO \u7684 DOSY \u8c31\u3002Z \u68af\u5ea6\u6821\u51c6\u4e3a 6.0 G/mm \u65f6\uff0c25\u00b0C \u4e0b HDO \u7684\u81ea\u6269\u6563\u7cfb\u6570\u4e3a 1.9 \u00d7 10<sup>\u22129</sup> m<sup>2</sup>/s\uff0c\u5373 log D = \u22128.72\u3002</p>\n","source-127":"<p class=\"figure-caption\">\u56fe 8.4 3.6 mg/mL SDS \u548c 2 mg/mL ATP \u5728 50 mM NaPi\u3001pH = 6.8 \u7684 D<sub>2</sub>O \u6eb6\u6db2\u4e2d\u7684 DOSY \u8c31\u3002HOD \u7684\u81ea\u6269\u6563\u7cfb\u6570\u4f5c\u4e3a\u5185\u90e8\u6821\u9a8c\uff1b\u7531\u4e8e SDS\u3001ATP \u548c\u7f13\u51b2\u6db2\u7684\u5b58\u5728\uff0c\u5176\u8bfb\u6570\u7565\u4f4e\u4e8e\u7eaf D<sub>2</sub>O \u4e2d\u7684\u503c\u3002</p><p>2. \u6309\u7b2c 2 \u90e8\u5206\u6240\u8ff0\u91c7\u96c6 DOSY \u8c31\u3002\u6ce8\uff1a\u7531\u4e8e SDS \u548c ATP \u7684\u6269\u6563\u901f\u5ea6\u90fd\u6bd4\u6c34\u6162\uff0c\u53ef\u80fd\u9700\u8981\u5c06 P30 \u589e\u81f3\u6700\u591a 5 ms\uff0c\u5e76/\u6216\u5c06 D20 \u589e\u81f3 100 ms \u4ee5\u4e0a\uff08\u53d6\u51b3\u4e8e T1\uff09\u3002\u5728 eddosy \u6b65\u9aa4\u4e2d\uff0c\u53ef\u5c06 DISPmax \u548c DISPmin\uff08\u5bf9\u6570\u523b\u5ea6\uff09\u5206\u522b\u8bbe\u4e3a \u22128.5 \u548c \u221210.5\u30023. \u53ef\u5728 eddosy \u53c2\u6570\u8bbe\u7f6e\u4e2d\u8c03\u6574\u5404\u79cd\u9009\u9879\u3002\u53ef\u5728\u6309\u5cf0\u79ef\u5206\u6216\u5cf0\u5f3a\u5ea6\u62df\u5408\u4e4b\u95f4\u5207\u6362\uff0c\u4e5f\u53ef\u8c03\u6574 I1max\u3002\u56fe 8.4 \u7ed9\u51fa\u4e86\u6837\u54c1 M \u7684 DOSY \u8c31\u3002\uff08\u5982\u6709\u9700\u8981\uff0c\u4e5f\u53ef\u4ee5\u5728\u672c\u6b65\u9aa4\u4f7f\u7528\u81ea\u5df1\u7684\u6837\u54c1\u3002\u76ee\u6807\u6e29\u5ea6\u8bbe\u5b9a\u5e76\u5e73\u8861\u540e\uff0c\u9501\u573a\u3001\u5300\u573a\u3001\u8c03\u8c10 <sup>1</sup>H \u63a2\u5934\u5e76\u91c7\u96c6 <sup>1</sup>H \u8c31\uff1b\u5bf9 D<sub>2</sub>O \u6837\u54c1\uff0c\u53d1\u5c04\u9891\u7387 O1 \u901a\u5e38\u7f6e\u4e8e\u6c34\u5cf0\u4f4d\u7f6e\u3002\u6b64\u5904\u7684\u91c7\u96c6\u65f6\u95f4\u540c\u6837\u7ea6\u4e3a 1\u20131.5 s\u3002\uff09</p><h3>\u603b\u7ed3</h3><p>\u5b9e\u9a8c\u62a5\u544a\u5e94\u5305\u62ec\u4ee5\u4e0b\u5185\u5bb9\uff1a</p><p>1. \u7b2c 1 \u90e8\u5206\u7532\u9187\u8c31\u56fe\uff0c\u663e\u793a aOH \u4e0e aCH<sub>3</sub> <sup>1</sup>H \u5cf0\u4e4b\u95f4\u7684\u8ddd\u79bb \u0394\uff08ppm\uff09\u3002</p><p>\u8bf7\u5c06\u8bbe\u5b9a\u6e29\u5ea6\u548c\u5b9e\u6d4b\u6e29\u5ea6\u90fd\u5199\u5165\u56fe\u9898\u3002</p>\n","source-128":"<p>\u5728\u56fe\u9898\u4e2d\u540c\u65f6\u5199\u51fa\u8bbe\u5b9a\u6e29\u5ea6\u548c\u5b9e\u6d4b\u6e29\u5ea6\u30022. \u7ed8\u5236\u7b2c 1 \u90e8\u5206\u5f97\u5230\u7684\u6e29\u5ea6\u6821\u51c6\u6570\u636e\u30023. \u7ed8\u5236 D<sub>2</sub>O \u4e2d HDO \u7684 DOSY \u56fe\uff0c\u5e76\u5217\u51fa\u573a\u5f3a\u3001\u63a2\u5934\u3001\u6837\u54c1\u4fe1\u606f\u3001\u6e29\u5ea6\u3001\u8109\u51b2\u5e8f\u5217\u3001\u0394 \u548c \u03b4 \u7b49\u5b9e\u9a8c\u53c2\u6570\u30024. \u7ed8\u5236 SDS/ATP \u7684 DOSY \u56fe\uff0c\u5e76\u5217\u51fa\u4e0a\u8ff0\u5b9e\u9a8c\u53c2\u6570\u3002</p><p>5a. \u4e3a\u4ec0\u4e48\u7532\u9187 aOH \u7684\u5316\u5b66\u4f4d\u79fb\u5bf9\u6e29\u5ea6\u654f\u611f\uff1fb. \u89e3\u91ca\u4e3a\u4ec0\u4e48 D<sub>2</sub>O \u4e2d HDO \u7684\u6269\u6563\uff081.93 \u00d7 10<sup>\u22129</sup> m<sup>2</sup>/s\uff09\u6bd4 H<sub>2</sub>O \u4e2d H<sub>2</sub>O \u7684\u6269\u6563\uff08\u5171\u8bc6\u503c 2.3 \u00d7 10<sup>\u22129</sup> m<sup>2</sup>/s\uff09\u6162\uff08\u53c2\u89c1 M. Holz \u548c H. Weingartner\uff0cJ. Magn. Reson. 1991, 92, 115\u2013125 \u7684\u8868 1\uff09\u3002</p><p>5c. \u5728\u4ee5\u4e0b\u5047\u8bbe\u4e0b\u4f30\u7b97 SDS \u80f6\u675f\u7684\u5e73\u5747\u5927\u5c0f\uff1aATP \u4e3a\u5355\u4f53\u4e14\u5448\u7403\u5f62\uff0c\u4f53\u79ef\u4e0e\u5206\u5b50\u91cf\u6210\u6b63\u6bd4\uff0cD \u4e0e\u534a\u5f84 r \u6210\u53cd\u6bd4\u3002</p><p>5d. \u6837\u54c1\u4e2d\u7684\u6e29\u5ea6\u68af\u5ea6\u4f1a\u5bfc\u81f4\u5bf9\u6d41\u3002\u8bc4\u4f30\u5bf9\u6d41\u5bf9\u5c0f\u5206\u5b50\uff08\u5982\u6c34\uff09\u548c\u5927\u5206\u5b50\uff08\u5982 SDS \u80f6\u675f\uff09\u6269\u6563\u7cfb\u6570\u6d4b\u91cf\u7684\u5f71\u54cd\u3002</p><p>5e. \u5bf9\u6837\u54c1 M\uff0c\u80fd\u5426\u89c2\u5bdf\u5230 HDO \u7684\u6269\u6563\u7cfb\u6570\uff1f\u8be5\u503c\u4e0e\u9884\u671f\u76f8\u6bd4\u5982\u4f55\uff1f</p>\n"},"figurePlacements":{"source-120":[{"source":0,"before":"\u56fe 8.1 \u901a\u8fc7\u4f7f\u7528\u53cc\u6781\u573a\u68af\u5ea6\u8fdb\u884cNMR\u6269\u6563\u6d4b\u91cf\u7684\u523a\u6fc0\u56de\u58f0\u8109\u51b2\u5e8f\u5217."}],"source-123":[{"source":0,"before":"\u56fe8.2 \u91c7\u7528500 MHz\u9891\u8c31\u4eea\u4e2d\u7cbe\u786e\u7684\u9187\u6837\u672c\u7684VT\u6821\u51c6\u56fe\u7247,\u914d\u5907\u4e00\u4e2a5mm BBFO Z-\u68af\u5ea6\u63a2\u6d4b\u5668,\u7528\u4e8e\u5728\u7ea6283304K\u8303\u56f4\u5185\u7684\u6837\u672c\u6e29\u5ea6.\u4e24\u4e2a\u4e0d\u540c\u7684\u7ebf\u8868"}],"source-127":[{"source":0,"before":"\u56fe8.4 DOSY\u8c313.6 mg/mL SDS\u548c2 mg/mL ATP\u572850 mM NaPi pH 5 6.8 D2O\u6eb6\u6db2\u4e2d.HOD\u7684\u81ea\u6211\u6269\u6563\u7cfb\u6570\u4f5c\u4e3a\u5185\u90e8\u63a7\u5236,"}]},"navigationSections":[{"id":"section-source-120-1","pageId":"source-120","title":"OVERVIEW","titleZh":"\u6982\u8ff0","kind":"section"},{"id":"section-source-121-2","pageId":"source-121","title":"SAMPLE AND SPECTROMETER REQUIREMENTS","titleZh":"\u6837\u54c1\u548c\u8c31\u4eea\u8981\u6c42","kind":"section"},{"id":"section-source-121-3","pageId":"source-121","title":"ACTIVITIES","titleZh":"\u5b9e\u9a8c\u5185\u5bb9","kind":"section"},{"id":"section-source-121-4","pageId":"source-121","title":"Part 1\u2014VT Calibration","titleZh":"\u7b2c 1 \u90e8\u5206\u2014\u2014VT \u6821\u51c6","kind":"part"},{"id":"section-source-123-5","pageId":"source-123","title":"Part 2\u2014Diffusion of H2O in D2O","titleZh":"\u7b2c 2 \u90e8\u5206\u2014\u2014D 2 O \u4e2d H 2 O \u7684\u6269\u6563","kind":"part"},{"id":"section-source-126-6","pageId":"source-126","title":"Part 3\u2014DOSY Spectrum of Sample M","titleZh":"\u7b2c 3 \u90e8\u5206\u2014\u2014\u6837\u54c1 M \u7684 DOSY \u8c31","kind":"part"},{"id":"section-source-127-7","pageId":"source-127","title":"SUMMARY","titleZh":"\u603b\u7ed3","kind":"section"}]});</script></head>
+    <body data-language="en" data-asset-prefix="../assets"><header class="topbar"><div class="brand"><h1><a href="../../index.html">Practical NMR Spectroscopy Laboratory Guide</a></h1><p>核磁共振实验方法、脉冲序列与谱图实践</p></div><div class="toolbar" aria-label="阅读模式">
+  <div class="language-switcher" role="group" aria-label="语言模式">
+    <button class="view-icon" type="button" data-view="en" aria-label="原文" title="原文 · 快捷键 1 / O 循环" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h11v17h-11zM9 8h6M9 11h6M9 14h4.5" /></svg></button>
+    <button class="view-icon" type="button" data-view="bilingual" aria-label="双语对照" title="双语对照 · 快捷键 2 / O 循环" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 4.5h7v15h-7zM13.5 4.5h7v15h-7zM6 9h2M6 12h2M16 9h2M16 12h2" /></svg></button>
+  </div>
+  <button id="toggle-original" class="view-icon" type="button" data-view="original" aria-label="原页对照" aria-pressed="false" title="原页对照 · 快捷键 3 / O 循环"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5h16v17H4zM7 7h10M7 10h10M7 13h6M7 16h4" /></svg></button>
+  <div class="display-control">
+    <button id="toggle-display-settings" class="view-icon" type="button" aria-label="显示设置" aria-expanded="false" aria-controls="display-settings" title="缩放与主题">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10M14 4v6M6 14v6" /></svg>
+    </button>
+    <section id="display-settings" class="display-panel" aria-label="显示设置" hidden>
+      <div class="display-panel-heading"><strong>显示设置</strong><span>在页面间自动保留</span></div>
+      <div class="display-setting-row"><span>界面缩放</span><div class="zoom-controls" role="group" aria-label="界面缩放"><button id="zoom-out" type="button" aria-label="缩小">−</button><output id="zoom-value" aria-live="polite">自动</output><button id="zoom-in" type="button" aria-label="放大">+</button></div></div>
+      <button id="zoom-auto" class="auto-scale-button" type="button" aria-pressed="true">按窗口自动适应</button>
+      <div class="display-setting-row theme-setting"><span>主题颜色</span>
+  <div class="theme-options" role="group" aria-label="主题颜色">
+    <button type="button" data-theme="sage" aria-label="鼠尾草绿" title="鼠尾草绿" aria-pressed="true"></button>
+    <button type="button" data-theme="mist" aria-label="雾蓝" title="雾蓝" aria-pressed="false"></button>
+    <button type="button" data-theme="sand" aria-label="暖砂" title="暖砂" aria-pressed="false"></button>
+    <button type="button" data-theme="mauve" aria-label="灰紫" title="灰紫" aria-pressed="false"></button>
+    <button type="button" data-theme="gray" aria-label="浅灰" title="浅灰" aria-pressed="false"></button>
+  </div></div>
+    </section>
+  </div>
+</div></header>
+    <button id="toggle-nav" class="mobile-nav-button" type="button" aria-expanded="false" aria-label="打开内容目录" title="内容目录"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14" /></svg></button>
+    <div class="layout"><nav class="sidebar" aria-label="内容目录">
+    <a class="sidebar-home-link" href="../../index.html">目录与搜索</a>
+    <div class="sidebar-section-heading"><p class="sidebar-label">内容目录</p><div class="sidebar-tree-actions" role="group" aria-label="目录章节控制"><button type="button" data-nav-action="toggle" data-state="expand" aria-label="展开所有章节" title="展开所有章节"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7l5 5 5-5M3 3h14" /></svg></button></div></div>
+    <div class="sidebar-tree"><details class="chapter-group" data-chapter="F">
+      <summary><span>第 F 章</span><small>Front Matter</small></summary><ol><li class="sidebar-item"><a href="half-title-and-title-page.html"><span>F.1</span><span>Half Title and Title Page</span></a></li>
+<li class="sidebar-item"><a href="copyright.html"><span>F.2</span><span>Copyright</span></a></li>
+<li class="sidebar-item"><a href="acknowledgments.html"><span>F.3</span><span>Acknowledgments</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="acknowledgments.html#section-source-4-1" data-section-id="section-source-4-1"><span>§</span><span>ACKNOWLEDGMENTS</span></a></li></ol></li>
+<li class="sidebar-item"><a href="introduction.html"><span>F.4</span><span>Introduction</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="introduction.html#section-source-5-1" data-section-id="section-source-5-1"><span>§</span><span>INTRODUCTION</span></a></li>
+<li><a class="sidebar-section-link" href="introduction.html#section-source-5-2" data-section-id="section-source-5-2"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="introduction.html#section-source-9-3" data-section-id="section-source-9-3"><span>§</span><span>ACTIVITIES</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="1">
+      <summary><span>第 1 章</span><small>Basics and Spectrometer Performance Checks</small></summary><ol><li class="sidebar-item"><a href="chapter-1.html"><span>1</span><span>Basics and Spectrometer Performance Checks</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-1.html#section-source-11-1" data-section-id="section-source-11-1"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-11-2" data-section-id="section-source-11-2"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-11-3" data-section-id="section-source-11-3"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-11-4" data-section-id="section-source-11-4"><span>§</span><span>Part 1—Familiarization</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-13-5" data-section-id="section-source-13-5"><span>§</span><span>Part 2—Shimming and Lineshape</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-17-6" data-section-id="section-source-17-6"><span>§</span><span>Part 3—Pulse Calibration and Sensitivity for 1H</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-19-7" data-section-id="section-source-19-7"><span>§</span><span>Part 4—Pulse Calibration and Sensitivity for 13C</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-20-8" data-section-id="section-source-20-8"><span>§</span><span>Part 5—Viewing and Editing Text Files in TopSpin</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-22-9" data-section-id="section-source-22-9"><span>§</span><span>SUMMARY</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-22-10" data-section-id="section-source-22-10"><span>§</span><span>APPENDIX 1.1 STANDARD PARAMETER SETS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-25-11" data-section-id="section-source-25-11"><span>§</span><span>APPENDIX 1.2 PROBE TUNING</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-28-12" data-section-id="section-source-28-12"><span>§</span><span>APPENDIX 1.3 QUININE SPECTRA</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-28-13" data-section-id="section-source-28-13"><span>§</span><span>APPENDIX 1.4 LINESHAPE EFFECTS OF NONSPINNING SHIMS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-1.html#section-source-28-14" data-section-id="section-source-28-14"><span>§</span><span>APPENDIX 1.5 PULSE WIDTH CALIBRATION WITH PAROPT</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="2">
+      <summary><span>第 2 章</span><small>Multiple Irradiation and Multiple Pulse Experiments</small></summary><ol><li class="sidebar-item"><a href="chapter-2.html"><span>2</span><span>Multiple Irradiation and Multiple Pulse Experiments</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-2.html#section-source-34-1" data-section-id="section-source-34-1"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-34-2" data-section-id="section-source-34-2"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-34-3" data-section-id="section-source-34-3"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-34-4" data-section-id="section-source-34-4"><span>§</span><span>Part 1—1H T1 (Spin–Lattice) Relaxation Measurement</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-39-5" data-section-id="section-source-39-5"><span>§</span><span>Part 2—Homonuclear Decoupling</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-41-6" data-section-id="section-source-41-6"><span>§</span><span>Part 3—nOe-difference</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-43-7" data-section-id="section-source-43-7"><span>§</span><span>Part 4—1H-decoupled 13C Spectra with and without nOe</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-44-8" data-section-id="section-source-44-8"><span>§</span><span>Part 5—13C DEPT Spectra</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-2.html#section-source-45-9" data-section-id="section-source-45-9"><span>§</span><span>SUMMARY</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="3">
+      <summary><span>第 3 章</span><small>Polarization Transfer and Its Applications</small></summary><ol><li class="sidebar-item"><a href="chapter-3.html"><span>3</span><span>Polarization Transfer and Its Applications</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-3.html#section-source-48-1" data-section-id="section-source-48-1"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-48-2" data-section-id="section-source-48-2"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-48-3" data-section-id="section-source-48-3"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-48-4" data-section-id="section-source-48-4"><span>§</span><span>Part 1—Polarization Transfer via Selective Irradiation</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-50-5" data-section-id="section-source-50-5"><span>§</span><span>Part 2—Polarization Transfer via INEPT</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-51-6" data-section-id="section-source-51-6"><span>§</span><span>Part 3—Heteronuclear Correlation Experiment Setup and</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-53-7" data-section-id="section-source-53-7"><span>§</span><span>Part 4—Heteronuclear Correlation Experiment Data Processing</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-54-8" data-section-id="section-source-54-8"><span>§</span><span>Part 5—Heteronuclear Correlation Experiments on</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-57-9" data-section-id="section-source-57-9"><span>§</span><span>Part 6—Heteronuclear Correlation Experiments on</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-3.html#section-source-58-10" data-section-id="section-source-58-10"><span>§</span><span>SUMMARY</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="4">
+      <summary><span>第 4 章</span><small>Homonuclear Correlation Experiments</small></summary><ol><li class="sidebar-item"><a href="chapter-4.html"><span>4</span><span>Homonuclear Correlation Experiments</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-4.html#section-source-60-1" data-section-id="section-source-60-1"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-60-2" data-section-id="section-source-60-2"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-60-3" data-section-id="section-source-60-3"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-60-4" data-section-id="section-source-60-4"><span>§</span><span>Part 1—Quinine 1H Spectrum</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-61-5" data-section-id="section-source-61-5"><span>§</span><span>Part 2—COSY Setup</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-61-6" data-section-id="section-source-61-6"><span>§</span><span>Part 3—TOCSY Setup</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-63-7" data-section-id="section-source-63-7"><span>§</span><span>Part 4—NOESY Setup</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-63-8" data-section-id="section-source-63-8"><span>§</span><span>Part 5—2D Data Acquisition</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-64-9" data-section-id="section-source-64-9"><span>§</span><span>Part 6—COSY Data processing</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-64-10" data-section-id="section-source-64-10"><span>§</span><span>Part 7—TOCSY Data Processing</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-66-11" data-section-id="section-source-66-11"><span>§</span><span>Part 8—NOESY Data Processing</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-67-12" data-section-id="section-source-67-12"><span>§</span><span>SUMMARY</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-4.html#section-source-68-13" data-section-id="section-source-68-13"><span>§</span><span>APPENDIX 4.1 USING edprosol TO DETERMINE THE POWER</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="5">
+      <summary><span>第 5 章</span><small>PFG (Pulsed Field Gradient) Experiments</small></summary><ol><li class="sidebar-item"><a href="chapter-5.html"><span>5</span><span>PFG (Pulsed Field Gradient) Experiments</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-5.html#section-source-70-1" data-section-id="section-source-70-1"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-70-2" data-section-id="section-source-70-2"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-71-3" data-section-id="section-source-71-3"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-71-4" data-section-id="section-source-71-4"><span>§</span><span>Part 1—1D Z-Gradient Image of an H2O/D2O “Phantom”</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-73-5" data-section-id="section-source-73-5"><span>§</span><span>Part 2—pfg-Homonuclear 2D Experiments Setup</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-75-6" data-section-id="section-source-75-6"><span>§</span><span>Part 3—2D pfg-Homonuclear Experiments Data Acquisition</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-75-7" data-section-id="section-source-75-7"><span>§</span><span>Part 4—pfg-Homonuclear 2D Experiments Data Processing</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-77-8" data-section-id="section-source-77-8"><span>§</span><span>Part 5—pfg-Heteronuclear 2D Experiments Setup</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-79-9" data-section-id="section-source-79-9"><span>§</span><span>Part 6—2D Data Acquisition</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-79-10" data-section-id="section-source-79-10"><span>§</span><span>Part 7—pfg-Heteronuclear 2D Experiments Data Processing</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-80-11" data-section-id="section-source-80-11"><span>§</span><span>SUMMARY</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-5.html#section-source-81-12" data-section-id="section-source-81-12"><span>§</span><span>APPENDIX 5.1 REGARDING THE “PHANTOM” SAMPLE</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="6">
+      <summary><span>第 6 章</span><small>Introduction to NMR of Biomolecules in H2O</small></summary><ol><li class="sidebar-item"><a href="chapter-6.html"><span>6</span><span>Introduction to NMR of Biomolecules in H2O</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-6.html#section-source-83-1" data-section-id="section-source-83-1"><span>§</span><span>Introduction to NMR of Biomolecules in H2O</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-83-2" data-section-id="section-source-83-2"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-83-3" data-section-id="section-source-83-3"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-84-4" data-section-id="section-source-84-4"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-84-5" data-section-id="section-source-84-5"><span>§</span><span>Part 1—Lysozyme Spectra—Shimming and Pulse Calibration</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-87-6" data-section-id="section-source-87-6"><span>§</span><span>Part 2—Lysozyme Spectra—Water Suppression Using</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-91-7" data-section-id="section-source-91-7"><span>§</span><span>Part 3—Lysozyme Spectra—Water Suppression Using</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-92-8" data-section-id="section-source-92-8"><span>§</span><span>Part 4—Lysozyme Spectra—2D NOESY with WATERGATE Water</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-94-9" data-section-id="section-source-94-9"><span>§</span><span>Part 5—Ubiquitin Spectra—Shimming, Pulse Calibration and</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-94-10" data-section-id="section-source-94-10"><span>§</span><span>Part 6—Ubiquitin 2D 13C HSQC (Heteronuclear Single-</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-96-11" data-section-id="section-source-96-11"><span>§</span><span>Part 7—Ubiquitin 2D 15N HSQC Experiment Setup and</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-97-12" data-section-id="section-source-97-12"><span>§</span><span>Part 8—Ubiquitin 2D HSQC Experiments Data Processing</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-98-13" data-section-id="section-source-98-13"><span>§</span><span>SUMMARY</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-98-14" data-section-id="section-source-98-14"><span>§</span><span>APPENDIX 6.1 MAPPING SHIM PROFILES IN GRADSHIM</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-101-15" data-section-id="section-source-101-15"><span>§</span><span>APPENDIX 6.2 PRESAT180 PULSE SEQUENCE</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-102-16" data-section-id="section-source-102-16"><span>§</span><span>APPENDIX 6.3 X-NUCLEUS PULSE CALIBRATION</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-6.html#section-source-103-17" data-section-id="section-source-103-17"><span>§</span><span>APPENDIX 6.4 ROUTING FOR THE 15N RF CHANNEL IN THE</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group" data-chapter="7">
+      <summary><span>第 7 章</span><small>Selective Experiments Using Shaped Pulses</small></summary><ol><li class="sidebar-item"><a href="chapter-7.html"><span>7</span><span>Selective Experiments Using Shaped Pulses</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-7.html#section-source-106-1" data-section-id="section-source-106-1"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-106-2" data-section-id="section-source-106-2"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-106-3" data-section-id="section-source-106-3"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-106-4" data-section-id="section-source-106-4"><span>§</span><span>Part 1—1H Setup</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-107-5" data-section-id="section-source-107-5"><span>§</span><span>Part 2—Selective Pulse Calculation and Simulation</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-107-6" data-section-id="section-source-107-6"><span>§</span><span>Part 3—Selective Pulse Calibration</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-109-7" data-section-id="section-source-109-7"><span>§</span><span>Part 4—Selective TOCSY with 270– Selective Pulse</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-111-8" data-section-id="section-source-111-8"><span>§</span><span>Part 5—Selective TOCSY with 180– Selective Pulse and</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-111-9" data-section-id="section-source-111-9"><span>§</span><span>Part 6—Selective NOESY with 270– Selective Pulse</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-112-10" data-section-id="section-source-112-10"><span>§</span><span>Part 7—Selective NOESY with 180– Selective Pulse and</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-112-11" data-section-id="section-source-112-11"><span>§</span><span>Part 8—Quantitation by NMR (qNMR)—Introduction</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-117-12" data-section-id="section-source-117-12"><span>§</span><span>SUMMARY</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-7.html#section-source-118-13" data-section-id="section-source-118-13"><span>§</span><span>APPENDIX 7.1 QUANTITATION SAMPLES I AND</span></a></li></ol></li></ol>
+    </details>
+<details class="chapter-group active-chapter" data-chapter="8" open>
+      <summary><span>第 8 章</span><small>Diffusion Measurements and DOSY (Diffusion Ordered SpectroscopY)</small></summary><ol><li class="sidebar-item"><a class="active" aria-current="page" href="chapter-8.html"><span>8</span><span>Diffusion Measurements and DOSY (Diffusion Ordered SpectroscopY)</span></a><ol class="sidebar-subsections"><li><a class="sidebar-section-link" href="chapter-8.html#section-source-120-1" data-section-id="section-source-120-1"><span>§</span><span>OVERVIEW</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-8.html#section-source-121-2" data-section-id="section-source-121-2"><span>§</span><span>SAMPLE AND SPECTROMETER REQUIREMENTS</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-8.html#section-source-121-3" data-section-id="section-source-121-3"><span>§</span><span>ACTIVITIES</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-8.html#section-source-121-4" data-section-id="section-source-121-4"><span>§</span><span>Part 1—VT Calibration</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-8.html#section-source-123-5" data-section-id="section-source-123-5"><span>§</span><span>Part 2—Diffusion of H2O in D2O</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-8.html#section-source-126-6" data-section-id="section-source-126-6"><span>§</span><span>Part 3—DOSY Spectrum of Sample M</span></a></li>
+<li><a class="sidebar-section-link" href="chapter-8.html#section-source-127-7" data-section-id="section-source-127-7"><span>§</span><span>SUMMARY</span></a></li></ol></li></ol>
+    </details></div>
+    <footer class="sidebar-copyright"><p class="copyright-owner">© 2026 <a href="mailto:wuhaifeng@ustc.edu.cn">wuhaifeng@ustc.edu.cn</a></p><p>本文档仅供小范围、非公开的学术交流与学习参考；未经许可，不得复制、转载、转发、公开传播或用于商业用途。</p></footer>
+  </nav><main><article class="experiment paper" data-experiment="8" aria-labelledby="item-title"><header class="experiment-heading"><p class="experiment-label">Chapter 8</p><h2 class="experiment-title" id="item-title">Diffusion Measurements and DOSY (Diffusion Ordered SpectroscopY)</h2><p class="experiment-title-zh" lang="zh-CN">扩散测量与 DOSY（扩散有序谱）</p><p class="range-line">PDF 120–128 · 原书 113–121 · Diffusion Measurements and DOSY (Diffusion Ordered SpectroscopY)</p></header><section class="page-block" id="source-120" data-pdf="120" data-book="113">
+        <span class="page-marker">原书第 113 页 · PDF 第 120 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-120"></div><div class="content-pane content-zh" data-page="source-120"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-120.webp" alt="原书来源第 120 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-121" data-pdf="121" data-book="114">
+        <span class="page-marker">原书第 114 页 · PDF 第 121 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-121"></div><div class="content-pane content-zh" data-page="source-121"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-121.webp" alt="原书来源第 121 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-122" data-pdf="122" data-book="115">
+        <span class="page-marker">原书第 115 页 · PDF 第 122 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-122"></div><div class="content-pane content-zh" data-page="source-122"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-122.webp" alt="原书来源第 122 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-123" data-pdf="123" data-book="116">
+        <span class="page-marker">原书第 116 页 · PDF 第 123 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-123"></div><div class="content-pane content-zh" data-page="source-123"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-123.webp" alt="原书来源第 123 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-124" data-pdf="124" data-book="117">
+        <span class="page-marker">原书第 117 页 · PDF 第 124 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-124"></div><div class="content-pane content-zh" data-page="source-124"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-124.webp" alt="原书来源第 124 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-125" data-pdf="125" data-book="118">
+        <span class="page-marker">原书第 118 页 · PDF 第 125 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-125"></div><div class="content-pane content-zh" data-page="source-125"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-125.webp" alt="原书来源第 125 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-126" data-pdf="126" data-book="119">
+        <span class="page-marker">原书第 119 页 · PDF 第 126 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-126"></div><div class="content-pane content-zh" data-page="source-126"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-126.webp" alt="原书来源第 126 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-127" data-pdf="127" data-book="120">
+        <span class="page-marker">原书第 120 页 · PDF 第 127 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-127"></div><div class="content-pane content-zh" data-page="source-127"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-127.webp" alt="原书来源第 127 页" loading="lazy">
+      </section>
+<section class="page-block" id="source-128" data-pdf="128" data-book="121">
+        <span class="page-marker">原书第 121 页 · PDF 第 128 页</span>
+        <div class="bilingual-grid"><div class="content-pane content-en" data-page="source-128"></div><div class="content-pane content-zh" data-page="source-128"></div></div>
+        <img class="reference-scan" data-src="../assets/original-pages/page-128.webp" alt="原书来源第 128 页" loading="lazy">
+      </section></article></main></div><script>if (!window.NMR_APP_LOADED) {
+window.NMR_APP_LOADED = true;
+
+const body = document.body;
+const experiment = window.NMR_EXPERIMENT;
+const scanButton = document.querySelector("#toggle-original");
+const navButton = document.querySelector("#toggle-nav");
+const toolbar = document.querySelector(".toolbar");
+const sidebar = document.querySelector(".sidebar");
+const sidebarActionButton = document.querySelector("button[data-nav-action='toggle']");
+const root = document.documentElement;
+const displayButton = document.querySelector("#toggle-display-settings");
+const displayPanel = document.querySelector("#display-settings");
+const zoomOutButton = document.querySelector("#zoom-out");
+const zoomInButton = document.querySelector("#zoom-in");
+const zoomAutoButton = document.querySelector("#zoom-auto");
+const zoomValue = document.querySelector("#zoom-value");
+const themeButtons = [...document.querySelectorAll("button[data-theme]")];
+const viewButtons = [...document.querySelectorAll("button[data-view]")];
+const languageButtons = viewButtons.filter((button) => button.dataset.view !== "original");
+const referenceScans = [...document.querySelectorAll(".reference-scan")];
+
+function cloneMappedFigure(figure) {
+  const mapped = figure.cloneNode(true);
+  mapped.classList.add("mapped-figure");
+  mapped.querySelectorAll("img").forEach((image) => {
+    image.alt = `\u4e2d\u6587\u680f\u5bf9\u5e94\u56fe\u50cf\uff1a${image.alt || "\u539f\u4e66\u56fe\u50cf"}`;
+    image.loading = "lazy";
+  });
+  // The translated figure caption is already a separate aligned paragraph.
+  // Avoid inserting a redundant placeholder caption under only one image.
+  return mapped;
+}
+
+function mapFigures(page, pageId) {
+  const englishPane = page.querySelector(".content-en");
+  const chinesePane = page.querySelector(".content-zh");
+  const englishFigures = [...englishPane.children].filter((node) => node.tagName === "FIGURE");
+  const chineseBlocks = [...chinesePane.children].filter((node) => node.matches("p, h3"));
+  const oldPlacements = experiment.figurePlacements[pageId] || [];
+
+  for (const [source, figure] of englishFigures.entries()) {
+    const mapped = cloneMappedFigure(figure);
+    // Original English figures sit between indexed text blocks. Insert their
+    // Chinese counterparts at the SAME boundary; the next block is commonly
+    // the translated caption, but on cover/opening pages it may be a heading.
+    // This remains valid when caption wording changes after technical editing.
+    let next = figure.nextElementSibling;
+    while (next && !next.matches("p, h3")) next = next.nextElementSibling;
+    const matched = next && chineseBlocks[Number(next.dataset.alignIndex)];
+    if (matched) {
+      matched.before(mapped);
+      continue;
+    }
+
+    // Old textual anchors are a fallback for exceptional non-parallel pages.
+    const { before, after } = oldPlacements.find((entry) => entry.source === source) || {};
+    const anchors = [...chinesePane.querySelectorAll("h3, p")];
+    if (before) {
+      const anchor = anchors.find((node) => node.textContent.trim().startsWith(before));
+      if (anchor) {
+        anchor.before(mapped);
+        continue;
+      }
+    }
+    if (after) {
+      const anchor = anchors.find((node) => node.textContent.trim().startsWith(after));
+      if (anchor) {
+        anchor.after(mapped);
+        continue;
+      }
+    }
+    // No corresponding text follows a figure on this page.
+    chinesePane.append(mapped);
+  }
+}
+
+// Normalize OCR-exported parameter lists into compact borderless tables.
+const parameterNames = new Set(["PULPROG", "NS", "DS", "PL0", "P11", "SPNAM1", "SP1", "RG", "D9", "D11", "D14", "TD0", "P1/PL1", "P6/PL10", "P11/SP1", "P17", "VDLIST", "SPOFFS1", "P12", "SP2", "SPNAM2", "SPOFFS2", "GPNAM1", "GPZ1", "GPZ2", "P16", "D8", "SI", "LB", "SW", "D1", "TD", "SI (F1)", "SI (F2)", "WDW (F2)", "EM", "LB (F2)", "PH_mod (F2)", "PH_mod (F1)", "GPNAME\u00d7", "GPNAMEX", "GPZ6", "GPZ7", "GPZ8", "P19", "P30"]);
+const nonParameterHeadings = new Set(["OVERVIEW", "ACTIVITIES", "SUMMARY", "REFERENCE", "ACQUISITION", "INTRODUCTION", "NOESY", "COSY", "COLOC", "HETCOR", "1H", "13C", "15N", "Z", "X", "A", "B*", "C*", "D*", "E", "F", "G*", "H*", "I", "J", "K*", "L*", "M"]);
+
+function looksLikeParameter(heading) {
+  const text = heading.textContent.trim();
+  if (parameterNames.has(text) || nonParameterHeadings.has(text)) return parameterNames.has(text);
+  if (/[\u3400-\u9fff]/.test(text)) {
+    if (/[\u3002\uff01\uff1f\uff1a\uff0c]|^(\u7b2c|\u9644\u5f55|\u7ae0\u8282|\u603b\u7ed3|\u6982\u8ff0|\u5b9e\u9a8c|\u6d3b\u52a8|\u4f7f\u7528|\u9009\u62e9\u6027|\u573a\u5730|\u68af\u5ea6|\u8109\u51b2|\u6821\u51c6|\u8def\u7531|\u5904\u7406|\u8c31|\u65b9\u6cd5|\u6837\u54c1|\u4eea\u5668)/.test(text)) return false;
+    const next = heading.nextElementSibling;
+    return Boolean(next?.tagName === "P" && next.textContent.trim().length <= 140);
+  }
+  if (!/^[A-Z0-9][A-Z0-9_./,:+\u00d7\u2212()\[\] -]*$/.test(text) || text.length > 24) return false;
+  if (/^(?:CHAPTER|PART|APPENDIX|FIELD|SPECTROMETER|TUNING|PROBE|PULSE|LEVEL|USING|ORDERED|DIFFUSION|SELECTIVE|MULTIPLE|HOMONUCLEAR|HETERONUCLEAR|POLARIZATION|INTRODUCTION|EXPERIMENTS?)(?:\b|\u2014)/.test(text)) return false;
+  const next = heading.nextElementSibling;
+  if (next?.tagName === "P") {
+    const value = next.textContent.trim();
+    if (value.length > 180 && !/^(?:Use|From|Set|Check|Normal|The values|Power level)/.test(value)) return false;
+  }
+  return true;
+}
+
+// A few PDF tables are exported in reading order rather than row order.  For
+// example, the source page for the T1-IR experiment arrives as
+// `FnMODE`, `QF`, `TD (F2)`, `16K`, ... with the value cells represented as
+// headings.  Keep the source fragments untouched, but normalize both the
+// normal key/paragraph form and this alternating key/value form at runtime.
+const parameterValueHeadings = new Set([
+  "QF", "QSIM", "QSEQ", "EM", "GM", "QSINE", "SINE.50", "SINE.100",
+  "1H", "13C", "15N", "16K", "32K", "64K", "128K", "256K", "4K", "2K",
+]);
+
+function parameterText(node) {
+  return node?.textContent.trim().replace(/[\uff1a:]$/, "") || "";
+}
+
+function isParameterKeyText(value) {
+  const text = value.trim().replace(/[\uff1a:]$/, "");
+  if (!text || parameterValueHeadings.has(text) || nonParameterHeadings.has(text)) return false;
+  if (parameterNames.has(text)) return true;
+  // Bruker acquisition/processing parameter families.  This intentionally
+  // excludes ordinary all-caps experiment names (DQF-COSY, NOESY, etc.).
+  return /^(?:PULPROG|FnMODE|(?:P|D|G|PL|SP|GPZ|P\d+\/PL|P\d+\/SP|GPNAM|SPNAM|SPOFFS|CPDPRG|PCPD|CNST|NUC|O\dP?|TD|SI|SW|SF|SWH|AQ|LB|WDW|PHC|PH_mod|BC_mod|SR|FCOR|MC|SSB|RG|NS|DS|DIGMOD|HDDUTY|ZGOPTNS|FILENAME|DISK|USER|GSHIM|VDLIST|TE\d+|SHIMGROUP|ND_\d+|CPD)(?:[A-Z0-9_./,()\[\] -]*)?)$/i.test(text);
+}
+
+function isParameterNode(node) {
+  if (!node || !["H3", "P"].includes(node.tagName)) return false;
+  const text = parameterText(node);
+  if (node.tagName === "P" && text.length > 32) return false;
+  return isParameterKeyText(text);
+}
+
+function isNumberedInstruction(node) {
+  return /^\s*\d+\.\s/.test(node?.textContent || "");
+}
+
+function isValueHeading(node) {
+  if (!node || !["H3", "P"].includes(node.tagName)) return false;
+  const text = parameterText(node);
+  if (!text || isNumberedInstruction(node)) return false;
+  if (parameterValueHeadings.has(text)) return true;
+  if (/^(?:[-+]?\d|\.\d|\d+\s*(?:k|K|Hz|ms|us|\u03bcs|s|dB|ppm|%|\u00b0|MHz|MHz|mM|M)\b)/.test(text)) return true;
+  return node.tagName === "H3" && !isParameterKeyText(text) && /^[A-Z0-9][A-Z0-9 .(),/%+\-]*$/.test(text) && text.length <= 28;
+}
+
+function formatParameterTables(pane) {
+  // First convert heading-shaped value cells to paragraphs. This makes the
+  // row parser deterministic for both FnMODE -> QF and TD (F2) -> 16K
+  // reading-order exports.
+  [...pane.children].forEach((node) => {
+    if (!isParameterNode(node)) return;
+    const next = node.nextElementSibling;
+    if (!isValueHeading(next)) return;
+    const value = document.createElement("p");
+    value.innerHTML = next.innerHTML;
+    next.replaceWith(value);
+  });
+  let cursor = pane.firstElementChild;
+  while (cursor) {
+    // A final value cell is occasionally emitted immediately before its key
+    // cell (SP1 followed by \u201c75 dB\u201d, for example).  Re-associate that short
+    // numeric/unit paragraph with the following parameter key.
+    if (cursor.tagName === "P" && cursor.previousElementSibling?.classList.contains("parameter-table") && isValueHeading(cursor) && isParameterNode(cursor.nextElementSibling)) {
+      const keyNode = cursor.nextElementSibling;
+      const table = document.createElement("div");
+      table.className = "parameter-table";
+      cursor.before(table);
+      const key = document.createElement("div");
+      key.className = "parameter-key";
+      key.textContent = parameterText(keyNode);
+      const value = document.createElement("div");
+      value.className = "parameter-value";
+      value.innerHTML = cursor.innerHTML;
+      table.append(key, value);
+      cursor.remove();
+      keyNode.remove();
+      cursor = table.nextElementSibling;
+      continue;
+    }
+    if (!isParameterNode(cursor)) { cursor = cursor.nextElementSibling; continue; }
+
+    const table = document.createElement("div");
+    table.className = "parameter-table";
+    table.dataset.alignIndex = cursor.dataset.alignIndex || "";
+    cursor.before(table);
+
+    // Consume one contiguous parameter run.  A row may be key + paragraph,
+    // key + value-heading, or a key with no value (when the PDF omitted it).
+    while (cursor && isParameterNode(cursor)) {
+      const keyText = parameterText(cursor);
+      const next = cursor.nextElementSibling;
+      let valueNode = null;
+      if (next && next.tagName === "P" && !isNumberedInstruction(next)) {
+        valueNode = next;
+      } else if (isValueHeading(next)) {
+        valueNode = next;
+      }
+
+      const key = document.createElement("div");
+      key.className = "parameter-key";
+      key.textContent = keyText;
+      const value = document.createElement("div");
+      value.className = "parameter-value";
+      if (valueNode) value.innerHTML = valueNode.innerHTML;
+      table.append(key, value);
+
+      cursor.remove();
+      if (valueNode) valueNode.remove();
+      cursor = table.nextElementSibling;
+    }
+
+    // Some tables export their last value immediately before the key. Fold
+    // that reversed pair into the current table instead of leaving an empty
+    // parameter heading below it.
+    if (cursor?.tagName === "P" && !isNumberedInstruction(cursor) && isParameterNode(cursor.nextElementSibling)) {
+      const keyNode = cursor.nextElementSibling;
+      const key = document.createElement("div");
+      key.className = "parameter-key";
+      key.textContent = parameterText(keyNode);
+      const value = document.createElement("div");
+      value.className = "parameter-value";
+      value.innerHTML = cursor.innerHTML;
+      table.append(key, value);
+      cursor.remove();
+      keyNode.remove();
+      cursor = table.nextElementSibling;
+    }
+    // Keep a short explanatory paragraph attached to the table when it
+    // follows a parameter run, but never swallow the next numbered step.
+    if (cursor?.tagName === "P" && !isNumberedInstruction(cursor) && cursor.textContent.trim().length <= 180
+      && !/^(?:All other|\u6240\u6709\u5176\u4ed6|\u5176\u4ed6\u53c2\u6570|Note:|\u6ce8\u610f[:\uff1a]|\u6ce8[:\uff1a]|Acquire|\u91c7\u96c6\u8c31\u56fe)/i.test(cursor.textContent.trim())) {
+      const note = document.createElement("div");
+      note.className = "parameter-note";
+      note.innerHTML = cursor.innerHTML;
+      table.append(note);
+      cursor.remove();
+      cursor = table.nextElementSibling;
+    }
+  }
+}
+
+function formatInlineParameterLists(pane) {
+  // Some appendix pulse-program lists are extracted as one semicolon-delimited
+  // paragraph (for example \u201c;pl1: ... ;pl9: ... ;sp1: ...\u201d).  Turn those
+  // lists into the same two-column table used by ordinary parameter blocks.
+  [...pane.querySelectorAll("p")].forEach((paragraph) => {
+    const text = paragraph.textContent;
+    const matches = [...text.matchAll(/(?:^|;\s*)([A-Za-z][A-Za-z0-9_]*(?:\[\%\])?)\s*:\s*/g)]
+      .filter((match) => isParameterKeyText(match[1]));
+    if (matches.length < 3) return;
+
+    const table = document.createElement("div");
+    table.className = "parameter-table";
+    table.dataset.alignIndex = paragraph.dataset.alignIndex || "";
+    matches.forEach((match, index) => {
+      const start = match.index + match[0].length;
+      const end = index + 1 < matches.length ? matches[index + 1].index : text.length;
+      const valueText = text.slice(start, end).replace(/;\s*$/, "").trim();
+      const key = document.createElement("div");
+      key.className = "parameter-key";
+      key.textContent = match[1].toUpperCase();
+      const value = document.createElement("div");
+      value.className = "parameter-value";
+      value.textContent = valueText;
+      table.append(key, value);
+    });
+    paragraph.before(table);
+    paragraph.remove();
+  });
+}
+
+function formatStepBreaks(pane) {
+  // Both languages need the same step boundaries. Work on text nodes so
+  // inline <code>, <sup> and links survive unchanged; reject citations and
+  // decimal numbers instead of applying a Latin-only innerHTML expression.
+  pane.querySelectorAll("p").forEach((paragraph) => {
+    if (paragraph.classList.contains("figure-caption")) return;
+    const walker = document.createTreeWalker(paragraph, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach((node) => {
+      if (node.parentElement?.closest("code, a, sub, sup")) return;
+      const source = node.textContent;
+      const positions = [];
+      for (const match of source.matchAll(/(?:\d{1,2}|[a-h])\.(?=\s|[\u3400-\u9fff\u201cA-Z])/gi)) {
+        const before = source.slice(0, match.index);
+        if (!before || !/[\s\u3002\uff01\uff1f\uff1b;.!?]/.test(before.at(-1))) continue;
+        if (/(?:step|steps|figure|chapter|part|section|no|fig|\u6b65\u9aa4|\u7b2c|\u56fe)\s*$/i.test(before)) continue;
+        if (/\d+\.\s*$/.test(before)) continue;
+        positions.push(match.index);
+      }
+      if (!positions.length) return;
+      const fragment = document.createDocumentFragment();
+      let start = 0;
+      positions.forEach((position) => {
+        fragment.append(document.createTextNode(source.slice(start, position).replace(/\s+$/, "")));
+        fragment.append(document.createElement("br"));
+        start = position;
+      });
+      fragment.append(document.createTextNode(source.slice(start)));
+      node.replaceWith(fragment);
+    });
+  });
+}
+
+function formatCodePage(pane, pageId) {
+  if (pageId !== "source-21") return;
+  pane.querySelectorAll("h3").forEach((heading) => {
+    if (/^(GETCURDATA|II|LOPO|LOCK|QUIT)$/.test(heading.textContent.trim())) { heading.classList.add("code-command"); heading.innerHTML = `<code>${heading.textContent.trim()}</code>`; }
+  });
+  pane.querySelectorAll("p").forEach((paragraph) => {
+    if (/^\s*(\/\*|char solvent)|FETCHPAR|STOREPAR|RSH\(/.test(paragraph.textContent)) paragraph.classList.add("code-line");
+  });
+}
+
+function formatKnownFormulas(pane, pageId) {
+  if (pageId !== "source-113") return;
+  pane.querySelectorAll("p").forEach((paragraph) => {
+    const text = paragraph.textContent.trim();
+    if (/^A\s*5\s*A0/.test(text)) paragraph.innerHTML = "A = A<sub>0</sub>N C I(\u03b8) sin \u03b8";
+    if (/^As=Ar\s*5/.test(text)) paragraph.innerHTML = "A<sub>s</sub>/A<sub>r</sub> = N<sub>s</sub>C<sub>s</sub>/(N<sub>r</sub>C<sub>r</sub>)";
+  });
+  if (pageId === "source-15") {
+    const caption = pane.querySelector(".figure-caption");
+    if (caption) caption.textContent = "Figure 1.2 \u00b9H lineshape test of a 0.1% CHCl\u2083/acetone-d\u2086 sample recorded on a Bruker AV-III 800 MHz spectrometer equipped with a TXI probe at 298 K. The nonspinning linewidth at \u00bd-height, 0.55% and 0.11% height is measured using humpcal as 0.58, 5.6, and 11.8 Hz. The manual measurement of the linewidth and approximately 0.55% height is also shown. The cursor information displays \u2018Value = 0.56 rel\u2019; this is the datapoint height relative to the peak height (cy), set to 100 cm. When measuring lineshape by hand, use a close height or interpolate between adjacent points. Low-frequency (<10 Hz) noise from floor vibration is visible at the base of the peak.";
+  }
+}
+
+function formatKnownTranscriptions(pane, pageId) {
+  // Restore a handful of high-impact OCR substitutions that otherwise make
+  // parameter instructions or equations read incorrectly in every language
+  // view.  These are source-level text repairs, not translation changes.
+  if (pageId === "source-49") pane.innerHTML = pane.innerHTML.replace(/xyz\s+5\s+your initials/g, "xyz = your initials");
+  if (pageId === "source-52") pane.innerHTML = pane.innerHTML.replace(/13C\s+5\s+F2/g, "13C = F2");
+  if (pageId === "source-72") {
+    pane.innerHTML = pane.innerHTML
+      .replace(/GPZ2[^A-Za-z0-9]+AQ/g, "GPZ2 \u00d7 AQ")
+      .replace(/GPZ1[^A-Za-z0-9]+D27/g, "GPZ1 \u00d7 D27")
+      .replace(/\)\s+5\s+\(0\.2\)[^A-Za-z0-9]+/g, ") = (0.2) \u00d7 ");
+  }
+  if (pageId === "source-128") {
+    pane.innerHTML = pane.innerHTML
+      .replace(/1\.93\s+1029\s+m2\/s/g, "1.93 \u00d7 10<sup>\u22129</sup> m<sup>2</sup>/s")
+      .replace(/2\.3\s+1029\s+m2\/s/g, "2.3 \u00d7 10<sup>\u22129</sup> m<sup>2</sup>/s");
+  }
+}
+
+function formatContinuations(pane, pageId) {
+  const firstParagraph = pane.querySelector("p");
+  if (pageId === "source-15" && firstParagraph) firstParagraph.classList.add("continuation");
+  if (firstParagraph && /^(?:and|or|but|which|where|while|back|current|then|this|these|those)\b/i.test(firstParagraph.textContent.trim())) {
+    firstParagraph.classList.add("continuation");
+  }
+  if (pageId === "source-14") {
+    const paragraphs = [...pane.querySelectorAll("p")];
+    paragraphs.filter((paragraph) => /^\s*(back 500|c\.\s*XY)/i.test(paragraph.textContent)).forEach((paragraph) => paragraph.classList.add("continuation"));
+  }
+  if (pageId === "source-22") {
+    const first = pane.querySelector("p");
+    if (first && /^\s*current experiment/i.test(first.textContent)) first.classList.add("continuation");
+  }
+}
+
+function markAlignmentBlocks(pane) {
+  [...pane.children].filter((node) => node.matches("p, h3")).forEach((node, index) => {
+    node.dataset.alignIndex = String(index);
+  });
+}
+
+function alignBilingualPages() {
+  document.querySelectorAll(".page-block").forEach((page) => {
+    const left = page.querySelector(".content-en");
+    const right = page.querySelector(".content-zh");
+    const all = [...left.children, ...right.children];
+    all.forEach((node) => {
+      if (node.dataset.alignmentMargin !== undefined) {
+        node.style.marginTop = "";
+        delete node.dataset.alignmentMargin;
+      }
+    });
+    page.querySelectorAll(".parameter-table").forEach((table) => { table.style.gridTemplateRows = ""; });
+    if (body.dataset.language !== "bilingual" || body.classList.contains("show-original") || window.innerWidth <= 640) return;
+
+    // A translated page with differently ordered heading/value cells cannot
+    // safely be synchronized by source-block index. Leave it in natural flow
+    // until its underlying transcription is corrected.
+    const source = experiment.english[page.id] || "";
+    const translation = experiment.chinese[page.id] || "";
+    const tags = (markup) => [...markup.matchAll(/<(h3|p)(?:\s[^>]*)?>/gi)].map((match) => match[1].toLowerCase()).join(",");
+    if (tags(source) !== tags(translation)) return;
+
+    // A parameter list is one outer block but contains many independently
+    // wrapping rows. Match complete lists by parameter names, then give each
+    // corresponding row the same track height in both language columns.
+    const tables = (pane) => [...pane.querySelectorAll(":scope > .parameter-table")];
+    const enTables = tables(left);
+    const zhTables = tables(right);
+    for (const enTable of enTables) {
+      const enKeys = [...enTable.querySelectorAll(":scope > .parameter-key")].map((node) => node.textContent.trim());
+      const partner = zhTables.find((table) => {
+        const keys = [...table.querySelectorAll(":scope > .parameter-key")].map((node) => node.textContent.trim());
+        return keys.length === enKeys.length && keys.length > 1 && keys.every((key, i) => key === enKeys[i]);
+      });
+      if (!partner) continue;
+      const complete = (table) => [...table.children].every((node, i) => node.classList.contains(i % 2 ? "parameter-value" : "parameter-key"));
+      if (!complete(enTable) || !complete(partner)) continue;
+      const rows = enKeys.map((_, i) => Math.ceil(Math.max(
+        enTable.children[i * 2].getBoundingClientRect().height,
+        enTable.children[i * 2 + 1].getBoundingClientRect().height,
+        partner.children[i * 2].getBoundingClientRect().height,
+        partner.children[i * 2 + 1].getBoundingClientRect().height,
+      )));
+      const tracks = rows.map((height) => `${height}px`).join(" ");
+      enTable.style.gridTemplateRows = tracks;
+      partner.style.gridTemplateRows = tracks;
+      zhTables.splice(zhTables.indexOf(partner), 1);
+    }
+
+    const indexed = (pane) => new Map([...pane.children]
+      .filter((node) => node.dataset.alignIndex !== undefined && node.dataset.alignIndex !== "")
+      .map((node) => [Number(node.dataset.alignIndex), node]));
+    const en = indexed(left);
+    const zh = indexed(right);
+    const pairs = [...en.keys()].filter((key) => zh.has(key)).sort((a, b) => a - b)
+      .map((key) => [en.get(key), zh.get(key)])
+      .filter(([enNode, zhNode]) => enNode.tagName === zhNode.tagName
+        && enNode.classList.contains("parameter-table") === zhNode.classList.contains("parameter-table"));
+    const sourceFigures = [...left.children].filter((node) => node.tagName === "FIGURE");
+    const translatedFigures = [...right.children].filter((node) => node.matches("figure.mapped-figure"));
+    sourceFigures.forEach((figure, i) => {
+      const partner = translatedFigures[i];
+      if (partner && figure.querySelector("img")?.src === partner.querySelector("img")?.src) {
+        pairs.push([figure, partner]);
+      }
+    });
+    pairs.sort(([a], [b]) => a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1);
+    // CSS vertical margin collapse can absorb a small correction, so make a
+    // second pass once the first margin adjustments have settled in layout.
+    for (let pass = 0; pass < 3; pass += 1) {
+      let changed = false;
+      for (const [enNode, zhNode] of pairs) {
+        const difference = enNode.getBoundingClientRect().top - zhNode.getBoundingClientRect().top;
+        if (Math.abs(difference) < 2) continue;
+        const earlier = difference > 0 ? zhNode : enNode;
+        const base = Number.parseFloat(getComputedStyle(earlier).marginTop) || 0;
+        earlier.style.marginTop = `${base + Math.abs(difference)}px`;
+        earlier.dataset.alignmentMargin = "1";
+        changed = true;
+      }
+      if (!changed) break;
+    }
+  });
+}
+
+let alignmentFrame = 0;
+function scheduleBilingualAlignment() {
+  if (alignmentFrame) cancelAnimationFrame(alignmentFrame);
+  alignmentFrame = requestAnimationFrame(() => {
+    alignmentFrame = 0;
+    alignBilingualPages();
+  });
+}
+
+function populateExperiment() {
+  if (!experiment) return;
+  document.querySelectorAll(".page-block").forEach((page) => {
+    const pageId = page.id;
+    const englishPane = page.querySelector(".content-en");
+    const chinesePane = page.querySelector(".content-zh");
+    englishPane.innerHTML = experiment.english[pageId] || "<p>English transcription pending.</p>";
+    chinesePane.innerHTML = experiment.chinese[pageId] || "<p>\u4e2d\u6587\u7ffb\u8bd1\u5f85\u8865\u3002</p>";
+    markAlignmentBlocks(englishPane);
+    markAlignmentBlocks(chinesePane);
+    mapFigures(page, pageId);
+    formatInlineParameterLists(englishPane);
+    formatInlineParameterLists(chinesePane);
+    formatParameterTables(englishPane);
+    formatParameterTables(chinesePane);
+    formatStepBreaks(englishPane);
+    formatStepBreaks(chinesePane);
+    formatCodePage(englishPane, pageId);
+    formatCodePage(chinesePane, pageId);
+    formatKnownTranscriptions(englishPane, pageId);
+    formatKnownTranscriptions(chinesePane, pageId);
+    formatKnownFormulas(englishPane, pageId);
+    formatKnownFormulas(chinesePane, pageId);
+    formatContinuations(englishPane, pageId);
+    formatContinuations(chinesePane, pageId);
+  });
+
+  // Add stable anchors to the small set of semantic section headings used by
+  // the sidebar. Parameter names and table-like headings remain unindexed.
+  (experiment.navigationSections || []).forEach((section) => {
+    const page = document.getElementById(section.pageId);
+    if (!page) return;
+    const panes = [page.querySelector(".content-en"), page.querySelector(".content-zh")].filter(Boolean);
+    panes.forEach((pane) => {
+      const heading = [...pane.querySelectorAll("h3")].find((node) => node.textContent.trim() === section.title || node.textContent.trim() === section.titleZh);
+      if (heading) heading.id = section.id;
+    });
+  });
+
+  const assetPrefix = body.dataset.assetPrefix || "assets";
+  document.querySelectorAll("figure.worksheet img").forEach((image) => {
+    image.src = `${assetPrefix}/worksheets/observations-grid.svg`;
+    image.alt = "Blank NMR observation grid";
+  });
+}
+
+function alignLocationHash() {
+  if (!window.location.hash) return;
+  let targetId;
+  try {
+    targetId = decodeURIComponent(window.location.hash.slice(1));
+  } catch {
+    targetId = window.location.hash.slice(1);
+  }
+  const target = document.getElementById(targetId);
+  if (!target) return;
+
+  const align = () => target.scrollIntoView({ block: "start", behavior: "instant" });
+  requestAnimationFrame(() => requestAnimationFrame(align));
+  window.addEventListener("load", align, { once: true });
+  document.fonts?.ready.then(align).catch(() => {});
+
+  // Page fragments and lazy figures are inserted after the browser's native
+  // hash jump.  Keep the target aligned briefly while those elements settle.
+  if ("ResizeObserver" in window) {
+    const paper = document.querySelector(".paper");
+    if (paper) {
+      const observer = new ResizeObserver(align);
+      observer.observe(paper);
+      window.setTimeout(() => observer.disconnect(), 1500);
+    }
+  }
+}
+
+const scanObserver = "IntersectionObserver" in window
+  ? new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const image = entry.target;
+        if (!image.src && image.dataset.src) image.src = image.dataset.src;
+        scanObserver.unobserve(image);
+      });
+    }, { rootMargin: "900px 0px" })
+  : null;
+
+function armReferenceScans() {
+  referenceScans.forEach((image) => {
+    if (image.src || !image.dataset.src) return;
+    if (scanObserver) scanObserver.observe(image);
+    else image.src = image.dataset.src;
+  });
+}
+
+function setOriginalMode(enabled) {
+  body.classList.toggle("show-original", enabled);
+  scheduleBilingualAlignment();
+  scanButton.setAttribute("aria-pressed", String(enabled));
+  scanButton.setAttribute("aria-label", enabled ? "\u8fd4\u56de\u91cd\u5efa\u7a3f" : "\u539f\u9875\u5bf9\u7167");
+  scanButton.title = enabled ? "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af" : "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af";
+  languageButtons.forEach((button) => {
+    button.setAttribute("aria-pressed", String(!enabled && button.dataset.view === body.dataset.language));
+  });
+  if (enabled) armReferenceScans();
+}
+
+function setLanguage(mode) {
+  const selected = ["en", "bilingual"].includes(mode) ? mode : "en";
+  body.classList.remove("show-original");
+  scanButton.setAttribute("aria-pressed", "false");
+  scanButton.setAttribute("aria-label", "\u539f\u9875\u5bf9\u7167");
+  scanButton.title = "\u539f\u9875\u5bf9\u7167 \u00b7 \u5feb\u6377\u952e 3 / O \u5faa\u73af";
+  body.dataset.language = selected;
+  scheduleBilingualAlignment();
+  languageButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.view === selected)));
+  localStorage.setItem("nmr-reading-mode", selected);
+}
+
+function activateView(view) {
+  if (view === "original") {
+    setOriginalMode(!body.classList.contains("show-original"));
+    return;
+  }
+  setLanguage(view);
+}
+
+function cycleView() {
+  if (body.classList.contains("show-original")) {
+    setLanguage("en");
+    return;
+  }
+  if (body.dataset.language === "en") {
+    setLanguage("bilingual");
+    return;
+  }
+  setOriginalMode(true);
+}
+
+populateExperiment();
+alignLocationHash();
+window.addEventListener("hashchange", alignLocationHash);
+
+const sidebarStateKey = "nmr-sidebar-navigation";
+
+function readSidebarState() {
+  try {
+    return JSON.parse(sessionStorage.getItem(sidebarStateKey) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function persistSidebarState() {
+  if (!sidebar) return;
+  const openChapters = [...sidebar.querySelectorAll("details.chapter-group[open]")]
+    .map((group) => group.dataset.chapter)
+    .filter(Boolean);
+  try {
+    sessionStorage.setItem(sidebarStateKey, JSON.stringify({
+      scrollTop: sidebar.scrollTop,
+      openChapters,
+    }));
+  } catch {
+    // Some browser policies disable storage for local files; navigation still works.
+  }
+}
+
+function restoreSidebarState() {
+  if (!sidebar) return;
+  const state = readSidebarState();
+  const openChapters = new Set(Array.isArray(state.openChapters) ? state.openChapters : []);
+  sidebar.querySelectorAll("details.chapter-group").forEach((group) => {
+    if (openChapters.has(group.dataset.chapter) || group.classList.contains("active-chapter")) group.open = true;
+    group.addEventListener("toggle", () => {
+      persistSidebarState();
+      updateNavToggleButton();
+    });
+  });
+
+  requestAnimationFrame(() => {
+    updateNavToggleButton();
+    if (Number.isFinite(state.scrollTop)) {
+      sidebar.scrollTop = state.scrollTop;
+      return;
+    }
+    const activeLink = sidebar.querySelector("a.active");
+    if (activeLink) sidebar.scrollTop = Math.max(0, activeLink.offsetTop - sidebar.clientHeight / 2);
+  });
+
+  let scrollTimer = 0;
+  sidebar.addEventListener("scroll", () => {
+    window.clearTimeout(scrollTimer);
+    scrollTimer = window.setTimeout(persistSidebarState, 80);
+  }, { passive: true });
+}
+
+restoreSidebarState();
+
+const sectionLinks = [...document.querySelectorAll(".sidebar-section-link[data-section-id]")];
+const sectionTargets = sectionLinks
+  .map((link) => document.getElementById(link.dataset.sectionId))
+  .filter(Boolean);
+const sectionObserver = "IntersectionObserver" in window && sectionTargets.length
+  ? new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        sectionLinks.forEach((link) => {
+          const active = link.dataset.sectionId === entry.target.id;
+          link.classList.toggle("active", active);
+          if (active) link.setAttribute("aria-current", "location");
+          else link.removeAttribute("aria-current");
+        });
+      });
+    }, { rootMargin: "-16% 0px -68% 0px", threshold: 0 })
+  : null;
+sectionTargets.forEach((target) => sectionObserver?.observe(target));
+
+function updateNavToggleButton() {
+  if (!sidebar || !sidebarActionButton) return;
+  const groups = [...sidebar.querySelectorAll("details.chapter-group")];
+  const allOpen = groups.length > 0 && groups.every((group) => group.open);
+  const label = allOpen ? "\u6536\u62e2\u6240\u6709\u7ae0\u8282" : "\u5c55\u5f00\u6240\u6709\u7ae0\u8282";
+  sidebarActionButton.dataset.state = allOpen ? "collapse" : "expand";
+  sidebarActionButton.setAttribute("aria-label", label);
+  sidebarActionButton.title = label;
+}
+
+sidebarActionButton?.addEventListener("click", () => {
+  const groups = [...sidebar.querySelectorAll("details.chapter-group")];
+  const shouldOpen = !groups.every((group) => group.open);
+  groups.forEach((group) => {
+    group.open = shouldOpen;
+  });
+  persistSidebarState();
+  updateNavToggleButton();
+});
+
+const scaleStorageKey = "nmr-interface-scale";
+const themeStorageKey = "nmr-interface-theme";
+let scaleMode = "auto";
+let appliedScale = 1;
+
+function storedValue(key, fallback) {
+  try {
+    return localStorage.getItem(key) || fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function saveValue(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    // The display setting still applies for the current page.
+  }
+}
+
+function automaticScale() {
+  if (window.innerWidth <= 1040) return 1;
+  return Math.min(1.2, Math.max(0.95, window.innerWidth / 1800));
+}
+
+function applyScale(scale, mode = scaleMode) {
+  appliedScale = Math.min(1.4, Math.max(0.8, scale));
+  root.style.setProperty("--sidebar-w", `${Math.round(340 * appliedScale)}px`);
+  root.style.setProperty("--page-w", `${Math.round(1180 * appliedScale)}px`);
+  root.style.setProperty("--reader-font", `${(15 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--reader-heading", `${(20 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--reader-title", `${(34 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--sidebar-font", `${(13 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--sidebar-small", `${(11 * appliedScale).toFixed(1)}px`);
+  root.style.setProperty("--paper-pad", `${Math.round(44 * appliedScale)}px`);
+  if (zoomValue) zoomValue.textContent = mode === "auto" ? `\u81ea\u52a8 ${Math.round(appliedScale * 100)}%` : `${Math.round(appliedScale * 100)}%`;
+  if (zoomAutoButton) zoomAutoButton.setAttribute("aria-pressed", String(mode === "auto"));
+}
+
+function setScaleMode(value) {
+  if (value === "auto") {
+    scaleMode = "auto";
+    applyScale(automaticScale(), scaleMode);
+    saveValue(scaleStorageKey, scaleMode);
+    return;
+  }
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return;
+  scaleMode = String(Math.min(1.4, Math.max(0.8, numeric)));
+  applyScale(Number(scaleMode), scaleMode);
+  saveValue(scaleStorageKey, scaleMode);
+}
+
+function adjustScale(delta) {
+  setScaleMode((Math.round((appliedScale + delta) * 10) / 10).toFixed(1));
+}
+
+function applyTheme(theme) {
+  const selected = ["sage", "mist", "sand", "mauve", "gray"].includes(theme) ? theme : "sage";
+  root.dataset.theme = selected;
+  themeButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.theme === selected)));
+  saveValue(themeStorageKey, selected);
+}
+
+setScaleMode(storedValue(scaleStorageKey, "auto"));
+applyTheme(storedValue(themeStorageKey, "sage"));
+
+displayButton?.addEventListener("click", (event) => {
+  event.stopPropagation();
+  const willOpen = displayPanel.hidden;
+  displayPanel.hidden = !willOpen;
+  displayButton.setAttribute("aria-expanded", String(willOpen));
+});
+
+displayPanel?.addEventListener("click", (event) => event.stopPropagation());
+zoomOutButton?.addEventListener("click", () => adjustScale(-0.1));
+zoomInButton?.addEventListener("click", () => adjustScale(0.1));
+zoomAutoButton?.addEventListener("click", () => setScaleMode("auto"));
+themeButtons.forEach((button) => button.addEventListener("click", () => applyTheme(button.dataset.theme)));
+
+document.addEventListener("click", () => {
+  if (!displayPanel || displayPanel.hidden) return;
+  displayPanel.hidden = true;
+  displayButton?.setAttribute("aria-expanded", "false");
+});
+
+let scaleResizeTimer = 0;
+window.addEventListener("resize", () => {
+  scheduleBilingualAlignment();
+  if (scaleMode !== "auto") return;
+  window.clearTimeout(scaleResizeTimer);
+  scaleResizeTimer = window.setTimeout(() => applyScale(automaticScale(), "auto"), 100);
+}, { passive: true });
+
+document.fonts?.ready.then(scheduleBilingualAlignment).catch(() => {});
+document.addEventListener("load", (event) => {
+  if (event.target instanceof HTMLImageElement && event.target.closest(".bilingual-grid")) scheduleBilingualAlignment();
+}, true);
+
+toolbar.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-view]");
+  if (!button || !toolbar.contains(button)) return;
+  event.preventDefault();
+  activateView(button.dataset.view);
+});
+
+navButton.addEventListener("click", () => {
+  const open = body.classList.toggle("nav-open");
+  navButton.setAttribute("aria-expanded", String(open));
+});
+
+document.querySelectorAll(".sidebar a").forEach((link) => link.addEventListener("click", () => {
+  persistSidebarState();
+  body.classList.remove("nav-open");
+  navButton.setAttribute("aria-expanded", "false");
+}));
+
+document.addEventListener("keydown", (event) => {
+  const target = event.target;
+  if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target?.isContentEditable) return;
+  if (event.ctrlKey || event.metaKey || event.altKey) return;
+  if (event.key === "1") setLanguage("en");
+  if (event.key === "2") setLanguage("bilingual");
+  if (event.key === "3") setOriginalMode(true);
+  if (event.key.toLowerCase() === "o") cycleView();
+});
+
+setLanguage(localStorage.getItem("nmr-reading-mode") || "en");
+}
+</script></body></html>
