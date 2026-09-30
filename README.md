@@ -1,4 +1,4 @@
-# NMR Textbook HTML Suite
+# NMR Experiment Library
 
 这是一个可离线阅读的 NMR 教材 HTML 资料库，包含三套按章节和实验组织的双语页面。根目录入口提供跨教材全文检索；每套教材也可以单独启动。
 

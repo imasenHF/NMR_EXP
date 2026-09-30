@@ -1,6 +1,6 @@
 {
   "name": "nmr-textbook-suite",
-  "displayName": "NMR Textbook HTML Suite",
+  "displayName": "NMR Experiment Library",
   "imagePolicy": {
     "rasterFormat": "webp",
     "maxWidth": 1600,

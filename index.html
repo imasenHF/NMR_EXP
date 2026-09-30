@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Unified searchable entry for three NMR textbook HTML editions." />
-    <title>NMR Textbook Library — 核磁共振教材资料库</title>
+    <meta name="description" content="NMR Experiment Library：从仪器基础、脉冲序列到多维与生物 NMR 的实验资料库。" />
+    <title>NMR Experiment Library — 从仪器基础、脉冲序列到多维与生物 NMR 的实验资料库</title>
+    <link rel="icon" href="practical-nmr-spectroscopy-laboratory-guide-html/shared/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="200-and-more-nmr-experiments-html/shared/site.css?v=18" />
-    <link rel="stylesheet" href="shared/suite.css?v=1" />
+    <link rel="stylesheet" href="shared/suite.css?v=2" />
     <script src="data/suite-catalog.js"></script>
     <script src="data/suite-search.js"></script>
   </head>
@@ -90,7 +91,7 @@
             const details = document.createElement("details"); details.className = "suite-chapter";
             const summary = document.createElement("summary"); summary.innerHTML = `<span class="suite-chapter-number">${chapter.number}</span><span class="suite-chapter-title"><strong>${chapter.title}</strong>${chapter.titleZh ? `<small>${chapter.titleZh}</small>` : ""}</span><span class="suite-chapter-count">${entries.length ? `${entries.length} 项` : "章节页"}</span>`; details.append(summary);
             const links = document.createElement("div"); links.className = "suite-chapter-links";
-            entries.forEach((item) => { const a = document.createElement("a"); a.href = item.href || itemHref(book, item); a.innerHTML = `<span>${item.number || "·"}</span><strong>${item.titleZh ? `${item.title}<br /><em>${item.titleZh}</em>` : item.title}</strong>`; links.append(a); });
+            entries.forEach((item) => { const a = document.createElement("a"); a.className = item.kind === "part" ? "suite-part-link" : "suite-entry-link"; a.href = item.href || itemHref(book, item); a.innerHTML = `<span>${item.number || "·"}</span><strong>${item.titleZh ? `${item.title}<br /><em>${item.titleZh}</em>` : item.title}</strong>`; links.append(a); });
             if (!entries.length) { const a = document.createElement("a"); a.href = chapter.href; a.innerHTML = `<span>${chapter.number}</span><strong>进入章节页面</strong>`; links.append(a); }
             details.append(links); list.append(details);
           });
