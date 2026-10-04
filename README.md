@@ -29,6 +29,7 @@ powershell -ExecutionPolicy Bypass -File .\serve.ps1 -Port 8765
 - `200-and-more-nmr-experiments-html/`：200 and More NMR Experiments。
 - `50-and-more-essential-nmr-experiments-html/`：50 and More Essential NMR Experiments。
 - `practical-nmr-spectroscopy-laboratory-guide-html/`：Practical NMR Spectroscopy Laboratory Guide。
+- `reader-template/`：可复制到其他项目的单语种阅读器模板，保留主题、缩放、章节目录、锚点和脚注功能。
 - `assets/`：原书页、谱图、脉冲序列、方程和封面等本地资源。
 - `shared/`：统一入口样式；每套教材目录内另有对应的阅读器脚本和样式。
 

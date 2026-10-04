@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="单语种技术资料 HTML 阅读器模板" />
+  <title>HTML 阅读器模板</title>
+  <link rel="stylesheet" href="shared/reader.css" />
+  <script src="data/example-item.js"></script>
+  <script src="shared/reader.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <p class="eyebrow" id="reader-eyebrow">TECHNICAL READER</p>
+      <h1 id="reader-title">HTML 阅读器模板</h1>
+      <p id="reader-subtitle">单语种、可缩放、可离线阅读</p>
+    </div>
+    <div class="toolbar" aria-label="阅读器工具栏">
+      <button id="toggle-nav" type="button" aria-expanded="false">目录</button>
+      <button id="toggle-display-settings" type="button" aria-expanded="false">显示</button>
+      <div id="display-settings" class="display-panel" hidden>
+        <div class="display-group" aria-label="阅读缩放">
+          <span>缩放</span>
+          <button id="zoom-out" type="button">−</button>
+          <output id="zoom-value">自动</output>
+          <button id="zoom-in" type="button">＋</button>
+          <button id="zoom-auto" type="button" aria-pressed="true">自动</button>
+        </div>
+        <div class="display-group" aria-label="主题">
+          <span>主题</span>
+          <button type="button" data-theme="sage" aria-label="鼠尾草绿"></button>
+          <button type="button" data-theme="mist" aria-label="雾灰"></button>
+          <button type="button" data-theme="sand" aria-label="砂岩"></button>
+          <button type="button" data-theme="mauve" aria-label="灰紫"></button>
+          <button type="button" data-theme="gray" aria-label="浅灰"></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="章节目录">
+      <div class="sidebar-tools">
+        <p class="sidebar-label">CONTENTS</p>
+        <button type="button" data-nav-action="toggle" aria-label="展开所有章节" title="展开所有章节">±</button>
+      </div>
+      <nav id="reader-navigation"></nav>
+    </aside>
+
+    <main>
+      <section class="intro-card">
+        <p class="eyebrow" id="reader-section-label">READING EDITION</p>
+        <h2 id="reader-heading">HTML 阅读器模板</h2>
+        <p id="reader-description">用于技术资料和实验手册的单语种阅读界面。</p>
+      </section>
+      <article id="reader-paper" class="paper" aria-label="正文"></article>
+    </main>
+  </div>
+</body>
+</html>
