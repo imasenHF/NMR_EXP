@@ -1,61 +1,9 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="单语种技术资料 HTML 阅读器模板" />
-  <title>HTML 阅读器模板</title>
-  <link rel="stylesheet" href="shared/reader.css" />
-  <script src="data/example-item.js"></script>
-  <script src="shared/reader.js" defer></script>
-</head>
-<body>
-  <header class="topbar">
-    <div class="brand">
-      <p class="eyebrow" id="reader-eyebrow">TECHNICAL READER</p>
-      <h1 id="reader-title">HTML 阅读器模板</h1>
-      <p id="reader-subtitle">单语种、可缩放、可离线阅读</p>
-    </div>
-    <div class="toolbar" aria-label="阅读器工具栏">
-      <button id="toggle-nav" type="button" aria-expanded="false">目录</button>
-      <button id="toggle-display-settings" type="button" aria-expanded="false">显示</button>
-      <div id="display-settings" class="display-panel" hidden>
-        <div class="display-group" aria-label="阅读缩放">
-          <span>缩放</span>
-          <button id="zoom-out" type="button">−</button>
-          <output id="zoom-value">自动</output>
-          <button id="zoom-in" type="button">＋</button>
-          <button id="zoom-auto" type="button" aria-pressed="true">自动</button>
-        </div>
-        <div class="display-group" aria-label="主题">
-          <span>主题</span>
-          <button type="button" data-theme="sage" aria-label="鼠尾草绿"></button>
-          <button type="button" data-theme="mist" aria-label="雾灰"></button>
-          <button type="button" data-theme="sand" aria-label="砂岩"></button>
-          <button type="button" data-theme="mauve" aria-label="灰紫"></button>
-          <button type="button" data-theme="gray" aria-label="浅灰"></button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div class="layout">
-    <aside class="sidebar" aria-label="章节目录">
-      <div class="sidebar-tools">
-        <p class="sidebar-label">CONTENTS</p>
-        <button type="button" data-nav-action="toggle" aria-label="展开所有章节" title="展开所有章节">±</button>
-      </div>
-      <nav id="reader-navigation"></nav>
-    </aside>
-
-    <main>
-      <section class="intro-card">
-        <p class="eyebrow" id="reader-section-label">READING EDITION</p>
-        <h2 id="reader-heading">HTML 阅读器模板</h2>
-        <p id="reader-description">用于技术资料和实验手册的单语种阅读界面。</p>
-      </section>
-      <article id="reader-paper" class="paper" aria-label="正文"></article>
-    </main>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="单语种技术资料 HTML 阅读器模板"><title>HTML 阅读器模板</title><link rel="stylesheet" href="shared/reader.css"><script src="data/example-item.js"></script><script src="shared/reader.js" defer></script></head>
+<body data-language="single" data-asset-prefix="assets">
+<header class="topbar"><div class="brand"><h1><a href="index.html" id="reader-title">HTML 阅读器模板</a></h1><p id="reader-subtitle">单语种、可缩放、可离线阅读</p></div><div class="toolbar" aria-label="阅读器工具栏">
+  <div class="display-control"><button id="toggle-display-settings" class="view-icon" type="button" aria-label="显示设置" aria-expanded="false" aria-controls="display-settings" title="缩放与主题"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10M14 4v6M6 14v6" /></svg></button>
+    <section id="display-settings" class="display-panel" aria-label="显示设置" hidden><div class="display-panel-heading"><strong>显示设置</strong><span>在页面间自动保留</span></div><div class="display-setting-row"><span>界面缩放</span><div class="zoom-controls" role="group" aria-label="界面缩放"><button id="zoom-out" type="button" aria-label="缩小">−</button><output id="zoom-value" aria-live="polite">自动</output><button id="zoom-in" type="button" aria-label="放大">+</button></div></div><button id="zoom-auto" class="auto-scale-button" type="button" aria-pressed="true">按窗口自动适应</button><div class="display-setting-row theme-setting"><span>主题颜色</span><div class="theme-options" role="group" aria-label="主题颜色"><button type="button" data-theme="sage" aria-label="鼠尾草绿" title="鼠尾草绿" aria-pressed="true"></button><button type="button" data-theme="mist" aria-label="雾蓝" title="雾蓝" aria-pressed="false"></button><button type="button" data-theme="sand" aria-label="暖砂" title="暖砂" aria-pressed="false"></button><button type="button" data-theme="mauve" aria-label="灰紫" title="灰紫" aria-pressed="false"></button><button type="button" data-theme="gray" aria-label="浅灰" title="浅灰" aria-pressed="false"></button></div></div></section>
   </div>
-</body>
-</html>
+</div></header>
+<button id="toggle-nav" class="mobile-nav-button" type="button" aria-expanded="false" aria-label="打开内容目录" title="内容目录"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14" /></svg></button>
+<div class="layout"><nav class="sidebar" aria-label="内容目录"><a class="sidebar-home-link" href="index.html">目录与搜索</a><div class="sidebar-section-heading"><p class="sidebar-label">内容目录</p><div class="sidebar-tree-actions" role="group" aria-label="目录章节控制"><button type="button" data-nav-action="toggle" data-state="expand" aria-label="展开所有章节" title="展开所有章节"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7l5 5 5-5M3 3h14" /></svg></button></div></div><div class="sidebar-tree" id="reader-navigation"></div><footer class="sidebar-copyright"><p class="copyright-owner">HTML Reader Template</p><p>将此模板复制到其他项目后，请替换数据脚本并检查相对路径。</p></footer></nav><main><article class="experiment paper" data-experiment="chapter-1" aria-labelledby="item-title"><header class="experiment-heading"><p class="experiment-label" id="reader-label">Chapter 1</p><h2 class="experiment-title" id="item-title">HTML 阅读器模板</h2><p class="range-line" id="reader-range">单语种阅读示例</p></header><div id="reader-paper"></div></article></main></div></body></html>
