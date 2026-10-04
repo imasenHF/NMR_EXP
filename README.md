@@ -40,3 +40,8 @@ powershell -ExecutionPolicy Bypass -File .\serve.ps1 -Port 8765
 栅格图统一使用 WebP，并保持原有裁剪边界与宽高比；SVG 矢量图保留原格式。源 PDF、扫描原档、构建工程和审校工作资料不包含在本分发目录中。
 
 本资料库按已取得的原书扫描、文本翻译和网络发布授权整理，仅用于授权范围内的阅读与学术交流。转载、再分发或商业使用应遵守相应授权条件。
+
+
+## 线上地址
+
+资料库入口：https://plastocyanin.org/nmrexp/ 。GitHub 仓库：https://github.com/imasenHF/nmrexp 。Pages 发布 main 根目录，教材与资源使用相对路径。旧 /NMR_EXP/ 及深层地址由主站兼容页转到对应 /nmrexp/ 地址，查询参数与锚点保留。
